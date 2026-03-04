@@ -1,0 +1,3487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_751748bb9849f0dca9f2b6ff6805d2db {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <a href="index.html" style="position:fixed;top:12px;left:12px;z-index:1000;
+       background:white;padding:8px 14px;border-radius:6px;text-decoration:none;
+       box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;font-size:13px;color:#1a3c5e">
+       ← Toutes les régions
+    </a>
+    
+    <div style="position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:1000;
+                background:rgba(255,255,255,.93);padding:8px 20px;border-radius:6px;
+                box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;
+                font-size:15px;font-weight:bold;color:#1a3c5e">
+      🌿 Nord-du-Québec — 67 interventions
+    </div>
+    
+    <div style="position:fixed;bottom:30px;left:30px;z-index:1000;background:white;
+                padding:12px 16px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.3);
+                font-family:sans-serif;font-size:12px;line-height:1.9">
+      <b>🏭 Type d'incident</b><br>
+      <span style="color:red">●</span> Incendie &nbsp;
+      <span style="color:orange">●</span> Déversement<br>
+      <span style="color:purple">●</span> Contamination &nbsp;
+      <span style="color:blue">●</span> Accident<br>
+      <span style="color:gray">●</span> Signalement &nbsp;
+      <span style="color:darkred">●</span> Mortalité<br>
+      <span style="color:darkblue">●</span> Rejet &nbsp;
+      <span style="color:lightgray">●</span> Autre
+    </div>
+    
+            <div class="folium-map" id="map_751748bb9849f0dca9f2b6ff6805d2db" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_751748bb9849f0dca9f2b6ff6805d2db = L.map(
+                "map_751748bb9849f0dca9f2b6ff6805d2db",
+                {
+                    center: [53.0, -76.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e62ca12c4790fcbb874a34e54fe5c1bd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e62ca12c4790fcbb874a34e54fe5c1bd.addTo(map_751748bb9849f0dca9f2b6ff6805d2db);
+        
+    
+            var marker_cluster_7519576397eb717d971b64cf3e84fd61 = L.markerClusterGroup(
+                {
+  "maxClusterRadius": 40,
+  "disableClusteringAtZoom": 13,
+}
+            );
+        
+    
+            var marker_940e5e6f192cbfdd994f529d61662f3a = L.marker(
+                [49.915263, -74.304993],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_0f8860ca5c25e54baa0f0cfb430d1410 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_208a2c09971b3af8d1060978d527d2c0 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_fc6f9f256482ed818778227c87403de4 = $(`<div id="html_fc6f9f256482ed818778227c87403de4" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chibougamau 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 6 octobre 2025<br>           📁 <b>Dossier :</b> 301852982 Catégorie : 1<br>           📍 <b>Adresse :</b> Km 250 de la route 167<br>           🏙️ <b>Municipalité :</b> Chibougamau<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301852982" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_208a2c09971b3af8d1060978d527d2c0.setContent(html_fc6f9f256482ed818778227c87403de4);
+            
+        
+
+        marker_940e5e6f192cbfdd994f529d61662f3a.bindPopup(popup_208a2c09971b3af8d1060978d527d2c0)
+        ;
+
+        
+    
+    
+            marker_940e5e6f192cbfdd994f529d61662f3a.bindTooltip(
+                `<div>
+                     6 octobre 2025 – Chibougamau 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_940e5e6f192cbfdd994f529d61662f3a.setIcon(icon_0f8860ca5c25e54baa0f0cfb430d1410);
+            
+    
+            var marker_db7aac9436d84fedb07c356bf79931ac = L.marker(
+                [49.783605, -74.859546],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_80d4452cbaf7ae629b9e35e4be6ab24b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d41c65b757fb9996d44dbfa169433bf = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_b7a291c6750cda4b247c4f17f0983573 = $(`<div id="html_b7a291c6750cda4b247c4f17f0983573" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chapais 
+ 				- Bris d'équipement</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 6 juin 2025<br>           📁 <b>Dossier :</b> 301830453 Catégorie : 1<br>           📍 <b>Adresse :</b> 99, boulevard Springer<br>           🏙️ <b>Municipalité :</b> Chapais<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301830453" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_5d41c65b757fb9996d44dbfa169433bf.setContent(html_b7a291c6750cda4b247c4f17f0983573);
+            
+        
+
+        marker_db7aac9436d84fedb07c356bf79931ac.bindPopup(popup_5d41c65b757fb9996d44dbfa169433bf)
+        ;
+
+        
+    
+    
+            marker_db7aac9436d84fedb07c356bf79931ac.bindTooltip(
+                `<div>
+                     6 juin 2025 – Chapais 
+				- Bris d'équipement
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db7aac9436d84fedb07c356bf79931ac.setIcon(icon_80d4452cbaf7ae629b9e35e4be6ab24b);
+            
+    
+            var marker_048faab4a5156a39e771f65c8d8c6652 = L.marker(
+                [49.731416, -77.691401],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_fe20ea8904ae998bf9f7bb8deddac350 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe1b055305d24fa1a46b636538089872 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_40335e376d6022ba566966e5a0263ca1 = $(`<div id="html_40335e376d6022ba566966e5a0263ca1" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Matagami 
+ 				- Phénomène naturel (fleur d'eau)</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 28 août 2024<br>           📁 <b>Dossier :</b> 301777609 Catégorie : 1<br>           📍 <b>Adresse :</b> Bordure de la route 109<br>           🏙️ <b>Municipalité :</b> Matagami<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301777609" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_fe1b055305d24fa1a46b636538089872.setContent(html_40335e376d6022ba566966e5a0263ca1);
+            
+        
+
+        marker_048faab4a5156a39e771f65c8d8c6652.bindPopup(popup_fe1b055305d24fa1a46b636538089872)
+        ;
+
+        
+    
+    
+            marker_048faab4a5156a39e771f65c8d8c6652.bindTooltip(
+                `<div>
+                     28 août 2024 – Matagami 
+				- Phénomène naturel (fleur d'eau)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_048faab4a5156a39e771f65c8d8c6652.setIcon(icon_fe20ea8904ae998bf9f7bb8deddac350);
+            
+    
+            var marker_53fc7518734b1b8def12b2a3851cda2e = L.marker(
+                [51.498206, -75.438743],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_0ba4ac27dae5a04a58d472f6dc8c926c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eec7f8cfb8ecb14913990743506d6d8 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_49ffaf7243f7a2a5c917c25aeaa9bf6a = $(`<div id="html_49ffaf7243f7a2a5c917c25aeaa9bf6a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Eyou-Itshee-Bais-James 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 11 juin 2024<br>           📁 <b>Dossier :</b> 301761326 Catégorie : 2<br>           📍 <b>Adresse :</b> Km 155, route N-810<br>           🏙️ <b>Municipalité :</b> Eyou-Itshee-Bais-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301761326" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_6eec7f8cfb8ecb14913990743506d6d8.setContent(html_49ffaf7243f7a2a5c917c25aeaa9bf6a);
+            
+        
+
+        marker_53fc7518734b1b8def12b2a3851cda2e.bindPopup(popup_6eec7f8cfb8ecb14913990743506d6d8)
+        ;
+
+        
+    
+    
+            marker_53fc7518734b1b8def12b2a3851cda2e.bindTooltip(
+                `<div>
+                     11 juin 2024 – Eyou-Itshee-Bais-James 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_53fc7518734b1b8def12b2a3851cda2e.setIcon(icon_0ba4ac27dae5a04a58d472f6dc8c926c);
+            
+    
+            var marker_9bec8355d16765698cc0b74a19b277ee = L.marker(
+                [57.376566, -69.200972],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_ae52412e7b3186e38d9047d823d59f8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b898b443c301d223b344ce27065f4fe = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_441e0f2c8e48dd6e3b32f29191b5ce6b = $(`<div id="html_441e0f2c8e48dd6e3b32f29191b5ce6b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">TNO Rivière-Koksoak 
+ 				- Bris d'équipement</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 8 juillet 2024<br>           📁 <b>Dossier :</b> 301776132 Catégorie : 1<br>           📍 <b>Adresse :</b> Mine<br>           🏙️ <b>Municipalité :</b> TNO Rivière-Koksoak<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301776132" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_8b898b443c301d223b344ce27065f4fe.setContent(html_441e0f2c8e48dd6e3b32f29191b5ce6b);
+            
+        
+
+        marker_9bec8355d16765698cc0b74a19b277ee.bindPopup(popup_8b898b443c301d223b344ce27065f4fe)
+        ;
+
+        
+    
+    
+            marker_9bec8355d16765698cc0b74a19b277ee.bindTooltip(
+                `<div>
+                     8 juillet 2024 – TNO Rivière-Koksoak 
+				- Bris d'équipement
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9bec8355d16765698cc0b74a19b277ee.setIcon(icon_ae52412e7b3186e38d9047d823d59f8b);
+            
+    
+            var marker_78f91d8a1b8db0efcc752f79747d143b = L.marker(
+                [49.481262, -77.335251],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_5d0ec0efc31f7a19583e5dff2af9ded5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2c200ad1157825594650dabc9ab119b = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7e128f90e4f9250aa093b5f99b3673b7 = $(`<div id="html_7e128f90e4f9250aa093b5f99b3673b7" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 1 août 2025<br>           📁 <b>Dossier :</b> 301841472 Catégorie : 1<br>           📍 <b>Adresse :</b> Km 53 de la route 1055<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301841472" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_f2c200ad1157825594650dabc9ab119b.setContent(html_7e128f90e4f9250aa093b5f99b3673b7);
+            
+        
+
+        marker_78f91d8a1b8db0efcc752f79747d143b.bindPopup(popup_f2c200ad1157825594650dabc9ab119b)
+        ;
+
+        
+    
+    
+            marker_78f91d8a1b8db0efcc752f79747d143b.bindTooltip(
+                `<div>
+                     1 août 2025 – Baie-James 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78f91d8a1b8db0efcc752f79747d143b.setIcon(icon_5d0ec0efc31f7a19583e5dff2af9ded5);
+            
+    
+            var marker_b40fa434856f332e75bd7ab635e1652e = L.marker(
+                [49.840283, -74.229967],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_2c3e481baa040eac4bdbe8a00ec1cb9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39b6aae5aa21fd0f1c81503a11a42b09 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_665ff5b50317a9a49bf10406bcdf9cb5 = $(`<div id="html_665ff5b50317a9a49bf10406bcdf9cb5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Quai municipale de Chibougamau 
+ 				- Présence d'hydrocarbure</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 avril 2024<br>           📁 <b>Dossier :</b> 301746917 Catégorie : 1<br>           📍 <b>Adresse :</b> Lac Chibougamau<br>           🏙️ <b>Municipalité :</b> Quai municipale de Chibougamau<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301746917" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_39b6aae5aa21fd0f1c81503a11a42b09.setContent(html_665ff5b50317a9a49bf10406bcdf9cb5);
+            
+        
+
+        marker_b40fa434856f332e75bd7ab635e1652e.bindPopup(popup_39b6aae5aa21fd0f1c81503a11a42b09)
+        ;
+
+        
+    
+    
+            marker_b40fa434856f332e75bd7ab635e1652e.bindTooltip(
+                `<div>
+                     27 avril 2024 – Quai municipale de Chibougamau 
+				- Présence d'
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b40fa434856f332e75bd7ab635e1652e.setIcon(icon_2c3e481baa040eac4bdbe8a00ec1cb9c);
+            
+    
+            var marker_54832b5102f58677c4b68789cdfa3916 = L.marker(
+                [58.697407, -69.937393],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_d9e4469c21cc14fed7a27d3388b88f40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b74a7d2aa8bfad5083de128be8323544 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_ed23cf141489c6b6d576307b6d7915b6 = $(`<div id="html_ed23cf141489c6b6d576307b6d7915b6" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Village nordique de Tasiujaq 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 28 février 2024<br>           📁 <b>Dossier :</b> 301733521 Catégorie : 1<br>           📍 <b>Adresse :</b> Garage<br>           🏙️ <b>Municipalité :</b> Village nordique de Tasiujaq<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301733521" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b74a7d2aa8bfad5083de128be8323544.setContent(html_ed23cf141489c6b6d576307b6d7915b6);
+            
+        
+
+        marker_54832b5102f58677c4b68789cdfa3916.bindPopup(popup_b74a7d2aa8bfad5083de128be8323544)
+        ;
+
+        
+    
+    
+            marker_54832b5102f58677c4b68789cdfa3916.bindTooltip(
+                `<div>
+                     28 février 2024 – Village nordique de Tasiujaq 
+				- Déversement d
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54832b5102f58677c4b68789cdfa3916.setIcon(icon_d9e4469c21cc14fed7a27d3388b88f40);
+            
+    
+            var marker_2f641f3678e714f754cb5a461652f59b = L.marker(
+                [52.241859, -78.507404],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_34d2dbe6e0295d560c85feb41f6bab9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0432209fb2b8fa13e0ac65a2d3a6702 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_b773c82d2bdfc6a4b5b476c1dc1d76a6 = $(`<div id="html_b773c82d2bdfc6a4b5b476c1dc1d76a6" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Eeyou Istchee Baie-James 
+ 				- Glissement de terrain</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 16 mai 2023<br>           📁 <b>Dossier :</b> 301676705 Catégorie : 1<br>           📍 <b>Adresse :</b> Site minier situé aux coordonnés GPS 49.5695°N et 79.2157°O<br>           🏙️ <b>Municipalité :</b> Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301676705" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b0432209fb2b8fa13e0ac65a2d3a6702.setContent(html_b773c82d2bdfc6a4b5b476c1dc1d76a6);
+            
+        
+
+        marker_2f641f3678e714f754cb5a461652f59b.bindPopup(popup_b0432209fb2b8fa13e0ac65a2d3a6702)
+        ;
+
+        
+    
+    
+            marker_2f641f3678e714f754cb5a461652f59b.bindTooltip(
+                `<div>
+                     16 mai 2023 – Eeyou Istchee Baie-James 
+				- Glissement de ter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f641f3678e714f754cb5a461652f59b.setIcon(icon_34d2dbe6e0295d560c85feb41f6bab9e);
+            
+    
+            var marker_a8b58ebcbe604812bcf6d2cc822d370e = L.marker(
+                [49.757874, -77.622112],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_66c1304962e28ca9eb30abcad16bf35d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_568ab7a6328cc2eaca00584bab949cae = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_6bc6364f49d828115a27282b4c8b5852 = $(`<div id="html_6bc6364f49d828115a27282b4c8b5852" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d'Eeyou Itshee Baie-James 
+ 				- Accident d'avion</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 14 octobre 2022<br>           📁 <b>Dossier :</b> 301637628 Catégorie : 1<br>           📍 <b>Adresse :</b> 52 05.43N  071 24.48W<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d'Eeyou Itshee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301637628" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_568ab7a6328cc2eaca00584bab949cae.setContent(html_6bc6364f49d828115a27282b4c8b5852);
+            
+        
+
+        marker_a8b58ebcbe604812bcf6d2cc822d370e.bindPopup(popup_568ab7a6328cc2eaca00584bab949cae)
+        ;
+
+        
+    
+    
+            marker_a8b58ebcbe604812bcf6d2cc822d370e.bindTooltip(
+                `<div>
+                     14 octobre 2022 – Gouvernement régional d'Eeyou Itshee Baie-James 
+
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8b58ebcbe604812bcf6d2cc822d370e.setIcon(icon_66c1304962e28ca9eb30abcad16bf35d);
+            
+    
+            var marker_573db0d96f0edd04a578aeae3f7cd3d3 = L.marker(
+                [49.757874, -77.622112],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_e057247909b7db204bcf3728c125d063 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_945be4d0079fae254a0100d9699ec243 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_00b922005cdb3ac59069847c385767f5 = $(`<div id="html_00b922005cdb3ac59069847c385767f5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d'Eeyou Istchee, Baie-James 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 novembre 2021<br>           📁 <b>Dossier :</b> 301572510 Catégorie : 1<br>           📍 <b>Adresse :</b> Km 78 de la route 6000<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d'Eeyou Istchee, Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301572510" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_945be4d0079fae254a0100d9699ec243.setContent(html_00b922005cdb3ac59069847c385767f5);
+            
+        
+
+        marker_573db0d96f0edd04a578aeae3f7cd3d3.bindPopup(popup_945be4d0079fae254a0100d9699ec243)
+        ;
+
+        
+    
+    
+            marker_573db0d96f0edd04a578aeae3f7cd3d3.bindTooltip(
+                `<div>
+                     27 novembre 2021 – Gouvernement régional d'Eeyou Istchee, Baie-James 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_573db0d96f0edd04a578aeae3f7cd3d3.setIcon(icon_e057247909b7db204bcf3728c125d063);
+            
+    
+            var marker_efa5fa841c05cb6a4a0b7f206ee9e8ad = L.marker(
+                [49.027789, -76.961108],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_13df1be8992b27bb904c2b6b1bbb5cf2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0887eabea4103b597f68f2995771c983 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7e90baf2b58242ffe279f983d917bc2c = $(`<div id="html_7e90baf2b58242ffe279f983d917bc2c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Lebel-sur-Quévillon 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 octobre 2021<br>           📁 <b>Dossier :</b> 301566907 Catégorie : 1<br>           📍 <b>Adresse :</b> 30, chemin du Moulin<br>           🏙️ <b>Municipalité :</b> Lebel-sur-Quévillon<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301566907" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_0887eabea4103b597f68f2995771c983.setContent(html_7e90baf2b58242ffe279f983d917bc2c);
+            
+        
+
+        marker_efa5fa841c05cb6a4a0b7f206ee9e8ad.bindPopup(popup_0887eabea4103b597f68f2995771c983)
+        ;
+
+        
+    
+    
+            marker_efa5fa841c05cb6a4a0b7f206ee9e8ad.bindTooltip(
+                `<div>
+                     27 octobre 2021 – Lebel-sur-Quévillon 
+				- Déversement de produit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efa5fa841c05cb6a4a0b7f206ee9e8ad.setIcon(icon_13df1be8992b27bb904c2b6b1bbb5cf2);
+            
+    
+            var marker_9d1743257a7c2042694ef70ce7446b65 = L.marker(
+                [49.512052, -79.208125],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_a79058dbd65370ed6a731fbdf16f0f59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b331caf41e2903ba42bb834864a6f42 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_e6275250269d9e29ca1e823031c0fc02 = $(`<div id="html_e6275250269d9e29ca1e823031c0fc02" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d'Eeyou Istchee Baie-James 
+ 				- Bris d'équipement</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 4 juin 2021<br>           📁 <b>Dossier :</b> 301535526 Catégorie : 1<br>           📍 <b>Adresse :</b> Site de la mine Casa Berardi<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d'Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301535526" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_3b331caf41e2903ba42bb834864a6f42.setContent(html_e6275250269d9e29ca1e823031c0fc02);
+            
+        
+
+        marker_9d1743257a7c2042694ef70ce7446b65.bindPopup(popup_3b331caf41e2903ba42bb834864a6f42)
+        ;
+
+        
+    
+    
+            marker_9d1743257a7c2042694ef70ce7446b65.bindTooltip(
+                `<div>
+                     4 juin 2021 – Gouvernement régional d'Eeyou Istchee Baie-James 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d1743257a7c2042694ef70ce7446b65.setIcon(icon_a79058dbd65370ed6a731fbdf16f0f59);
+            
+    
+            var marker_55a84aa9d6b191627dda4d0cdb807efe = L.marker(
+                [62.416667, -77.916667],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_64610c5332930d655f55ef672f27631a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_529b955e8dc738ef42232817cb3bb7d0 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_3a7f14dd43eae35c628f81dec3b5ff39 = $(`<div id="html_3a7f14dd43eae35c628f81dec3b5ff39" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Ivujivik 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 16 mars 2021<br>           📁 <b>Dossier :</b> 301517681 Catégorie : 1<br>           📍 <b>Adresse :</b> Garage municipal de Ivujivik<br>           🏙️ <b>Municipalité :</b> Ivujivik<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301517681" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_529b955e8dc738ef42232817cb3bb7d0.setContent(html_3a7f14dd43eae35c628f81dec3b5ff39);
+            
+        
+
+        marker_55a84aa9d6b191627dda4d0cdb807efe.bindPopup(popup_529b955e8dc738ef42232817cb3bb7d0)
+        ;
+
+        
+    
+    
+            marker_55a84aa9d6b191627dda4d0cdb807efe.bindTooltip(
+                `<div>
+                     16 mars 2021 – Ivujivik 
+				- Déversement de produits pétrolier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55a84aa9d6b191627dda4d0cdb807efe.setIcon(icon_64610c5332930d655f55ef672f27631a);
+            
+    
+            var marker_e9afc055dec3ab21558680b5ba7ee258 = L.marker(
+                [49.03531, -77.021384],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_b477eff92b5aeeeb2fdf2169e900813a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a217ed0f27317ce05cc4e1721660c8c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_f419e9d0ac1bfaaf90c255061e9e3000 = $(`<div id="html_f419e9d0ac1bfaaf90c255061e9e3000" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Lebel-sur-Quévillon 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 24 juillet 2018<br>           📁 <b>Dossier :</b> 301331707 Catégorie : 1<br>           📍 <b>Adresse :</b> 100, chemin de l'Aéroport<br>           🏙️ <b>Municipalité :</b> Lebel-sur-Quévillon<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301331707" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_7a217ed0f27317ce05cc4e1721660c8c.setContent(html_f419e9d0ac1bfaaf90c255061e9e3000);
+            
+        
+
+        marker_e9afc055dec3ab21558680b5ba7ee258.bindPopup(popup_7a217ed0f27317ce05cc4e1721660c8c)
+        ;
+
+        
+    
+    
+            marker_e9afc055dec3ab21558680b5ba7ee258.bindTooltip(
+                `<div>
+                     24 juillet 2018 – Lebel-sur-Quévillon 
+				- Déversement de produit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9afc055dec3ab21558680b5ba7ee258.setIcon(icon_b477eff92b5aeeeb2fdf2169e900813a);
+            
+    
+            var marker_6821bf5a6812d4d7400f5f50b6376756 = L.marker(
+                [49.770914, -74.856831],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_e55d0ab291953c131060751ed4d5c578 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb28a02e52a94f3175163b770968f393 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d130c0e0968237da929648160b85f03b = $(`<div id="html_d130c0e0968237da929648160b85f03b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chapais 
+ 				- Déversement de matières dangereuses</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 26 janvier 2018<br>           📁 <b>Dossier :</b> 301283350 Catégorie : 1<br>           📍 <b>Adresse :</b> 140, rue de la Cogénération<br>           🏙️ <b>Municipalité :</b> Chapais<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301283350" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_cb28a02e52a94f3175163b770968f393.setContent(html_d130c0e0968237da929648160b85f03b);
+            
+        
+
+        marker_6821bf5a6812d4d7400f5f50b6376756.bindPopup(popup_cb28a02e52a94f3175163b770968f393)
+        ;
+
+        
+    
+    
+            marker_6821bf5a6812d4d7400f5f50b6376756.bindTooltip(
+                `<div>
+                     26 janvier 2018 – Chapais 
+				- Déversement de matières dangereuse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6821bf5a6812d4d7400f5f50b6376756.setIcon(icon_e55d0ab291953c131060751ed4d5c578);
+            
+    
+            var marker_78a95025f406fee4167b082abbfe5f19 = L.marker(
+                [49.80085, -77.855463],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_0791cc46cb644283ab47ed21c4a7f9b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d50ade8f5d933cb1ef9ed98fdd542e9 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7962bf28c1ffd0423efdd1e3138d13c7 = $(`<div id="html_7962bf28c1ffd0423efdd1e3138d13c7" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d'Eeyou Istchee Baie-James 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 décembre 2016<br>           📁 <b>Dossier :</b> 301211626 Catégorie : 2<br>           📍 <b>Adresse :</b> Chemin forestier (millage 20)<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d'Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301211626" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_6d50ade8f5d933cb1ef9ed98fdd542e9.setContent(html_7962bf28c1ffd0423efdd1e3138d13c7);
+            
+        
+
+        marker_78a95025f406fee4167b082abbfe5f19.bindPopup(popup_6d50ade8f5d933cb1ef9ed98fdd542e9)
+        ;
+
+        
+    
+    
+            marker_78a95025f406fee4167b082abbfe5f19.bindTooltip(
+                `<div>
+                     7 décembre 2016 – Gouvernement régional d'Eeyou Istchee Baie-James 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78a95025f406fee4167b082abbfe5f19.setIcon(icon_0791cc46cb644283ab47ed21c4a7f9b9);
+            
+    
+            var marker_439f6b606c4c38f33681e373177e1404 = L.marker(
+                [60.020013, -70.016164],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_f53af578217a048bb489d0fa26aed51f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec52124d0c72fa9917aedd803d720cca = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_0ff616a4df884f02fc86f3d114a973a6 = $(`<div id="html_0ff616a4df884f02fc86f3d114a973a6" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Village nordique Kangirsuk 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 10 octobre 2017<br>           📁 <b>Dossier :</b> 301269558 Catégorie : 2<br>           📍 <b>Adresse :</b> Station de pompage d'eau potable du lac Hardy<br>           🏙️ <b>Municipalité :</b> Village nordique Kangirsuk<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301269558" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_ec52124d0c72fa9917aedd803d720cca.setContent(html_0ff616a4df884f02fc86f3d114a973a6);
+            
+        
+
+        marker_439f6b606c4c38f33681e373177e1404.bindPopup(popup_ec52124d0c72fa9917aedd803d720cca)
+        ;
+
+        
+    
+    
+            marker_439f6b606c4c38f33681e373177e1404.bindTooltip(
+                `<div>
+                     10 octobre 2017 – Village nordique Kangirsuk 
+				- Déversement de 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_439f6b606c4c38f33681e373177e1404.setIcon(icon_f53af578217a048bb489d0fa26aed51f);
+            
+    
+            var marker_66465aee8f1463c3446c9a983ff7eb4b = L.marker(
+                [54.444468, -70.527084],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_6ae997840c746eb5c4102473d79aa8e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2167df2879844460917e83cef2ef12e7 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_e207a46e760fe47d3383b4b0845e42ab = $(`<div id="html_e207a46e760fe47d3383b4b0845e42ab" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d’Eeyou Istchee Baie-James 
+ 				- Déversement d'eaux usées</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 mai 2019<br>           📁 <b>Dossier :</b> 301392189 Catégorie : 1<br>           📍 <b>Adresse :</b> Campement de la centrale Brisay<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d’Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301392189" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2167df2879844460917e83cef2ef12e7.setContent(html_e207a46e760fe47d3383b4b0845e42ab);
+            
+        
+
+        marker_66465aee8f1463c3446c9a983ff7eb4b.bindPopup(popup_2167df2879844460917e83cef2ef12e7)
+        ;
+
+        
+    
+    
+            marker_66465aee8f1463c3446c9a983ff7eb4b.bindTooltip(
+                `<div>
+                     27 mai 2019 – Gouvernement régional d’Eeyou Istchee Baie-James 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66465aee8f1463c3446c9a983ff7eb4b.setIcon(icon_6ae997840c746eb5c4102473d79aa8e4);
+            
+    
+            var marker_83246e942a91385fe5e7feeb194870ab = L.marker(
+                [49.585026, -76.022313],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_22926337e400028634f033886c19b2f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ce1b5f0892cddd82a17f8cc72c427ce = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_3ad68e90c597d7e2528b55edf7e24508 = $(`<div id="html_3ad68e90c597d7e2528b55edf7e24508" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité d'Eeyou Istchee Baie-James 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 8 août 2017<br>           📁 <b>Dossier :</b> 301261308 Catégorie : 2<br>           📍 <b>Adresse :</b> Kilomètre 198, route 113<br>           🏙️ <b>Municipalité :</b> Municipalité d'Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301261308" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_3ce1b5f0892cddd82a17f8cc72c427ce.setContent(html_3ad68e90c597d7e2528b55edf7e24508);
+            
+        
+
+        marker_83246e942a91385fe5e7feeb194870ab.bindPopup(popup_3ce1b5f0892cddd82a17f8cc72c427ce)
+        ;
+
+        
+    
+    
+            marker_83246e942a91385fe5e7feeb194870ab.bindTooltip(
+                `<div>
+                     8 août 2017 – Municipalité d'Eeyou Istchee Baie-James 
+				- Ac
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83246e942a91385fe5e7feeb194870ab.setIcon(icon_22926337e400028634f033886c19b2f0);
+            
+    
+            var marker_e9cac0035409e5d751addce426621e6d = L.marker(
+                [49.90121, -74.390648],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_6d733d813e4ac596833ad173ab324d3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d16de3289a258d20b2fc550cd95f3fd5 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_3315622dfbc6ed95a40a98df9ffd382a = $(`<div id="html_3315622dfbc6ed95a40a98df9ffd382a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d'Eeyou Istchee Baie-James 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 9 décembre 2015<br>           📁 <b>Dossier :</b> 301005227 Catégorie : 1<br>           📍 <b>Adresse :</b> Kilomètre 462, route 167 Nord<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d'Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301005227" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_d16de3289a258d20b2fc550cd95f3fd5.setContent(html_3315622dfbc6ed95a40a98df9ffd382a);
+            
+        
+
+        marker_e9cac0035409e5d751addce426621e6d.bindPopup(popup_d16de3289a258d20b2fc550cd95f3fd5)
+        ;
+
+        
+    
+    
+            marker_e9cac0035409e5d751addce426621e6d.bindTooltip(
+                `<div>
+                     9 décembre 2015 – Gouvernement régional d'Eeyou Istchee Baie-James 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9cac0035409e5d751addce426621e6d.setIcon(icon_6d733d813e4ac596833ad173ab324d3b);
+            
+    
+            var marker_2c92d8c2abb1416639bc05458328547c = L.marker(
+                [62.213614, -75.694127],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_2d64091f5e03fb8ff5dfb3fda8b6f9e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04bb48138da2bbd7188413c3d4f8cc9d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_99d76f40509db712a17669769271506a = $(`<div id="html_99d76f40509db712a17669769271506a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Salluit 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 octobre 2015<br>           📁 <b>Dossier :</b> 300994449 Catégorie : 2<br>           📍 <b>Adresse :</b> Fjord de Salluit<br>           🏙️ <b>Municipalité :</b> Salluit<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300994449" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_04bb48138da2bbd7188413c3d4f8cc9d.setContent(html_99d76f40509db712a17669769271506a);
+            
+        
+
+        marker_2c92d8c2abb1416639bc05458328547c.bindPopup(popup_04bb48138da2bbd7188413c3d4f8cc9d)
+        ;
+
+        
+    
+    
+            marker_2c92d8c2abb1416639bc05458328547c.bindTooltip(
+                `<div>
+                     7 octobre 2015 – Salluit 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c92d8c2abb1416639bc05458328547c.setIcon(icon_2d64091f5e03fb8ff5dfb3fda8b6f9e9);
+            
+    
+            var marker_4d7e5f8ca209f994a9a08ff408bedf0e = L.marker(
+                [58.452549, -78.108186],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_dfeb48b019d069eb24ba4d610af651d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_332098bbc6efb560dc2bb658d34f02b9 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7e2928a5f892e3693545b8805721af8d = $(`<div id="html_7e2928a5f892e3693545b8805721af8d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Inukjuak 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 14 septembre 2015<br>           📁 <b>Dossier :</b> 300988907 Catégorie : 1<br>           📍 <b>Adresse :</b> Centrale thermique d'Inukjuak<br>           🏙️ <b>Municipalité :</b> Inukjuak<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300988907" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_332098bbc6efb560dc2bb658d34f02b9.setContent(html_7e2928a5f892e3693545b8805721af8d);
+            
+        
+
+        marker_4d7e5f8ca209f994a9a08ff408bedf0e.bindPopup(popup_332098bbc6efb560dc2bb658d34f02b9)
+        ;
+
+        
+    
+    
+            marker_4d7e5f8ca209f994a9a08ff408bedf0e.bindTooltip(
+                `<div>
+                     14 septembre 2015 – Inukjuak 
+				- Déversement de produits pétrolier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d7e5f8ca209f994a9a08ff408bedf0e.setIcon(icon_dfeb48b019d069eb24ba4d610af651d5);
+            
+    
+            var marker_fe2ed4be4d18014a47b5dd33d67fa7fa = L.marker(
+                [49.90121, -74.390648],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_775bccc8dd3c3ad89905c53a8e240044 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4226d6e87d64380fc1bb9525004a0a39 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d13969bc1aa2a73efe3d4d483ffacb3f = $(`<div id="html_d13969bc1aa2a73efe3d4d483ffacb3f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Eeyou Istchee Baie-James 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 20 juillet 2015<br>           📁 <b>Dossier :</b> 300977513 Catégorie : 1<br>           📍 <b>Adresse :</b> Km 412, route 167 Nord<br>           🏙️ <b>Municipalité :</b> Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300977513" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4226d6e87d64380fc1bb9525004a0a39.setContent(html_d13969bc1aa2a73efe3d4d483ffacb3f);
+            
+        
+
+        marker_fe2ed4be4d18014a47b5dd33d67fa7fa.bindPopup(popup_4226d6e87d64380fc1bb9525004a0a39)
+        ;
+
+        
+    
+    
+            marker_fe2ed4be4d18014a47b5dd33d67fa7fa.bindTooltip(
+                `<div>
+                     20 juillet 2015 – Eeyou Istchee Baie-James 
+				- Déversement de pr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe2ed4be4d18014a47b5dd33d67fa7fa.setIcon(icon_775bccc8dd3c3ad89905c53a8e240044);
+            
+    
+            var marker_8c5b407cddf187c45bbdc0996f0292fa = L.marker(
+                [52.241859, -78.507404],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_fb20823d65ef550075cdc10e56b59f95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46d991ab4d9ce2570bfd0207ee94a4e0 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_fd44b770122c6e28f29312ad2074c867 = $(`<div id="html_fd44b770122c6e28f29312ad2074c867" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d'Eeyou Istchee Baie-James 
+ 				- Déraillement de train</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 26 juin 2014<br>           📁 <b>Dossier :</b> 300893260 Catégorie : 1<br>           📍 <b>Adresse :</b> Point milliaire 64 voie ferrée du CN<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d'Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300893260" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_46d991ab4d9ce2570bfd0207ee94a4e0.setContent(html_fd44b770122c6e28f29312ad2074c867);
+            
+        
+
+        marker_8c5b407cddf187c45bbdc0996f0292fa.bindPopup(popup_46d991ab4d9ce2570bfd0207ee94a4e0)
+        ;
+
+        
+    
+    
+            marker_8c5b407cddf187c45bbdc0996f0292fa.bindTooltip(
+                `<div>
+                     26 juin 2014 – Gouvernement régional d'Eeyou Istchee Baie-James 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c5b407cddf187c45bbdc0996f0292fa.setIcon(icon_fb20823d65ef550075cdc10e56b59f95);
+            
+    
+            var marker_059f9518582b8ef53248fa7fe04efb08 = L.marker(
+                [49.512052, -79.208125],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_2b3b305d4ab5a4dc5647cbb900df1f08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32238ab15cf0abd9774726c0ea233474 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d88e7513d33290e74c9cfb83a9b73d5a = $(`<div id="html_d88e7513d33290e74c9cfb83a9b73d5a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Déversement de résidus miniers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 1 mai 2013<br>           📁 <b>Dossier :</b> 7110-10-13-99060-34 Catégorie : 2<br>           📍 <b>Adresse :</b> Mine Aurizon division Casa Berardie<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-13-99060-34" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_32238ab15cf0abd9774726c0ea233474.setContent(html_d88e7513d33290e74c9cfb83a9b73d5a);
+            
+        
+
+        marker_059f9518582b8ef53248fa7fe04efb08.bindPopup(popup_32238ab15cf0abd9774726c0ea233474)
+        ;
+
+        
+    
+    
+            marker_059f9518582b8ef53248fa7fe04efb08.bindTooltip(
+                `<div>
+                     1 mai 2013 – Baie-James 
+				- Déversement de résidus miniers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_059f9518582b8ef53248fa7fe04efb08.setIcon(icon_2b3b305d4ab5a4dc5647cbb900df1f08);
+            
+    
+            var marker_0fb242c1f566c73e6bd66d50dec5f1e4 = L.marker(
+                [49.697543, -75.960736],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_1d5c5cd2407a4ee319443ab0ac3c799e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a6ed06c6b7c58fc32902d8fe640f555 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_bf474d3022834d652741b2755a41527f = $(`<div id="html_bf474d3022834d652741b2755a41527f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Waswanipi 
+ 				- Déversement d'eaux usées</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 mai 2013<br>           📁 <b>Dossier :</b> 7110-10-13-99010-01 Catégorie : 1<br>           📍 <b>Adresse :</b> Bassins de traitement des eaux usées<br>           🏙️ <b>Municipalité :</b> Waswanipi<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-13-99010-01" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_8a6ed06c6b7c58fc32902d8fe640f555.setContent(html_bf474d3022834d652741b2755a41527f);
+            
+        
+
+        marker_0fb242c1f566c73e6bd66d50dec5f1e4.bindPopup(popup_8a6ed06c6b7c58fc32902d8fe640f555)
+        ;
+
+        
+    
+    
+            marker_0fb242c1f566c73e6bd66d50dec5f1e4.bindTooltip(
+                `<div>
+                     7 mai 2013 – Waswanipi 
+				- Déversement d'eaux usées
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fb242c1f566c73e6bd66d50dec5f1e4.setIcon(icon_1d5c5cd2407a4ee319443ab0ac3c799e);
+            
+    
+            var marker_8e83a2f19c3a23fb9e694879ac1559f1 = L.marker(
+                [62.416667, -77.916667],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_7ad3b5f602fdec41bdb15add90c37195 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34ff73d974667b178a3a437e18f8424c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_3a9543d2684c6913a38fb542619f3e3f = $(`<div id="html_3a9543d2684c6913a38fb542619f3e3f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Ivujivik 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 2 août 2015<br>           📁 <b>Dossier :</b> 300983055 Catégorie : 2<br>           📍 <b>Adresse :</b> Centrale électrique<br>           🏙️ <b>Municipalité :</b> Ivujivik<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300983055" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_34ff73d974667b178a3a437e18f8424c.setContent(html_3a9543d2684c6913a38fb542619f3e3f);
+            
+        
+
+        marker_8e83a2f19c3a23fb9e694879ac1559f1.bindPopup(popup_34ff73d974667b178a3a437e18f8424c)
+        ;
+
+        
+    
+    
+            marker_8e83a2f19c3a23fb9e694879ac1559f1.bindTooltip(
+                `<div>
+                     2 août 2015 – Ivujivik 
+				- Déversement de produits pétrolier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e83a2f19c3a23fb9e694879ac1559f1.setIcon(icon_7ad3b5f602fdec41bdb15add90c37195);
+            
+    
+            var marker_64f5f37db118dcbc5287c0885edb9b7b = L.marker(
+                [49.781802, -74.85451],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_16a96e1607d56c20cdff60851dd70954 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0215a9aa2d87eca5c6623941cc294c52 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_20be836a7d5923ff0310d2b95d6322c7 = $(`<div id="html_20be836a7d5923ff0310d2b95d6322c7" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chapais 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 12 août 2013<br>           📁 <b>Dossier :</b> 7110-10-13-99020-02 Catégorie : 1<br>           📍 <b>Adresse :</b> Chemin forestier<br>           🏙️ <b>Municipalité :</b> Chapais<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-13-99020-02" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_0215a9aa2d87eca5c6623941cc294c52.setContent(html_20be836a7d5923ff0310d2b95d6322c7);
+            
+        
+
+        marker_64f5f37db118dcbc5287c0885edb9b7b.bindPopup(popup_0215a9aa2d87eca5c6623941cc294c52)
+        ;
+
+        
+    
+    
+            marker_64f5f37db118dcbc5287c0885edb9b7b.bindTooltip(
+                `<div>
+                     12 août 2013 – Chapais 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_64f5f37db118dcbc5287c0885edb9b7b.setIcon(icon_16a96e1607d56c20cdff60851dd70954);
+            
+    
+            var marker_8591b16a7461eaf7e505fa301017ea22 = L.marker(
+                [49.052317, -76.990935],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_8ac00a8ede5ea41db05e5316d08cd79b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e4b1d0a0d4ecf1c8d6183206395ed76 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_febc168a41044bbc563bd375a2638763 = $(`<div id="html_febc168a41044bbc563bd375a2638763" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Lebel-sur-Quévillon 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 30 avril 2013<br>           📁 <b>Dossier :</b> 7110-10-13-99005-05 Catégorie : 1<br>           📍 <b>Adresse :</b> Parc industriel<br>           🏙️ <b>Municipalité :</b> Lebel-sur-Quévillon<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-13-99005-05" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_8e4b1d0a0d4ecf1c8d6183206395ed76.setContent(html_febc168a41044bbc563bd375a2638763);
+            
+        
+
+        marker_8591b16a7461eaf7e505fa301017ea22.bindPopup(popup_8e4b1d0a0d4ecf1c8d6183206395ed76)
+        ;
+
+        
+    
+    
+            marker_8591b16a7461eaf7e505fa301017ea22.bindTooltip(
+                `<div>
+                     30 avril 2013 – Lebel-sur-Quévillon 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8591b16a7461eaf7e505fa301017ea22.setIcon(icon_8ac00a8ede5ea41db05e5316d08cd79b);
+            
+    
+            var marker_5a3f9a87ba6d766334acec4bec8fcc3a = L.marker(
+                [49.758851, -77.625829],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_f3af496ae5f03470844b9e289f38834c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b69d595336e0c73fba1d2c858a8a563 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_99bb61b602e3ce581e52000cc1f42064 = $(`<div id="html_99bb61b602e3ce581e52000cc1f42064" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Matagami 
+ 				- Rejet de matières en suspension</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 6 août 2012<br>           📁 <b>Dossier :</b> 7110-10-12-99015-08 Catégorie : 1<br>           📍 <b>Adresse :</b> Bassin d'eaux de dénoyage de la mine Persévérence<br>           🏙️ <b>Municipalité :</b> Matagami<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-12-99015-08" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4b69d595336e0c73fba1d2c858a8a563.setContent(html_99bb61b602e3ce581e52000cc1f42064);
+            
+        
+
+        marker_5a3f9a87ba6d766334acec4bec8fcc3a.bindPopup(popup_4b69d595336e0c73fba1d2c858a8a563)
+        ;
+
+        
+    
+    
+            marker_5a3f9a87ba6d766334acec4bec8fcc3a.bindTooltip(
+                `<div>
+                     6 août 2012 – Matagami 
+				- Rejet de matières en suspension
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a3f9a87ba6d766334acec4bec8fcc3a.setIcon(icon_f3af496ae5f03470844b9e289f38834c);
+            
+    
+            var marker_24f22118ffa4da7bd46d6a45f8c81ad0 = L.marker(
+                [60.037118, -77.26923],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_7c61123072f994372b8f861c9a873d24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08340766a8fc8436fe446c224b5aafcc = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_2b21528b9eb4a50fe76962e29cd55f65 = $(`<div id="html_2b21528b9eb4a50fe76962e29cd55f65" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Puvirnituk 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 5 juin 2012<br>           📁 <b>Dossier :</b> 7110-10-12-99120-02 Catégorie : 1<br>           📍 <b>Adresse :</b> Ancienne piste d'atterrissage de Puvirnituk<br>           🏙️ <b>Municipalité :</b> Puvirnituk<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-12-99120-02" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_08340766a8fc8436fe446c224b5aafcc.setContent(html_2b21528b9eb4a50fe76962e29cd55f65);
+            
+        
+
+        marker_24f22118ffa4da7bd46d6a45f8c81ad0.bindPopup(popup_08340766a8fc8436fe446c224b5aafcc)
+        ;
+
+        
+    
+    
+            marker_24f22118ffa4da7bd46d6a45f8c81ad0.bindTooltip(
+                `<div>
+                     5 juin 2012 – Puvirnituk 
+				- Déversement de produits pétroli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24f22118ffa4da7bd46d6a45f8c81ad0.setIcon(icon_7c61123072f994372b8f861c9a873d24);
+            
+    
+            var marker_5d0c0a697d3c0c3eca702a46669e324d = L.marker(
+                [53.795307, -77.621255],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_d223602eeaabc8b8dbddc8c325b10122 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4130f28f8d40630dff8841fad3e26b56 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_4673b82f5c968e662486f4bbcb53b7cc = $(`<div id="html_4673b82f5c968e662486f4bbcb53b7cc" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">LG-2 (Radisson - Baie James) 
+ 				- Incendie impliquant des produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 17 septembre 2010<br>           📁 <b>Dossier :</b> 7110-10-10-99060-93 Catégorie : 1<br>           📍 <b>Adresse :</b> Poste de distribution de LG-2<br>           🏙️ <b>Municipalité :</b> LG-2 (Radisson - Baie James)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-10-99060-93" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4130f28f8d40630dff8841fad3e26b56.setContent(html_4673b82f5c968e662486f4bbcb53b7cc);
+            
+        
+
+        marker_5d0c0a697d3c0c3eca702a46669e324d.bindPopup(popup_4130f28f8d40630dff8841fad3e26b56)
+        ;
+
+        
+    
+    
+            marker_5d0c0a697d3c0c3eca702a46669e324d.bindTooltip(
+                `<div>
+                     17 septembre 2010 – LG-2 (Radisson - Baie James) 
+				- Incendie impl
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d0c0a697d3c0c3eca702a46669e324d.setIcon(icon_d223602eeaabc8b8dbddc8c325b10122);
+            
+    
+            var marker_e151c20ca77df7bd0462891cdb27e7b8 = L.marker(
+                [49.784222, -74.652885],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_28aa331fa85556bd9499bcce2bd9db3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65f58d018de38711e0414828914d4d0a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d257ed516c3bed436fcd1719f8249916 = $(`<div id="html_d257ed516c3bed436fcd1719f8249916" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Explosion d'un transformateur</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 28 mars 2012<br>           📁 <b>Dossier :</b> 7110-10-12-99060-18 Catégorie : 1<br>           📍 <b>Adresse :</b> Poste Chibougamau, sur la route 113 entre Chibougamau et Chapais<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-12-99060-18" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_65f58d018de38711e0414828914d4d0a.setContent(html_d257ed516c3bed436fcd1719f8249916);
+            
+        
+
+        marker_e151c20ca77df7bd0462891cdb27e7b8.bindPopup(popup_65f58d018de38711e0414828914d4d0a)
+        ;
+
+        
+    
+    
+            marker_e151c20ca77df7bd0462891cdb27e7b8.bindTooltip(
+                `<div>
+                     28 mars 2012 – Baie-James 
+				- Explosion d'un transformateur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e151c20ca77df7bd0462891cdb27e7b8.setIcon(icon_28aa331fa85556bd9499bcce2bd9db3a);
+            
+    
+            var marker_69b1246cc695cf8f792540886bbdd9da = L.marker(
+                [60.014099, -70.010487],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_ab844a8d00a7b29bc2696f2cad2d486b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0720a0f41f8e72baeed0da7ce21c6542 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_de2bc6b750c0146113f56258ccd6d049 = $(`<div id="html_de2bc6b750c0146113f56258ccd6d049" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Kangirsuk 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 14 septembre 2010<br>           📁 <b>Dossier :</b> 7110-10-10-99110-01 Catégorie : 1<br>           📍 <b>Adresse :</b> Rampe de déchargement portuaire<br>           🏙️ <b>Municipalité :</b> Kangirsuk<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-10-99110-01" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_0720a0f41f8e72baeed0da7ce21c6542.setContent(html_de2bc6b750c0146113f56258ccd6d049);
+            
+        
+
+        marker_69b1246cc695cf8f792540886bbdd9da.bindPopup(popup_0720a0f41f8e72baeed0da7ce21c6542)
+        ;
+
+        
+    
+    
+            marker_69b1246cc695cf8f792540886bbdd9da.bindTooltip(
+                `<div>
+                     14 septembre 2010 – Kangirsuk 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69b1246cc695cf8f792540886bbdd9da.setIcon(icon_ab844a8d00a7b29bc2696f2cad2d486b);
+            
+    
+            var marker_1498ae15ea9859c62204cd7759b75ae3 = L.marker(
+                [52.698553, -76.058309],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_590fee0d56ada99c79add90e2cd1926d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f52758f9a0350a5bbf8a945870c8e131 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_92a01af4d022b4317cf766e75523a9f0 = $(`<div id="html_92a01af4d022b4317cf766e75523a9f0" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 22 janvier 2012<br>           📁 <b>Dossier :</b> 7110-10-12-99060-03 Catégorie : 1<br>           📍 <b>Adresse :</b> Chemin d'hiver vers site minier Éléonore<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-12-99060-03" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_f52758f9a0350a5bbf8a945870c8e131.setContent(html_92a01af4d022b4317cf766e75523a9f0);
+            
+        
+
+        marker_1498ae15ea9859c62204cd7759b75ae3.bindPopup(popup_f52758f9a0350a5bbf8a945870c8e131)
+        ;
+
+        
+    
+    
+            marker_1498ae15ea9859c62204cd7759b75ae3.bindTooltip(
+                `<div>
+                     22 janvier 2012 – Baie-James 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1498ae15ea9859c62204cd7759b75ae3.setIcon(icon_590fee0d56ada99c79add90e2cd1926d);
+            
+    
+            var marker_3c35a309f27fdde28b084322c27bde62 = L.marker(
+                [57.376566, -69.200972],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_ee1443b3220674c3d2f242217956b754 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad59d9380a98f84979570564739e0059 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c589b8c815287c5323b8c3577e8c6b84 = $(`<div id="html_c589b8c815287c5323b8c3577e8c6b84" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Rivière-Koksoak (TNO) 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 17 mars 2011<br>           📁 <b>Dossier :</b> 7110-10-11-99902-04 Catégorie : 1<br>           📍 <b>Adresse :</b> Tour de télécommunication - Mine Raglan<br>           🏙️ <b>Municipalité :</b> Rivière-Koksoak (TNO)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-11-99902-04" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_ad59d9380a98f84979570564739e0059.setContent(html_c589b8c815287c5323b8c3577e8c6b84);
+            
+        
+
+        marker_3c35a309f27fdde28b084322c27bde62.bindPopup(popup_ad59d9380a98f84979570564739e0059)
+        ;
+
+        
+    
+    
+            marker_3c35a309f27fdde28b084322c27bde62.bindTooltip(
+                `<div>
+                     17 mars 2011 – Rivière-Koksoak (TNO) 
+				- Déversement de diese
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c35a309f27fdde28b084322c27bde62.setIcon(icon_ee1443b3220674c3d2f242217956b754);
+            
+    
+            var marker_2ac3b4a5d3d20a5174c6e84bd249b276 = L.marker(
+                [49.900787, -74.244725],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_5f484a55c0a35b22bc933f6556f3dcda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4deff859fa56629f99b160a4e2b46c0d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_4a28465709bd4852a8cc0ac5c6adc68e = $(`<div id="html_4a28465709bd4852a8cc0ac5c6adc68e" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chibougamau 
+ 				- Déversement d'eaux usées</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 29 avril 2011<br>           📁 <b>Dossier :</b> 7100-10-11-99025-03 Catégorie : 1<br>           📍 <b>Adresse :</b> Mine Principale<br>           🏙️ <b>Municipalité :</b> Chibougamau<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7100-10-11-99025-03" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4deff859fa56629f99b160a4e2b46c0d.setContent(html_4a28465709bd4852a8cc0ac5c6adc68e);
+            
+        
+
+        marker_2ac3b4a5d3d20a5174c6e84bd249b276.bindPopup(popup_4deff859fa56629f99b160a4e2b46c0d)
+        ;
+
+        
+    
+    
+            marker_2ac3b4a5d3d20a5174c6e84bd249b276.bindTooltip(
+                `<div>
+                     29 avril 2011 – Chibougamau 
+				- Déversement d'eaux usées
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ac3b4a5d3d20a5174c6e84bd249b276.setIcon(icon_5f484a55c0a35b22bc933f6556f3dcda);
+            
+    
+            var marker_0632cf134df97b9e95a3cf021782453a = L.marker(
+                [49.729091, -77.703975],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_7c44bcba64b73f8e7dfc33522cec0ba2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29729f51f690948fb7f8448236be0309 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_80cbb5a2fb73e47497d515d54f664745 = $(`<div id="html_80cbb5a2fb73e47497d515d54f664745" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Matagami 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 2 novembre 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99015-05 Catégorie : 1<br>           📍 <b>Adresse :</b> 1640, boulevard Industriel<br>           🏙️ <b>Municipalité :</b> Matagami<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99015-05" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_29729f51f690948fb7f8448236be0309.setContent(html_80cbb5a2fb73e47497d515d54f664745);
+            
+        
+
+        marker_0632cf134df97b9e95a3cf021782453a.bindPopup(popup_29729f51f690948fb7f8448236be0309)
+        ;
+
+        
+    
+    
+            marker_0632cf134df97b9e95a3cf021782453a.bindTooltip(
+                `<div>
+                     2 novembre 2009 – Matagami 
+				- Déversement de produits pétrolier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0632cf134df97b9e95a3cf021782453a.setIcon(icon_7c44bcba64b73f8e7dfc33522cec0ba2);
+            
+    
+            var marker_607ea20efd8242d409effe9ed84d7d70 = L.marker(
+                [49.052317, -76.990935],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_2893dc2d39809fa244fc32a4b28d6252 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29c8a39220c9dd2d29716b2be7c1bc90 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_76ae76c46a5ca71e9579dd9fc583aea6 = $(`<div id="html_76ae76c46a5ca71e9579dd9fc583aea6" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Lebel-sur-Quévillon 
+ 				- Signalement d'hydrocarbures</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 octobre 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99005-03 Catégorie : 1<br>           📍 <b>Adresse :</b> Dans le cours d'eau qui longe le côté sud du boul. Industriel<br>           🏙️ <b>Municipalité :</b> Lebel-sur-Quévillon<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99005-03" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_29c8a39220c9dd2d29716b2be7c1bc90.setContent(html_76ae76c46a5ca71e9579dd9fc583aea6);
+            
+        
+
+        marker_607ea20efd8242d409effe9ed84d7d70.bindPopup(popup_29c8a39220c9dd2d29716b2be7c1bc90)
+        ;
+
+        
+    
+    
+            marker_607ea20efd8242d409effe9ed84d7d70.bindTooltip(
+                `<div>
+                     7 octobre 2009 – Lebel-sur-Quévillon 
+				- Signalement d'hydrocar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_607ea20efd8242d409effe9ed84d7d70.setIcon(icon_2893dc2d39809fa244fc32a4b28d6252);
+            
+    
+            var marker_02d4c5e278e59d229245b047170274c5 = L.marker(
+                [61.048716, -69.624228],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_f85080b6b73eca28eba77e7364b952c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83f0b6a8fe8ec9dcae4aab26f21cf70a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_2c56b52d9c70901004a3056b34280f3d = $(`<div id="html_2c56b52d9c70901004a3056b34280f3d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Quaqtaq 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 octobre 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99889-01 Catégorie : 1<br>           📍 <b>Adresse :</b> Aéroport<br>           🏙️ <b>Municipalité :</b> Quaqtaq<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99889-01" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_83f0b6a8fe8ec9dcae4aab26f21cf70a.setContent(html_2c56b52d9c70901004a3056b34280f3d);
+            
+        
+
+        marker_02d4c5e278e59d229245b047170274c5.bindPopup(popup_83f0b6a8fe8ec9dcae4aab26f21cf70a)
+        ;
+
+        
+    
+    
+            marker_02d4c5e278e59d229245b047170274c5.bindTooltip(
+                `<div>
+                     27 octobre 2009 – Quaqtaq 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02d4c5e278e59d229245b047170274c5.setIcon(icon_f85080b6b73eca28eba77e7364b952c8);
+            
+    
+            var marker_0a8a3b9a22a07999c2e8966265a5dbb2 = L.marker(
+                [57.376566, -69.200972],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_735fa367dec62811b7af059373b804ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c795b986f306c07a63ff4fbe9717407d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_5888e73da13481d4edf3f9700a740f01 = $(`<div id="html_5888e73da13481d4edf3f9700a740f01" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Rivière-Koksoak  
+ 				- Déversement d'eau de mine</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 17 août 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99902-04 Catégorie : 1<br>           📍 <b>Adresse :</b> Complexe minier Raglan (entre les sites Donaldson et Spoon)<br>           🏙️ <b>Municipalité :</b> Rivière-Koksoak<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99902-04" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_c795b986f306c07a63ff4fbe9717407d.setContent(html_5888e73da13481d4edf3f9700a740f01);
+            
+        
+
+        marker_0a8a3b9a22a07999c2e8966265a5dbb2.bindPopup(popup_c795b986f306c07a63ff4fbe9717407d)
+        ;
+
+        
+    
+    
+            marker_0a8a3b9a22a07999c2e8966265a5dbb2.bindTooltip(
+                `<div>
+                     17 août 2009 – Rivière-Koksoak  
+				- Déversement d'eau de mine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a8a3b9a22a07999c2e8966265a5dbb2.setIcon(icon_735fa367dec62811b7af059373b804ec);
+            
+    
+            var marker_bf25f8d9d3898e1dd8273acf032acd31 = L.marker(
+                [53.590083, -77.683909],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_9583092de6d63b37c06f9a243b6a5a9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0fa6a180219001f27f902110370c83d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_9d544cb28b2f008e1fb6d4c57d1a0e14 = $(`<div id="html_9d544cb28b2f008e1fb6d4c57d1a0e14" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité de la Baie-James  
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 15 juillet 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-48 Catégorie : 1<br>           📍 <b>Adresse :</b> Au kilomètre 18 de la route de la Baie-James, du côté nord de la route<br>           🏙️ <b>Municipalité :</b> Municipalité de la Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-48" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_c0fa6a180219001f27f902110370c83d.setContent(html_9d544cb28b2f008e1fb6d4c57d1a0e14);
+            
+        
+
+        marker_bf25f8d9d3898e1dd8273acf032acd31.bindPopup(popup_c0fa6a180219001f27f902110370c83d)
+        ;
+
+        
+    
+    
+            marker_bf25f8d9d3898e1dd8273acf032acd31.bindTooltip(
+                `<div>
+                     15 juillet 2009 – Municipalité de la Baie-James  
+				- Déversement
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf25f8d9d3898e1dd8273acf032acd31.setIcon(icon_9583092de6d63b37c06f9a243b6a5a9c);
+            
+    
+            var marker_c46c23cad5d351aebfdb0fe9af6f83d4 = L.marker(
+                [51.70076, -76.046835],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_ba2414c60e653d07b1e879198128bda6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4008f4245fc2b0d799eaede7512e4fd4 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_5f941e6c4dc7a7680dab2c458ba03c44 = $(`<div id="html_5f941e6c4dc7a7680dab2c458ba03c44" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité de la Baie-James 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 juillet 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-54 Catégorie : 1<br>           📍 <b>Adresse :</b> MTM Nad 83 (zone 8)  401 015 m E : 5 745 332 m N<br>           🏙️ <b>Municipalité :</b> Municipalité de la Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-54" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4008f4245fc2b0d799eaede7512e4fd4.setContent(html_5f941e6c4dc7a7680dab2c458ba03c44);
+            
+        
+
+        marker_c46c23cad5d351aebfdb0fe9af6f83d4.bindPopup(popup_4008f4245fc2b0d799eaede7512e4fd4)
+        ;
+
+        
+    
+    
+            marker_c46c23cad5d351aebfdb0fe9af6f83d4.bindTooltip(
+                `<div>
+                     27 juillet 2009 – Municipalité de la Baie-James 
+				- Déversement 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c46c23cad5d351aebfdb0fe9af6f83d4.setIcon(icon_ba2414c60e653d07b1e879198128bda6);
+            
+    
+            var marker_8734eb856e950903818ee025b22f0af1 = L.marker(
+                [51.691022, -76.135998],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_d0363da22151f0a15ee9fdfaef885f65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47a07effdfda1fe7317dcd5e37523269 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a9eb202754b5026872c593d7d8d69d51 = $(`<div id="html_a9eb202754b5026872c593d7d8d69d51" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité de la Baie-James 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 15 juillet 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-49 Catégorie : 1<br>           📍 <b>Adresse :</b> Site du transformateur T12 du Poste Nemiscau d'Hydro-Québec<br>           🏙️ <b>Municipalité :</b> Municipalité de la Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-49" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_47a07effdfda1fe7317dcd5e37523269.setContent(html_a9eb202754b5026872c593d7d8d69d51);
+            
+        
+
+        marker_8734eb856e950903818ee025b22f0af1.bindPopup(popup_47a07effdfda1fe7317dcd5e37523269)
+        ;
+
+        
+    
+    
+            marker_8734eb856e950903818ee025b22f0af1.bindTooltip(
+                `<div>
+                     15 juillet 2009 – Municipalité de la Baie-James 
+				- Déversement 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8734eb856e950903818ee025b22f0af1.setIcon(icon_d0363da22151f0a15ee9fdfaef885f65);
+            
+    
+            var marker_6cb0da9311b0af68a73b3daef310f7fe = L.marker(
+                [52.241859, -78.507404],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_0277759927c425ff5dfd332ca3d986bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9926856aefc999b94a94762f1a12771 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_74f8f285e8ed4ae0e1185fdb3bf09710 = $(`<div id="html_74f8f285e8ed4ae0e1185fdb3bf09710" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Gouvernement régional d'Eeyou Istchee Baie-James 
+ 				- Déversement de matières dangereuses</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 19 août 2019<br>           📁 <b>Dossier :</b> 301413919 Catégorie : 1<br>           📍 <b>Adresse :</b> Lot 5 702 565 cadastre du Québec<br>           🏙️ <b>Municipalité :</b> Gouvernement régional d'Eeyou Istchee Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301413919" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b9926856aefc999b94a94762f1a12771.setContent(html_74f8f285e8ed4ae0e1185fdb3bf09710);
+            
+        
+
+        marker_6cb0da9311b0af68a73b3daef310f7fe.bindPopup(popup_b9926856aefc999b94a94762f1a12771)
+        ;
+
+        
+    
+    
+            marker_6cb0da9311b0af68a73b3daef310f7fe.bindTooltip(
+                `<div>
+                     19 août 2019 – Gouvernement régional d'Eeyou Istchee Baie-James 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cb0da9311b0af68a73b3daef310f7fe.setIcon(icon_0277759927c425ff5dfd332ca3d986bc);
+            
+    
+            var marker_1b72775c90cef151b96eb564739c74d9 = L.marker(
+                [51.605697, -77.143072],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_035e9108a25a80b64325f771facef0c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4242141cf563ea78722a8e766fff951 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_50268d66abe224709b34424ad7d49e5e = $(`<div id="html_50268d66abe224709b34424ad7d49e5e" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité de Baie-James 
+ 				- Déversement d'huile</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 9 mai 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-35 Catégorie : 1<br>           📍 <b>Adresse :</b> kilomètre 7 secteur du seuil au PK 223 de la rivière Rupert<br>           🏙️ <b>Municipalité :</b> Municipalité de Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-35" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_e4242141cf563ea78722a8e766fff951.setContent(html_50268d66abe224709b34424ad7d49e5e);
+            
+        
+
+        marker_1b72775c90cef151b96eb564739c74d9.bindPopup(popup_e4242141cf563ea78722a8e766fff951)
+        ;
+
+        
+    
+    
+            marker_1b72775c90cef151b96eb564739c74d9.bindTooltip(
+                `<div>
+                     9 mai 2009 – Municipalité de Baie-James 
+				- Déversement d'h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b72775c90cef151b96eb564739c74d9.setIcon(icon_035e9108a25a80b64325f771facef0c2);
+            
+    
+            var marker_43af58a7395b467d284d2c04c31683fe = L.marker(
+                [51.70076, -76.046835],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_96b412670db05df3af155bbd9a4669d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f18694883d8ceb16a73bcf6ac885b53c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_1e3f71d64cf11e340f1707b95a6b8523 = $(`<div id="html_1e3f71d64cf11e340f1707b95a6b8523" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité de la Baie-James 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 juillet 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-50 Catégorie : 1<br>           📍 <b>Adresse :</b> Digue LR-34, au point métrique 0+750 mètres<br>           🏙️ <b>Municipalité :</b> Municipalité de la Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-50" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_f18694883d8ceb16a73bcf6ac885b53c.setContent(html_1e3f71d64cf11e340f1707b95a6b8523);
+            
+        
+
+        marker_43af58a7395b467d284d2c04c31683fe.bindPopup(popup_f18694883d8ceb16a73bcf6ac885b53c)
+        ;
+
+        
+    
+    
+            marker_43af58a7395b467d284d2c04c31683fe.bindTooltip(
+                `<div>
+                     13 juillet 2009 – Municipalité de la Baie-James 
+				- Déversement 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43af58a7395b467d284d2c04c31683fe.setIcon(icon_96b412670db05df3af155bbd9a4669d5);
+            
+    
+            var marker_70fa6fcadffaf8ec4b3f8d9c8bd2e9ff = L.marker(
+                [49.811154, -74.459281],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_bece4013ffd54c8a3dfc2f35ff8239dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3afdc99a40713c36895414a6f7982685 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_1a7092159c735f9de97eb5b2d42b31f7 = $(`<div id="html_1a7092159c735f9de97eb5b2d42b31f7" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chibougamau 
+ 				- Déversement d'huile à transformateur</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 2 juin 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99025-02 Catégorie : 1<br>           📍 <b>Adresse :</b> Poste électrique de Chibougamau, route 113<br>           🏙️ <b>Municipalité :</b> Chibougamau<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99025-02" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_3afdc99a40713c36895414a6f7982685.setContent(html_1a7092159c735f9de97eb5b2d42b31f7);
+            
+        
+
+        marker_70fa6fcadffaf8ec4b3f8d9c8bd2e9ff.bindPopup(popup_3afdc99a40713c36895414a6f7982685)
+        ;
+
+        
+    
+    
+            marker_70fa6fcadffaf8ec4b3f8d9c8bd2e9ff.bindTooltip(
+                `<div>
+                     2 juin 2009 – Chibougamau 
+				- Déversement d'huile à transfor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70fa6fcadffaf8ec4b3f8d9c8bd2e9ff.setIcon(icon_bece4013ffd54c8a3dfc2f35ff8239dd);
+            
+    
+            var marker_5fa408ba8c45d0effc188bed6361df9c = L.marker(
+                [51.769337, -77.420217],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_aa79967fe604297e61a7daa9d7650235 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66293c2cf9a822e2ef61ccd80fab4607 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_5346261b0ca510ee096917d09d1e533f = $(`<div id="html_5346261b0ca510ee096917d09d1e533f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Déversement d'huile à transformateur</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 8 mai 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-33 Catégorie : 1<br>           📍 <b>Adresse :</b> Dépôt en tranchée de Radisson Kilomètre 580 de la route de la Baie James<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-33" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_66293c2cf9a822e2ef61ccd80fab4607.setContent(html_5346261b0ca510ee096917d09d1e533f);
+            
+        
+
+        marker_5fa408ba8c45d0effc188bed6361df9c.bindPopup(popup_66293c2cf9a822e2ef61ccd80fab4607)
+        ;
+
+        
+    
+    
+            marker_5fa408ba8c45d0effc188bed6361df9c.bindTooltip(
+                `<div>
+                     8 mai 2009 – Baie-James 
+				- Déversement d'huile à transform
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fa408ba8c45d0effc188bed6361df9c.setIcon(icon_aa79967fe604297e61a7daa9d7650235);
+            
+    
+            var marker_54e2f331041c6b666446b51cd3839f2e = L.marker(
+                [55.281683, -77.751983],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_e656349284447dbd6b342042e26c6658 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_270eea9761f55df0a83674eb512deb63 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c8d162e2e978bed2d706bbf4055084a9 = $(`<div id="html_c8d162e2e978bed2d706bbf4055084a9" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Kuujjuarapik 
+ 				- Déversement d'huile à chauffage</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 mai 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99075-01 Catégorie : 1<br>           📍 <b>Adresse :</b> 1239, Chemin Ningauraaluk<br>           🏙️ <b>Municipalité :</b> Kuujjuarapik<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99075-01" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_270eea9761f55df0a83674eb512deb63.setContent(html_c8d162e2e978bed2d706bbf4055084a9);
+            
+        
+
+        marker_54e2f331041c6b666446b51cd3839f2e.bindPopup(popup_270eea9761f55df0a83674eb512deb63)
+        ;
+
+        
+    
+    
+            marker_54e2f331041c6b666446b51cd3839f2e.bindTooltip(
+                `<div>
+                     7 mai 2009 – Kuujjuarapik 
+				- Déversement d'huile à chauffa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54e2f331041c6b666446b51cd3839f2e.setIcon(icon_e656349284447dbd6b342042e26c6658);
+            
+    
+            var marker_85071d54a98d36b80739bc73c1a6a5a5 = L.marker(
+                [60.037118, -77.26923],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_827398b21731057efc034d7566f451b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4242510d02fe22c40b6f57760337accb = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_eb5008f7436a5621c1d3df153fcb92c3 = $(`<div id="html_eb5008f7436a5621c1d3df153fcb92c3" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Puvirnituk (Nunavik) 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 17 mars 2009<br>           📁 <b>Dossier :</b> 7710-10-09-99120-01 Catégorie : 1<br>           📍 <b>Adresse :</b> Réservoirs de diesel alimentant le village<br>           🏙️ <b>Municipalité :</b> Puvirnituk (Nunavik)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7710-10-09-99120-01" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4242510d02fe22c40b6f57760337accb.setContent(html_eb5008f7436a5621c1d3df153fcb92c3);
+            
+        
+
+        marker_85071d54a98d36b80739bc73c1a6a5a5.bindPopup(popup_4242510d02fe22c40b6f57760337accb)
+        ;
+
+        
+    
+    
+            marker_85071d54a98d36b80739bc73c1a6a5a5.bindTooltip(
+                `<div>
+                     17 mars 2009 – Puvirnituk (Nunavik) 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85071d54a98d36b80739bc73c1a6a5a5.setIcon(icon_827398b21731057efc034d7566f451b9);
+            
+    
+            var marker_bd468c43bd10660d4bc4ad82bd4e5e30 = L.marker(
+                [53.795307, -77.621255],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_8d5357a71517e66ea248a04c4c1dfac9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dba5b3b05ff68a0a1145d68ae2fb1007 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_ce89f4d183631e1df4c867eabdcc6a07 = $(`<div id="html_ce89f4d183631e1df4c867eabdcc6a07" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Poste Hydro-Québec LG-2 près de Radisson 
+ 				- , Incendie d'un transformateur électrique</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 2 février 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-04 Catégorie : 1<br>           📍 <b>Adresse :</b> Transfo T-27<br>           🏙️ <b>Municipalité :</b> Poste Hydro-Québec LG-2 près de Radisson<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-04" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_dba5b3b05ff68a0a1145d68ae2fb1007.setContent(html_ce89f4d183631e1df4c867eabdcc6a07);
+            
+        
+
+        marker_bd468c43bd10660d4bc4ad82bd4e5e30.bindPopup(popup_dba5b3b05ff68a0a1145d68ae2fb1007)
+        ;
+
+        
+    
+    
+            marker_bd468c43bd10660d4bc4ad82bd4e5e30.bindTooltip(
+                `<div>
+                     2 février 2009 – Poste Hydro-Québec LG-2 près de Radisson 
+				- ,
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd468c43bd10660d4bc4ad82bd4e5e30.setIcon(icon_8d5357a71517e66ea248a04c4c1dfac9);
+            
+    
+            var marker_b4e0e7e14211d396b4baa38453a46ca1 = L.marker(
+                [50.417347, -73.869885],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_4dd7e680d7042f309a7e1f7e62c58b29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5ed93436c6cd300fc4932545724d166 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c34a4e111c475218b66e1320d97d6441 = $(`<div id="html_c34a4e111c475218b66e1320d97d6441" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Déversement d'essence</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 5 mars 2009<br>           📁 <b>Dossier :</b> 7110-10-09-99060-05 Catégorie : 1<br>           📍 <b>Adresse :</b> Route de Mistissini<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-09-99060-05" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b5ed93436c6cd300fc4932545724d166.setContent(html_c34a4e111c475218b66e1320d97d6441);
+            
+        
+
+        marker_b4e0e7e14211d396b4baa38453a46ca1.bindPopup(popup_b5ed93436c6cd300fc4932545724d166)
+        ;
+
+        
+    
+    
+            marker_b4e0e7e14211d396b4baa38453a46ca1.bindTooltip(
+                `<div>
+                     5 mars 2009 – Baie-James 
+				- Déversement d'essence
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4e0e7e14211d396b4baa38453a46ca1.setIcon(icon_4dd7e680d7042f309a7e1f7e62c58b29);
+            
+    
+            var marker_27c5c9667c9c29d8d9d6d8def781777e = L.marker(
+                [53.79575, -77.615099],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_3bf3e46156c8cf14df3500755bedc9ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89ae863ef6158061db21a74ed81eae8a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8aba69028f9e1c34336d173347084429 = $(`<div id="html_8aba69028f9e1c34336d173347084429" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James (localité de Radisson) 
+ 				- Déversement d'essence</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 18 novembre 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99060-66 Catégorie : 1<br>           📍 <b>Adresse :</b> À 16 km au nord ouest de Radisson<br>           🏙️ <b>Municipalité :</b> Baie-James (localité de Radisson)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99060-66" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_89ae863ef6158061db21a74ed81eae8a.setContent(html_8aba69028f9e1c34336d173347084429);
+            
+        
+
+        marker_27c5c9667c9c29d8d9d6d8def781777e.bindPopup(popup_89ae863ef6158061db21a74ed81eae8a)
+        ;
+
+        
+    
+    
+            marker_27c5c9667c9c29d8d9d6d8def781777e.bindTooltip(
+                `<div>
+                     18 novembre 2008 – Baie-James (localité de Radisson) 
+				- Déversem
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_27c5c9667c9c29d8d9d6d8def781777e.setIcon(icon_3bf3e46156c8cf14df3500755bedc9ed);
+            
+    
+            var marker_0c03a231341363f96feb767821867027 = L.marker(
+                [51.708872, -76.049079],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_382cef18df21aed7b6bc74b26aad8bf5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_265a3cccea8962b771eb878460546335 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c873fffcb7aaef4f221a2f0be928965a = $(`<div id="html_c873fffcb7aaef4f221a2f0be928965a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Déversement d'huile isolante</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 novembre 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99060-58 Catégorie : 1<br>           📍 <b>Adresse :</b> Poste Nemiscau<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99060-58" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_265a3cccea8962b771eb878460546335.setContent(html_c873fffcb7aaef4f221a2f0be928965a);
+            
+        
+
+        marker_0c03a231341363f96feb767821867027.bindPopup(popup_265a3cccea8962b771eb878460546335)
+        ;
+
+        
+    
+    
+            marker_0c03a231341363f96feb767821867027.bindTooltip(
+                `<div>
+                     13 novembre 2008 – Baie-James 
+				- Déversement d'huile isolante
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c03a231341363f96feb767821867027.setIcon(icon_382cef18df21aed7b6bc74b26aad8bf5);
+            
+    
+            var marker_b0e8884b7e0f7312b1c22027385f4055 = L.marker(
+                [52.181667, -75.873889],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_d3bd75ecd8d2b0cf2b80fcf38a9627b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_358dbd0ddb5763b89595adb98595645c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a6e8724cfd18cbfefac5a8bd567b455f = $(`<div id="html_a6e8724cfd18cbfefac5a8bd567b455f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 octobre 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99060-37 Catégorie : 1<br>           📍 <b>Adresse :</b> 8 km au nord du campement Eastmain-1<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99060-37" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_358dbd0ddb5763b89595adb98595645c.setContent(html_a6e8724cfd18cbfefac5a8bd567b455f);
+            
+        
+
+        marker_b0e8884b7e0f7312b1c22027385f4055.bindPopup(popup_358dbd0ddb5763b89595adb98595645c)
+        ;
+
+        
+    
+    
+            marker_b0e8884b7e0f7312b1c22027385f4055.bindTooltip(
+                `<div>
+                     7 octobre 2008 – Baie-James 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b0e8884b7e0f7312b1c22027385f4055.setIcon(icon_d3bd75ecd8d2b0cf2b80fcf38a9627b4);
+            
+    
+            var marker_24e69c79012cb60ebc745afa3ceb2bf7 = L.marker(
+                [58.102996, -68.418839],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_9230e31e5098fe31d2f020dd4931f5b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2454de119af1a919870120d2e981b1ab = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_cecdaf4eab1637b2f6ce80bf761cf759 = $(`<div id="html_cecdaf4eab1637b2f6ce80bf761cf759" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Kuujjuaq 
+ 				- Déversement d'huile à chauffage</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 5 octobre 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99095-02 Catégorie : 1<br>           📍 <b>Adresse :</b> Au bureau administratif de la centrale thermique d'Hydro-Québec<br>           🏙️ <b>Municipalité :</b> Kuujjuaq<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99095-02" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2454de119af1a919870120d2e981b1ab.setContent(html_cecdaf4eab1637b2f6ce80bf761cf759);
+            
+        
+
+        marker_24e69c79012cb60ebc745afa3ceb2bf7.bindPopup(popup_2454de119af1a919870120d2e981b1ab)
+        ;
+
+        
+    
+    
+            marker_24e69c79012cb60ebc745afa3ceb2bf7.bindTooltip(
+                `<div>
+                     5 octobre 2008 – Kuujjuaq 
+				- Déversement d'huile à chauffage
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24e69c79012cb60ebc745afa3ceb2bf7.setIcon(icon_9230e31e5098fe31d2f020dd4931f5b7);
+            
+    
+            var marker_8d126db8d1e1d619e4e4ae7291b308ff = L.marker(
+                [53.811746, -73.628703],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_10c925810b5ef5b0a8296239bf866d91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6d0beb12970f1ab9411938298c8d05b = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_00ed09f1f6520902af4cf6c960f679c0 = $(`<div id="html_00ed09f1f6520902af4cf6c960f679c0" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité de Baie-James 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 23 septembre 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99060-31 Catégorie : 1<br>           📍 <b>Adresse :</b> Kilomètre 362 de la route Transtaïga<br>           🏙️ <b>Municipalité :</b> Municipalité de Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99060-31" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_a6d0beb12970f1ab9411938298c8d05b.setContent(html_00ed09f1f6520902af4cf6c960f679c0);
+            
+        
+
+        marker_8d126db8d1e1d619e4e4ae7291b308ff.bindPopup(popup_a6d0beb12970f1ab9411938298c8d05b)
+        ;
+
+        
+    
+    
+            marker_8d126db8d1e1d619e4e4ae7291b308ff.bindTooltip(
+                `<div>
+                     23 septembre 2008 – Municipalité de Baie-James 
+				- Déversement de 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d126db8d1e1d619e4e4ae7291b308ff.setIcon(icon_10c925810b5ef5b0a8296239bf866d91);
+            
+    
+            var marker_527c9ed72dc3dec5dc6664e893b18a75 = L.marker(
+                [48.338218, -70.882544],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_a3094a73335c4843e6af5f032ae2e66c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fe671e9b9457a38168a4a8805337773 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a5df7120b58e2293000b1bdc4ab29670 = $(`<div id="html_a5df7120b58e2293000b1bdc4ab29670" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Salluit 
+ 				- Présence d'hydrocarbures</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 4 septembre 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99135-03 Catégorie : 1<br>           📍 <b>Adresse :</b> Sur les rives de la baie Sugluk<br>           🏙️ <b>Municipalité :</b> Salluit<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99135-03" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_9fe671e9b9457a38168a4a8805337773.setContent(html_a5df7120b58e2293000b1bdc4ab29670);
+            
+        
+
+        marker_527c9ed72dc3dec5dc6664e893b18a75.bindPopup(popup_9fe671e9b9457a38168a4a8805337773)
+        ;
+
+        
+    
+    
+            marker_527c9ed72dc3dec5dc6664e893b18a75.bindTooltip(
+                `<div>
+                     4 septembre 2008 – Salluit 
+				- Présence d'hydrocarbures
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_527c9ed72dc3dec5dc6664e893b18a75.setIcon(icon_a3094a73335c4843e6af5f032ae2e66c);
+            
+    
+            var marker_3d9bb4ef0172984c3e95a05b43cb029a = L.marker(
+                [49.038986, -79.237239],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_d05139270f4d769beaa0d257fa69335c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f39e8121e43b54c6195bc2f9daf7687a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_0670681b8d72bf2627c670a2ca353d4f = $(`<div id="html_0670681b8d72bf2627c670a2ca353d4f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Val-Canton, Baie-James
+  
+ 				- Présence d'une coloration rouge dans un cours d'eau</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 août 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99060-EE Catégorie : 1<br>           📍 <b>Adresse :</b> Lac Pajegasque<br>           🏙️ <b>Municipalité :</b> Val-Canton, Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99060-EE" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_f39e8121e43b54c6195bc2f9daf7687a.setContent(html_0670681b8d72bf2627c670a2ca353d4f);
+            
+        
+
+        marker_3d9bb4ef0172984c3e95a05b43cb029a.bindPopup(popup_f39e8121e43b54c6195bc2f9daf7687a)
+        ;
+
+        
+    
+    
+            marker_3d9bb4ef0172984c3e95a05b43cb029a.bindTooltip(
+                `<div>
+                     7 août 2008 – Val-Canton, Baie-James
+ 
+				- Présence d'une co
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d9bb4ef0172984c3e95a05b43cb029a.setIcon(icon_d05139270f4d769beaa0d257fa69335c);
+            
+    
+            var marker_b39bf71ca5c3ae8c818a8dca0dd8721c = L.marker(
+                [49.777667, -74.83936],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_8c9582785acb77833d2c37a397465024 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a60bc913551b461765ca8df1f0a8894e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a02fa822e379730541b350f69d09c8f3 = $(`<div id="html_a02fa822e379730541b350f69d09c8f3" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chapais 
+ 				- Bris d'une digue d'un bassin de sédimentation</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 23 juin 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99020-01-1 Catégorie : 2<br>           📍 <b>Adresse :</b> Ancienne mine Opémisca - Route 113 dans le secteur Ouest de Chapais - Rivière Obatogamau<br>           🏙️ <b>Municipalité :</b> Chapais<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99020-01-1" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_a60bc913551b461765ca8df1f0a8894e.setContent(html_a02fa822e379730541b350f69d09c8f3);
+            
+        
+
+        marker_b39bf71ca5c3ae8c818a8dca0dd8721c.bindPopup(popup_a60bc913551b461765ca8df1f0a8894e)
+        ;
+
+        
+    
+    
+            marker_b39bf71ca5c3ae8c818a8dca0dd8721c.bindTooltip(
+                `<div>
+                     23 juin 2008 – Chapais 
+				- Bris d'une digue d'un bassin de sé
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b39bf71ca5c3ae8c818a8dca0dd8721c.setIcon(icon_8c9582785acb77833d2c37a397465024);
+            
+    
+            var marker_c2af5c189b560584a9f4f5fb8dd6b4c2 = L.marker(
+                [49.905153, -74.389045],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_f74e7d1f2abd4fc41d2d1c08ee46847d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e26555ceda3151f95801f8862b67f56 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_de9d6f0740246c8a33ab4de6367dc0cd = $(`<div id="html_de9d6f0740246c8a33ab4de6367dc0cd" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chibougamau 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 14 juillet 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99025-02 Catégorie : 1<br>           📍 <b>Adresse :</b> Entreprise Alain Maltais 982, boulevard Hamel Ouest<br>           🏙️ <b>Municipalité :</b> Chibougamau<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99025-02" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_8e26555ceda3151f95801f8862b67f56.setContent(html_de9d6f0740246c8a33ab4de6367dc0cd);
+            
+        
+
+        marker_c2af5c189b560584a9f4f5fb8dd6b4c2.bindPopup(popup_8e26555ceda3151f95801f8862b67f56)
+        ;
+
+        
+    
+    
+            marker_c2af5c189b560584a9f4f5fb8dd6b4c2.bindTooltip(
+                `<div>
+                     14 juillet 2008 – Chibougamau 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c2af5c189b560584a9f4f5fb8dd6b4c2.setIcon(icon_f74e7d1f2abd4fc41d2d1c08ee46847d);
+            
+    
+            var marker_6e74e0f74e5bb1d00839b3966b1ff3dc = L.marker(
+                [49.73035, -77.76918],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_d688ede16abe836d21f34b463c302253 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc286077a65744623ae001d54bf567be = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_e4ead07accfb24b09321841c8607fb16 = $(`<div id="html_e4ead07accfb24b09321841c8607fb16" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Matagami 
+ 				- Déversement de résidus miniers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 septembre 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99015-01 Catégorie : 1<br>           📍 <b>Adresse :</b> À 850 m à l'est du Lac Watson<br>           🏙️ <b>Municipalité :</b> Matagami<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99015-01" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_dc286077a65744623ae001d54bf567be.setContent(html_e4ead07accfb24b09321841c8607fb16);
+            
+        
+
+        marker_6e74e0f74e5bb1d00839b3966b1ff3dc.bindPopup(popup_dc286077a65744623ae001d54bf567be)
+        ;
+
+        
+    
+    
+            marker_6e74e0f74e5bb1d00839b3966b1ff3dc.bindTooltip(
+                `<div>
+                     27 septembre 2008 – Matagami 
+				- Déversement de résidus miniers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e74e0f74e5bb1d00839b3966b1ff3dc.setIcon(icon_d688ede16abe836d21f34b463c302253);
+            
+    
+            var marker_c1b5494524e30c4a74927fa24b9aef93 = L.marker(
+                [49.789128, -74.719093],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_7dccc34766dce47649ff68bf8d3d7ac3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e365d925de73083760ab7be7d1c987b2 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_510bc8c912112948baff7bfeb6388d71 = $(`<div id="html_510bc8c912112948baff7bfeb6388d71" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Chapais  
+ 				- Déversement d'hydrocarbures</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 mai 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99020-01 Catégorie : 1<br>           📍 <b>Adresse :</b> Séparateur d'huiles du garage de la Scierie Barrette-Chapais<br>           🏙️ <b>Municipalité :</b> Chapais<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99020-01" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_e365d925de73083760ab7be7d1c987b2.setContent(html_510bc8c912112948baff7bfeb6388d71);
+            
+        
+
+        marker_c1b5494524e30c4a74927fa24b9aef93.bindPopup(popup_e365d925de73083760ab7be7d1c987b2)
+        ;
+
+        
+    
+    
+            marker_c1b5494524e30c4a74927fa24b9aef93.bindTooltip(
+                `<div>
+                     13 mai 2008 – Chapais  
+				- Déversement d'hydrocarbures
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1b5494524e30c4a74927fa24b9aef93.setIcon(icon_7dccc34766dce47649ff68bf8d3d7ac3);
+            
+    
+            var marker_1504a7b81eac2cd6e2fe1b7f0bd126f3 = L.marker(
+                [53.729722, -75.968333],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_8011b5b4375c97d7fc17d4a15806500a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7f263d67d81eda6d2915c77019c89da = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_dbd1abf47cdd789d37d65df7272ddbeb = $(`<div id="html_dbd1abf47cdd789d37d65df7272ddbeb" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Bris d'un transformateur</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 7 mai 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99060-11 Catégorie : 2<br>           📍 <b>Adresse :</b> Barrage LG-3<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99060-11" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b7f263d67d81eda6d2915c77019c89da.setContent(html_dbd1abf47cdd789d37d65df7272ddbeb);
+            
+        
+
+        marker_1504a7b81eac2cd6e2fe1b7f0bd126f3.bindPopup(popup_b7f263d67d81eda6d2915c77019c89da)
+        ;
+
+        
+    
+    
+            marker_1504a7b81eac2cd6e2fe1b7f0bd126f3.bindTooltip(
+                `<div>
+                     7 mai 2008 – Baie-James 
+				- Bris d'un transformateur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1504a7b81eac2cd6e2fe1b7f0bd126f3.setIcon(icon_8011b5b4375c97d7fc17d4a15806500a);
+            
+    
+            var marker_07bd71a94d036ea252fcad1f630ab053 = L.marker(
+                [49.512052, -79.208125],
+                {
+}
+            ).addTo(marker_cluster_7519576397eb717d971b64cf3e84fd61);
+        
+    
+            var icon_2eb0c997c39db5df44f4701751137d7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd361d29ee2566179312faaa58103ed3 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_dffe86fdbf04fef84fc6625316e9e919 = $(`<div id="html_dffe86fdbf04fef84fc6625316e9e919" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Baie-James 
+ 				- Bris de conduite d'eau de recirculation</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 10 mai 2008<br>           📁 <b>Dossier :</b> 7110-10-08-99060-12 Catégorie : 1<br>           📍 <b>Adresse :</b> Mine Casa Bérardi<br>           🏙️ <b>Municipalité :</b> Baie-James<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-10-08-99060-12" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_fd361d29ee2566179312faaa58103ed3.setContent(html_dffe86fdbf04fef84fc6625316e9e919);
+            
+        
+
+        marker_07bd71a94d036ea252fcad1f630ab053.bindPopup(popup_fd361d29ee2566179312faaa58103ed3)
+        ;
+
+        
+    
+    
+            marker_07bd71a94d036ea252fcad1f630ab053.bindTooltip(
+                `<div>
+                     10 mai 2008 – Baie-James 
+				- Bris de conduite d'eau de recir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07bd71a94d036ea252fcad1f630ab053.setIcon(icon_2eb0c997c39db5df44f4701751137d7f);
+            
+    
+            marker_cluster_7519576397eb717d971b64cf3e84fd61.addTo(map_751748bb9849f0dca9f2b6ff6805d2db);
+        
+</script>
+</html>

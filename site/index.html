@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urgences environnementales – Québec</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          background: #f0f4f8; color: #1a3c5e; }
+  header { background: #1a3c5e; color: white; padding: 30px 20px; text-align: center; }
+  header h1 { font-size: 1.6em; margin-bottom: 8px; }
+  header p { opacity: 0.8; font-size: 0.95em; }
+  .total { background: #2980b9; color: white; text-align: center;
+            padding: 10px; font-size: 0.9em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+           gap: 16px; padding: 30px 20px; max-width: 1100px; margin: 0 auto; }
+  .region-card { background: white; border-radius: 10px; padding: 20px;
+                  text-decoration: none; color: inherit;
+                  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+                  transition: transform .15s, box-shadow .15s;
+                  border-left: 4px solid #2980b9; }
+  .region-card:hover { transform: translateY(-3px);
+                        box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+  .region-name { font-weight: 600; font-size: 1em; margin-bottom: 6px; }
+  .region-count { color: #2980b9; font-size: 0.85em; }
+  footer { text-align: center; padding: 20px; color: #888; font-size: 0.8em; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🌿 Interventions d'urgence environnementale</h1>
+  <p>Registre du MELCCFP — Québec</p>
+</header>
+<div class="total">
+  6184 interventions géocodées réparties dans 17 régions
+</div>
+<div class="grid">
+
+        <a href="carte_abitibi-temiscamingue.html" class="region-card">
+            <div class="region-name">Abitibi-Témiscamingue</div>
+            <div class="region-count">146 interventions</div>
+        </a>
+        <a href="carte_bas-saint-laurent.html" class="region-card">
+            <div class="region-name">Bas-Saint-Laurent</div>
+            <div class="region-count">220 interventions</div>
+        </a>
+        <a href="carte_capitale-nationale.html" class="region-card">
+            <div class="region-name">Capitale-Nationale</div>
+            <div class="region-count">671 interventions</div>
+        </a>
+        <a href="carte_centre-du-quebec.html" class="region-card">
+            <div class="region-name">Centre-du-Québec</div>
+            <div class="region-count">548 interventions</div>
+        </a>
+        <a href="carte_chaudiere-appalaches.html" class="region-card">
+            <div class="region-name">Chaudière-Appalaches</div>
+            <div class="region-count">621 interventions</div>
+        </a>
+        <a href="carte_cote-nord.html" class="region-card">
+            <div class="region-name">Côte-Nord</div>
+            <div class="region-count">313 interventions</div>
+        </a>
+        <a href="carte_estrie.html" class="region-card">
+            <div class="region-name">Estrie</div>
+            <div class="region-count">498 interventions</div>
+        </a>
+        <a href="carte_gaspesie-iles-de-la-madeleine.html" class="region-card">
+            <div class="region-name">Gaspésie—Îles-de-la-Madeleine</div>
+            <div class="region-count">102 interventions</div>
+        </a>
+        <a href="carte_lanaudiere.html" class="region-card">
+            <div class="region-name">Lanaudière</div>
+            <div class="region-count">280 interventions</div>
+        </a>
+        <a href="carte_laurentides.html" class="region-card">
+            <div class="region-name">Laurentides</div>
+            <div class="region-count">328 interventions</div>
+        </a>
+        <a href="carte_laval.html" class="region-card">
+            <div class="region-name">Laval</div>
+            <div class="region-count">62 interventions</div>
+        </a>
+        <a href="carte_mauricie.html" class="region-card">
+            <div class="region-name">Mauricie</div>
+            <div class="region-count">329 interventions</div>
+        </a>
+        <a href="carte_montreal.html" class="region-card">
+            <div class="region-name">Montréal</div>
+            <div class="region-count">235 interventions</div>
+        </a>
+        <a href="carte_monteregie.html" class="region-card">
+            <div class="region-name">Montérégie</div>
+            <div class="region-count">760 interventions</div>
+        </a>
+        <a href="carte_nord-du-quebec.html" class="region-card">
+            <div class="region-name">Nord-du-Québec</div>
+            <div class="region-count">67 interventions</div>
+        </a>
+        <a href="carte_outaouais.html" class="region-card">
+            <div class="region-name">Outaouais</div>
+            <div class="region-count">377 interventions</div>
+        </a>
+        <a href="carte_saguenay-lac-saint-jean.html" class="region-card">
+            <div class="region-name">Saguenay—Lac-Saint-Jean</div>
+            <div class="region-count">627 interventions</div>
+        </a>
+</div>
+<footer>Source : Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP)</footer>
+</body>
+</html>

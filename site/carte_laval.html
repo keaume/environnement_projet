@@ -1,0 +1,3242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_37d4c643ad1d2d3f14439315152afa69 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <a href="index.html" style="position:fixed;top:12px;left:12px;z-index:1000;
+       background:white;padding:8px 14px;border-radius:6px;text-decoration:none;
+       box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;font-size:13px;color:#1a3c5e">
+       ← Toutes les régions
+    </a>
+    
+    <div style="position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:1000;
+                background:rgba(255,255,255,.93);padding:8px 20px;border-radius:6px;
+                box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;
+                font-size:15px;font-weight:bold;color:#1a3c5e">
+      🌿 Laval — 62 interventions
+    </div>
+    
+    <div style="position:fixed;bottom:30px;left:30px;z-index:1000;background:white;
+                padding:12px 16px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.3);
+                font-family:sans-serif;font-size:12px;line-height:1.9">
+      <b>🏭 Type d'incident</b><br>
+      <span style="color:red">●</span> Incendie &nbsp;
+      <span style="color:orange">●</span> Déversement<br>
+      <span style="color:purple">●</span> Contamination &nbsp;
+      <span style="color:blue">●</span> Accident<br>
+      <span style="color:gray">●</span> Signalement &nbsp;
+      <span style="color:darkred">●</span> Mortalité<br>
+      <span style="color:darkblue">●</span> Rejet &nbsp;
+      <span style="color:lightgray">●</span> Autre
+    </div>
+    
+            <div class="folium-map" id="map_37d4c643ad1d2d3f14439315152afa69" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_37d4c643ad1d2d3f14439315152afa69 = L.map(
+                "map_37d4c643ad1d2d3f14439315152afa69",
+                {
+                    center: [45.57, -73.75],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_642ad4e0d25e295a383e0bb73cb6f82d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_642ad4e0d25e295a383e0bb73cb6f82d.addTo(map_37d4c643ad1d2d3f14439315152afa69);
+        
+    
+            var marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343 = L.markerClusterGroup(
+                {
+  "maxClusterRadius": 40,
+  "disableClusteringAtZoom": 13,
+}
+            );
+        
+    
+            var marker_130435d2627fc50285695ae83ef96b1d = L.marker(
+                [45.568406, -73.736751],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_2735480718ac079c1a0b2517a934ed0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_452afb50cb316cfcb30dd0fce127ead5 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_1fe067acaea910076411b8c7f85611b9 = $(`<div id="html_1fe067acaea910076411b8c7f85611b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Ville de Laval 
+ 				- Présence de matières inconnues</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 2 février 2026<br>           📁 <b>Dossier :</b> 301872156 Catégorie : 1<br>           📍 <b>Adresse :</b> Stationnement, en arrière du 1850, boulevard Le Corbusier<br>           🏙️ <b>Municipalité :</b> Ville de Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301872156" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_452afb50cb316cfcb30dd0fce127ead5.setContent(html_1fe067acaea910076411b8c7f85611b9);
+            
+        
+
+        marker_130435d2627fc50285695ae83ef96b1d.bindPopup(popup_452afb50cb316cfcb30dd0fce127ead5)
+        ;
+
+        
+    
+    
+            marker_130435d2627fc50285695ae83ef96b1d.bindTooltip(
+                `<div>
+                     2 février 2026 – Ville de Laval 
+				- Présence de matières inconn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_130435d2627fc50285695ae83ef96b1d.setIcon(icon_2735480718ac079c1a0b2517a934ed0b);
+            
+    
+            var marker_c8b4fd7b804f62f89e098877e60fd3bc = L.marker(
+                [45.675301, -73.627906],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_324ffb9743aed9ac8a1c628e17cbc8f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_655b9bfe5d929067923949f4baa765ba = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_87fe4e01bf67f39b4cc2fdab87c946a5 = $(`<div id="html_87fe4e01bf67f39b4cc2fdab87c946a5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 30 novembre 2025<br>           📁 <b>Dossier :</b> 301862133 Catégorie : 1<br>           📍 <b>Adresse :</b> 3355, montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301862133" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_655b9bfe5d929067923949f4baa765ba.setContent(html_87fe4e01bf67f39b4cc2fdab87c946a5);
+            
+        
+
+        marker_c8b4fd7b804f62f89e098877e60fd3bc.bindPopup(popup_655b9bfe5d929067923949f4baa765ba)
+        ;
+
+        
+    
+    
+            marker_c8b4fd7b804f62f89e098877e60fd3bc.bindTooltip(
+                `<div>
+                     30 novembre 2025 – Laval 
+				- Incendie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8b4fd7b804f62f89e098877e60fd3bc.setIcon(icon_324ffb9743aed9ac8a1c628e17cbc8f0);
+            
+    
+            var marker_8dda75dd8a9600168f4194455089e966 = L.marker(
+                [45.634415, -73.636715],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_d1f0f849838d87c469df9a173f1fb490 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_337e0287dc7e7c889c1a1c59b380f8a0 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_76cc11b3e71d9aef02b2178043a8ae46 = $(`<div id="html_76cc11b3e71d9aef02b2178043a8ae46" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie impliquant des produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 11 juillet 2025<br>           📁 <b>Dossier :</b> 301837244 Catégorie : 1<br>           📍 <b>Adresse :</b> 6475, boulevard la Fayette<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301837244" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_337e0287dc7e7c889c1a1c59b380f8a0.setContent(html_76cc11b3e71d9aef02b2178043a8ae46);
+            
+        
+
+        marker_8dda75dd8a9600168f4194455089e966.bindPopup(popup_337e0287dc7e7c889c1a1c59b380f8a0)
+        ;
+
+        
+    
+    
+            marker_8dda75dd8a9600168f4194455089e966.bindTooltip(
+                `<div>
+                     11 juillet 2025 – Laval 
+				- Incendie impliquant des produits pét
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8dda75dd8a9600168f4194455089e966.setIcon(icon_d1f0f849838d87c469df9a173f1fb490);
+            
+    
+            var marker_66f2e2aaecab81a58000c42d91fdd932 = L.marker(
+                [45.572501, -73.780099],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_a77e3730ef4bbb19406d8746b9083c3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6678fcf7742fef5afcf34dadac7760c3 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_e0c0b083bb5e4002ca28867951d9f81b = $(`<div id="html_e0c0b083bb5e4002ca28867951d9f81b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de matières liquides</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 4 juin 2025<br>           📁 <b>Dossier :</b> 301829393 Catégorie : 1<br>           📍 <b>Adresse :</b> Dans l'aire de stationnement localisée sur le lot 5 172 044, à proximité du boulevard Chomedey et de la rue Simone-de-Beauvoir<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301829393" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_6678fcf7742fef5afcf34dadac7760c3.setContent(html_e0c0b083bb5e4002ca28867951d9f81b);
+            
+        
+
+        marker_66f2e2aaecab81a58000c42d91fdd932.bindPopup(popup_6678fcf7742fef5afcf34dadac7760c3)
+        ;
+
+        
+    
+    
+            marker_66f2e2aaecab81a58000c42d91fdd932.bindTooltip(
+                `<div>
+                     4 juin 2025 – Laval 
+				- Déversement de matières liquides
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66f2e2aaecab81a58000c42d91fdd932.setIcon(icon_a77e3730ef4bbb19406d8746b9083c3b);
+            
+    
+            var marker_305d0cd0f21c597e7d9c6865b89743a8 = L.marker(
+                [45.55579, -73.698239],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_c492cc89a0c7d7c2c4643f1db0860f2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48b4a2cdc0fe23d24d91b627fcc8da75 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_ee65fc6f7d0e169d82eb40d1f1073cb9 = $(`<div id="html_ee65fc6f7d0e169d82eb40d1f1073cb9" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Ville de Laval 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 9 juin 2025<br>           📁 <b>Dossier :</b> 301829990 Catégorie : 1<br>           📍 <b>Adresse :</b> 306, boulevard Cartier-Ouest<br>           🏙️ <b>Municipalité :</b> Ville de Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301829990" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_48b4a2cdc0fe23d24d91b627fcc8da75.setContent(html_ee65fc6f7d0e169d82eb40d1f1073cb9);
+            
+        
+
+        marker_305d0cd0f21c597e7d9c6865b89743a8.bindPopup(popup_48b4a2cdc0fe23d24d91b627fcc8da75)
+        ;
+
+        
+    
+    
+            marker_305d0cd0f21c597e7d9c6865b89743a8.bindTooltip(
+                `<div>
+                     9 juin 2025 – Ville de Laval 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_305d0cd0f21c597e7d9c6865b89743a8.setIcon(icon_c492cc89a0c7d7c2c4643f1db0860f2c);
+            
+    
+            var marker_4c3278db98f2f29ece5ca8ac3d959e91 = L.marker(
+                [45.506272, -73.662973],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_8b3aa2bc8dc9f106e26cf91c2433bc84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5e3eab2ce49612ce0967570f5802c59 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_68cac9274a4c3ed515472cdf02c48ad7 = $(`<div id="html_68cac9274a4c3ed515472cdf02c48ad7" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Ville de Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 12 mai 2025<br>           📁 <b>Dossier :</b> 301823443 Catégorie : 1<br>           📍 <b>Adresse :</b> 985, rue Lippman<br>           🏙️ <b>Municipalité :</b> Ville de Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301823443" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b5e3eab2ce49612ce0967570f5802c59.setContent(html_68cac9274a4c3ed515472cdf02c48ad7);
+            
+        
+
+        marker_4c3278db98f2f29ece5ca8ac3d959e91.bindPopup(popup_b5e3eab2ce49612ce0967570f5802c59)
+        ;
+
+        
+    
+    
+            marker_4c3278db98f2f29ece5ca8ac3d959e91.bindTooltip(
+                `<div>
+                     12 mai 2025 – Ville de Laval 
+				- Déversement de produits pét
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c3278db98f2f29ece5ca8ac3d959e91.setIcon(icon_8b3aa2bc8dc9f106e26cf91c2433bc84);
+            
+    
+            var marker_18b29c2fe88dfabdda45ad30395238ca = L.marker(
+                [45.636148, -73.679598],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_43e9941eaa2aa79daa157858125d1ff0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca994a1f9177369a013fadf514157c4d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_ed3230e5de595d839b040cc86a152efa = $(`<div id="html_ed3230e5de595d839b040cc86a152efa" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 15 mai 2025<br>           📁 <b>Dossier :</b> 301824293 Catégorie : 1<br>           📍 <b>Adresse :</b> 4297, rang Saint-Elzéard Est<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301824293" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_ca994a1f9177369a013fadf514157c4d.setContent(html_ed3230e5de595d839b040cc86a152efa);
+            
+        
+
+        marker_18b29c2fe88dfabdda45ad30395238ca.bindPopup(popup_ca994a1f9177369a013fadf514157c4d)
+        ;
+
+        
+    
+    
+            marker_18b29c2fe88dfabdda45ad30395238ca.bindTooltip(
+                `<div>
+                     15 mai 2025 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18b29c2fe88dfabdda45ad30395238ca.setIcon(icon_43e9941eaa2aa79daa157858125d1ff0);
+            
+    
+            var marker_ae644fc4b3f91276e4107df2bfe184f7 = L.marker(
+                [45.671771, -73.628143],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_ea125f5b74d3d63bb4590250fbab91fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcfc59122ede03ea991bb2c9758fece6 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a0dfb2bdb67688cef369f58e9e897d9e = $(`<div id="html_a0dfb2bdb67688cef369f58e9e897d9e" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Signalement d'une matière sur un lieu sensible</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 31 décembre 2024<br>           📁 <b>Dossier :</b> 301795635 Catégorie : 1<br>           📍 <b>Adresse :</b> Prés du 3128, Montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301795635" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_dcfc59122ede03ea991bb2c9758fece6.setContent(html_a0dfb2bdb67688cef369f58e9e897d9e);
+            
+        
+
+        marker_ae644fc4b3f91276e4107df2bfe184f7.bindPopup(popup_dcfc59122ede03ea991bb2c9758fece6)
+        ;
+
+        
+    
+    
+            marker_ae644fc4b3f91276e4107df2bfe184f7.bindTooltip(
+                `<div>
+                     31 décembre 2024 – Laval 
+				- Signalement d'une matière sur un lie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae644fc4b3f91276e4107df2bfe184f7.setIcon(icon_ea125f5b74d3d63bb4590250fbab91fe);
+            
+    
+            var marker_37f8fc0f4784a5a256d273fae3ee4188 = L.marker(
+                [45.616904, -73.661435],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_bc001ca3a301f5ae001fc4f4f6c697ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0943b313d956773c0435703fa16df824 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_3ac3056251e65bc599eb475a817d70c5 = $(`<div id="html_3ac3056251e65bc599eb475a817d70c5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de matières liquides</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 14 novembre 2024<br>           📁 <b>Dossier :</b> 301788428 Catégorie : 1<br>           📍 <b>Adresse :</b> 1375, avenue Valleyfield<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301788428" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_0943b313d956773c0435703fa16df824.setContent(html_3ac3056251e65bc599eb475a817d70c5);
+            
+        
+
+        marker_37f8fc0f4784a5a256d273fae3ee4188.bindPopup(popup_0943b313d956773c0435703fa16df824)
+        ;
+
+        
+    
+    
+            marker_37f8fc0f4784a5a256d273fae3ee4188.bindTooltip(
+                `<div>
+                     14 novembre 2024 – Laval 
+				- Déversement de matières liquides
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37f8fc0f4784a5a256d273fae3ee4188.setIcon(icon_bc001ca3a301f5ae001fc4f4f6c697ec);
+            
+    
+            var marker_9dbffec5250f186099d553246b7b61e0 = L.marker(
+                [45.528911, -73.809861],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_bab52d25edc8c174324b0d73e272831e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3bdf14607aa723dbb092ba56465803e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_797c4bdd787491b0f5009c3061a8730f = $(`<div id="html_797c4bdd787491b0f5009c3061a8730f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval (Ste-Dorothée) 
+ 				- Rejet de matières en suspension</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 24 octobre 2024<br>           📁 <b>Dossier :</b> 301784501 Catégorie : 1<br>           📍 <b>Adresse :</b> Près du 655, rue Des Jardins (Parc Couvrette)<br>           🏙️ <b>Municipalité :</b> Laval (Ste-Dorothée)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301784501" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_f3bdf14607aa723dbb092ba56465803e.setContent(html_797c4bdd787491b0f5009c3061a8730f);
+            
+        
+
+        marker_9dbffec5250f186099d553246b7b61e0.bindPopup(popup_f3bdf14607aa723dbb092ba56465803e)
+        ;
+
+        
+    
+    
+            marker_9dbffec5250f186099d553246b7b61e0.bindTooltip(
+                `<div>
+                     24 octobre 2024 – Laval (Ste-Dorothée) 
+				- Rejet de matières en 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9dbffec5250f186099d553246b7b61e0.setIcon(icon_bab52d25edc8c174324b0d73e272831e);
+            
+    
+            var marker_04b90425088dac22f9f1c83bfd363184 = L.marker(
+                [45.589282, -73.740386],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_8bfd64272075a4f5bc557ba1dd6064f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b3ef0af2f242df1714a9c5c79383c76 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_84194976980523fdfe9175a2e1131c62 = $(`<div id="html_84194976980523fdfe9175a2e1131c62" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie impliquant des matières résiduelles</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 31 août 2024<br>           📁 <b>Dossier :</b> 301774014 Catégorie : 1<br>           📍 <b>Adresse :</b> 2975, boulevard Industriel<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301774014" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_5b3ef0af2f242df1714a9c5c79383c76.setContent(html_84194976980523fdfe9175a2e1131c62);
+            
+        
+
+        marker_04b90425088dac22f9f1c83bfd363184.bindPopup(popup_5b3ef0af2f242df1714a9c5c79383c76)
+        ;
+
+        
+    
+    
+            marker_04b90425088dac22f9f1c83bfd363184.bindTooltip(
+                `<div>
+                     31 août 2024 – Laval 
+				- Incendie impliquant des matières rés
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04b90425088dac22f9f1c83bfd363184.setIcon(icon_8bfd64272075a4f5bc557ba1dd6064f3);
+            
+    
+            var marker_fbb321566d3296b6fd1dcf82cc660173 = L.marker(
+                [45.529491, -73.79875],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_b2c278dde3c228774ae48411d293f9cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37c49ae95b409a9a0c5f39f66a9d9be5 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_6eff57c3a2b00bf31078437df5593669 = $(`<div id="html_6eff57c3a2b00bf31078437df5593669" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Signalement d'odeur</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 21 novembre 2023<br>           📁 <b>Dossier :</b> 301714452 Catégorie : 1<br>           📍 <b>Adresse :</b> 375, rue Sylvie, Laval<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301714452" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_37c49ae95b409a9a0c5f39f66a9d9be5.setContent(html_6eff57c3a2b00bf31078437df5593669);
+            
+        
+
+        marker_fbb321566d3296b6fd1dcf82cc660173.bindPopup(popup_37c49ae95b409a9a0c5f39f66a9d9be5)
+        ;
+
+        
+    
+    
+            marker_fbb321566d3296b6fd1dcf82cc660173.bindTooltip(
+                `<div>
+                     21 novembre 2023 – Laval 
+				- Signalement d'odeur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbb321566d3296b6fd1dcf82cc660173.setIcon(icon_b2c278dde3c228774ae48411d293f9cc);
+            
+    
+            var marker_543c5aa19f3f83692709bc9d4989f09f = L.marker(
+                [45.53595, -73.806965],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_9aff592e5f49204d45d7ec32c0129d46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1c012076f19d17b42392414f7c64bb0 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_9139aadb0fde4854ec0df12db88ec3c9 = $(`<div id="html_9139aadb0fde4854ec0df12db88ec3c9" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Contamination d'un réseau d'eau potable</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 26 septembre 2023<br>           📁 <b>Dossier :</b> 301705786 Catégorie : 1<br>           📍 <b>Adresse :</b> Secteur Sainte-Dorothée<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301705786" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b1c012076f19d17b42392414f7c64bb0.setContent(html_9139aadb0fde4854ec0df12db88ec3c9);
+            
+        
+
+        marker_543c5aa19f3f83692709bc9d4989f09f.bindPopup(popup_b1c012076f19d17b42392414f7c64bb0)
+        ;
+
+        
+    
+    
+            marker_543c5aa19f3f83692709bc9d4989f09f.bindTooltip(
+                `<div>
+                     26 septembre 2023 – Laval 
+				- Contamination d'un réseau d'eau pota
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_543c5aa19f3f83692709bc9d4989f09f.setIcon(icon_9aff592e5f49204d45d7ec32c0129d46);
+            
+    
+            var marker_2d6850dc7d3ec35187c9c07722867e1e = L.marker(
+                [45.588741, -73.696436],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_f39fe7d9e9e5cbdc3544ad8442485288 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e27964b12ef18f430c7a8bdc1e15a0e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_4e1392a6b8da72778e5b062427c701fd = $(`<div id="html_4e1392a6b8da72778e5b062427c701fd" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Rejet de matières en suspension</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 4 septembre 2023<br>           📁 <b>Dossier :</b> 301701094 Catégorie : 1<br>           📍 <b>Adresse :</b> Ruisseau Lapinière entre le 1500 boul. Saint-Martin est et Notre-Dame-de-Fatima<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301701094" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_3e27964b12ef18f430c7a8bdc1e15a0e.setContent(html_4e1392a6b8da72778e5b062427c701fd);
+            
+        
+
+        marker_2d6850dc7d3ec35187c9c07722867e1e.bindPopup(popup_3e27964b12ef18f430c7a8bdc1e15a0e)
+        ;
+
+        
+    
+    
+            marker_2d6850dc7d3ec35187c9c07722867e1e.bindTooltip(
+                `<div>
+                     4 septembre 2023 – Laval 
+				- Rejet de matières en suspension
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d6850dc7d3ec35187c9c07722867e1e.setIcon(icon_f39fe7d9e9e5cbdc3544ad8442485288);
+            
+    
+            var marker_c2a2f3a2cb4ced5a9493db135e28d669 = L.marker(
+                [45.63428, -73.636095],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_8ed7bcf640a597b3ad5a19a8f69db163 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac039e31a64731f673f011c4a22c67b2 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_14ce72303eaf74a81bc927e18abcaac3 = $(`<div id="html_14ce72303eaf74a81bc927e18abcaac3" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie d'un véhicule</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 2 mai 2023<br>           📁 <b>Dossier :</b> 301673018 Catégorie : 1<br>           📍 <b>Adresse :</b> 6515 Boulevard Lafayette<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301673018" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_ac039e31a64731f673f011c4a22c67b2.setContent(html_14ce72303eaf74a81bc927e18abcaac3);
+            
+        
+
+        marker_c2a2f3a2cb4ced5a9493db135e28d669.bindPopup(popup_ac039e31a64731f673f011c4a22c67b2)
+        ;
+
+        
+    
+    
+            marker_c2a2f3a2cb4ced5a9493db135e28d669.bindTooltip(
+                `<div>
+                     2 mai 2023 – Laval 
+				- Incendie d'un véhicule
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c2a2f3a2cb4ced5a9493db135e28d669.setIcon(icon_8ed7bcf640a597b3ad5a19a8f69db163);
+            
+    
+            var marker_8c5a5f2ccb7fbdca458bef219e2c3e9e = L.marker(
+                [45.542756, -73.850252],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_393e7c51f6f47339e61bdf52f2ea8553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bec02239cbbc3efde7da8727a329c6e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c4e41ebf9e3f265b39666ec5ffd6bb8c = $(`<div id="html_c4e41ebf9e3f265b39666ec5ffd6bb8c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Mortalité de poissons</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 21 août 2023<br>           📁 <b>Dossier :</b> 301698841 Catégorie : 1<br>           📍 <b>Adresse :</b> Sur les rive de la Rivière-des-Milles-Îles, près du Parc Jeanne-Tremblay et du pont de la route 148<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301698841" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2bec02239cbbc3efde7da8727a329c6e.setContent(html_c4e41ebf9e3f265b39666ec5ffd6bb8c);
+            
+        
+
+        marker_8c5a5f2ccb7fbdca458bef219e2c3e9e.bindPopup(popup_2bec02239cbbc3efde7da8727a329c6e)
+        ;
+
+        
+    
+    
+            marker_8c5a5f2ccb7fbdca458bef219e2c3e9e.bindTooltip(
+                `<div>
+                     21 août 2023 – Laval 
+				- Mortalité de poissons
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c5a5f2ccb7fbdca458bef219e2c3e9e.setIcon(icon_393e7c51f6f47339e61bdf52f2ea8553);
+            
+    
+            var marker_26b1d9e74967653561cf1466f98a3ab9 = L.marker(
+                [45.403229, -72.734066],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_d92b7838174b69da49045b4d7c17affe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c037d13a2133046915f0386fe0f8ef13 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_75b5d41493d5af55bdf5bb1c6e876f42 = $(`<div id="html_75b5d41493d5af55bdf5bb1c6e876f42" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de matières dangereuses</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 29 juin 2023<br>           📁 <b>Dossier :</b> 301687168 Catégorie : 1<br>           📍 <b>Adresse :</b> Prolongement de l'Autoroute 19 (intersection Saint-Saens Est et Granby<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301687168" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_c037d13a2133046915f0386fe0f8ef13.setContent(html_75b5d41493d5af55bdf5bb1c6e876f42);
+            
+        
+
+        marker_26b1d9e74967653561cf1466f98a3ab9.bindPopup(popup_c037d13a2133046915f0386fe0f8ef13)
+        ;
+
+        
+    
+    
+            marker_26b1d9e74967653561cf1466f98a3ab9.bindTooltip(
+                `<div>
+                     29 juin 2023 – Laval 
+				- Déversement de matières dangereuses
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_26b1d9e74967653561cf1466f98a3ab9.setIcon(icon_d92b7838174b69da49045b4d7c17affe);
+            
+    
+            var marker_3cc29cbbd3e49f6cd707f8c5180e0e45 = L.marker(
+                [45.568846, -73.77382],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_e30ad4298ab327cb3af66ce5ede1fb8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21a57032f1a4a54ff4ef48efcb13161c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_1ca38b3b104aefa162765d425a77dfa4 = $(`<div id="html_1ca38b3b104aefa162765d425a77dfa4" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Travaux en zone humide</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 24 mars 2023<br>           📁 <b>Dossier :</b> 301666652 Catégorie : 1<br>           📍 <b>Adresse :</b> Derrière le 3710 boul. St-Elzear Ouest<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301666652" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_21a57032f1a4a54ff4ef48efcb13161c.setContent(html_1ca38b3b104aefa162765d425a77dfa4);
+            
+        
+
+        marker_3cc29cbbd3e49f6cd707f8c5180e0e45.bindPopup(popup_21a57032f1a4a54ff4ef48efcb13161c)
+        ;
+
+        
+    
+    
+            marker_3cc29cbbd3e49f6cd707f8c5180e0e45.bindTooltip(
+                `<div>
+                     24 mars 2023 – Laval 
+				- Travaux en zone humide
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3cc29cbbd3e49f6cd707f8c5180e0e45.setIcon(icon_e30ad4298ab327cb3af66ce5ede1fb8e);
+            
+    
+            var marker_afa850d68ed17594d206246f9173a63b = L.marker(
+                [45.536822, -73.763085],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_4435b181da5c4849d297a35e155dab76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cd36ede304c64d7bef2b4a86e34fb63 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_2c1f4c3b50d9010aab65d6516605b023 = $(`<div id="html_2c1f4c3b50d9010aab65d6516605b023" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 23 décembre 2022<br>           📁 <b>Dossier :</b> 301649596 Catégorie : 1<br>           📍 <b>Adresse :</b> Sur l'autoroute 13 Nord près du Boulevard Notre-Dame<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301649596" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4cd36ede304c64d7bef2b4a86e34fb63.setContent(html_2c1f4c3b50d9010aab65d6516605b023);
+            
+        
+
+        marker_afa850d68ed17594d206246f9173a63b.bindPopup(popup_4cd36ede304c64d7bef2b4a86e34fb63)
+        ;
+
+        
+    
+    
+            marker_afa850d68ed17594d206246f9173a63b.bindTooltip(
+                `<div>
+                     23 décembre 2022 – Laval 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afa850d68ed17594d206246f9173a63b.setIcon(icon_4435b181da5c4849d297a35e155dab76);
+            
+    
+            var marker_29ce54d9287c681f22444d9f0d874ac9 = L.marker(
+                [45.591773, -73.719803],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_48a5625b389a6205c021de3591df0d75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35f43462117528e0fd0feec7251af916 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_71c7823de2994277aba34ba9fe422257 = $(`<div id="html_71c7823de2994277aba34ba9fe422257" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 26 octobre 2022<br>           📁 <b>Dossier :</b> 301639539 Catégorie : 1<br>           📍 <b>Adresse :</b> Km 27 de l'autoroute 440 direction Ouest<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301639539" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_35f43462117528e0fd0feec7251af916.setContent(html_71c7823de2994277aba34ba9fe422257);
+            
+        
+
+        marker_29ce54d9287c681f22444d9f0d874ac9.bindPopup(popup_35f43462117528e0fd0feec7251af916)
+        ;
+
+        
+    
+    
+            marker_29ce54d9287c681f22444d9f0d874ac9.bindTooltip(
+                `<div>
+                     26 octobre 2022 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29ce54d9287c681f22444d9f0d874ac9.setIcon(icon_48a5625b389a6205c021de3591df0d75);
+            
+    
+            var marker_c80fae246dd2a29337795db01f9208d5 = L.marker(
+                [45.631876, -73.781701],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_1af758a5ee1695a2c35d90c7f4c26989 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53b4713afc96bf6d32f06aa5acfee273 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_44d9e79abf64f0bb188c5d451febfb35 = $(`<div id="html_44d9e79abf64f0bb188c5d451febfb35" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de matières contaminées</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 18 octobre 2022<br>           📁 <b>Dossier :</b> 301638089 Catégorie : 1<br>           📍 <b>Adresse :</b> 110, rue de Venise<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301638089" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_53b4713afc96bf6d32f06aa5acfee273.setContent(html_44d9e79abf64f0bb188c5d451febfb35);
+            
+        
+
+        marker_c80fae246dd2a29337795db01f9208d5.bindPopup(popup_53b4713afc96bf6d32f06aa5acfee273)
+        ;
+
+        
+    
+    
+            marker_c80fae246dd2a29337795db01f9208d5.bindTooltip(
+                `<div>
+                     18 octobre 2022 – Laval 
+				- Déversement de matières contaminées
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c80fae246dd2a29337795db01f9208d5.setIcon(icon_1af758a5ee1695a2c35d90c7f4c26989);
+            
+    
+            var marker_abe51fcfd93a85a3441fad2b824d877b = L.marker(
+                [45.629301, -73.644664],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_bfc8e6f890687b2c6fbbab0f77b439a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4db3c921c5358191efb9dc898a5dfbd = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_701b9c5106fe4f666d7dab42df4979a3 = $(`<div id="html_701b9c5106fe4f666d7dab42df4979a3" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Signalement d'une coloration sur un cours d'eau</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 20 août 2022<br>           📁 <b>Dossier :</b> 301628114 Catégorie : 1<br>           📍 <b>Adresse :</b> Ruisseau Lapinière au niveau du boisé Papineau<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301628114" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_d4db3c921c5358191efb9dc898a5dfbd.setContent(html_701b9c5106fe4f666d7dab42df4979a3);
+            
+        
+
+        marker_abe51fcfd93a85a3441fad2b824d877b.bindPopup(popup_d4db3c921c5358191efb9dc898a5dfbd)
+        ;
+
+        
+    
+    
+            marker_abe51fcfd93a85a3441fad2b824d877b.bindTooltip(
+                `<div>
+                     20 août 2022 – Laval 
+				- Signalement d'une coloration sur un 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_abe51fcfd93a85a3441fad2b824d877b.setIcon(icon_bfc8e6f890687b2c6fbbab0f77b439a9);
+            
+    
+            var marker_a5b836af8759038ed1421344912c6398 = L.marker(
+                [45.522711, -73.756027],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_59619331b80364cf5b75d239e8cf77de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16107f120cfea0e91802c8d860efd458 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8c4330cfe09da455ad5d73f50875ed67 = $(`<div id="html_8c4330cfe09da455ad5d73f50875ed67" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Signalement d'une coloration sur un cours d'eau</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 30 septembre 2022<br>           📁 <b>Dossier :</b> 301635364 Catégorie : 1<br>           📍 <b>Adresse :</b> 2555, Avenue du Havre-des-Iles<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301635364" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_16107f120cfea0e91802c8d860efd458.setContent(html_8c4330cfe09da455ad5d73f50875ed67);
+            
+        
+
+        marker_a5b836af8759038ed1421344912c6398.bindPopup(popup_16107f120cfea0e91802c8d860efd458)
+        ;
+
+        
+    
+    
+            marker_a5b836af8759038ed1421344912c6398.bindTooltip(
+                `<div>
+                     30 septembre 2022 – Laval 
+				- Signalement d'une coloration sur un 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a5b836af8759038ed1421344912c6398.setIcon(icon_59619331b80364cf5b75d239e8cf77de);
+            
+    
+            var marker_096453c9701aedec3631c8bbdb18339c = L.marker(
+                [45.540393, -73.743248],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_a37d3896284391ac505c9a3fae77a7cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91db8043ae0a29e0bd1e00515b097d5e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_ea243f63f18c42c90022fccbf7d50f09 = $(`<div id="html_ea243f63f18c42c90022fccbf7d50f09" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 17 août 2022<br>           📁 <b>Dossier :</b> 301627718 Catégorie : 1<br>           📍 <b>Adresse :</b> 716, 79e Avenue<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301627718" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_91db8043ae0a29e0bd1e00515b097d5e.setContent(html_ea243f63f18c42c90022fccbf7d50f09);
+            
+        
+
+        marker_096453c9701aedec3631c8bbdb18339c.bindPopup(popup_91db8043ae0a29e0bd1e00515b097d5e)
+        ;
+
+        
+    
+    
+            marker_096453c9701aedec3631c8bbdb18339c.bindTooltip(
+                `<div>
+                     17 août 2022 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_096453c9701aedec3631c8bbdb18339c.setIcon(icon_a37d3896284391ac505c9a3fae77a7cb);
+            
+    
+            var marker_2a547edb57e035fe8851a1768c85e7ba = L.marker(
+                [45.616735, -73.732799],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_d93ae7251dce19a16acd96bed6dfc87a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3e59031ed4093cfd8744d4cc19ab6a7 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_b03f61a6e7a5bcdf55d2b7d211ff4449 = $(`<div id="html_b03f61a6e7a5bcdf55d2b7d211ff4449" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 6 juillet 2022<br>           📁 <b>Dossier :</b> 301617991 Catégorie : 1<br>           📍 <b>Adresse :</b> 2267, rue Marc<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301617991" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b3e59031ed4093cfd8744d4cc19ab6a7.setContent(html_b03f61a6e7a5bcdf55d2b7d211ff4449);
+            
+        
+
+        marker_2a547edb57e035fe8851a1768c85e7ba.bindPopup(popup_b3e59031ed4093cfd8744d4cc19ab6a7)
+        ;
+
+        
+    
+    
+            marker_2a547edb57e035fe8851a1768c85e7ba.bindTooltip(
+                `<div>
+                     6 juillet 2022 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a547edb57e035fe8851a1768c85e7ba.setIcon(icon_d93ae7251dce19a16acd96bed6dfc87a);
+            
+    
+            var marker_17e6b537d30afea23af1e03b2534bb66 = L.marker(
+                [45.63428, -73.636095],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_f889679b4621dca48ab082314742e30d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3a00b5be14d98d73395167bad95747d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_5757ec7def527c51f8c6522d1f656f8c = $(`<div id="html_5757ec7def527c51f8c6522d1f656f8c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie impliquant des produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 12 avril 2022<br>           📁 <b>Dossier :</b> 301599817 Catégorie : 1<br>           📍 <b>Adresse :</b> 6515, boulevard Lafayette<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301599817" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_a3a00b5be14d98d73395167bad95747d.setContent(html_5757ec7def527c51f8c6522d1f656f8c);
+            
+        
+
+        marker_17e6b537d30afea23af1e03b2534bb66.bindPopup(popup_a3a00b5be14d98d73395167bad95747d)
+        ;
+
+        
+    
+    
+            marker_17e6b537d30afea23af1e03b2534bb66.bindTooltip(
+                `<div>
+                     12 avril 2022 – Laval 
+				- Incendie impliquant des produits pét
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17e6b537d30afea23af1e03b2534bb66.setIcon(icon_f889679b4621dca48ab082314742e30d);
+            
+    
+            var marker_a5f386558d6a678cbcf4040a7dd7f7da = L.marker(
+                [45.522516, -73.785371],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_10fda7e4ddbd6b2b01c10f94a71cbdac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70e4f0bef0e67b5f2cdd8e2e3d40dba9 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_115af88d539ce7f3fa709ef841fa81fe = $(`<div id="html_115af88d539ce7f3fa709ef841fa81fe" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 3 novembre 2021<br>           📁 <b>Dossier :</b> 301568462 Catégorie : 1<br>           📍 <b>Adresse :</b> Sur la bretelle de l'autoroute 13 Nord près du boul. Samson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301568462" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_70e4f0bef0e67b5f2cdd8e2e3d40dba9.setContent(html_115af88d539ce7f3fa709ef841fa81fe);
+            
+        
+
+        marker_a5f386558d6a678cbcf4040a7dd7f7da.bindPopup(popup_70e4f0bef0e67b5f2cdd8e2e3d40dba9)
+        ;
+
+        
+    
+    
+            marker_a5f386558d6a678cbcf4040a7dd7f7da.bindTooltip(
+                `<div>
+                     3 novembre 2021 – Laval 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a5f386558d6a678cbcf4040a7dd7f7da.setIcon(icon_10fda7e4ddbd6b2b01c10f94a71cbdac);
+            
+    
+            var marker_571d08fffe0a5822e4ab0ccfdea9655f = L.marker(
+                [45.659653, -73.640188],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_933332c4abd2d70fa7bc5a60df16cef3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52c34813393a931e27312b2ee6adf8eb = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d36b8ffdb8019f22f15439e7fb9be0a4 = $(`<div id="html_d36b8ffdb8019f22f15439e7fb9be0a4" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Émission de fumée noire</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 18 août 2021<br>           📁 <b>Dossier :</b> 301553736 Catégorie : 1<br>           📍 <b>Adresse :</b> 2185, Montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301553736" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_52c34813393a931e27312b2ee6adf8eb.setContent(html_d36b8ffdb8019f22f15439e7fb9be0a4);
+            
+        
+
+        marker_571d08fffe0a5822e4ab0ccfdea9655f.bindPopup(popup_52c34813393a931e27312b2ee6adf8eb)
+        ;
+
+        
+    
+    
+            marker_571d08fffe0a5822e4ab0ccfdea9655f.bindTooltip(
+                `<div>
+                     18 août 2021 – Laval 
+				- Émission de fumée noire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_571d08fffe0a5822e4ab0ccfdea9655f.setIcon(icon_933332c4abd2d70fa7bc5a60df16cef3);
+            
+    
+            var marker_6090ae3d11ac4d9ec29a06292d4b9ed0 = L.marker(
+                [45.591732, -73.66549],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_d5b00bf15b3e2f74f18b7afc03b687e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e4e1d0cbb33395ab89dab2eb245a03b = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_f9ffee366099a3d1d9f3b177e55d5b86 = $(`<div id="html_f9ffee366099a3d1d9f3b177e55d5b86" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie impliquant des matières dangereuses</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 mai 2021<br>           📁 <b>Dossier :</b> 301533159 Catégorie : 1<br>           📍 <b>Adresse :</b> 3100 Boulevard de la Concorde Est<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301533159" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_3e4e1d0cbb33395ab89dab2eb245a03b.setContent(html_f9ffee366099a3d1d9f3b177e55d5b86);
+            
+        
+
+        marker_6090ae3d11ac4d9ec29a06292d4b9ed0.bindPopup(popup_3e4e1d0cbb33395ab89dab2eb245a03b)
+        ;
+
+        
+    
+    
+            marker_6090ae3d11ac4d9ec29a06292d4b9ed0.bindTooltip(
+                `<div>
+                     27 mai 2021 – Laval 
+				- Incendie impliquant des matières dan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6090ae3d11ac4d9ec29a06292d4b9ed0.setIcon(icon_d5b00bf15b3e2f74f18b7afc03b687e9);
+            
+    
+            var marker_6bf721948a9d0197b5a298bae3f06532 = L.marker(
+                [45.594077, -73.706311],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_f8198a61eec0d28fc456bc7482446d0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_974663afd8554a509ac93598084aca6c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_859a23711c0d147937221028ec07f70b = $(`<div id="html_859a23711c0d147937221028ec07f70b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie impliquant des matières résiduelles</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 28 décembre 2020<br>           📁 <b>Dossier :</b> 301502163 Catégorie : 2<br>           📍 <b>Adresse :</b> 140, rue Saulnier<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301502163" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_974663afd8554a509ac93598084aca6c.setContent(html_859a23711c0d147937221028ec07f70b);
+            
+        
+
+        marker_6bf721948a9d0197b5a298bae3f06532.bindPopup(popup_974663afd8554a509ac93598084aca6c)
+        ;
+
+        
+    
+    
+            marker_6bf721948a9d0197b5a298bae3f06532.bindTooltip(
+                `<div>
+                     28 décembre 2020 – Laval 
+				- Incendie impliquant des matières rés
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bf721948a9d0197b5a298bae3f06532.setIcon(icon_f8198a61eec0d28fc456bc7482446d0f);
+            
+    
+            var marker_91c7b8ef4133095fb8f3dd0011a8dc37 = L.marker(
+                [45.684926, -73.682312],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_d712c41a34ec28e22e910e19f719e734 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9b4fbcf81ff148db69698163d270c3b = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c660909f68671c86b473a1c799970846 = $(`<div id="html_c660909f68671c86b473a1c799970846" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 1 novembre 2020<br>           📁 <b>Dossier :</b> 301492788 Catégorie : 1<br>           📍 <b>Adresse :</b> 6, rue Lanctôt<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301492788" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b9b4fbcf81ff148db69698163d270c3b.setContent(html_c660909f68671c86b473a1c799970846);
+            
+        
+
+        marker_91c7b8ef4133095fb8f3dd0011a8dc37.bindPopup(popup_b9b4fbcf81ff148db69698163d270c3b)
+        ;
+
+        
+    
+    
+            marker_91c7b8ef4133095fb8f3dd0011a8dc37.bindTooltip(
+                `<div>
+                     1 novembre 2020 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91c7b8ef4133095fb8f3dd0011a8dc37.setIcon(icon_d712c41a34ec28e22e910e19f719e734);
+            
+    
+            var marker_4540167253e3ba2d3100e3eef77bb766 = L.marker(
+                [45.60553, -73.67972],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_e0f89384f21a21c6b55861dcc39db504 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bbb3527c259325e4e6e872ace763c49 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_2215275a774258d5fdf0544dc89a4bf3 = $(`<div id="html_2215275a774258d5fdf0544dc89a4bf3" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de matières solides</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 9 juillet 2020<br>           📁 <b>Dossier :</b> 301474116 Catégorie : 1<br>           📍 <b>Adresse :</b> Réserve naturelle de Bois Papineau<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301474116" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_6bbb3527c259325e4e6e872ace763c49.setContent(html_2215275a774258d5fdf0544dc89a4bf3);
+            
+        
+
+        marker_4540167253e3ba2d3100e3eef77bb766.bindPopup(popup_6bbb3527c259325e4e6e872ace763c49)
+        ;
+
+        
+    
+    
+            marker_4540167253e3ba2d3100e3eef77bb766.bindTooltip(
+                `<div>
+                     9 juillet 2020 – Laval 
+				- Déversement de matières solides
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4540167253e3ba2d3100e3eef77bb766.setIcon(icon_e0f89384f21a21c6b55861dcc39db504);
+            
+    
+            var marker_cb7ba274bc7742fb08a4b3f214794ec6 = L.marker(
+                [45.591338, -73.72109],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_87fef44b2aae8d23d029712db854b787 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5d61e96fdf11cb239413de80a8b25fc = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_4bd2d2b2a9901cbc9f3587381ecfdbef = $(`<div id="html_4bd2d2b2a9901cbc9f3587381ecfdbef" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 22 août 2019<br>           📁 <b>Dossier :</b> 301414719 Catégorie : 1<br>           📍 <b>Adresse :</b> Autoroute 44 Ouest, sortie 31<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301414719" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_d5d61e96fdf11cb239413de80a8b25fc.setContent(html_4bd2d2b2a9901cbc9f3587381ecfdbef);
+            
+        
+
+        marker_cb7ba274bc7742fb08a4b3f214794ec6.bindPopup(popup_d5d61e96fdf11cb239413de80a8b25fc)
+        ;
+
+        
+    
+    
+            marker_cb7ba274bc7742fb08a4b3f214794ec6.bindTooltip(
+                `<div>
+                     22 août 2019 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb7ba274bc7742fb08a4b3f214794ec6.setIcon(icon_87fef44b2aae8d23d029712db854b787);
+            
+    
+            var marker_02764f4f7dbe7db9f963d1be9a50b545 = L.marker(
+                [45.53908, -73.846621],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_c3054b46e7d36f2e98d720088f901b4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ec3c4ecd96a332a8153024030fe9557 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_bc6ac370122cf8fa18b7ba1c1970f701 = $(`<div id="html_bc6ac370122cf8fa18b7ba1c1970f701" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval (Ste-Dorothée) 
+ 				- Incendie</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 19 février 2019<br>           📁 <b>Dossier :</b> 301371466 Catégorie : 1<br>           📍 <b>Adresse :</b> 1570, rue Principale<br>           🏙️ <b>Municipalité :</b> Laval (Ste-Dorothée)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301371466" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_9ec3c4ecd96a332a8153024030fe9557.setContent(html_bc6ac370122cf8fa18b7ba1c1970f701);
+            
+        
+
+        marker_02764f4f7dbe7db9f963d1be9a50b545.bindPopup(popup_9ec3c4ecd96a332a8153024030fe9557)
+        ;
+
+        
+    
+    
+            marker_02764f4f7dbe7db9f963d1be9a50b545.bindTooltip(
+                `<div>
+                     19 février 2019 – Laval (Ste-Dorothée) 
+				- Incendie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02764f4f7dbe7db9f963d1be9a50b545.setIcon(icon_c3054b46e7d36f2e98d720088f901b4e);
+            
+    
+            var marker_ee470016fd78f4dacc104be5fc6f00a2 = L.marker(
+                [45.544877, -73.799199],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_0a335f138d68eee706e0d6c40ad3e29a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c813dff29a658beb69afffe2a999df0f = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d4fff6c7fd9889b1c77246b513f42c2b = $(`<div id="html_d4fff6c7fd9889b1c77246b513f42c2b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 février 2019<br>           📁 <b>Dossier :</b> 301370147 Catégorie : 1<br>           📍 <b>Adresse :</b> Autoroute 13 Nord à la hauteur du boulevard Saint-Martin<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301370147" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_c813dff29a658beb69afffe2a999df0f.setContent(html_d4fff6c7fd9889b1c77246b513f42c2b);
+            
+        
+
+        marker_ee470016fd78f4dacc104be5fc6f00a2.bindPopup(popup_c813dff29a658beb69afffe2a999df0f)
+        ;
+
+        
+    
+    
+            marker_ee470016fd78f4dacc104be5fc6f00a2.bindTooltip(
+                `<div>
+                     13 février 2019 – Laval 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee470016fd78f4dacc104be5fc6f00a2.setIcon(icon_0a335f138d68eee706e0d6c40ad3e29a);
+            
+    
+            var marker_6debfae9b95903009e53a6d3b1f83711 = L.marker(
+                [45.643292, -73.64812],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_4c48a7f9e31d15217038ef08e4607515 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e80b17055808454aeba74e4102809ef2 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_f171722b514b96a5950a3e4e3ac05e8f = $(`<div id="html_f171722b514b96a5950a3e4e3ac05e8f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 juillet 2018<br>           📁 <b>Dossier :</b> 301328872 Catégorie : 1<br>           📍 <b>Adresse :</b> Route 125 Nord, sortie 440 Ouest<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301328872" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_e80b17055808454aeba74e4102809ef2.setContent(html_f171722b514b96a5950a3e4e3ac05e8f);
+            
+        
+
+        marker_6debfae9b95903009e53a6d3b1f83711.bindPopup(popup_e80b17055808454aeba74e4102809ef2)
+        ;
+
+        
+    
+    
+            marker_6debfae9b95903009e53a6d3b1f83711.bindTooltip(
+                `<div>
+                     13 juillet 2018 – Laval 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6debfae9b95903009e53a6d3b1f83711.setIcon(icon_4c48a7f9e31d15217038ef08e4607515);
+            
+    
+            var marker_2db1851bb441ac437aac1e3be3b0eb86 = L.marker(
+                [45.521435, -73.844122],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_8a7ec6809f5b3845d080f2d47f55213f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85a0fc124a62fbb524138360b9d8ad21 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_af76f55b333ee26dc004028427063517 = $(`<div id="html_af76f55b333ee26dc004028427063517" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Présence de matières inconnues</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 31 mai 2018<br>           📁 <b>Dossier :</b> 301316810 Catégorie : 1<br>           📍 <b>Adresse :</b> Rivière des Prairies, rue Jeanne à la hauteur du pont Ile Bigras<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301316810" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_85a0fc124a62fbb524138360b9d8ad21.setContent(html_af76f55b333ee26dc004028427063517);
+            
+        
+
+        marker_2db1851bb441ac437aac1e3be3b0eb86.bindPopup(popup_85a0fc124a62fbb524138360b9d8ad21)
+        ;
+
+        
+    
+    
+            marker_2db1851bb441ac437aac1e3be3b0eb86.bindTooltip(
+                `<div>
+                     31 mai 2018 – Laval 
+				- Présence de matières inconnues
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2db1851bb441ac437aac1e3be3b0eb86.setIcon(icon_8a7ec6809f5b3845d080f2d47f55213f);
+            
+    
+            var marker_cff34cfce002979571a01670960f89bc = L.marker(
+                [45.64538, -73.643375],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_adffeecc845289c2a82552ca5d9018b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_223a8186ce96ba39b84b3c66a73dfcdf = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_b8e7969a1357a7d1d87605ab6b60c93a = $(`<div id="html_b8e7969a1357a7d1d87605ab6b60c93a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Signalement d'hydrocarbures</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 29 mars 2018<br>           📁 <b>Dossier :</b> 301297337 Catégorie : 1<br>           📍 <b>Adresse :</b> Près du 1605, Montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301297337" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_223a8186ce96ba39b84b3c66a73dfcdf.setContent(html_b8e7969a1357a7d1d87605ab6b60c93a);
+            
+        
+
+        marker_cff34cfce002979571a01670960f89bc.bindPopup(popup_223a8186ce96ba39b84b3c66a73dfcdf)
+        ;
+
+        
+    
+    
+            marker_cff34cfce002979571a01670960f89bc.bindTooltip(
+                `<div>
+                     29 mars 2018 – Laval 
+				- Signalement d'hydrocarbures
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cff34cfce002979571a01670960f89bc.setIcon(icon_adffeecc845289c2a82552ca5d9018b5);
+            
+    
+            var marker_9708b734c1973c663ad0920bd042f426 = L.marker(
+                [45.692982, -73.63311],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_d8fe1e1f581bf5440e1bbdc2b4b0433f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_713575c22bc75122c2142b61e23d0bd3 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_49b44cc26abc7dcf84b7c177466f31a4 = $(`<div id="html_49b44cc26abc7dcf84b7c177466f31a4" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Municipalité de Laval 
+ 				- Déraillement de train</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 12 octobre 2017<br>           📁 <b>Dossier :</b> 301270075 Catégorie : 2<br>           📍 <b>Adresse :</b> Pont ferroviaire entre Laval et Terrebonne au-dessus de la rivière des Mille Îles<br>           🏙️ <b>Municipalité :</b> Municipalité de Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301270075" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_713575c22bc75122c2142b61e23d0bd3.setContent(html_49b44cc26abc7dcf84b7c177466f31a4);
+            
+        
+
+        marker_9708b734c1973c663ad0920bd042f426.bindPopup(popup_713575c22bc75122c2142b61e23d0bd3)
+        ;
+
+        
+    
+    
+            marker_9708b734c1973c663ad0920bd042f426.bindTooltip(
+                `<div>
+                     12 octobre 2017 – Municipalité de Laval 
+				- Déraillement de trai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9708b734c1973c663ad0920bd042f426.setIcon(icon_d8fe1e1f581bf5440e1bbdc2b4b0433f);
+            
+    
+            var marker_666d57675c85a0d5d7b4fe2a241930d8 = L.marker(
+                [45.582875, -73.748693],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_ad79bbf8882e5c4ea9ed9628b3afaf9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2323091af749e8276a61cc68b68ed4d4 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d66bdbd1748c550bb0716c12601bcc2c = $(`<div id="html_d66bdbd1748c550bb0716c12601bcc2c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de matières dangereuses</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 12 octobre 2017<br>           📁 <b>Dossier :</b> 301269991 Catégorie : 1<br>           📍 <b>Adresse :</b> 2995, boulevard le Corbusier<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301269991" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2323091af749e8276a61cc68b68ed4d4.setContent(html_d66bdbd1748c550bb0716c12601bcc2c);
+            
+        
+
+        marker_666d57675c85a0d5d7b4fe2a241930d8.bindPopup(popup_2323091af749e8276a61cc68b68ed4d4)
+        ;
+
+        
+    
+    
+            marker_666d57675c85a0d5d7b4fe2a241930d8.bindTooltip(
+                `<div>
+                     12 octobre 2017 – Laval 
+				- Déversement de matières dangereuses
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_666d57675c85a0d5d7b4fe2a241930d8.setIcon(icon_ad79bbf8882e5c4ea9ed9628b3afaf9e);
+            
+    
+            var marker_24c479f9cf43b839deabb48232690f33 = L.marker(
+                [45.655793, -73.637545],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_7f06e341a29aa21858faaf7d2e07332d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b57268547f50bb8904f79b0011f92cc = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8e6fc425ebeaf33a7bcb409ffa5f3273 = $(`<div id="html_8e6fc425ebeaf33a7bcb409ffa5f3273" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Dépôt illicite de matières résiduelles</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 17 août 2016<br>           📁 <b>Dossier :</b> 301059870 Catégorie : 1<br>           📍 <b>Adresse :</b> Avenue Roger-Lortie (Lot 4 787 359)<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301059870" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2b57268547f50bb8904f79b0011f92cc.setContent(html_8e6fc425ebeaf33a7bcb409ffa5f3273);
+            
+        
+
+        marker_24c479f9cf43b839deabb48232690f33.bindPopup(popup_2b57268547f50bb8904f79b0011f92cc)
+        ;
+
+        
+    
+    
+            marker_24c479f9cf43b839deabb48232690f33.bindTooltip(
+                `<div>
+                     17 août 2016 – Laval 
+				- Dépôt illicite de matières résiduell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24c479f9cf43b839deabb48232690f33.setIcon(icon_7f06e341a29aa21858faaf7d2e07332d);
+            
+    
+            var marker_63da742c0fee5af7a2091c07fdd70e50 = L.marker(
+                [45.682468, -73.891196],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_b76c13750497cc7a8006d8b5a63b505c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b779f793020a14c669f9abc6ef0c072a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_88fc2ffa5ea45d79cb56aeea6a5262f0 = $(`<div id="html_88fc2ffa5ea45d79cb56aeea6a5262f0" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 14 décembre 2015<br>           📁 <b>Dossier :</b> 301005928 Catégorie : 1<br>           📍 <b>Adresse :</b> 521, 89ème avenue<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301005928" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b779f793020a14c669f9abc6ef0c072a.setContent(html_88fc2ffa5ea45d79cb56aeea6a5262f0);
+            
+        
+
+        marker_63da742c0fee5af7a2091c07fdd70e50.bindPopup(popup_b779f793020a14c669f9abc6ef0c072a)
+        ;
+
+        
+    
+    
+            marker_63da742c0fee5af7a2091c07fdd70e50.bindTooltip(
+                `<div>
+                     14 décembre 2015 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63da742c0fee5af7a2091c07fdd70e50.setIcon(icon_b76c13750497cc7a8006d8b5a63b505c);
+            
+    
+            var marker_ab8fb118cfdac0341d2bdac948c71dc7 = L.marker(
+                [45.569116, -73.672238],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_cfdc0e8d0fcee0c07ccd5664b0ffbcc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77a7abed9fb2cf46773aaab0994d603e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_6960f3a33ffe8d5eaf81d624563ce051 = $(`<div id="html_6960f3a33ffe8d5eaf81d624563ce051" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Bateau coulé</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 8 juillet 2015<br>           📁 <b>Dossier :</b> 300974456 Catégorie : 1<br>           📍 <b>Adresse :</b> 333, boulevard Lévesque Est<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300974456" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_77a7abed9fb2cf46773aaab0994d603e.setContent(html_6960f3a33ffe8d5eaf81d624563ce051);
+            
+        
+
+        marker_ab8fb118cfdac0341d2bdac948c71dc7.bindPopup(popup_77a7abed9fb2cf46773aaab0994d603e)
+        ;
+
+        
+    
+    
+            marker_ab8fb118cfdac0341d2bdac948c71dc7.bindTooltip(
+                `<div>
+                     8 juillet 2015 – Laval 
+				- Bateau coulé
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab8fb118cfdac0341d2bdac948c71dc7.setIcon(icon_cfdc0e8d0fcee0c07ccd5664b0ffbcc8);
+            
+    
+            var marker_70d90b1a32adc781e41155380b675bd4 = L.marker(
+                [45.685334, -73.647262],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_44c0ff9ea8b02eef03223da84a8d3ea1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd0a2f999686510b62afebcbe408fa60 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_93bbae63396655d37699a538d40f9585 = $(`<div id="html_93bbae63396655d37699a538d40f9585" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie suite à une explosion,</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 30 juin 2015<br>           📁 <b>Dossier :</b> 300972658 Catégorie : 2<br>           📍 <b>Adresse :</b> 5 000 boulevard des Milles-Îles<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300972658" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_dd0a2f999686510b62afebcbe408fa60.setContent(html_93bbae63396655d37699a538d40f9585);
+            
+        
+
+        marker_70d90b1a32adc781e41155380b675bd4.bindPopup(popup_dd0a2f999686510b62afebcbe408fa60)
+        ;
+
+        
+    
+    
+            marker_70d90b1a32adc781e41155380b675bd4.bindTooltip(
+                `<div>
+                     30 juin 2015 – Laval 
+				- Incendie suite à une explosion,
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70d90b1a32adc781e41155380b675bd4.setIcon(icon_44c0ff9ea8b02eef03223da84a8d3ea1);
+            
+    
+            var marker_36adb4a9e547717ec329a2061c94fe60 = L.marker(
+                [45.659653, -73.640188],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_641877b48d020cbc31bc7176520e8a68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3affee31a09025ddc51cedf5e24a0d1 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_5288de970ac4cbd70453fcf1db21b062 = $(`<div id="html_5288de970ac4cbd70453fcf1db21b062" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie impliquant des matières résiduelles,</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 octobre 2014<br>           📁 <b>Dossier :</b> 300921297 Catégorie : 2<br>           📍 <b>Adresse :</b> 2185, Montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300921297" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b3affee31a09025ddc51cedf5e24a0d1.setContent(html_5288de970ac4cbd70453fcf1db21b062);
+            
+        
+
+        marker_36adb4a9e547717ec329a2061c94fe60.bindPopup(popup_b3affee31a09025ddc51cedf5e24a0d1)
+        ;
+
+        
+    
+    
+            marker_36adb4a9e547717ec329a2061c94fe60.bindTooltip(
+                `<div>
+                     27 octobre 2014 – Laval 
+				- Incendie impliquant des matières rés
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36adb4a9e547717ec329a2061c94fe60.setIcon(icon_641877b48d020cbc31bc7176520e8a68);
+            
+    
+            var marker_47e4d6f063a96fa06c560feba5f001d4 = L.marker(
+                [45.60528, -73.729137],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_4d00485e1a70405bbe5ef80081f30113 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6a90519698e1823665940f69b222b7e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_cf07d50323d2016cb6bc16c1eb40fc9b = $(`<div id="html_cf07d50323d2016cb6bc16c1eb40fc9b" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 6 avril 2015<br>           📁 <b>Dossier :</b> 300952900 Catégorie : 1<br>           📍 <b>Adresse :</b> 1920, place de Tolède<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300952900" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_a6a90519698e1823665940f69b222b7e.setContent(html_cf07d50323d2016cb6bc16c1eb40fc9b);
+            
+        
+
+        marker_47e4d6f063a96fa06c560feba5f001d4.bindPopup(popup_a6a90519698e1823665940f69b222b7e)
+        ;
+
+        
+    
+    
+            marker_47e4d6f063a96fa06c560feba5f001d4.bindTooltip(
+                `<div>
+                     6 avril 2015 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_47e4d6f063a96fa06c560feba5f001d4.setIcon(icon_4d00485e1a70405bbe5ef80081f30113);
+            
+    
+            var marker_23b3dfdc434839d191a07d1b3fbfb9d1 = L.marker(
+                [45.640863, -73.621954],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_803382fd5d419d8ba10c8214dcc35b82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6862de970719e8022b27f11540f5231e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d05159a4de9e76fa08ba0b788dfe8edb = $(`<div id="html_d05159a4de9e76fa08ba0b788dfe8edb" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 20 mai 2015<br>           📁 <b>Dossier :</b> 300962524 Catégorie : 1<br>           📍 <b>Adresse :</b> Intersection de la 70ème Avenue et du boul. Lévesque<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300962524" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_6862de970719e8022b27f11540f5231e.setContent(html_d05159a4de9e76fa08ba0b788dfe8edb);
+            
+        
+
+        marker_23b3dfdc434839d191a07d1b3fbfb9d1.bindPopup(popup_6862de970719e8022b27f11540f5231e)
+        ;
+
+        
+    
+    
+            marker_23b3dfdc434839d191a07d1b3fbfb9d1.bindTooltip(
+                `<div>
+                     20 mai 2015 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23b3dfdc434839d191a07d1b3fbfb9d1.setIcon(icon_803382fd5d419d8ba10c8214dcc35b82);
+            
+    
+            var marker_426f65bb7903f9634f0ff7dc0109f930 = L.marker(
+                [45.665495, -73.572338],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_26a74572a99087ab0b8409f257b94262 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be7d579fb5ab554846420c7dd857f179 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8bb299bd51bdf98a28696a324a405769 = $(`<div id="html_8bb299bd51bdf98a28696a324a405769" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement d'huile</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 25 mars 2014<br>           📁 <b>Dossier :</b> T-13-2014-03-25-095 Catégorie : 1<br>           📍 <b>Adresse :</b> 350, rue Leroux<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2014-03-25-095" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_be7d579fb5ab554846420c7dd857f179.setContent(html_8bb299bd51bdf98a28696a324a405769);
+            
+        
+
+        marker_426f65bb7903f9634f0ff7dc0109f930.bindPopup(popup_be7d579fb5ab554846420c7dd857f179)
+        ;
+
+        
+    
+    
+            marker_426f65bb7903f9634f0ff7dc0109f930.bindTooltip(
+                `<div>
+                     25 mars 2014 – Laval 
+				- Déversement d'huile
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_426f65bb7903f9634f0ff7dc0109f930.setIcon(icon_26a74572a99087ab0b8409f257b94262);
+            
+    
+            var marker_b338bac36ea05216b0a63c7e0538ac2d = L.marker(
+                [45.536747, -73.730392],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_d0a171aa22a7fc5b9218e2fcbd4fc3a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ba34113f66f8d7f4142f46cd00a07bb = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_0dc7afb12553c97c9b1dd4862e6ffac7 = $(`<div id="html_0dc7afb12553c97c9b1dd4862e6ffac7" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Dépôt illicite de matières dangereuses</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 22 janvier 2013<br>           📁 <b>Dossier :</b> T-13-2013-01-22-68 Catégorie : 1<br>           📍 <b>Adresse :</b> 3410, boulevard Lévesque Ouest<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2013-01-22-68" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_5ba34113f66f8d7f4142f46cd00a07bb.setContent(html_0dc7afb12553c97c9b1dd4862e6ffac7);
+            
+        
+
+        marker_b338bac36ea05216b0a63c7e0538ac2d.bindPopup(popup_5ba34113f66f8d7f4142f46cd00a07bb)
+        ;
+
+        
+    
+    
+            marker_b338bac36ea05216b0a63c7e0538ac2d.bindTooltip(
+                `<div>
+                     22 janvier 2013 – Laval 
+				- Dépôt illicite de matières dangereus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b338bac36ea05216b0a63c7e0538ac2d.setIcon(icon_d0a171aa22a7fc5b9218e2fcbd4fc3a8);
+            
+    
+            var marker_ee643d6fd7ae2d882eca81fe248fecf1 = L.marker(
+                [45.558762, -73.840603],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_e32df491ea139e3f10f48344daf9794b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a9a7b5062a4b6e85ebfd7bc746972c9 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_55aab6bfee1f5a2e7529c6b09653329a = $(`<div id="html_55aab6bfee1f5a2e7529c6b09653329a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 16 juillet 2012<br>           📁 <b>Dossier :</b> T-13-2012-07-16-21 Catégorie : 1<br>           📍 <b>Adresse :</b> 4341, boulevard Dagenais ouest<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2012-07-16-21" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2a9a7b5062a4b6e85ebfd7bc746972c9.setContent(html_55aab6bfee1f5a2e7529c6b09653329a);
+            
+        
+
+        marker_ee643d6fd7ae2d882eca81fe248fecf1.bindPopup(popup_2a9a7b5062a4b6e85ebfd7bc746972c9)
+        ;
+
+        
+    
+    
+            marker_ee643d6fd7ae2d882eca81fe248fecf1.bindTooltip(
+                `<div>
+                     16 juillet 2012 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee643d6fd7ae2d882eca81fe248fecf1.setIcon(icon_e32df491ea139e3f10f48344daf9794b);
+            
+    
+            var marker_c87f81e72a587e56798c2f29147886d2 = L.marker(
+                [45.616128, -73.659249],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_cc0d50eff1e824a18fee021a035df54c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2c826e24d37f6530e872ad19ba87d48 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_79dae11b11bb47016b91a9d45cdc5910 = $(`<div id="html_79dae11b11bb47016b91a9d45cdc5910" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 27 février 2012<br>           📁 <b>Dossier :</b> T-13-2012-02-27-79 Catégorie : 1<br>           📍 <b>Adresse :</b> 1220, rue Tellier<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2012-02-27-79" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_c2c826e24d37f6530e872ad19ba87d48.setContent(html_79dae11b11bb47016b91a9d45cdc5910);
+            
+        
+
+        marker_c87f81e72a587e56798c2f29147886d2.bindPopup(popup_c2c826e24d37f6530e872ad19ba87d48)
+        ;
+
+        
+    
+    
+            marker_c87f81e72a587e56798c2f29147886d2.bindTooltip(
+                `<div>
+                     27 février 2012 – Laval 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c87f81e72a587e56798c2f29147886d2.setIcon(icon_cc0d50eff1e824a18fee021a035df54c);
+            
+    
+            var marker_2523743e4c2fde629949db79c0c3ee48 = L.marker(
+                [45.582222, -73.747778],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_ed10f7dee5e41c7926a3f0f14c58840f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a08e6163e126f8e0aa44f4c00c2ff5a6 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_0efe43dd02af37639a6e994d503b9673 = $(`<div id="html_0efe43dd02af37639a6e994d503b9673" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 6 juillet 2011<br>           📁 <b>Dossier :</b> T-13-2011-07-06-028 Catégorie : 2<br>           📍 <b>Adresse :</b> 2965, boulevard Le Corbusier<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2011-07-06-028" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_a08e6163e126f8e0aa44f4c00c2ff5a6.setContent(html_0efe43dd02af37639a6e994d503b9673);
+            
+        
+
+        marker_2523743e4c2fde629949db79c0c3ee48.bindPopup(popup_a08e6163e126f8e0aa44f4c00c2ff5a6)
+        ;
+
+        
+    
+    
+            marker_2523743e4c2fde629949db79c0c3ee48.bindTooltip(
+                `<div>
+                     6 juillet 2011 – Laval 
+				- Incendie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2523743e4c2fde629949db79c0c3ee48.setIcon(icon_ed10f7dee5e41c7926a3f0f14c58840f);
+            
+    
+            var marker_b40dbe0f90ef7c8f613e69c6591e4757 = L.marker(
+                [45.589378, -73.736075],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_8180a42328c927297c43e154df70cf9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_705370f619828e1edeefaad246187226 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_785cbd06e6f305a35cd68d93293c1896 = $(`<div id="html_785cbd06e6f305a35cd68d93293c1896" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Incendie impliquant des matières dangereuses</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 15 novembre 2011<br>           📁 <b>Dossier :</b> T-13-2011-11-15-60 Catégorie : 1<br>           📍 <b>Adresse :</b> 872, rue Berlier<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2011-11-15-60" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_705370f619828e1edeefaad246187226.setContent(html_785cbd06e6f305a35cd68d93293c1896);
+            
+        
+
+        marker_b40dbe0f90ef7c8f613e69c6591e4757.bindPopup(popup_705370f619828e1edeefaad246187226)
+        ;
+
+        
+    
+    
+            marker_b40dbe0f90ef7c8f613e69c6591e4757.bindTooltip(
+                `<div>
+                     15 novembre 2011 – Laval 
+				- Incendie impliquant des matières dan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b40dbe0f90ef7c8f613e69c6591e4757.setIcon(icon_8180a42328c927297c43e154df70cf9a);
+            
+    
+            var marker_b1762ec6dba74f17d21b9e2793acef4d = L.marker(
+                [45.573304, -73.686748],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_1f3d58dd4d57e7f4773ee490e1d3d39d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c44b3c87afca429ea03826a942c166c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_3d97d95b8df23faad1c2caf2cf00083c = $(`<div id="html_3d97d95b8df23faad1c2caf2cf00083c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval (Secteur Pont-Viau) 
+ 				- Signalement d'une matière sur un lieu sensible</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 juin 2011<br>           📁 <b>Dossier :</b> N-13-2011-06-13-001 Catégorie : 1<br>           📍 <b>Adresse :</b> Baie du Marigot<br>           🏙️ <b>Municipalité :</b> Laval (Secteur Pont-Viau)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=N-13-2011-06-13-001" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_1c44b3c87afca429ea03826a942c166c.setContent(html_3d97d95b8df23faad1c2caf2cf00083c);
+            
+        
+
+        marker_b1762ec6dba74f17d21b9e2793acef4d.bindPopup(popup_1c44b3c87afca429ea03826a942c166c)
+        ;
+
+        
+    
+    
+            marker_b1762ec6dba74f17d21b9e2793acef4d.bindTooltip(
+                `<div>
+                     13 juin 2011 – Laval (Secteur Pont-Viau) 
+				- Signalement d'un
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1762ec6dba74f17d21b9e2793acef4d.setIcon(icon_1f3d58dd4d57e7f4773ee490e1d3d39d);
+            
+    
+            var marker_97a943fd4cc418ee504d4c67a1578284 = L.marker(
+                [45.65697, -73.639027],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_4921836347893de98d96715e9b917ca2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0dbd0ef5f9efef298f232a4d149dd07 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_6320d261d28ea2eec1fd2ef5bea1fa2f = $(`<div id="html_6320d261d28ea2eec1fd2ef5bea1fa2f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Travaux en milieu hydrique</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 21 août 2010<br>           📁 <b>Dossier :</b> T-13-2010-08-21-43 Catégorie : 1<br>           📍 <b>Adresse :</b> Montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-08-21-43" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_e0dbd0ef5f9efef298f232a4d149dd07.setContent(html_6320d261d28ea2eec1fd2ef5bea1fa2f);
+            
+        
+
+        marker_97a943fd4cc418ee504d4c67a1578284.bindPopup(popup_e0dbd0ef5f9efef298f232a4d149dd07)
+        ;
+
+        
+    
+    
+            marker_97a943fd4cc418ee504d4c67a1578284.bindTooltip(
+                `<div>
+                     21 août 2010 – Laval 
+				- Travaux en milieu hydrique
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97a943fd4cc418ee504d4c67a1578284.setIcon(icon_4921836347893de98d96715e9b917ca2);
+            
+    
+            var marker_aa82ce2bc552267507758dec36055e1f = L.marker(
+                [45.65697, -73.639027],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_a668562e3c8935e2279a12b66d72f82f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1eac05dc9a2b52a948cf7e741cc3613c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d32c15be01758be8ff6006ce64230633 = $(`<div id="html_d32c15be01758be8ff6006ce64230633" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Présence de mousse sur un cours d'eau</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 9 août 2010<br>           📁 <b>Dossier :</b> T-13-2010-08-09-40 Catégorie : 1<br>           📍 <b>Adresse :</b> Rivière des Prairies face à la Montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-08-09-40" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_1eac05dc9a2b52a948cf7e741cc3613c.setContent(html_d32c15be01758be8ff6006ce64230633);
+            
+        
+
+        marker_aa82ce2bc552267507758dec36055e1f.bindPopup(popup_1eac05dc9a2b52a948cf7e741cc3613c)
+        ;
+
+        
+    
+    
+            marker_aa82ce2bc552267507758dec36055e1f.bindTooltip(
+                `<div>
+                     9 août 2010 – Laval 
+				- Présence de mousse sur un cours d'ea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa82ce2bc552267507758dec36055e1f.setIcon(icon_a668562e3c8935e2279a12b66d72f82f);
+            
+    
+            var marker_6559ea301c90b62d74f44f0ef2cc1843 = L.marker(
+                [45.613342, -73.671437],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_c55edd298d7747a294b46d89935fbf1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d25e7ff1d8ea2692d34e549f35e156bf = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a1285650b7881a8c6194a1f38b3764e8 = $(`<div id="html_a1285650b7881a8c6194a1f38b3764e8" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement d'eaux usées</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 mai 2011<br>           📁 <b>Dossier :</b> T-13-2011-05-13-008 Catégorie : 1<br>           📍 <b>Adresse :</b> 3949, boulevard Leman<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2011-05-13-008" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_d25e7ff1d8ea2692d34e549f35e156bf.setContent(html_a1285650b7881a8c6194a1f38b3764e8);
+            
+        
+
+        marker_6559ea301c90b62d74f44f0ef2cc1843.bindPopup(popup_d25e7ff1d8ea2692d34e549f35e156bf)
+        ;
+
+        
+    
+    
+            marker_6559ea301c90b62d74f44f0ef2cc1843.bindTooltip(
+                `<div>
+                     13 mai 2011 – Laval 
+				- Déversement d'eaux usées
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6559ea301c90b62d74f44f0ef2cc1843.setIcon(icon_c55edd298d7747a294b46d89935fbf1d);
+            
+    
+            var marker_00a9153214e97dc8e032f6649612348c = L.marker(
+                [45.629301, -73.644664],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_a6fa78269f31d1953dd362d1db7da830 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_515d08bcaa1d68f41c1fff6d7d83a974 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7653c1782721980805c0193b10f1952d = $(`<div id="html_7653c1782721980805c0193b10f1952d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval (secteur St-François) 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 26 février 2010<br>           📁 <b>Dossier :</b> T-13-2010-02-26-133 Catégorie : 2<br>           📍 <b>Adresse :</b> Ruisseau Lapinière<br>           🏙️ <b>Municipalité :</b> Laval (secteur St-François)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-02-26-133" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_515d08bcaa1d68f41c1fff6d7d83a974.setContent(html_7653c1782721980805c0193b10f1952d);
+            
+        
+
+        marker_00a9153214e97dc8e032f6649612348c.bindPopup(popup_515d08bcaa1d68f41c1fff6d7d83a974)
+        ;
+
+        
+    
+    
+            marker_00a9153214e97dc8e032f6649612348c.bindTooltip(
+                `<div>
+                     26 février 2010 – Laval (secteur St-François) 
+				- Déversement de
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00a9153214e97dc8e032f6649612348c.setIcon(icon_a6fa78269f31d1953dd362d1db7da830);
+            
+    
+            var marker_e99c28bbdd3fc95d15cb144bbf90968b = L.marker(
+                [45.578592, -73.825155],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_18342e40ae71b2b8c764c52ebd084fb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc3ee91a415bb8d7a3ef820de45e67ff = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_79aff12c56955c60bedd735b3620b8f3 = $(`<div id="html_79aff12c56955c60bedd735b3620b8f3" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 30 août 2009<br>           📁 <b>Dossier :</b> T-13-2009-08-30-70 Catégorie : 1<br>           📍 <b>Adresse :</b> Boulevard Sainte-Rose<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2009-08-30-70" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_cc3ee91a415bb8d7a3ef820de45e67ff.setContent(html_79aff12c56955c60bedd735b3620b8f3);
+            
+        
+
+        marker_e99c28bbdd3fc95d15cb144bbf90968b.bindPopup(popup_cc3ee91a415bb8d7a3ef820de45e67ff)
+        ;
+
+        
+    
+    
+            marker_e99c28bbdd3fc95d15cb144bbf90968b.bindTooltip(
+                `<div>
+                     30 août 2009 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e99c28bbdd3fc95d15cb144bbf90968b.setIcon(icon_18342e40ae71b2b8c764c52ebd084fb2);
+            
+    
+            var marker_11821c8c416dc99a663fdde2e3cd9338 = L.marker(
+                [45.520468, -73.856853],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_c683595b7a41c2ec737c215f59ef9a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30365c23bf88ded1181c0e56344f6016 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_6ed9bb42b681da12da66fa6c5e6c6896 = $(`<div id="html_6ed9bb42b681da12da66fa6c5e6c6896" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 13 août 2009<br>           📁 <b>Dossier :</b> T-13-2009-08-13-61 Catégorie : 1<br>           📍 <b>Adresse :</b> Chemin du Tour<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2009-08-13-61" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_30365c23bf88ded1181c0e56344f6016.setContent(html_6ed9bb42b681da12da66fa6c5e6c6896);
+            
+        
+
+        marker_11821c8c416dc99a663fdde2e3cd9338.bindPopup(popup_30365c23bf88ded1181c0e56344f6016)
+        ;
+
+        
+    
+    
+            marker_11821c8c416dc99a663fdde2e3cd9338.bindTooltip(
+                `<div>
+                     13 août 2009 – Laval 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11821c8c416dc99a663fdde2e3cd9338.setIcon(icon_c683595b7a41c2ec737c215f59ef9a0c);
+            
+    
+            var marker_8d0eb3ef04c4de4d132dbca789983e1f = L.marker(
+                [45.631544, -73.640488],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_de43ef48eec7239adb1e17dc110ba773 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d95b469d5d1e6dcbb2174f9eb00bf4f6 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_cdec3bebe5574b346e8697460584d516 = $(`<div id="html_cdec3bebe5574b346e8697460584d516" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement d'hydrocarbures</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 17 mars 2009<br>           📁 <b>Dossier :</b> T-13-2009-03-17-141 Catégorie : 1<br>           📍 <b>Adresse :</b> 1100, Montée Masson<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2009-03-17-141" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_d95b469d5d1e6dcbb2174f9eb00bf4f6.setContent(html_cdec3bebe5574b346e8697460584d516);
+            
+        
+
+        marker_8d0eb3ef04c4de4d132dbca789983e1f.bindPopup(popup_d95b469d5d1e6dcbb2174f9eb00bf4f6)
+        ;
+
+        
+    
+    
+            marker_8d0eb3ef04c4de4d132dbca789983e1f.bindTooltip(
+                `<div>
+                     17 mars 2009 – Laval 
+				- Déversement d'hydrocarbures
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d0eb3ef04c4de4d132dbca789983e1f.setIcon(icon_de43ef48eec7239adb1e17dc110ba773);
+            
+    
+            var marker_d006fc31ef602a5d3d2131938a5a9af5 = L.marker(
+                [45.586461, -73.73771],
+                {
+}
+            ).addTo(marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343);
+        
+    
+            var icon_0467dc426759949a021d9d21cb64ee56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_187ba57376d2718fa7986a786bc467c3 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_30cd2252fdfb06b575755a9e04d35776 = $(`<div id="html_30cd2252fdfb06b575755a9e04d35776" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:290px">           <b style="color:#1a5276">Laval 
+ 				- Déversement d'asphalte liquide lors d'un accident routier</b><br>           <hr style="margin:4px 0">           📅 <b>Date :</b> 5 juin 2008<br>           📁 <b>Dossier :</b> T-13-2008-06-05-30 Catégorie : 1<br>           📍 <b>Adresse :</b> Dans le terre-plein central de l'autoroute 440, direction ouest, à l'ouest du boulevard industriel<br>           🏙️ <b>Municipalité :</b> Laval<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2008-06-05-30" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_187ba57376d2718fa7986a786bc467c3.setContent(html_30cd2252fdfb06b575755a9e04d35776);
+            
+        
+
+        marker_d006fc31ef602a5d3d2131938a5a9af5.bindPopup(popup_187ba57376d2718fa7986a786bc467c3)
+        ;
+
+        
+    
+    
+            marker_d006fc31ef602a5d3d2131938a5a9af5.bindTooltip(
+                `<div>
+                     5 juin 2008 – Laval 
+				- Déversement d'asphalte liquide lors 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d006fc31ef602a5d3d2131938a5a9af5.setIcon(icon_0467dc426759949a021d9d21cb64ee56);
+            
+    
+            marker_cluster_9f9ab3d1eccc8d9a6a9f5344bf17b343.addTo(map_37d4c643ad1d2d3f14439315152afa69);
+        
+</script>
+</html>
