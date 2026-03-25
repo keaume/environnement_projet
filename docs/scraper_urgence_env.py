@@ -6,12 +6,16 @@ Scraper - Interventions d'urgence environnementale du MELCCFP (Québec)
 =====================================================================
 STRATÉGIE DELTA + NOMINATIM (géocodage 100% gratuit)
 -----------------------------------------------------
-- cache_fiches.json    → accumule TOUTES les fiches (jamais effacé)
-- cache_geocode.json   → accumule TOUS les géocodages (jamais effacé)
+- cache_fiches.json    → accumule TOUTES les fiches
+- cache_geocode.json   → accumule TOUS les géocodages
 - Nominatim (OpenStreetMap) remplace Google → 0 $
 """
 
-import os, time, csv, re, json
+import os
+import time
+import csv
+import re
+import json
 import requests
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -20,29 +24,31 @@ from collections import defaultdict
 import folium
 from folium.plugins import MarkerCluster
 from tqdm import tqdm
-
 from shapely.geometry import Point, shape
 
 
 # ──────────────────────────────────────────────────────────────────
 # CONFIG
 # ──────────────────────────────────────────────────────────────────
-BASE_URL  = "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement"
+BASE_URL = "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement"
 LISTE_URL = f"{BASE_URL}/resultats_region.asp"
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 NOMINATIM_EMAIL = "antoine.toenz@gmail.com"
 
-MAX_THREADS  = 10
+MAX_THREADS = 10
 DELAI_SCRAPE = 0.15
-DELAI_NOMINATIM = 1.1  # Nominatim impose 1 requête/seconde max
+DELAI_NOMINATIM = 1.1  # Nominatim: max ~1 req/sec
 
-CACHE_SCRAPE  = "cache_fiches.json"
-CACHE_GEOCODE = "cache_geocode.json"
-GEOJSON_FILE  = "regions_quebec.geojson"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+print("BASE_DIR =", BASE_DIR)
+OUTPUT_DIR = BASE_DIR
+print("OUTPUT_DIR =", OUTPUT_DIR)
 
-OUTPUT_DIR = "docs"
-STRICT_REGION = False
+CACHE_SCRAPE = os.path.join(BASE_DIR, "cache_fiches.json")
+CACHE_GEOCODE = os.path.join(BASE_DIR, "cache_geocode.json")
+GEOJSON_FILE = os.path.join(BASE_DIR, "regions_quebec.geojson")
+STRICT_REGION = True
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; recherche-academique/1.0)"
@@ -61,7 +67,7 @@ ZOOM_REGIONS = {
     "Nord-du-Québec":                (53.0,  -76.0,  5),
     "Gaspésie—Îles-de-la-Madeleine": (48.5,  -65.5,  7),
     "Chaudière-Appalaches":          (46.3,  -70.8,  8),
-    "Laval":                         (45.57, -73.75,12),
+    "Laval":                         (45.57, -73.75, 12),
     "Lanaudière":                    (46.0,  -73.5,  9),
     "Laurentides":                   (46.2,  -74.5,  8),
     "Montérégie":                    (45.4,  -73.1,  9),
@@ -80,6 +86,10 @@ COULEURS = {
     "travaux": "green",
 }
 
+
+# ──────────────────────────────────────────────────────────────────
+# HELPERS
+# ──────────────────────────────────────────────────────────────────
 def couleur(nom: str) -> str:
     n = (nom or "").lower()
     for k, v in COULEURS.items():
@@ -87,11 +97,22 @@ def couleur(nom: str) -> str:
             return v
     return "lightgray"
 
+
 def nom_fichier(region: str) -> str:
     tbl = str.maketrans("àâäéèêëîïôùûüç", "aaaeeeeiioouuc")
     r = (region or "").lower().translate(tbl).replace("—", "-")
     r = re.sub(r"[^a-z0-9-]", "_", r)
     return f"carte_{r}.html"
+
+
+def adresse_non_postale(adresse: str) -> bool:
+    a = (adresse or "").lower()
+    motifs = [
+        "lot ", " lots ", "cadastre", "concession", "rang ", "route forestière",
+        "chemin forestier", "km ", "kilomètre", "pres de ", "près de ",
+        "a environ", "à environ", "intersection", "parcelle"
+    ]
+    return any(m in a for m in motifs)
 
 
 # ──────────────────────────────────────────────────────────────────
@@ -109,6 +130,7 @@ def charger_polygones():
     print(f"   → {len(polygones)} polygones chargés.")
     return polygones
 
+
 def point_dans_region(polygones, region, lat, lon) -> bool:
     if lat is None or lon is None:
         return False
@@ -118,7 +140,7 @@ def point_dans_region(polygones, region, lat, lon) -> bool:
 
 
 # ──────────────────────────────────────────────────────────────────
-# CACHE SCRAPING
+# CACHE
 # ──────────────────────────────────────────────────────────────────
 def charger_cache_scrape() -> dict:
     if not os.path.exists(CACHE_SCRAPE):
@@ -133,9 +155,25 @@ def charger_cache_scrape() -> dict:
     except Exception:
         return {}
 
+
 def sauver_cache_scrape(cache_dict: dict):
     with open(CACHE_SCRAPE, "w", encoding="utf-8") as f:
         json.dump(cache_dict, f, ensure_ascii=False, indent=2)
+
+
+def charger_cache_geocode():
+    if os.path.exists(CACHE_GEOCODE):
+        try:
+            with open(CACHE_GEOCODE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def sauver_cache_geocode(cache: dict):
+    with open(CACHE_GEOCODE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
 # ──────────────────────────────────────────────────────────────────
@@ -146,18 +184,22 @@ def get_regions():
     resp = requests.get(LISTE_URL, headers=HEADERS, timeout=30)
     resp.encoding = "utf-8"
     soup = BeautifulSoup(resp.text, "html.parser")
+
     regions = []
     sel = soup.find("select")
     if not sel:
         print("⚠️ Impossible de trouver la liste des régions.")
         return regions
+
     for opt in sel.find_all("option"):
         v = (opt.get("value") or "").strip()
         nom = opt.get_text(strip=True)
         if v and v not in ("0", "") and nom:
             regions.append({"code": v, "nom": nom})
+
     print(f"   → {len(regions)} régions trouvées.")
     return regions
+
 
 def get_urls_region(region):
     items = []
@@ -166,6 +208,7 @@ def get_urls_region(region):
         resp = requests.post(LISTE_URL, data=data, headers=HEADERS, timeout=60)
         resp.encoding = "utf-8"
         soup = BeautifulSoup(resp.text, "html.parser")
+
         for a in soup.find_all("a", href=True):
             href = a["href"]
             low = href.lower()
@@ -173,13 +216,16 @@ def get_urls_region(region):
                 texte = a.get_text(strip=True)
                 if not texte:
                     continue
+
                 url = href if href.startswith("http") else BASE_URL + "/" + href.lstrip("/")
                 parent = a.find_parent("tr")
                 date_str = ""
+
                 if parent:
                     tds = parent.find_all("td")
                     if tds:
                         date_str = tds[0].get_text(strip=True)
+
                 items.append({
                     "region": region["nom"],
                     "evenement_liste": texte,
@@ -188,82 +234,85 @@ def get_urls_region(region):
                 })
     except Exception as e:
         print(f"⚠️ Erreur URL {region['nom']}: {e}")
+
     time.sleep(DELAI_SCRAPE)
     return items
 
+
 def scraper_fiche(item):
     result = {
-        "region":        item.get("region", ""),
-        "evenement":     item.get("evenement_liste", ""),
-        "date":          item.get("date_liste", ""),
-        "no_dossier":    "",
-        "adresse":       "",
-        "municipalite":  "",
-        "url":           item.get("url", ""),
-        "lat":           None,
-        "lon":           None,
-        "precision":     "",
+        "region": item.get("region", ""),
+        "evenement": item.get("evenement_liste", ""),
+        "date": item.get("date_liste", ""),
+        "no_dossier": "",
+        "adresse": "",
+        "municipalite": "",
+        "url": item.get("url", ""),
+        "lat": None,
+        "lon": None,
+        "precision": "",
         "geocode_query": ""
     }
+
     try:
         resp = requests.get(result["url"], headers=HEADERS, timeout=30)
         resp.encoding = "utf-8"
         soup = BeautifulSoup(resp.text, "html.parser")
+
         champs = {}
         for row in soup.find_all("tr"):
             cells = row.find_all("td")
             if len(cells) >= 2:
                 label = cells[0].get_text(strip=True).lower().rstrip(":").strip()
-                val   = cells[1].get_text(" ", strip=True)
+                val = cells[1].get_text(" ", strip=True)
                 champs[label] = val
+
         mapping = {
-            "date":         ["date de signalement de l'événement", "date de signalement", "date"],
-            "no_dossier":   ["numéro de dossier", "numero de dossier", "dossier"],
-            "adresse":      ["lieu de l'événement", "lieu de l evenement", "adresse", "lieu"],
+            "date": ["date de signalement de l'événement", "date de signalement", "date"],
+            "no_dossier": ["numéro de dossier", "numero de dossier", "dossier"],
+            "adresse": ["lieu de l'événement", "lieu de l evenement", "adresse", "lieu"],
             "municipalite": ["municipalité ou territoire", "municipalite", "ville"],
         }
+
         for champ, cles in mapping.items():
             for cle in cles:
                 if champs.get(cle):
                     result[champ] = champs[cle]
                     break
+
         txt = soup.get_text(" ", strip=True)
+
         if not result["date"]:
             m = re.search(r"Date de signalement[^:]*:\s*([^\n|]{5,40})", txt, re.I)
-            if m: result["date"] = m.group(1).strip()
+            if m:
+                result["date"] = m.group(1).strip()
+
         if not result["adresse"]:
             m = re.search(r"Lieu de l.?événement\s*:\s*([^\n|]+)", txt, re.I)
-            if m: result["adresse"] = m.group(1).strip()
+            if m:
+                result["adresse"] = m.group(1).strip()
+
         if not result["municipalite"]:
             m = re.search(r"Municipalit[eé][^:]*:\s*([^\n|]+)", txt, re.I)
-            if m: result["municipalite"] = m.group(1).strip()
+            if m:
+                result["municipalite"] = m.group(1).strip()
+
         if not result["no_dossier"]:
             m = re.search(r"(?:Numéro de dossier|Dossier)\s*:\s*(\d+)", txt, re.I)
-            if m: result["no_dossier"] = m.group(1).strip()
+            if m:
+                result["no_dossier"] = m.group(1).strip()
+
     except Exception:
         pass
+
     time.sleep(DELAI_SCRAPE)
     return result
 
 
 # ──────────────────────────────────────────────────────────────────
-# GEOCODAGE NOMINATIM (gratuit, 1 req/sec max)
+# NOMINATIM
 # ──────────────────────────────────────────────────────────────────
-def charger_cache_geocode():
-    if os.path.exists(CACHE_GEOCODE):
-        try:
-            with open(CACHE_GEOCODE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return {}
-    return {}
-
-def sauver_cache_geocode(cache: dict):
-    with open(CACHE_GEOCODE, "w", encoding="utf-8") as f:
-        json.dump(cache, f, ensure_ascii=False, indent=2)
-
 def geocode_nominatim(query: str, cache: dict):
-    """Géocode via Nominatim avec cache persistant. Gratuit."""
     if query in cache:
         c = cache[query]
         return c.get("lat"), c.get("lon"), c.get("display_name", "")
@@ -298,26 +347,24 @@ def geocode_nominatim(query: str, cache: dict):
 
 
 # ──────────────────────────────────────────────────────────────────
-# ÉTAPE 1 : Extraire coordonnées GPS depuis le champ adresse
+# GPS
 # ──────────────────────────────────────────────────────────────────
 def extraire_coords_gps(adresse):
-    """Retourne (lat, lon) si l'adresse contient des coordonnées GPS, sinon None."""
-
-    # Format DMS : 48°22'02.7"N 68°14'14.5"W  ou  48°22'02.7"N 68°14'14.5"O
     dms = re.search(
         r'(\d{1,3})[°º](\d{1,2})[\'′](\d{1,2}(?:[.,]\d+)?)[\"″]?\s*([NS])\s+'
         r'(\d{1,3})[°º](\d{1,2})[\'′](\d{1,2}(?:[.,]\d+)?)[\"″]?\s*([WOEoe])',
         adresse
     )
     if dms:
-        lat = int(dms.group(1)) + int(dms.group(2))/60 + float(dms.group(3).replace(',','.'))/3600
-        if dms.group(4).upper() == 'S': lat = -lat
-        lon = int(dms.group(5)) + int(dms.group(6))/60 + float(dms.group(7).replace(',','.'))/3600
-        if dms.group(8).upper() in ('W', 'O'): lon = -lon
+        lat = int(dms.group(1)) + int(dms.group(2))/60 + float(dms.group(3).replace(',', '.'))/3600
+        if dms.group(4).upper() == 'S':
+            lat = -lat
+        lon = int(dms.group(5)) + int(dms.group(6))/60 + float(dms.group(7).replace(',', '.'))/3600
+        if dms.group(8).upper() in ('W', 'O'):
+            lon = -lon
         if 44 < lat < 65 and -82 < lon < -55:
             return lat, lon
 
-    # Format décimal avec lettre : 48.337576°N et 65.983899°O
     dec_letter = re.search(
         r'(\d{2,3}[.,]\d+)[°\s]*([NS])\s*(?:et|and|,|;)\s*(\d{2,3}[.,]\d+)[°\s]*([WOEoe])',
         adresse, re.I
@@ -325,12 +372,13 @@ def extraire_coords_gps(adresse):
     if dec_letter:
         lat = float(dec_letter.group(1).replace(',', '.'))
         lon = float(dec_letter.group(3).replace(',', '.'))
-        if dec_letter.group(2).upper() == 'S': lat = -lat
-        if dec_letter.group(4).upper() in ('W', 'O'): lon = -lon
+        if dec_letter.group(2).upper() == 'S':
+            lat = -lat
+        if dec_letter.group(4).upper() in ('W', 'O'):
+            lon = -lon
         if 44 < lat < 65 and -82 < lon < -55:
             return lat, lon
 
-    # Format décimal pur : 47,7589984; -73,0412021  ou  47.758; -73.041
     dec_pure = re.search(
         r'(-?\d{2,3}[.,]\d{4,})\s*[;,]\s*(-?\d{2,3}[.,]\d{4,})',
         adresse
@@ -343,29 +391,30 @@ def extraire_coords_gps(adresse):
         if 44 < b < 65 and -82 < a < -55:
             return b, a
 
-    # Format GéoNAD83 : 48deg 20,646'N ; 71deg 11.663' O
     geo = re.search(
         r'(\d{1,3})deg\s*(\d{1,2}[.,]\d+)[\'′]?\s*([NS])\s*[;,]\s*'
         r'(\d{1,3})deg\s*(\d{1,2}[.,]\d+)[\'′]?\s*([WOEoe])',
         adresse, re.I
     )
     if geo:
-        lat = int(geo.group(1)) + float(geo.group(2).replace(',', '.'))/60
-        if geo.group(3).upper() == 'S': lat = -lat
-        lon = int(geo.group(4)) + float(geo.group(5).replace(',', '.'))/60
-        if geo.group(6).upper() in ('W', 'O'): lon = -lon
+        lat = int(geo.group(1)) + float(geo.group(2).replace(',', '.')) / 60
+        if geo.group(3).upper() == 'S':
+            lat = -lat
+        lon = int(geo.group(4)) + float(geo.group(5).replace(',', '.')) / 60
+        if geo.group(6).upper() in ('W', 'O'):
+            lon = -lon
         if 44 < lat < 65 and -82 < lon < -55:
             return lat, lon
 
-    # Format « 52 05.43N  071 24.48W »
     mtm = re.search(
         r'(\d{2})\s+(\d{2}[.,]\d+)\s*([NS])\s+(\d{3})\s+(\d{2}[.,]\d+)\s*([WO])',
         adresse
     )
     if mtm:
-        lat = int(mtm.group(1)) + float(mtm.group(2).replace(',', '.'))/60
-        lon = int(mtm.group(4)) + float(mtm.group(5).replace(',', '.'))/60
-        if mtm.group(3).upper() == 'S': lat = -lat
+        lat = int(mtm.group(1)) + float(mtm.group(2).replace(',', '.')) / 60
+        lon = int(mtm.group(4)) + float(mtm.group(5).replace(',', '.')) / 60
+        if mtm.group(3).upper() == 'S':
+            lat = -lat
         lon = -lon
         if 44 < lat < 65 and -82 < lon < -55:
             return lat, lon
@@ -374,17 +423,13 @@ def extraire_coords_gps(adresse):
 
 
 # ──────────────────────────────────────────────────────────────────
-# ÉTAPE 2 : Simplifier la municipalité pour Nominatim
+# MUNICIPALITÉ
 # ──────────────────────────────────────────────────────────────────
 def simplifier_municipalite(municipalite):
-    """
-    Transforme 'Ville de Saguenay (secteur Jonquière)' → 'Jonquière, Québec'
-    Transforme 'Gatineau, secteur Hull' → 'Gatineau, Québec'
-    Retourne None si c'est un TNO/réserve/territoire sans ville.
-    """
-    m = municipalite.strip()
+    m = (municipalite or "").strip()
+    if not m:
+        return None
 
-    # Irrécupérables : TNO, réserves, territoires sans nom de ville
     if re.match(
         r'(TNO\b|Territoire non organisé|Réserve faunique|Réservoir|'
         r'Parc (?:national|de la|du)|MRC de\b|Entre |Près de |À environ )',
@@ -392,14 +437,14 @@ def simplifier_municipalite(municipalite):
     ):
         return None
 
-    # Enlever préfixes courants
     m = re.sub(
         r'^(Ville de|Municipalité de|Municipalité Régionale de Comté du?|'
         r'Municipalité|Ville|Agglomération de)\s+',
-        '', m, flags=re.I
+        '',
+        m,
+        flags=re.I
     )
 
-    # Extraire secteur entre parenthèses : "Saguenay (secteur Jonquière)" → "Jonquière"
     secteur = re.search(
         r'\((?:secteur|arr\.|arrondissement|Secteur|Quartier|quartier)\s+([^)]+)\)',
         m, re.I
@@ -407,19 +452,10 @@ def simplifier_municipalite(municipalite):
     if secteur:
         return secteur.group(1).strip() + ', Québec'
 
-    # Enlever "(secteur X)" ou tout contenu entre parenthèses
     m = re.sub(r'\s*\([^)]+\)', '', m).strip()
-
-    # Enlever ", secteur X" : "Gatineau, secteur Hull" → "Gatineau"
     m = re.sub(r',?\s+secteur\s+.*', '', m, flags=re.I).strip()
-
-    # Plusieurs municipalités séparées par newline → prendre la première
     m = m.split('\n')[0].strip()
-
-    # Si plusieurs villes séparées par " et " → prendre la première
     m = re.split(r'\s+et\s+', m)[0].strip()
-
-    # Enlever suffixes ", MRC de ..."
     m = re.sub(r',?\s+MRC\s+.*', '', m, flags=re.I).strip()
 
     if not m:
@@ -433,9 +469,9 @@ def simplifier_municipalite(municipalite):
 # ──────────────────────────────────────────────────────────────────
 def geocoder(evenements, polygones):
     a_geocoder = [ev for ev in evenements if not ev.get("lat") or not ev.get("lon")]
-    deja_ok    = len(evenements) - len(a_geocoder)
+    deja_ok = len(evenements) - len(a_geocoder)
 
-    print(f"\n🌍 Géocodage Nominatim (gratuit)")
+    print("\n🌍 Géocodage Nominatim (gratuit)")
     print(f"   ✅ Déjà géocodés (cache) : {deja_ok}")
     print(f"   🆕 À géocoder maintenant  : {len(a_geocoder)}")
 
@@ -445,40 +481,41 @@ def geocoder(evenements, polygones):
 
     cache = charger_cache_geocode()
 
-    # Pré-calcul pour estimer la durée
     queries_uniques = set()
     for ev in a_geocoder:
-        adr  = (ev.get("adresse") or "").strip()
+        adr = (ev.get("adresse") or "").strip()
         muni = (ev.get("municipalite") or "").strip()
-        reg  = (ev.get("region") or "").strip()
+        reg = (ev.get("region") or "").strip()
+
         if adr and extraire_coords_gps(adr):
-            continue  # GPS direct, pas de requête Nominatim
+            continue
+
         muni_simple = simplifier_municipalite(muni) if muni else None
-        if adr and muni:
+
+        if adr and muni and not adresse_non_postale(adr):
             queries_uniques.add(f"{adr}, {muni}, Québec, Canada")
-        if adr and reg:
+        if adr and reg and not adresse_non_postale(adr):
             queries_uniques.add(f"{adr}, {reg}, Québec, Canada")
         if muni:
             queries_uniques.add(f"{muni}, Québec, Canada")
         if muni_simple:
-            queries_uniques.add(muni_simple + ", Canada")
+            queries_uniques.add(f"{muni_simple}, Canada")
 
     nouvelles = [q for q in queries_uniques if q not in cache]
     print(f"   🧠 Cache géocode : {len(cache)} entrées")
     print(f"   📡 Requêtes Nominatim à envoyer : {len(nouvelles)}")
     duree = len(nouvelles) * DELAI_NOMINATIM
-    print(f"   ⏱️  Durée estimée : ~{int(duree//60)}m{int(duree%60)}s (1 req/sec imposé)")
-    print(f"   💸 Coût : 0,00 $")
+    print(f"   ⏱️  Durée estimée : ~{int(duree // 60)}m{int(duree % 60)}s")
+    print("   💸 Coût : 0,00 $")
 
     ok = rejet = approx = gps_direct = 0
     erreurs = []
 
     for ev in tqdm(a_geocoder, desc="Géocodage"):
-        adr  = (ev.get("adresse") or "").strip()
+        adr = (ev.get("adresse") or "").strip()
         muni = (ev.get("municipalite") or "").strip()
-        reg  = (ev.get("region") or "").strip()
+        reg = (ev.get("region") or "").strip()
 
-        # ── ÉTAPE 1 : GPS dans l'adresse ────────────────────────────
         coords = extraire_coords_gps(adr) if adr else None
         if coords:
             lat, lon = coords
@@ -492,39 +529,42 @@ def geocoder(evenements, polygones):
                 gps_direct += 1
                 continue
 
-        # ── ÉTAPE 2 : Simplifier la municipalité ────────────────────
         muni_simple = simplifier_municipalite(muni) if muni else None
-
-        # Construire les tentatives de géocodage par ordre de précision
         tentatives = []
-        if adr and muni:
+
+        # Pour les adresses non postales, on ne tente PAS l'adresse exacte
+        if adr and muni and not adresse_non_postale(adr):
             tentatives.append(("adresse", f"{adr}, {muni}, Québec, Canada"))
-        if adr and reg:
-            tentatives.append(("adresse", f"{adr}, {reg}, Québec, Canada"))
+        if adr and reg and not adresse_non_postale(adr):
+            tentatives.append(("adresse_region", f"{adr}, {reg}, Québec, Canada"))
+
         if muni:
             tentatives.append(("ville", f"{muni}, Québec, Canada"))
-        # Tentative avec municipalité simplifiée (secteur extrait)
-        if muni_simple and muni_simple != muni + ', Québec':
-            tentatives.append(("ville_simplifiee", muni_simple + ", Canada"))
-        # Fallback : juste la municipalité simplifiée
+
         if muni_simple:
-            tentatives.append(("ville_simplifiee", muni_simple + ", Canada"))
+            q_simple = f"{muni_simple}, Canada"
+            q_ville = f"{muni}, Québec, Canada" if muni else ""
+            if q_simple.lower() != q_ville.lower():
+                tentatives.append(("ville_simplifiee", q_simple))
 
         placed = False
         for precision, q in tentatives:
             lat, lon, display = geocode_nominatim(q, cache)
             if lat is None or lon is None:
                 continue
+
             inside = point_dans_region(polygones, reg, lat, lon)
             if STRICT_REGION and not inside:
                 continue
+
             ev["lat"] = lat
             ev["lon"] = lon
             ev["precision"] = precision
             ev["geocode_query"] = q
             ev["geocode_formatted"] = display
+
             ok += 1
-            if "ville" in precision:
+            if precision in ("ville", "ville_simplifiee"):
                 approx += 1
             placed = True
             break
@@ -532,10 +572,14 @@ def geocoder(evenements, polygones):
         if not placed:
             rejet += 1
             erreurs.append({
-                "region": reg, "evenement": ev.get("evenement", ""),
-                "date": ev.get("date", ""), "no_dossier": ev.get("no_dossier", ""),
-                "adresse": adr, "municipalite": muni,
-                "url": ev.get("url", ""), "raison": "Hors polygone ou échec geocode"
+                "region": reg,
+                "evenement": ev.get("evenement", ""),
+                "date": ev.get("date", ""),
+                "no_dossier": ev.get("no_dossier", ""),
+                "adresse": adr,
+                "municipalite": muni,
+                "url": ev.get("url", ""),
+                "raison": "Hors polygone ou échec geocode"
             })
 
     sauver_cache_geocode(cache)
@@ -558,8 +602,8 @@ def geocoder(evenements, polygones):
 # ──────────────────────────────────────────────────────────────────
 def sauvegarder_csv(evenements, fichier):
     champs = [
-        "region","date","no_dossier","evenement","adresse","municipalite",
-        "lat","lon","precision","geocode_query","url"
+        "region", "date", "no_dossier", "evenement", "adresse", "municipalite",
+        "lat", "lon", "precision", "geocode_query", "url"
     ]
     with open(fichier, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=champs, extrasaction="ignore")
@@ -567,17 +611,21 @@ def sauvegarder_csv(evenements, fichier):
         w.writerows(evenements)
     print(f"   ✅ CSV : {fichier} ({len(evenements)} lignes)")
 
+
 def generer_carte_region(region, evenements, fichier):
     geo = ZOOM_REGIONS.get(region, (46.8, -71.2, 8))
     carte = folium.Map(location=[geo[0], geo[1]], zoom_start=geo[2], tiles="CartoDB positron")
     cluster = MarkerCluster(options={"maxClusterRadius": 40, "disableClusteringAtZoom": 13}).add_to(carte)
+
     n = 0
     for ev in evenements:
         if not ev.get("lat") or not ev.get("lon"):
             continue
+
         prec = ev.get("precision", "")
         approx = prec in ("ville", "ville_simplifiee")
         badge = "<span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>" if approx else ""
+
         popup = f"""
         <div style="font-family:sans-serif;font-size:13px;max-width:320px">
           <b style="color:#1a5276">{ev.get('evenement','')}</b><br>
@@ -587,21 +635,23 @@ def generer_carte_region(region, evenements, fichier):
           📁 <b>Dossier :</b> {ev.get('no_dossier') or 'N/D'}<br>
           📍 <b>Adresse :</b> {ev.get('adresse') or 'N/D'}<br>
           🏙️ <b>Municipalité :</b> {ev.get('municipalite') or 'N/D'}<br>
-          <a href="{ev.get('url','')}" target="_blank"
-             style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>
+          <a href="{ev.get('url','')}" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>
         </div>"""
+
         folium.Marker(
             [ev["lat"], ev["lon"]],
             popup=folium.Popup(popup, max_width=340),
             tooltip=f"{ev.get('date','')} – {ev.get('evenement','')[:60]}",
-            icon=folium.Icon(color=couleur(ev.get("evenement","")), icon="warning-sign", prefix="glyphicon"),
+            icon=folium.Icon(color=couleur(ev.get("evenement", "")), icon="warning-sign", prefix="glyphicon"),
         ).add_to(cluster)
         n += 1
+
     carte.get_root().html.add_child(folium.Element("""
     <a href="index.html" style="position:fixed;top:12px;left:12px;z-index:1000;
        background:white;padding:8px 14px;border-radius:6px;text-decoration:none;
        box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;
        font-size:13px;color:#1a3c5e">← Toutes les régions</a>"""))
+
     carte.get_root().html.add_child(folium.Element(f"""
     <div style="position:fixed;top:12px;left:50%;transform:translateX(-50%);
                 z-index:1000;background:rgba(255,255,255,.93);padding:8px 20px;
@@ -609,8 +659,10 @@ def generer_carte_region(region, evenements, fichier):
                 font-family:sans-serif;font-size:15px;font-weight:bold;color:#1a3c5e">
       🌿 {region} — {n} interventions
     </div>"""))
+
     carte.save(fichier)
     return n
+
 
 def generer_accueil(stats_regions, fichier):
     cartes_html = ""
@@ -620,7 +672,9 @@ def generer_accueil(stats_regions, fichier):
             <div class="region-name">{region}</div>
             <div class="region-count">{count} interventions</div>
         </a>"""
+
     total = sum(c for _, c, _ in stats_regions)
+
     html = f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -662,8 +716,10 @@ def generer_accueil(stats_regions, fichier):
 <footer>Source : MELCCFP — Urgence-Environnement</footer>
 </body>
 </html>"""
+
     with open(fichier, "w", encoding="utf-8") as f:
         f.write(html)
+
     print(f"   ✅ Page d'accueil → {fichier}")
 
 
@@ -678,11 +734,9 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     polygones = charger_polygones()
 
-    # 1) Cache scraping
     cache_scrape = charger_cache_scrape()
     print(f"\n💾 Cache scraping : {len(cache_scrape)} fiches déjà connues.")
 
-    # 2) Collecte URLs
     regions = get_regions()
     if not regions:
         return
@@ -693,7 +747,6 @@ def main():
         items_actuels.extend(get_urls_region(r))
     print(f"   → {len(items_actuels)} fiches trouvées sur le site.")
 
-    # 3) Delta scraping
     urls_connues = set(cache_scrape.keys())
     items_nouveaux = [it for it in items_actuels if it["url"] not in urls_connues]
     print(f"   🆕 Nouvelles fiches à scraper : {len(items_nouveaux)}")
@@ -705,54 +758,50 @@ def main():
             futures = {ex.submit(scraper_fiche, it): it for it in items_nouveaux}
             for fut in tqdm(as_completed(futures), total=len(futures), desc="Fiches"):
                 nouvelles_fiches.append(fut.result())
+
         for fiche in nouvelles_fiches:
             if fiche.get("url"):
                 cache_scrape[fiche["url"]] = fiche
+
         sauver_cache_scrape(cache_scrape)
         print(f"   💾 Cache mis à jour : {len(cache_scrape)} fiches.")
     else:
         print("   → Aucune nouvelle fiche.")
 
-    # 4) Liste active
     urls_site = {it["url"] for it in items_actuels}
     resultats = [fiche for url, fiche in cache_scrape.items() if url in urls_site]
     print(f"\n📊 Total fiches actives : {len(resultats)}")
 
-    # 5) Réinitialiser lat/lon des fiches non géocodées
     for fiche in resultats:
         if not fiche.get("lat") or not fiche.get("lon"):
             fiche["lat"] = None
             fiche["lon"] = None
 
-    # 6) Géocodage Nominatim
     resultats = geocoder(resultats, polygones)
 
-    # Sauvegarde coords dans cache scrape
     for fiche in resultats:
         if fiche.get("url") and fiche.get("lat"):
             cache_scrape[fiche["url"]] = fiche
     sauver_cache_scrape(cache_scrape)
 
-    # 7) CSV
     sauvegarder_csv(resultats, os.path.join(OUTPUT_DIR, "urgences_quebec.csv"))
 
-    # 8) Cartes
     par_region = defaultdict(list)
     for ev in resultats:
         par_region[ev.get("region", "")].append(ev)
 
-    print(f"\n🗺️  Génération des cartes...")
+    print("\n🗺️  Génération des cartes...")
     stats = []
     for region, evs in tqdm(par_region.items(), desc="Cartes"):
         fname = nom_fichier(region)
         n = generer_carte_region(region, evs, os.path.join(OUTPUT_DIR, fname))
         stats.append((region, n, fname))
 
-    # 9) Index
     generer_accueil(stats, os.path.join(OUTPUT_DIR, "index.html"))
 
     print("\n✅ Terminé !")
     print(f"   Site : {OUTPUT_DIR}/index.html")
+
 
 if __name__ == "__main__":
     main()
