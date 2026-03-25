@@ -42,7 +42,7 @@ CACHE_GEOCODE = "cache_geocode.json"
 GEOJSON_FILE  = "regions_quebec.geojson"
 
 OUTPUT_DIR = "docs"
-STRICT_REGION = True
+STRICT_REGION = False
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; recherche-academique/1.0)"
