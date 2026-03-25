@@ -56238,5 +56238,525 @@
     "lat": 45.364438,
     "lon": -72.933971,
     "display_name": "101, Route 235, Ange-Gardien, Rouville, Montérégie, Québec, J0E 1E0, Canada"
+  },
+  "l'Isle-Verte, Québec, Canada": {
+    "lat": 48.01519,
+    "lon": -69.337463,
+    "display_name": "L'Isle-Verte, Rivière-du-Loup (MRC), Bas-Saint-Laurent, Québec, G0L 1K0, Canada"
+  },
+  "Pointe-au-Père, Québec, Canada": {
+    "lat": 48.513594,
+    "lon": -68.463297,
+    "display_name": "Pointe-au-Père, Rimouski, Rimouski-Neigette, Bas-Saint-Laurent, Québec, G5M 1X3, Canada"
+  },
+  "Saint-Luc, Québec, Canada": {
+    "lat": 45.362142,
+    "lon": -73.303685,
+    "display_name": "Saint-Luc, Saint-Jean-sur-Richelieu, Le Haut-Richelieu, Montérégie, Québec, Canada"
+  },
+  "Jonquère, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saguenay -, Québec, Canada": {
+    "lat": 48.405959,
+    "lon": -71.069183,
+    "display_name": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "Laterrière, Québec, Canada": {
+    "lat": 48.405959,
+    "lon": -71.069183,
+    "display_name": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "d'Arvida, Québec, Canada": {
+    "lat": 48.425897,
+    "lon": -71.18217,
+    "display_name": "Arvida, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7S 3G7, Canada"
+  },
+  "du lac Kénogami, Québec, Canada": {
+    "lat": 48.334675,
+    "lon": -71.364498,
+    "display_name": "Cran du Curé, Arrondissement de Jonquière, Lac-Kénogami, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "Saint-Henri de Taillon, Québec, Canada": {
+    "lat": 48.663087,
+    "lon": -71.825079,
+    "display_name": "Saint-Henri-de-Taillon, Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "Sainte-Jeanne D'Arc, Québec, Canada": {
+    "lat": 48.865047,
+    "lon": -72.084019,
+    "display_name": "Sainte-Jeanne-d'Arc, Maria-Chapdelaine, Saguenay–Lac-Saint-Jean, Québec, G0W 1E0, Canada"
+  },
+  "de Lac-Kénogami, Québec, Canada": {
+    "lat": 48.41928,
+    "lon": -71.247606,
+    "display_name": "Bell Canada JNQRPQ06, Jonquiere, Rue Saint-Jacques, Kénogami, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7X 8T5, Canada"
+  },
+  "Shipshaw, Québec, Canada": {
+    "lat": 48.459804,
+    "lon": -71.260984,
+    "display_name": "Shipshaw, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7P 1H5, Canada"
+  },
+  "Arvida, Québec, Canada": {
+    "lat": 48.425897,
+    "lon": -71.18217,
+    "display_name": "Arvida, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7S 3G7, Canada"
+  },
+  "St-Coeur-de-Marie, Québec, Canada": {
+    "lat": 48.632301,
+    "lon": -71.696372,
+    "display_name": "Saint-Coeur-de-Marie, Alma, Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, G8E 2L1, Canada"
+  },
+  "Lac Sébastien, Québec, Canada": {
+    "lat": 48.650893,
+    "lon": -71.138479,
+    "display_name": "Lac Sébastien, Saint-David-de-Falardeau, Le Fjord-du-Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "de Laterrière, Québec, Canada": {
+    "lat": 48.307715,
+    "lon": -71.110066,
+    "display_name": "Postes Canada, Rue Notre-Dame, Laterrière, Arrondissement de Chicoutimi, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7N 1H8, Canada"
+  },
+  "Lac Saint-Jean Est, Québec, Canada": {
+    "lat": 48.391976,
+    "lon": -71.759514,
+    "display_name": "Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "Fjord-du-Saguenay, Québec, Canada": {
+    "lat": 48.530696,
+    "lon": -70.73347,
+    "display_name": "Ruisseau Canada, Saint-Fulgence, Le Fjord-du-Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "Ferland, Québec, Canada": {
+    "lat": 48.181676,
+    "lon": -70.846141,
+    "display_name": "Ferland, Ferland-et-Boilleau, Le Fjord-du-Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "des Rivières, Québec, Canada": {
+    "lat": 45.157863,
+    "lon": -73.050521,
+    "display_name": "Des Rivières, Notre-Dame-de-Stanbridge, Brome-Missisquoi, Québec, J0J 1M0, Canada"
+  },
+  "Ste-Foy, Québec, Canada": {
+    "lat": 46.774327,
+    "lon": -71.299444,
+    "display_name": "Sainte-Foy, Saint-Louis, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1V 4X7, Canada"
+  },
+  "Les Rivières, Québec, Canada": {
+    "lat": 46.829922,
+    "lon": -71.301735,
+    "display_name": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Limoilou, Québec, Canada": {
+    "lat": 46.826273,
+    "lon": -71.233149,
+    "display_name": "Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3K8, Canada"
+  },
+  "les Rivières, Québec, Canada": {
+    "lat": 46.829922,
+    "lon": -71.301735,
+    "display_name": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "de Beauport, Québec, Canada": {
+    "lat": 46.889957,
+    "lon": -71.19213,
+    "display_name": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+  },
+  "Sainte-Foy-Sillery-Cap-Rouge, Québec, Canada": {
+    "lat": 46.782012,
+    "lon": -71.349279,
+    "display_name": "Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "La Cité-Limoilou, Québec, Canada": {
+    "lat": 46.818418,
+    "lon": -71.219031,
+    "display_name": "La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Charlesbourg, Québec, Canada": {
+    "lat": 46.89565,
+    "lon": -71.290829,
+    "display_name": "Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "de Charlesbourg, Québec, Canada": {
+    "lat": 46.865528,
+    "lon": -71.271784,
+    "display_name": "TD, 8425, Boulevard Henri-Bourassa, Place Cloutier, Trait-Carré, Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1G 4E1, Canada"
+  },
+  "de Limoilou, Québec, Canada": {
+    "lat": 46.823213,
+    "lon": -71.226412,
+    "display_name": "Banque Nationale, 5e Rue, Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3B1, Canada"
+  },
+  "Beauport, Québec, Canada": {
+    "lat": 46.898349,
+    "lon": -71.206289,
+    "display_name": "Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Québec - Arrondissement Sainte-Foy-Sillery-Cap-Rouge, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "de la Haute-Saint-Charles, Québec, Canada": {
+    "lat": 46.891124,
+    "lon": -71.403115,
+    "display_name": "La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Haute-Saint-Charles, Québec, Canada": {
+    "lat": 46.850498,
+    "lon": -71.359776,
+    "display_name": "Édifice Denis-Giguère, Rue Wilfrid-Caron, Loretteville-Sud, Loretteville, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G2B 1E7, Canada"
+  },
+  "Québec, arrondissement des Rivières, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "de Sainte-Foy, Québec, Canada": {
+    "lat": 46.786503,
+    "lon": -71.27994,
+    "display_name": "Postes Canada, Chemin Sainte-Foy, Cité-Universitaire, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1V 1S5, Canada"
+  },
+  "Cap-Rouge, Québec, Canada": {
+    "lat": 46.749864,
+    "lon": -71.345345,
+    "display_name": "Cap-Rouge, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Val-Bélair, Québec, Canada": {
+    "lat": 46.856119,
+    "lon": -71.412426,
+    "display_name": "Val-Bélair, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Sainte-Foy, Québec, Canada": {
+    "lat": 46.774327,
+    "lon": -71.299444,
+    "display_name": "Sainte-Foy, Saint-Louis, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1V 4X7, Canada"
+  },
+  "Port de Québec, Québec, Canada": {
+    "lat": 45.547178,
+    "lon": -73.656717,
+    "display_name": "Postes Canada, Rue de Port-Royal Est, Ahuntsic, Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3L 1H4, Canada"
+  },
+  "Vanier, Québec, Canada": {
+    "lat": 46.814159,
+    "lon": -71.258011,
+    "display_name": "Vanier, Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Lac-Saint-Charles, Québec, Canada": {
+    "lat": 46.908295,
+    "lon": -71.376457,
+    "display_name": "Lac-Saint-Charles, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Val Bélair, Québec, Canada": {
+    "lat": 46.856119,
+    "lon": -71.412426,
+    "display_name": "Val-Bélair, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "La Haute-Saint-Charles, Québec, Canada": {
+    "lat": 46.891124,
+    "lon": -71.403115,
+    "display_name": "La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "Laurentien, Québec, Canada": {
+    "lat": 46.77863,
+    "lon": -72.836386,
+    "display_name": "Laurentien, Saint-Roch-de-Mékinac, Mékinac, Mauricie, Québec, Canada"
+  },
+  "Québec -, Québec, Canada": {
+    "lat": 46.813743,
+    "lon": -71.208406,
+    "display_name": "Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+  },
+  "de Parent, Québec, Canada": {
+    "lat": 47.922392,
+    "lon": -74.62095,
+    "display_name": "Radio-Canada, Rue Commerciale, Parent, La Tuque, Agglomération de La Tuque, Mauricie, Québec, G0X 3P0, Canada"
+  },
+  "Saint-Louis-de-France, Québec, Canada": {
+    "lat": 46.423813,
+    "lon": -72.595153,
+    "display_name": "Saint-Louis-de-France, Trois-Rivières, Mauricie, Québec, G8W 1E2, Canada"
+  },
+  "Grand-Mère, Québec, Canada": {
+    "lat": 46.612894,
+    "lon": -72.69516,
+    "display_name": "Grand-Mère, Shawinigan, Mauricie, Québec, G9T 2H9, Canada"
+  },
+  "Lac Brome, Québec, Canada": {
+    "lat": 45.217703,
+    "lon": -72.537222,
+    "display_name": "Lac-Brome, Brome-Missisquoi, Estrie, Québec, Canada"
+  },
+  "d'Ascot Corner, Québec, Canada": {
+    "lat": 45.44913,
+    "lon": -71.765482,
+    "display_name": "Ascot Corner, Le Haut-Saint-François, Estrie, Québec, J0B 1A0, Canada"
+  },
+  "Lennoxville, Québec, Canada": {
+    "lat": 45.366198,
+    "lon": -71.856443,
+    "display_name": "Lennoxville, Sherbrooke, Estrie, Québec, Canada"
+  },
+  "d'Austin, Québec, Canada": {
+    "lat": 45.184059,
+    "lon": -72.280017,
+    "display_name": "Austin, Memphrémagog, Estrie, Québec, J0B 1B0, Canada"
+  },
+  "Lac-Mégantic, Québec, Canada": {
+    "lat": 45.577264,
+    "lon": -70.881993,
+    "display_name": "Lac-Mégantic, Le Granit, Estrie, Québec, Canada"
+  },
+  "Bromptonville, Québec, Canada": {
+    "lat": 45.474916,
+    "lon": -71.942888,
+    "display_name": "Brompton, Brompton–Rock Forest–Saint-Élie–Deauville, Sherbrooke, Estrie, Québec, Canada"
+  },
+  "Villeray - Saint-Michel - Parc-Extension, Québec, Canada": {
+    "lat": 45.537104,
+    "lon": -73.625126,
+    "display_name": "Villeray–Saint-Michel–Parc-Extension, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
+  },
+  "Verdun, Québec, Canada": {
+    "lat": 45.459099,
+    "lon": -73.573171,
+    "display_name": "Verdun, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
+  },
+  "d'Anjou, Québec, Canada": {
+    "lat": 45.599509,
+    "lon": -73.563737,
+    "display_name": "Les Galeries d'Anjou, Anjou, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
+  },
+  "LaSalle, Québec, Canada": {
+    "lat": 45.432514,
+    "lon": -73.629267,
+    "display_name": "LaSalle, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
+  },
+  "d'Ahuntsic-Cartierville, Québec, Canada": {
+    "lat": 45.541862,
+    "lon": -73.680319,
+    "display_name": "Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
+  },
+  "Pointe-aux-Trembles, Québec, Canada": {
+    "lat": 45.67473,
+    "lon": -73.506233,
+    "display_name": "Pointe-aux-Trembles, 53e Avenue, Pointe-aux-Trembles, Rivière-des-Prairies–Pointe-aux-Trembles, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H1A 5S2, Canada"
+  },
+  "Lachine, Québec, Canada": {
+    "lat": 45.435114,
+    "lon": -73.683799,
+    "display_name": "Lachine, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
+  },
+  "La Pêche -, Québec, Canada": {
+    "lat": 45.640219,
+    "lon": -76.037235,
+    "display_name": "La Pêche, Les Collines-de-l'Outaouais, Outaouais, Québec, Canada"
+  },
+  "Gatineau -, Québec, Canada": {
+    "lat": 45.427766,
+    "lon": -75.710976,
+    "display_name": "Gatineau, Outaouais, Québec, Canada"
+  },
+  "Cayamant, Québec, Canada": {
+    "lat": 46.137148,
+    "lon": -76.248757,
+    "display_name": "Cayamant, La Vallée-de-la-Gatineau, Outaouais, Québec, Canada"
+  },
+  "Hull, Québec, Canada": {
+    "lat": 45.440584,
+    "lon": -75.732682,
+    "display_name": "Hull, Gatineau, Outaouais, Québec, Canada"
+  },
+  "Bois-Franc, Québec, Canada": {
+    "lat": 46.502817,
+    "lon": -75.982198,
+    "display_name": "Bois-Franc, La Vallée-de-la-Gatineau, Outaouais, Québec, Canada"
+  },
+  "Waltham, Québec, Canada": {
+    "lat": 45.907211,
+    "lon": -76.908417,
+    "display_name": "Waltham, Pontiac, Outaouais, Québec, J0X 3H0, Canada"
+  },
+  "Dubuisson, Québec, Canada": {
+    "lat": 48.113303,
+    "lon": -77.947249,
+    "display_name": "Dubuisson, Val-d'Or, La Vallée-de-l'Or, Abitibi-Témiscamingue, Québec, J9P 4N7, Canada"
+  },
+  "Val d'Or -, Québec, Canada": {
+    "lat": 48.102336,
+    "lon": -77.787571,
+    "display_name": "Val-d'Or, La Vallée-de-l'Or, Abitibi-Témiscamingue, Québec, Canada"
+  },
+  "Arntfield, Québec, Canada": {
+    "lat": 48.25175,
+    "lon": -79.363723,
+    "display_name": "Arntfield, Rouyn-Noranda, Abitibi-Témiscamingue, Québec, J0Z 1B0, Canada"
+  },
+  "D'Alembert, Québec, Canada": {
+    "lat": 48.365225,
+    "lon": -79.244608,
+    "display_name": "D'Alembert, Rouyn-Noranda, Abitibi-Témiscamingue, Québec, Canada"
+  },
+  "Saint-Édouard-de-Fabre, Québec, Canada": {
+    "lat": 47.17943,
+    "lon": -79.346607,
+    "display_name": "Saint-Édouard-de-Fabre, Témiscamingue, Abitibi-Témiscamingue, Québec, J0Z 1Z0, Canada"
+  },
+  "Rouyn-Noranda -, Québec, Canada": {
+    "lat": 48.242052,
+    "lon": -79.020538,
+    "display_name": "Rouyn-Noranda, Abitibi-Témiscamingue, Québec, Canada"
+  },
+  "Témiscaming, Québec, Canada": {
+    "lat": 46.721912,
+    "lon": -79.095454,
+    "display_name": "Témiscaming, Témiscamingue, Abitibi-Témiscamingue, Québec, Canada"
+  },
+  "régionale de comté - Manicouagan Territoire non organisé de la Rivière-aux-Outardes, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "régionale de comté de Manicouagan, Territoire Non Organisé Rivière-Aux-Outardes, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "d'Eeyou Istchee Baie-James, Québec, Canada": {
+    "lat": 51.963526,
+    "lon": -75.032651,
+    "display_name": "ᐄᔨᔨᐤ ᐊᔅᒌ ᒉᐃᒥᔅ ᐯᐃ Eeyou Istchee Baie-James, Jamésie, Nord-du-Québec, Québec, Canada"
+  },
+  "la Baie-James, Québec, Canada": {
+    "lat": 49.769536,
+    "lon": -77.630396,
+    "display_name": "Halte de la route de la Baie-James, km 2, Route Billy-Diamond, Matagami, Nord-du-Québec, Québec, J0Y 2A0, Canada"
+  },
+  "Rivière-au-Renard, Québec, Canada": {
+    "lat": 48.992561,
+    "lon": -64.385798,
+    "display_name": "Rivière-au-Renard, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 5K9, Canada"
+  },
+  "Douglastown, Québec, Canada": {
+    "lat": 48.764274,
+    "lon": -64.375677,
+    "display_name": "Douglastown, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 2J6, Canada"
+  },
+  "Tourelle, Québec, Canada": {
+    "lat": 49.160798,
+    "lon": -66.407197,
+    "display_name": "Tourelle, Sainte-Anne-des-Monts, La Haute-Gaspésie, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
+  },
+  "des Îles-de-la-Madeleine, Québec, Canada": {
+    "lat": 48.047022,
+    "lon": -65.468224,
+    "display_name": "Île des Chardons, Bonaventure, Bonaventure (MRC), Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
+  },
+  "Les Îles-de-la-Madeleine, Québec, Canada": {
+    "lat": 47.408341,
+    "lon": -61.780587,
+    "display_name": "Les Îles-de-la-Madeleine, Communauté maritime des Îles-de-la-Madeleine, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
+  },
+  "St-Romuald, Québec, Canada": {
+    "lat": 46.756568,
+    "lon": -71.237877,
+    "display_name": "Saint-Romuald, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Saint-Rédempteur, Québec, Canada": {
+    "lat": 46.695609,
+    "lon": -71.28582,
+    "display_name": "Saint-Rédempteur, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Saint-Étienne, Québec, Canada": {
+    "lat": 48.201058,
+    "lon": -69.960667,
+    "display_name": "Saint-Étienne, Petit-Saguenay, Le Fjord-du-Saguenay, Saguenay–Lac-Saint-Jean, Québec, G0V 1N0, Canada"
+  },
+  "Saint-Étienne-de-Lauzon, Québec, Canada": {
+    "lat": 46.653443,
+    "lon": -71.300926,
+    "display_name": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Saint-Jean-Chrysostome, Québec, Canada": {
+    "lat": 46.718916,
+    "lon": -71.197929,
+    "display_name": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Pintendre, Québec, Canada": {
+    "lat": 46.753126,
+    "lon": -71.124,
+    "display_name": "Pintendre, Desjardins, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "St-Nicolas, Québec, Canada": {
+    "lat": 46.700053,
+    "lon": -71.396556,
+    "display_name": "Saint-Nicolas, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Rivière Beaurivage à Lévis, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-Jean-Chrysostome, Québec, Canada": {
+    "lat": 46.718916,
+    "lon": -71.197929,
+    "display_name": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "D'Adstock, Québec, Canada": {
+    "lat": 46.046813,
+    "lon": -71.076283,
+    "display_name": "Adstock, Les Appalaches, Chaudière-Appalaches, Québec, G0N 1S0, Canada"
+  },
+  "Pont-Viau, Québec, Canada": {
+    "lat": 45.557393,
+    "lon": -73.675801,
+    "display_name": "Pont Viau, Avenue Park Stanley, Ahuntsic, Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2C 3K9, Canada"
+  },
+  "St-François, Québec, Canada": {
+    "lat": 47.001886,
+    "lon": -70.812922,
+    "display_name": "Saint-François-de-l'Île-d'Orléans, L'Île-d'Orléans, Capitale-Nationale, Québec, G0A 3S0, Canada"
+  },
+  "Au coin du chemin du lac d'Argent, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Laplaine, Québec, Canada": {
+    "lat": 45.770164,
+    "lon": -73.682793,
+    "display_name": "Lac-Laplaine, Mascouche, Les Moulins, Lanaudière, Québec, J6X 4J8, Canada"
+  },
+  "de Le Gardeur, Québec, Canada": {
+    "lat": 45.742015,
+    "lon": -73.451243,
+    "display_name": "Ville de Repentigny, Boulevard Iberville, Le Gardeur, Repentigny, L'Assomption (MRC), Lanaudière, Québec, J6A 2B6, Canada"
+  },
+  "Au coin des rues Albert, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-Adolphe-D'Howard, Québec, Canada": {
+    "lat": 45.971345,
+    "lon": -74.339275,
+    "display_name": "Saint-Adolphe-d'Howard, Les Pays-d'en-Haut, Laurentides, Québec, J0T 2B0, Canada"
+  },
+  "Lemieux, Québec, Canada": {
+    "lat": 46.296899,
+    "lon": -72.110825,
+    "display_name": "Lemieux, Bécancour (MRC), Centre-du-Québec, Québec, Canada"
+  },
+  "St-Grégoire, Québec, Canada": {
+    "lat": 46.272118,
+    "lon": -72.493575,
+    "display_name": "St-Grégoire, Avenue Laperrière, Saint-Grégoire, Bécancour, Bécancour (MRC), Centre-du-Québec, Québec, G0X 1L1, Canada"
+  },
+  "St-Joachim-De-Courval, Québec, Canada": {
+    "lat": 45.974319,
+    "lon": -72.550275,
+    "display_name": "Saint-Joachim-de-Courval, Drummondville, Drummond, Centre-du-Québec, Québec, J1Z 2C2, Canada"
   }
 }

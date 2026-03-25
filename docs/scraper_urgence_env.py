@@ -31,7 +31,7 @@ BASE_URL  = "https://www.environnement.gouv.qc.ca/ministere/urgence_environnemen
 LISTE_URL = f"{BASE_URL}/resultats_region.asp"
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
-NOMINATIM_EMAIL = "antoine.toenz@gmail.com"  # <-- mets ton email (requis par Nominatim)
+NOMINATIM_EMAIL = "antoine.toenz@gmail.com"
 
 MAX_THREADS  = 10
 DELAI_SCRAPE = 0.15
@@ -287,7 +287,7 @@ def geocode_nominatim(query: str, cache: dict):
             lon = round(float(results[0]["lon"]), 6)
             display = results[0].get("display_name", "")
             cache[query] = {"lat": lat, "lon": lon, "display_name": display}
-            time.sleep(DELAI_NOMINATIM)  # respecter la limite de Nominatim
+            time.sleep(DELAI_NOMINATIM)
             return lat, lon, display
     except Exception:
         pass
@@ -296,6 +296,141 @@ def geocode_nominatim(query: str, cache: dict):
     time.sleep(DELAI_NOMINATIM)
     return None, None, ""
 
+
+# ──────────────────────────────────────────────────────────────────
+# ÉTAPE 1 : Extraire coordonnées GPS depuis le champ adresse
+# ──────────────────────────────────────────────────────────────────
+def extraire_coords_gps(adresse):
+    """Retourne (lat, lon) si l'adresse contient des coordonnées GPS, sinon None."""
+
+    # Format DMS : 48°22'02.7"N 68°14'14.5"W  ou  48°22'02.7"N 68°14'14.5"O
+    dms = re.search(
+        r'(\d{1,3})[°º](\d{1,2})[\'′](\d{1,2}(?:[.,]\d+)?)[\"″]?\s*([NS])\s+'
+        r'(\d{1,3})[°º](\d{1,2})[\'′](\d{1,2}(?:[.,]\d+)?)[\"″]?\s*([WOEoe])',
+        adresse
+    )
+    if dms:
+        lat = int(dms.group(1)) + int(dms.group(2))/60 + float(dms.group(3).replace(',','.'))/3600
+        if dms.group(4).upper() == 'S': lat = -lat
+        lon = int(dms.group(5)) + int(dms.group(6))/60 + float(dms.group(7).replace(',','.'))/3600
+        if dms.group(8).upper() in ('W', 'O'): lon = -lon
+        if 44 < lat < 65 and -82 < lon < -55:
+            return lat, lon
+
+    # Format décimal avec lettre : 48.337576°N et 65.983899°O
+    dec_letter = re.search(
+        r'(\d{2,3}[.,]\d+)[°\s]*([NS])\s*(?:et|and|,|;)\s*(\d{2,3}[.,]\d+)[°\s]*([WOEoe])',
+        adresse, re.I
+    )
+    if dec_letter:
+        lat = float(dec_letter.group(1).replace(',', '.'))
+        lon = float(dec_letter.group(3).replace(',', '.'))
+        if dec_letter.group(2).upper() == 'S': lat = -lat
+        if dec_letter.group(4).upper() in ('W', 'O'): lon = -lon
+        if 44 < lat < 65 and -82 < lon < -55:
+            return lat, lon
+
+    # Format décimal pur : 47,7589984; -73,0412021  ou  47.758; -73.041
+    dec_pure = re.search(
+        r'(-?\d{2,3}[.,]\d{4,})\s*[;,]\s*(-?\d{2,3}[.,]\d{4,})',
+        adresse
+    )
+    if dec_pure:
+        a = float(dec_pure.group(1).replace(',', '.'))
+        b = float(dec_pure.group(2).replace(',', '.'))
+        if 44 < a < 65 and -82 < b < -55:
+            return a, b
+        if 44 < b < 65 and -82 < a < -55:
+            return b, a
+
+    # Format GéoNAD83 : 48deg 20,646'N ; 71deg 11.663' O
+    geo = re.search(
+        r'(\d{1,3})deg\s*(\d{1,2}[.,]\d+)[\'′]?\s*([NS])\s*[;,]\s*'
+        r'(\d{1,3})deg\s*(\d{1,2}[.,]\d+)[\'′]?\s*([WOEoe])',
+        adresse, re.I
+    )
+    if geo:
+        lat = int(geo.group(1)) + float(geo.group(2).replace(',', '.'))/60
+        if geo.group(3).upper() == 'S': lat = -lat
+        lon = int(geo.group(4)) + float(geo.group(5).replace(',', '.'))/60
+        if geo.group(6).upper() in ('W', 'O'): lon = -lon
+        if 44 < lat < 65 and -82 < lon < -55:
+            return lat, lon
+
+    # Format « 52 05.43N  071 24.48W »
+    mtm = re.search(
+        r'(\d{2})\s+(\d{2}[.,]\d+)\s*([NS])\s+(\d{3})\s+(\d{2}[.,]\d+)\s*([WO])',
+        adresse
+    )
+    if mtm:
+        lat = int(mtm.group(1)) + float(mtm.group(2).replace(',', '.'))/60
+        lon = int(mtm.group(4)) + float(mtm.group(5).replace(',', '.'))/60
+        if mtm.group(3).upper() == 'S': lat = -lat
+        lon = -lon
+        if 44 < lat < 65 and -82 < lon < -55:
+            return lat, lon
+
+    return None
+
+
+# ──────────────────────────────────────────────────────────────────
+# ÉTAPE 2 : Simplifier la municipalité pour Nominatim
+# ──────────────────────────────────────────────────────────────────
+def simplifier_municipalite(municipalite):
+    """
+    Transforme 'Ville de Saguenay (secteur Jonquière)' → 'Jonquière, Québec'
+    Transforme 'Gatineau, secteur Hull' → 'Gatineau, Québec'
+    Retourne None si c'est un TNO/réserve/territoire sans ville.
+    """
+    m = municipalite.strip()
+
+    # Irrécupérables : TNO, réserves, territoires sans nom de ville
+    if re.match(
+        r'(TNO\b|Territoire non organisé|Réserve faunique|Réservoir|'
+        r'Parc (?:national|de la|du)|MRC de\b|Entre |Près de |À environ )',
+        m, re.I
+    ):
+        return None
+
+    # Enlever préfixes courants
+    m = re.sub(
+        r'^(Ville de|Municipalité de|Municipalité Régionale de Comté du?|'
+        r'Municipalité|Ville|Agglomération de)\s+',
+        '', m, flags=re.I
+    )
+
+    # Extraire secteur entre parenthèses : "Saguenay (secteur Jonquière)" → "Jonquière"
+    secteur = re.search(
+        r'\((?:secteur|arr\.|arrondissement|Secteur|Quartier|quartier)\s+([^)]+)\)',
+        m, re.I
+    )
+    if secteur:
+        return secteur.group(1).strip() + ', Québec'
+
+    # Enlever "(secteur X)" ou tout contenu entre parenthèses
+    m = re.sub(r'\s*\([^)]+\)', '', m).strip()
+
+    # Enlever ", secteur X" : "Gatineau, secteur Hull" → "Gatineau"
+    m = re.sub(r',?\s+secteur\s+.*', '', m, flags=re.I).strip()
+
+    # Plusieurs municipalités séparées par newline → prendre la première
+    m = m.split('\n')[0].strip()
+
+    # Si plusieurs villes séparées par " et " → prendre la première
+    m = re.split(r'\s+et\s+', m)[0].strip()
+
+    # Enlever suffixes ", MRC de ..."
+    m = re.sub(r',?\s+MRC\s+.*', '', m, flags=re.I).strip()
+
+    if not m:
+        return None
+
+    return m + ', Québec'
+
+
+# ──────────────────────────────────────────────────────────────────
+# GEOCODAGE PRINCIPAL
+# ──────────────────────────────────────────────────────────────────
 def geocoder(evenements, polygones):
     a_geocoder = [ev for ev in evenements if not ev.get("lat") or not ev.get("lon")]
     deja_ok    = len(evenements) - len(a_geocoder)
@@ -310,25 +445,32 @@ def geocoder(evenements, polygones):
 
     cache = charger_cache_geocode()
 
-    # Compte les requêtes qui seront vraiment envoyées (pas dans le cache)
+    # Pré-calcul pour estimer la durée
     queries_uniques = set()
     for ev in a_geocoder:
         adr  = (ev.get("adresse") or "").strip()
         muni = (ev.get("municipalite") or "").strip()
         reg  = (ev.get("region") or "").strip()
+        if adr and extraire_coords_gps(adr):
+            continue  # GPS direct, pas de requête Nominatim
+        muni_simple = simplifier_municipalite(muni) if muni else None
         if adr and muni:
             queries_uniques.add(f"{adr}, {muni}, Québec, Canada")
-        elif muni:
+        if adr and reg:
+            queries_uniques.add(f"{adr}, {reg}, Québec, Canada")
+        if muni:
             queries_uniques.add(f"{muni}, Québec, Canada")
-    nouvelles = [q for q in queries_uniques if q not in cache]
+        if muni_simple:
+            queries_uniques.add(muni_simple + ", Canada")
 
+    nouvelles = [q for q in queries_uniques if q not in cache]
     print(f"   🧠 Cache géocode : {len(cache)} entrées")
     print(f"   📡 Requêtes Nominatim à envoyer : {len(nouvelles)}")
     duree = len(nouvelles) * DELAI_NOMINATIM
     print(f"   ⏱️  Durée estimée : ~{int(duree//60)}m{int(duree%60)}s (1 req/sec imposé)")
     print(f"   💸 Coût : 0,00 $")
 
-    ok = rejet = approx = 0
+    ok = rejet = approx = gps_direct = 0
     erreurs = []
 
     for ev in tqdm(a_geocoder, desc="Géocodage"):
@@ -336,6 +478,24 @@ def geocoder(evenements, polygones):
         muni = (ev.get("municipalite") or "").strip()
         reg  = (ev.get("region") or "").strip()
 
+        # ── ÉTAPE 1 : GPS dans l'adresse ────────────────────────────
+        coords = extraire_coords_gps(adr) if adr else None
+        if coords:
+            lat, lon = coords
+            inside = point_dans_region(polygones, reg, lat, lon)
+            if not STRICT_REGION or inside:
+                ev["lat"] = lat
+                ev["lon"] = lon
+                ev["precision"] = "gps"
+                ev["geocode_query"] = f"GPS extrait de: {adr}"
+                ok += 1
+                gps_direct += 1
+                continue
+
+        # ── ÉTAPE 2 : Simplifier la municipalité ────────────────────
+        muni_simple = simplifier_municipalite(muni) if muni else None
+
+        # Construire les tentatives de géocodage par ordre de précision
         tentatives = []
         if adr and muni:
             tentatives.append(("adresse", f"{adr}, {muni}, Québec, Canada"))
@@ -343,6 +503,12 @@ def geocoder(evenements, polygones):
             tentatives.append(("adresse", f"{adr}, {reg}, Québec, Canada"))
         if muni:
             tentatives.append(("ville", f"{muni}, Québec, Canada"))
+        # Tentative avec municipalité simplifiée (secteur extrait)
+        if muni_simple and muni_simple != muni + ', Québec':
+            tentatives.append(("ville_simplifiee", muni_simple + ", Canada"))
+        # Fallback : juste la municipalité simplifiée
+        if muni_simple:
+            tentatives.append(("ville_simplifiee", muni_simple + ", Canada"))
 
         placed = False
         for precision, q in tentatives:
@@ -358,7 +524,7 @@ def geocoder(evenements, polygones):
             ev["geocode_query"] = q
             ev["geocode_formatted"] = display
             ok += 1
-            if precision == "ville":
+            if "ville" in precision:
                 approx += 1
             placed = True
             break
@@ -373,7 +539,7 @@ def geocoder(evenements, polygones):
             })
 
     sauver_cache_geocode(cache)
-    print(f"   → {ok} placés ({approx} approx.), {rejet} rejetés.")
+    print(f"   → {ok} placés ({gps_direct} GPS direct, {approx} approx.), {rejet} rejetés.")
 
     if erreurs:
         fichier_erreurs = os.path.join(OUTPUT_DIR, "erreurs_geocode.csv")
@@ -409,7 +575,8 @@ def generer_carte_region(region, evenements, fichier):
     for ev in evenements:
         if not ev.get("lat") or not ev.get("lon"):
             continue
-        approx = (ev.get("precision") == "ville")
+        prec = ev.get("precision", "")
+        approx = prec in ("ville", "ville_simplifiee")
         badge = "<span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>" if approx else ""
         popup = f"""
         <div style="font-family:sans-serif;font-size:13px;max-width:320px">
@@ -551,7 +718,13 @@ def main():
     resultats = [fiche for url, fiche in cache_scrape.items() if url in urls_site]
     print(f"\n📊 Total fiches actives : {len(resultats)}")
 
-    # 5) Géocodage Nominatim
+    # 5) Réinitialiser lat/lon des fiches non géocodées
+    for fiche in resultats:
+        if not fiche.get("lat") or not fiche.get("lon"):
+            fiche["lat"] = None
+            fiche["lon"] = None
+
+    # 6) Géocodage Nominatim
     resultats = geocoder(resultats, polygones)
 
     # Sauvegarde coords dans cache scrape
@@ -560,10 +733,10 @@ def main():
             cache_scrape[fiche["url"]] = fiche
     sauver_cache_scrape(cache_scrape)
 
-    # 6) CSV
+    # 7) CSV
     sauvegarder_csv(resultats, os.path.join(OUTPUT_DIR, "urgences_quebec.csv"))
 
-    # 7) Cartes
+    # 8) Cartes
     par_region = defaultdict(list)
     for ev in resultats:
         par_region[ev.get("region", "")].append(ev)
@@ -575,7 +748,7 @@ def main():
         n = generer_carte_region(region, evs, os.path.join(OUTPUT_DIR, fname))
         stats.append((region, n, fname))
 
-    # 8) Index
+    # 9) Index
     generer_accueil(stats, os.path.join(OUTPUT_DIR, "index.html"))
 
     print("\n✅ Terminé !")
