@@ -611,20 +611,87 @@ def sauvegarder_csv(evenements, fichier):
         w.writerows(evenements)
     print(f"   ✅ CSV : {fichier} ({len(evenements)} lignes)")
 
+def escape_js(s):
+    if s is None:
+        return ""
+    return str(s).replace("\\", "\\\\").replace("'", "\\'").replace("\n", " ").replace("\r", " ")
+
+def normaliser_municipalite_filtre(muni: str) -> str:
+    m = (muni or "").strip()
+    if not m:
+        return "Inconnue"
+
+    ml = m.lower()
+
+    if "montréal" in ml or "montreal" in ml:
+        return "Montréal"
+    if "laval" in ml:
+        return "Laval"
+    if "longueuil" in ml:
+        return "Longueuil"
+    if "québec" in ml or "quebec" in ml:
+        return "Québec"
+
+    # enlève les précisions entre parenthèses
+    m = re.sub(r"\s*\([^)]+\)", "", m).strip()
+    return m if m else "Inconnue"
+
+def type_evenement_label(evenement: str) -> str:
+    e = (evenement or "").lower()
+    if "incendie" in e:
+        return "Incendie"
+    if "déversement" in e or "deversement" in e:
+        return "Déversement"
+    if "contamination" in e:
+        return "Contamination"
+    if "accident" in e:
+        return "Accident"
+    if "signalement" in e:
+        return "Signalement"
+    if "mortalité" in e or "mortalite" in e:
+        return "Mortalité"
+    if "rejet" in e:
+        return "Rejet"
+    if "émission" in e or "emission" in e:
+        return "Émission"
+    if "travaux" in e:
+        return "Travaux"
+    return "Autre"
 
 def generer_carte_region(region, evenements, fichier):
     geo = ZOOM_REGIONS.get(region, (46.8, -71.2, 8))
     carte = folium.Map(location=[geo[0], geo[1]], zoom_start=geo[2], tiles="CartoDB positron")
-    cluster = MarkerCluster(options={"maxClusterRadius": 40, "disableClusteringAtZoom": 13}).add_to(carte)
+
+    # cluster principal
+    cluster = MarkerCluster(
+        options={
+            "maxClusterRadius": 40,
+            "disableClusteringAtZoom": 13
+        }
+    ).add_to(carte)
 
     n = 0
+    municipalites = set()
+    types_evenement = set()
+    markers_meta = []
+
     for ev in evenements:
         if not ev.get("lat") or not ev.get("lon"):
             continue
 
         prec = ev.get("precision", "")
         approx = prec in ("ville", "ville_simplifiee")
-        badge = "<span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>" if approx else ""
+
+        muni_raw = ev.get("municipalite") or "Inconnue"
+        muni_filtre = normaliser_municipalite_filtre(muni_raw)
+        type_evt = type_evenement_label(ev.get("evenement", ""))
+
+        municipalites.add(muni_filtre)
+        types_evenement.add(type_evt)
+
+        badge = ""
+        if approx:
+            badge = "<span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>"
 
         popup = f"""
         <div style="font-family:sans-serif;font-size:13px;max-width:320px">
@@ -635,30 +702,179 @@ def generer_carte_region(region, evenements, fichier):
           📁 <b>Dossier :</b> {ev.get('no_dossier') or 'N/D'}<br>
           📍 <b>Adresse :</b> {ev.get('adresse') or 'N/D'}<br>
           🏙️ <b>Municipalité :</b> {ev.get('municipalite') or 'N/D'}<br>
+          🏷️ <b>Type :</b> {type_evt}<br>
           <a href="{ev.get('url','')}" target="_blank" style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>
-        </div>"""
+        </div>
+        """
 
-        folium.Marker(
+        marker = folium.Marker(
             [ev["lat"], ev["lon"]],
             popup=folium.Popup(popup, max_width=340),
             tooltip=f"{ev.get('date','')} – {ev.get('evenement','')[:60]}",
-            icon=folium.Icon(color=couleur(ev.get("evenement", "")), icon="warning-sign", prefix="glyphicon"),
-        ).add_to(cluster)
+            icon=folium.Icon(
+                color=couleur(ev.get("evenement", "")),
+                icon="warning-sign",
+                prefix="glyphicon",
+            ),
+        )
+        marker.add_to(cluster)
+
+        markers_meta.append({
+            "var_name": marker.get_name(),
+            "municipalite": muni_filtre,
+            "type_evt": type_evt,
+            "approx": approx,
+        })
+
         n += 1
 
+    # bouton retour
     carte.get_root().html.add_child(folium.Element("""
-    <a href="index.html" style="position:fixed;top:12px;left:12px;z-index:1000;
-       background:white;padding:8px 14px;border-radius:6px;text-decoration:none;
-       box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;
-       font-size:13px;color:#1a3c5e">← Toutes les régions</a>"""))
+    <a href="index.html" style="
+       position:fixed;top:12px;left:12px;z-index:1000;
+       background:white;padding:8px 14px;border-radius:8px;text-decoration:none;
+       box-shadow:0 2px 8px rgba(0,0,0,.18);font-family:sans-serif;
+       font-size:13px;color:#1a3c5e;font-weight:600;">
+       ← Toutes les régions
+    </a>
+    """))
 
+    # titre
     carte.get_root().html.add_child(folium.Element(f"""
-    <div style="position:fixed;top:12px;left:50%;transform:translateX(-50%);
-                z-index:1000;background:rgba(255,255,255,.93);padding:8px 20px;
-                border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.25);
-                font-family:sans-serif;font-size:15px;font-weight:bold;color:#1a3c5e">
+    <div style="
+        position:fixed;top:12px;left:50%;transform:translateX(-50%);
+        z-index:1000;background:rgba(255,255,255,.96);padding:8px 18px;
+        border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.18);
+        font-family:sans-serif;font-size:15px;font-weight:700;color:#1a3c5e;">
       🌿 {region} — {n} interventions
-    </div>"""))
+    </div>
+    """))
+
+    muni_options = '<option value="">Toutes les municipalités</option>' + "".join(
+        f"<option value='{escape_js(m)}'>{m}</option>" for m in sorted(municipalites)
+    )
+    type_options = '<option value="">Tous les types</option>' + "".join(
+        f"<option value='{escape_js(t)}'>{t}</option>" for t in sorted(types_evenement)
+    )
+
+    # panneau plus clean
+    filtres_html = f"""
+    <div id="filters-panel" style="
+        position:fixed;
+        top:70px;
+        right:12px;
+        z-index:1000;
+        width:300px;
+        background:rgba(255,255,255,.97);
+        padding:14px;
+        border-radius:10px;
+        box-shadow:0 4px 14px rgba(0,0,0,.18);
+        font-family:sans-serif;
+        font-size:13px;
+        color:#243b53;">
+
+      <div style="font-weight:700;font-size:14px;margin-bottom:10px;">Filtres</div>
+
+      <label style="display:block;margin-bottom:5px;font-weight:600;">Municipalité</label>
+      <select id="filter-muni" style="width:100%;padding:7px 8px;margin-bottom:10px;border:1px solid #cbd2d9;border-radius:6px;">
+        {muni_options}
+      </select>
+
+      <label style="display:block;margin-bottom:5px;font-weight:600;">Type d'événement</label>
+      <select id="filter-type" style="width:100%;padding:7px 8px;margin-bottom:10px;border:1px solid #cbd2d9;border-radius:6px;">
+        {type_options}
+      </select>
+
+      <label style="display:flex;align-items:center;gap:8px;margin-bottom:12px;cursor:pointer;">
+        <input type="checkbox" id="filter-hide-approx">
+        <span>Masquer les localisations approximatives</span>
+      </label>
+
+      <button id="filter-reset-btn" style="
+          width:100%;
+          padding:8px 10px;
+          border:none;
+          border-radius:6px;
+          background:#2f80c1;
+          color:white;
+          font-weight:600;
+          cursor:pointer;">
+        Réinitialiser
+      </button>
+
+      <div id="filters-count" style="margin-top:10px;color:#486581;font-size:12px;"></div>
+    </div>
+    """
+    carte.get_root().html.add_child(folium.Element(filtres_html))
+
+    # JS robuste
+    js_objects = []
+    for m in markers_meta:
+        js_objects.append(
+            "{{ marker: {var_name}, municipalite: '{municipalite}', type_evt: '{type_evt}', approx: {approx} }}".format(
+                var_name=m["var_name"],
+                municipalite=escape_js(m["municipalite"]),
+                type_evt=escape_js(m["type_evt"]),
+                approx="true" if m["approx"] else "false"
+            )
+        )
+
+    js = f"""
+    <script>
+    setTimeout(function() {{
+        var clusterGroup = {cluster.get_name()};
+        var markersData = [{",".join(js_objects)}];
+
+        function applyFilters() {{
+            var muni = document.getElementById("filter-muni").value;
+            var typeEvt = document.getElementById("filter-type").value;
+            var hideApprox = document.getElementById("filter-hide-approx").checked;
+
+            clusterGroup.clearLayers();
+
+            var count = 0;
+
+            markersData.forEach(function(item) {{
+                var keep = true;
+
+                if (muni && item.municipalite !== muni) keep = false;
+                if (typeEvt && item.type_evt !== typeEvt) keep = false;
+                if (hideApprox && item.approx) keep = false;
+
+                if (keep) {{
+                    clusterGroup.addLayer(item.marker);
+                    count++;
+                }}
+            }});
+
+            var countEl = document.getElementById("filters-count");
+            if (countEl) {{
+                countEl.innerText = count + " point(s) affiché(s)";
+            }}
+        }}
+
+        function resetFilters() {{
+            document.getElementById("filter-muni").value = "";
+            document.getElementById("filter-type").value = "";
+            document.getElementById("filter-hide-approx").checked = false;
+            applyFilters();
+        }}
+
+        var muniEl = document.getElementById("filter-muni");
+        var typeEl = document.getElementById("filter-type");
+        var approxEl = document.getElementById("filter-hide-approx");
+        var resetBtn = document.getElementById("filter-reset-btn");
+
+        if (muniEl) muniEl.addEventListener("change", applyFilters);
+        if (typeEl) typeEl.addEventListener("change", applyFilters);
+        if (approxEl) approxEl.addEventListener("change", applyFilters);
+        if (resetBtn) resetBtn.addEventListener("click", resetFilters);
+
+        applyFilters();
+    }}, 300);
+    </script>
+    """
+    carte.get_root().html.add_child(folium.Element(js))
 
     carte.save(fichier)
     return n
