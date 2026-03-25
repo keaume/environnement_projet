@@ -2,13 +2,46 @@
 # -*- coding: utf-8 -*-
 
 """
-Scraper - Interventions d'urgence environnementale du MELCCFP (Québec)
-=====================================================================
-STRATÉGIE DELTA + NOMINATIM (géocodage 100% gratuit)
------------------------------------------------------
-- cache_fiches.json    → accumule TOUTES les fiches
-- cache_geocode.json   → accumule TOUS les géocodages
-- Nominatim (OpenStreetMap) remplace Google → 0 $
+===========================================================
+Scraper - Urgences environnementales Québec
+===========================================================
+
+Auteur : Antoine Toenz
+Email  : antoine@toenz.com
+
+Description :
+------------
+Ce script permet de :
+- Scraper les interventions d'urgence environnementale du MELCCFP
+- Géocoder les adresses (Nominatim - OpenStreetMap)
+- Générer des cartes interactives (Leaflet / Folium)
+- Produire un site statique compatible GitHub Pages
+
+Fonctionnalités :
+----------------
+- Cache scraping (évite de recharger inutilement)
+- Cache géocodage (optimise les appels API)
+- Filtrage interactif (municipalité, type, précision)
+- Regroupement automatique (Montréal, Laval, etc.)
+- Génération automatique des cartes par région
+
+Utilisation :
+-------------
+python scraper_urgence_env.py
+
+Sorties :
+---------
+- docs/index.html
+- docs/carte_*.html
+- docs/urgences_quebec.csv
+
+Notes :
+-------
+- Les données proviennent du site du gouvernement du Québec
+- Certaines localisations peuvent être approximatives
+- Le script est conçu pour être relancé régulièrement
+
+===========================================================
 """
 
 import os
