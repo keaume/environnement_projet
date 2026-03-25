@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9f3d420fbcaeefdb0b8987d5b7d655f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <a href="index.html" style="position:fixed;top:12px;left:12px;z-index:1000;
+       background:white;padding:8px 14px;border-radius:6px;text-decoration:none;
+       box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;
+       font-size:13px;color:#1a3c5e">← Toutes les régions</a>
+    
+    <div style="position:fixed;top:12px;left:50%;transform:translateX(-50%);
+                z-index:1000;background:rgba(255,255,255,.93);padding:8px 20px;
+                border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.25);
+                font-family:sans-serif;font-size:15px;font-weight:bold;color:#1a3c5e">
+      🌿 Mauricie — 2 interventions
+    </div>
+    
+            <div class="folium-map" id="map_9f3d420fbcaeefdb0b8987d5b7d655f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9f3d420fbcaeefdb0b8987d5b7d655f3 = L.map(
+                "map_9f3d420fbcaeefdb0b8987d5b7d655f3",
+                {
+                    center: [46.7, -72.8],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e1f0bba5c43d486605d3c460c726dbc9 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e1f0bba5c43d486605d3c460c726dbc9.addTo(map_9f3d420fbcaeefdb0b8987d5b7d655f3);
+        
+    
+            var marker_cluster_0e96d9745d39869b99054ff07706dcda = L.markerClusterGroup(
+                {
+  "maxClusterRadius": 40,
+  "disableClusteringAtZoom": 13,
+}
+            );
+        
+    
+            var marker_1f66310e88ecc1c97b140e3e95651ca9 = L.marker(
+                [46.492474, -73.220281],
+                {
+}
+            ).addTo(marker_cluster_0e96d9745d39869b99054ff07706dcda);
+        
+    
+            var icon_25dba505d3d7d31dd0d4f1610a422224 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bcde54a2c8697167d01c3a6c4471a45 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_d71c604b8081a49d119d969bf065296c = $(`<div id="html_d71c604b8081a49d119d969bf065296c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Saint-Alexis-des-Monts 
+ 				- Signalement d'une matière sur un lieu sensible</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 30 juillet 2024<br>           📁 <b>Dossier :</b> 301767887 Catégorie : 1<br>           📍 <b>Adresse :</b> 2950, chemin Vallée<br>           🏙️ <b>Municipalité :</b> Saint-Alexis-des-Monts<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301767887" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2bcde54a2c8697167d01c3a6c4471a45.setContent(html_d71c604b8081a49d119d969bf065296c);
+            
+        
+
+        marker_1f66310e88ecc1c97b140e3e95651ca9.bindPopup(popup_2bcde54a2c8697167d01c3a6c4471a45)
+        ;
+
+        
+    
+    
+            marker_1f66310e88ecc1c97b140e3e95651ca9.bindTooltip(
+                `<div>
+                     30 juillet 2024 – Saint-Alexis-des-Monts 
+				- Signalement d'une matière sur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f66310e88ecc1c97b140e3e95651ca9.setIcon(icon_25dba505d3d7d31dd0d4f1610a422224);
+            
+    
+            var marker_abc78a36a09ba968dbe52374bfb10958 = L.marker(
+                [46.482659, -73.270736],
+                {
+}
+            ).addTo(marker_cluster_0e96d9745d39869b99054ff07706dcda);
+        
+    
+            var icon_a0f702a9b0e7cb3c2686ad21ff00ff81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce22fde725a38812fb89099f2f950900 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_5f5d7ca57ee5398c29ff0c07c91f6eda = $(`<div id="html_5f5d7ca57ee5398c29ff0c07c91f6eda" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Saint-lexis-des-Monts 
+ 				- Signalement d'une coloration sur un cours d'eau</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 27 avril 2024<br>           📁 <b>Dossier :</b> 301746042 Catégorie : 1<br>           📍 <b>Adresse :</b> Rivière aux Écorces<br>           🏙️ <b>Municipalité :</b> Saint-lexis-des-Monts<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301746042" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_ce22fde725a38812fb89099f2f950900.setContent(html_5f5d7ca57ee5398c29ff0c07c91f6eda);
+            
+        
+
+        marker_abc78a36a09ba968dbe52374bfb10958.bindPopup(popup_ce22fde725a38812fb89099f2f950900)
+        ;
+
+        
+    
+    
+            marker_abc78a36a09ba968dbe52374bfb10958.bindTooltip(
+                `<div>
+                     27 avril 2024 – Saint-lexis-des-Monts 
+				- Signalement d'une coloration s
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_abc78a36a09ba968dbe52374bfb10958.setIcon(icon_a0f702a9b0e7cb3c2686ad21ff00ff81);
+            
+    
+            marker_cluster_0e96d9745d39869b99054ff07706dcda.addTo(map_9f3d420fbcaeefdb0b8987d5b7d655f3);
+        
+</script>
+</html>

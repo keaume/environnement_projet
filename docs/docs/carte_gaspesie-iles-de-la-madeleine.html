@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7d50c8b4d1a9efc4eab4c4fd3ab77b13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <a href="index.html" style="position:fixed;top:12px;left:12px;z-index:1000;
+       background:white;padding:8px 14px;border-radius:6px;text-decoration:none;
+       box-shadow:0 2px 6px rgba(0,0,0,.25);font-family:sans-serif;
+       font-size:13px;color:#1a3c5e">← Toutes les régions</a>
+    
+    <div style="position:fixed;top:12px;left:50%;transform:translateX(-50%);
+                z-index:1000;background:rgba(255,255,255,.93);padding:8px 20px;
+                border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.25);
+                font-family:sans-serif;font-size:15px;font-weight:bold;color:#1a3c5e">
+      🌿 Gaspésie—Îles-de-la-Madeleine — 20 interventions
+    </div>
+    
+            <div class="folium-map" id="map_7d50c8b4d1a9efc4eab4c4fd3ab77b13" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7d50c8b4d1a9efc4eab4c4fd3ab77b13 = L.map(
+                "map_7d50c8b4d1a9efc4eab4c4fd3ab77b13",
+                {
+                    center: [48.5, -65.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cd0bfd7209ee376d6717d00a2a18608f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cd0bfd7209ee376d6717d00a2a18608f.addTo(map_7d50c8b4d1a9efc4eab4c4fd3ab77b13);
+        
+    
+            var marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc = L.markerClusterGroup(
+                {
+  "maxClusterRadius": 40,
+  "disableClusteringAtZoom": 13,
+}
+            );
+        
+    
+            var marker_3312bb2fae22b81bf695520f5dc2d557 = L.marker(
+                [48.522299, -64.213642],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_e04b9eb9288e2e0d9571c21905521075 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da4085b79564ee28269ae41c911b90b2 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_7babec85d010b373dae16e306f3d9d05 = $(`<div id="html_7babec85d010b373dae16e306f3d9d05" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Percé 
+ 				- Déversement de matières dangereuses</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 25 août 2025<br>           📁 <b>Dossier :</b> 301846181 Catégorie : 1<br>           📍 <b>Adresse :</b> En face du 1212, 2e rang<br>           🏙️ <b>Municipalité :</b> Percé<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301846181" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_da4085b79564ee28269ae41c911b90b2.setContent(html_7babec85d010b373dae16e306f3d9d05);
+            
+        
+
+        marker_3312bb2fae22b81bf695520f5dc2d557.bindPopup(popup_da4085b79564ee28269ae41c911b90b2)
+        ;
+
+        
+    
+    
+            marker_3312bb2fae22b81bf695520f5dc2d557.bindTooltip(
+                `<div>
+                     25 août 2025 – Percé 
+				- Déversement de matières dangereuses
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3312bb2fae22b81bf695520f5dc2d557.setIcon(icon_e04b9eb9288e2e0d9571c21905521075);
+            
+    
+            var marker_a11d6271077f82126409a1ed3af96939 = L.marker(
+                [49.226492, -65.728382],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_af89ca483e2a75accf0a613bf092a94d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8394265b165ade5fb6dee7dbaf67ee7c = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_bc352aaf7e0cdd01da2da09101c446ad = $(`<div id="html_bc352aaf7e0cdd01da2da09101c446ad" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Saint-Maxime-du-Mont-Louis 
+ 				- Déversement de diesel</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 20 mars 2025<br>           📁 <b>Dossier :</b> 301812254 Catégorie : 1<br>           📍 <b>Adresse :</b> 37, rue de l'Église<br>           🏙️ <b>Municipalité :</b> Saint-Maxime-du-Mont-Louis<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301812254" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_8394265b165ade5fb6dee7dbaf67ee7c.setContent(html_bc352aaf7e0cdd01da2da09101c446ad);
+            
+        
+
+        marker_a11d6271077f82126409a1ed3af96939.bindPopup(popup_8394265b165ade5fb6dee7dbaf67ee7c)
+        ;
+
+        
+    
+    
+            marker_a11d6271077f82126409a1ed3af96939.bindTooltip(
+                `<div>
+                     20 mars 2025 – Saint-Maxime-du-Mont-Louis 
+				- Déversement de diesel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a11d6271077f82126409a1ed3af96939.setIcon(icon_af89ca483e2a75accf0a613bf092a94d);
+            
+    
+            var marker_16c5144aab8240882e17ef9884bb4d41 = L.marker(
+                [48.361728, -64.608807],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_1631a1953dd30e581c46dd5e4099657e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88735526074a2f51e2acdbb49704c9c6 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_40d080c39760dc99e1233366ebde703a = $(`<div id="html_40d080c39760dc99e1233366ebde703a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Pabos 
+ 				- Présence de matières diverses</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 15 août 2024<br>           📁 <b>Dossier :</b> 301771784 Catégorie : 1<br>           📍 <b>Adresse :</b> Lot # 4 857 092<br>           🏙️ <b>Municipalité :</b> Pabos<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301771784" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_88735526074a2f51e2acdbb49704c9c6.setContent(html_40d080c39760dc99e1233366ebde703a);
+            
+        
+
+        marker_16c5144aab8240882e17ef9884bb4d41.bindPopup(popup_88735526074a2f51e2acdbb49704c9c6)
+        ;
+
+        
+    
+    
+            marker_16c5144aab8240882e17ef9884bb4d41.bindTooltip(
+                `<div>
+                     15 août 2024 – Pabos 
+				- Présence de matières diverses
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16c5144aab8240882e17ef9884bb4d41.setIcon(icon_1631a1953dd30e581c46dd5e4099657e);
+            
+    
+            var marker_182d12ee218f3f1fec6fbb19a76705f2 = L.marker(
+                [49.175422, -65.344834],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_2a90c216cb2fe851e7c6fce99dfca71f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ed2921bc7fcc6e2337e415c24535b72 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_f76f352b627a2111508c7ffe4e374cc4 = $(`<div id="html_f76f352b627a2111508c7ffe4e374cc4" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Sainte-Madeleine-de-la-Rivière-Madeleine 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 24 avril 2024<br>           📁 <b>Dossier :</b> 301745066 Catégorie : 1<br>           📍 <b>Adresse :</b> Route 132 (Lat: 49,2533111111 ; Long: -65,4685916667)<br>           🏙️ <b>Municipalité :</b> Sainte-Madeleine-de-la-Rivière-Madeleine<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301745066" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_4ed2921bc7fcc6e2337e415c24535b72.setContent(html_f76f352b627a2111508c7ffe4e374cc4);
+            
+        
+
+        marker_182d12ee218f3f1fec6fbb19a76705f2.bindPopup(popup_4ed2921bc7fcc6e2337e415c24535b72)
+        ;
+
+        
+    
+    
+            marker_182d12ee218f3f1fec6fbb19a76705f2.bindTooltip(
+                `<div>
+                     24 avril 2024 – Sainte-Madeleine-de-la-Rivière-Madeleine 
+				- Déversement
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_182d12ee218f3f1fec6fbb19a76705f2.setIcon(icon_2a90c216cb2fe851e7c6fce99dfca71f);
+            
+    
+            var marker_878af8bc89d2bbb502e6e570c17fa8bf = L.marker(
+                [48.522299, -64.213642],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_19328b59a3ed2b42bda3943e111ca6ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2d90cad1f21a260fe291e9b27818224 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_ece7659a3cdb12b87781be8759935f71 = $(`<div id="html_ece7659a3cdb12b87781be8759935f71" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Percé 
+ 				- Dépôt illicite de matières résiduelles</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 23 août 2023<br>           📁 <b>Dossier :</b> 301699319 Catégorie : 1<br>           📍 <b>Adresse :</b> 1670 route 132 O.<br>           🏙️ <b>Municipalité :</b> Percé<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301699319" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b2d90cad1f21a260fe291e9b27818224.setContent(html_ece7659a3cdb12b87781be8759935f71);
+            
+        
+
+        marker_878af8bc89d2bbb502e6e570c17fa8bf.bindPopup(popup_b2d90cad1f21a260fe291e9b27818224)
+        ;
+
+        
+    
+    
+            marker_878af8bc89d2bbb502e6e570c17fa8bf.bindTooltip(
+                `<div>
+                     23 août 2023 – Percé 
+				- Dépôt illicite de matières résiduelles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_878af8bc89d2bbb502e6e570c17fa8bf.setIcon(icon_19328b59a3ed2b42bda3943e111ca6ba);
+            
+    
+            var marker_7ee444061b38cc4e46006a81cf123819 = L.marker(
+                [48.398481, -64.495306],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_e7a74dbfb4bbdb7f0e4ec4cc4f8b69f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_548b6552e5d801f6a79459c47d734cb8 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_7337f149ec92d617c84c7ee6916428dd = $(`<div id="html_7337f149ec92d617c84c7ee6916428dd" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Grande-Rivière 
+ 				- Incendie impliquant des produits pétroliers</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 8 août 2022<br>           📁 <b>Dossier :</b> 301625734 Catégorie : 1<br>           📍 <b>Adresse :</b> 142, Rang Saint-Hilaire<br>           🏙️ <b>Municipalité :</b> Grande-Rivière<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301625734" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_548b6552e5d801f6a79459c47d734cb8.setContent(html_7337f149ec92d617c84c7ee6916428dd);
+            
+        
+
+        marker_7ee444061b38cc4e46006a81cf123819.bindPopup(popup_548b6552e5d801f6a79459c47d734cb8)
+        ;
+
+        
+    
+    
+            marker_7ee444061b38cc4e46006a81cf123819.bindTooltip(
+                `<div>
+                     8 août 2022 – Grande-Rivière 
+				- Incendie impliquant des produits pétr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ee444061b38cc4e46006a81cf123819.setIcon(icon_e7a74dbfb4bbdb7f0e4ec4cc4f8b69f9);
+            
+    
+            var marker_1542c9dd594cf68d7c1a2747c07c5d86 = L.marker(
+                [49.046003, -64.474926],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_8a33ea4aff85d8bdfbcd7825e0ac910e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2ac12ba1593a211d9aa27503aa0842f = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_4304d4ffdce9a8d09235547075afacb0 = $(`<div id="html_4304d4ffdce9a8d09235547075afacb0" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Gaspé (secteur Saint-Maurice-de-l'Échouerie) 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 4 octobre 2019<br>           📁 <b>Dossier :</b> 301423120 Catégorie : 1<br>           📍 <b>Adresse :</b> 635, boulevard de Saint-Maurice<br>           🏙️ <b>Municipalité :</b> Gaspé (secteur Saint-Maurice-de-l'Échouerie)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301423120" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_b2ac12ba1593a211d9aa27503aa0842f.setContent(html_4304d4ffdce9a8d09235547075afacb0);
+            
+        
+
+        marker_1542c9dd594cf68d7c1a2747c07c5d86.bindPopup(popup_b2ac12ba1593a211d9aa27503aa0842f)
+        ;
+
+        
+    
+    
+            marker_1542c9dd594cf68d7c1a2747c07c5d86.bindTooltip(
+                `<div>
+                     4 octobre 2019 – Gaspé (secteur Saint-Maurice-de-l'Échouerie) 
+				- Déverse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1542c9dd594cf68d7c1a2747c07c5d86.setIcon(icon_8a33ea4aff85d8bdfbcd7825e0ac910e);
+            
+    
+            var marker_b2a664dc597b6bf658d32316db28a31d = L.marker(
+                [49.193185, -64.889232],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_784d0385c2d3739e462ca422e9d45be3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cdc85b3618c00fdf2e3d1a83aaefedd = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_20d76caa9599deac61808c1117d26deb = $(`<div id="html_20d76caa9599deac61808c1117d26deb" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Cloridorme 
+ 				- Excavation de sols contaminés</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 20 septembre 2019<br>           📁 <b>Dossier :</b> 301419817 Catégorie : 1<br>           📍 <b>Adresse :</b> 300, route 132<br>           🏙️ <b>Municipalité :</b> Cloridorme<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301419817" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_2cdc85b3618c00fdf2e3d1a83aaefedd.setContent(html_20d76caa9599deac61808c1117d26deb);
+            
+        
+
+        marker_b2a664dc597b6bf658d32316db28a31d.bindPopup(popup_2cdc85b3618c00fdf2e3d1a83aaefedd)
+        ;
+
+        
+    
+    
+            marker_b2a664dc597b6bf658d32316db28a31d.bindTooltip(
+                `<div>
+                     20 septembre 2019 – Cloridorme 
+				- Excavation de sols contaminés
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2a664dc597b6bf658d32316db28a31d.setIcon(icon_784d0385c2d3739e462ca422e9d45be3);
+            
+    
+            var marker_4ddd33468f784c4b6c3bfb95b0a44997 = L.marker(
+                [48.519064, -64.216951],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_d52385003ee0b9ebebad0c4aa8ad1aa1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f73dabb9e5ee75fd08f489d61746b87b = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_55917accf8dacc735f926f78b2b65f9d = $(`<div id="html_55917accf8dacc735f926f78b2b65f9d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Cap-chat (Secteur Les Capucins) 
+ 				- Déversement de matières dangereuses</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 23 août 2019<br>           📁 <b>Dossier :</b> 301414895 Catégorie : 1<br>           📍 <b>Adresse :</b> 212, route 132<br>           🏙️ <b>Municipalité :</b> Cap-chat (Secteur Les Capucins)<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301414895" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_f73dabb9e5ee75fd08f489d61746b87b.setContent(html_55917accf8dacc735f926f78b2b65f9d);
+            
+        
+
+        marker_4ddd33468f784c4b6c3bfb95b0a44997.bindPopup(popup_f73dabb9e5ee75fd08f489d61746b87b)
+        ;
+
+        
+    
+    
+            marker_4ddd33468f784c4b6c3bfb95b0a44997.bindTooltip(
+                `<div>
+                     23 août 2019 – Cap-chat (Secteur Les Capucins) 
+				- Déversement de matiè
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ddd33468f784c4b6c3bfb95b0a44997.setIcon(icon_d52385003ee0b9ebebad0c4aa8ad1aa1);
+            
+    
+            var marker_baa2a0a95bdb871c8b3ed11c7e8799ad = L.marker(
+                [49.228047, -65.72872],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_a468d46990bdddf737a9982dd99e329a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e165a81b508368f3057fc61c1f1ed8c4 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_8287b822e92419a8b2a935ea19711d0c = $(`<div id="html_8287b822e92419a8b2a935ea19711d0c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Saint-Maxime-du-Mont-Louis 
+ 				- Bateau coulé</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 22 juin 2018<br>           📁 <b>Dossier :</b> 301324816 Catégorie : 1<br>           📍 <b>Adresse :</b> Rive du fleuve Saint-Laurent, secteur Gros-Morne (49 15.3N 065 31.62W)<br>           🏙️ <b>Municipalité :</b> Saint-Maxime-du-Mont-Louis<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301324816" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_e165a81b508368f3057fc61c1f1ed8c4.setContent(html_8287b822e92419a8b2a935ea19711d0c);
+            
+        
+
+        marker_baa2a0a95bdb871c8b3ed11c7e8799ad.bindPopup(popup_e165a81b508368f3057fc61c1f1ed8c4)
+        ;
+
+        
+    
+    
+            marker_baa2a0a95bdb871c8b3ed11c7e8799ad.bindTooltip(
+                `<div>
+                     22 juin 2018 – Saint-Maxime-du-Mont-Louis 
+				- Bateau coulé
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_baa2a0a95bdb871c8b3ed11c7e8799ad.setIcon(icon_a468d46990bdddf737a9982dd99e329a);
+            
+    
+            var marker_f948b9141f8bdf8d5b0269580383ffa7 = L.marker(
+                [48.134547, -64.992078],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_adcafc234d2b727e4d9ab728d453c2bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f21c86f00237ec334dbc43bfb7b16ae = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_95170d3ccf7c51247d6e89390307cee1 = $(`<div id="html_95170d3ccf7c51247d6e89390307cee1" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Cap-Chat  
+ 				- Brûlage de matières résiduelles</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 26 novembre 2016<br>           📁 <b>Dossier :</b> 301204417 Catégorie : 1<br>           📍 <b>Adresse :</b> 296, Route 132<br>           🏙️ <b>Municipalité :</b> Cap-Chat<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301204417" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_6f21c86f00237ec334dbc43bfb7b16ae.setContent(html_95170d3ccf7c51247d6e89390307cee1);
+            
+        
+
+        marker_f948b9141f8bdf8d5b0269580383ffa7.bindPopup(popup_6f21c86f00237ec334dbc43bfb7b16ae)
+        ;
+
+        
+    
+    
+            marker_f948b9141f8bdf8d5b0269580383ffa7.bindTooltip(
+                `<div>
+                     26 novembre 2016 – Cap-Chat  
+				- Brûlage de matières résiduelles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f948b9141f8bdf8d5b0269580383ffa7.setIcon(icon_adcafc234d2b727e4d9ab728d453c2bb);
+            
+    
+            var marker_8fcbb4b07bd6c0b88849ac8667d04eed = L.marker(
+                [48.164955, -64.979771],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_f1a5b2d6e707b386635e122c6cee1522 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_147078023bcef1690130633aa5c31a7b = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_c8c9146652dc772dbff07c8f0c3027b3 = $(`<div id="html_c8c9146652dc772dbff07c8f0c3027b3" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Port-Daniel 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 19 août 2015<br>           📁 <b>Dossier :</b> 300984870 Catégorie : 1<br>           📍 <b>Adresse :</b> Béton Provincial ltée<br>           🏙️ <b>Municipalité :</b> Port-Daniel<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300984870" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_147078023bcef1690130633aa5c31a7b.setContent(html_c8c9146652dc772dbff07c8f0c3027b3);
+            
+        
+
+        marker_8fcbb4b07bd6c0b88849ac8667d04eed.bindPopup(popup_147078023bcef1690130633aa5c31a7b)
+        ;
+
+        
+    
+    
+            marker_8fcbb4b07bd6c0b88849ac8667d04eed.bindTooltip(
+                `<div>
+                     19 août 2015 – Port-Daniel 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fcbb4b07bd6c0b88849ac8667d04eed.setIcon(icon_f1a5b2d6e707b386635e122c6cee1522);
+            
+    
+            var marker_9ebeceb6695524849404374bf31b8b7c = L.marker(
+                [49.251452, -65.413377],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_5917c537b801d19578ca4cad8c7a5404 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_475e55599b358be75a19f2cd615f729d = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_64e2cef379c5faacbe32a07eb087dabf = $(`<div id="html_64e2cef379c5faacbe32a07eb087dabf" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Sainte-Madeleine-de-la-rivière-Madeleine 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 16 mars 2015<br>           📁 <b>Dossier :</b> 300948344 Catégorie : 1<br>           📍 <b>Adresse :</b> 60, route Principale<br>           🏙️ <b>Municipalité :</b> Sainte-Madeleine-de-la-rivière-Madeleine<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300948344" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_475e55599b358be75a19f2cd615f729d.setContent(html_64e2cef379c5faacbe32a07eb087dabf);
+            
+        
+
+        marker_9ebeceb6695524849404374bf31b8b7c.bindPopup(popup_475e55599b358be75a19f2cd615f729d)
+        ;
+
+        
+    
+    
+            marker_9ebeceb6695524849404374bf31b8b7c.bindTooltip(
+                `<div>
+                     16 mars 2015 – Sainte-Madeleine-de-la-rivière-Madeleine 
+				- Déversement
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ebeceb6695524849404374bf31b8b7c.setIcon(icon_5917c537b801d19578ca4cad8c7a5404);
+            
+    
+            var marker_acf7e388f5d2d9bce10f016506406aee = L.marker(
+                [49.228047, -65.72872],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_c5e8543d6e14639c24e5670d8f636d72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e5b08a66472e06da6ecdcd94a48d9ae = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_489d9c6407d7df2a1d3950d3c2070572 = $(`<div id="html_489d9c6407d7df2a1d3950d3c2070572" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">St-Maxime-du-Mont-Louis 
+ 				- Accident maritime</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 15 décembre 2013<br>           📁 <b>Dossier :</b> 7110-11-13-0401003 Catégorie : 1<br>           📍 <b>Adresse :</b> Rive du fleuve St-Laurent (GPS: 49° 15' 12.6" - 65° 36' 12.1")<br>           🏙️ <b>Municipalité :</b> St-Maxime-du-Mont-Louis<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-11-13-0401003" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_9e5b08a66472e06da6ecdcd94a48d9ae.setContent(html_489d9c6407d7df2a1d3950d3c2070572);
+            
+        
+
+        marker_acf7e388f5d2d9bce10f016506406aee.bindPopup(popup_9e5b08a66472e06da6ecdcd94a48d9ae)
+        ;
+
+        
+    
+    
+            marker_acf7e388f5d2d9bce10f016506406aee.bindTooltip(
+                `<div>
+                     15 décembre 2013 – St-Maxime-du-Mont-Louis 
+				- Accident maritime
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_acf7e388f5d2d9bce10f016506406aee.setIcon(icon_c5e8543d6e14639c24e5670d8f636d72);
+            
+    
+            var marker_9d9194378a7bb818b0c1630088e748a6 = L.marker(
+                [48.286971, -64.722035],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_b9f87c4167b7a9396d7c6536ce5da02f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_775a075971fb11502890dc89f99ceb3a = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_8e69c17dbb4cae10d05f9d6f940249e0 = $(`<div id="html_8e69c17dbb4cae10d05f9d6f940249e0" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Chandler 
+ 				- Déversement d'eaux usées</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 27 août 2013<br>           📁 <b>Dossier :</b> 7110-11-13-0202810 Catégorie : 1<br>           📍 <b>Adresse :</b> Quai de Newport<br>           🏙️ <b>Municipalité :</b> Chandler<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-11-13-0202810" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_775a075971fb11502890dc89f99ceb3a.setContent(html_8e69c17dbb4cae10d05f9d6f940249e0);
+            
+        
+
+        marker_9d9194378a7bb818b0c1630088e748a6.bindPopup(popup_775a075971fb11502890dc89f99ceb3a)
+        ;
+
+        
+    
+    
+            marker_9d9194378a7bb818b0c1630088e748a6.bindTooltip(
+                `<div>
+                     27 août 2013 – Chandler 
+				- Déversement d'eaux usées
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d9194378a7bb818b0c1630088e748a6.setIcon(icon_b9f87c4167b7a9396d7c6536ce5da02f);
+            
+    
+            var marker_06425226b8f09bd34c765bb2b3a1d061 = L.marker(
+                [48.286961, -64.721943],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_c4ec566901a8c2c289192684dfdaadc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d366f51219a226e40fef24bf48a7151a = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_962c910f08693e9185b5a0bf31b1f118 = $(`<div id="html_962c910f08693e9185b5a0bf31b1f118" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Chandler 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 21 septembre 2011<br>           📁 <b>Dossier :</b> 7110-11-11-0202805 Catégorie : 1<br>           📍 <b>Adresse :</b> Quai de Chandler<br>           🏙️ <b>Municipalité :</b> Chandler<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-11-11-0202805" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_d366f51219a226e40fef24bf48a7151a.setContent(html_962c910f08693e9185b5a0bf31b1f118);
+            
+        
+
+        marker_06425226b8f09bd34c765bb2b3a1d061.bindPopup(popup_d366f51219a226e40fef24bf48a7151a)
+        ;
+
+        
+    
+    
+            marker_06425226b8f09bd34c765bb2b3a1d061.bindTooltip(
+                `<div>
+                     21 septembre 2011 – Chandler 
+				- Déversement de produits pétroliers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06425226b8f09bd34c765bb2b3a1d061.setIcon(icon_c4ec566901a8c2c289192684dfdaadc9);
+            
+    
+            var marker_be029f71003d906049c01bdde03ed7f7 = L.marker(
+                [48.393661, -64.494188],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_a8156683763ff4ba77631fe2e27053e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccfe10d35ffd72712e8bf0a614f136c5 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_6dc58d0675c45a54232b340c99ba2473 = $(`<div id="html_6dc58d0675c45a54232b340c99ba2473" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Sainte-Anne-des-Monts 
+ 				- Déversement de produits pétroliers</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 2 octobre 2010<br>           📁 <b>Dossier :</b> 7110-11-10-04037-11 Catégorie : 1<br>           📍 <b>Adresse :</b> Havre de pêche<br>           🏙️ <b>Municipalité :</b> Sainte-Anne-des-Monts<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-11-10-04037-11" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_ccfe10d35ffd72712e8bf0a614f136c5.setContent(html_6dc58d0675c45a54232b340c99ba2473);
+            
+        
+
+        marker_be029f71003d906049c01bdde03ed7f7.bindPopup(popup_ccfe10d35ffd72712e8bf0a614f136c5)
+        ;
+
+        
+    
+    
+            marker_be029f71003d906049c01bdde03ed7f7.bindTooltip(
+                `<div>
+                     2 octobre 2010 – Sainte-Anne-des-Monts 
+				- Déversement de produits pétrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be029f71003d906049c01bdde03ed7f7.setIcon(icon_a8156683763ff4ba77631fe2e27053e3);
+            
+    
+            var marker_584a393f1315fc7e0afc4749c4b738e7 = L.marker(
+                [49.18579, -64.852727],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_e439fd9b36a2694947f3fe0ff1e3535b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d2888ccbcf61cfbdf3f83572b22b0a9 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_9746d18bbe36a221bea30f3d4ed6f863 = $(`<div id="html_9746d18bbe36a221bea30f3d4ed6f863" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Cloridorme 
+ 				- Contamination souterraine</b><br>           <hr style="margin:4px 0">           <span style='color:#b03a2e;font-weight:700'>📍 Localisation approximative</span><br>           📅 <b>Date :</b> 22 août 2010<br>           📁 <b>Dossier :</b> 7110-11-10-03010-01 Catégorie : 1<br>           📍 <b>Adresse :</b> Face à l'aréna<br>           🏙️ <b>Municipalité :</b> Cloridorme<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-11-10-03010-01" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_3d2888ccbcf61cfbdf3f83572b22b0a9.setContent(html_9746d18bbe36a221bea30f3d4ed6f863);
+            
+        
+
+        marker_584a393f1315fc7e0afc4749c4b738e7.bindPopup(popup_3d2888ccbcf61cfbdf3f83572b22b0a9)
+        ;
+
+        
+    
+    
+            marker_584a393f1315fc7e0afc4749c4b738e7.bindTooltip(
+                `<div>
+                     22 août 2010 – Cloridorme 
+				- Contamination souterraine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_584a393f1315fc7e0afc4749c4b738e7.setIcon(icon_e439fd9b36a2694947f3fe0ff1e3535b);
+            
+    
+            var marker_5cad6e8eadbc35cb665424c340a2b6f0 = L.marker(
+                [48.519414, -64.216168],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_e33e971f5628e47b8a3725b3db721418 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c100b6e896c00227d9ed1bce60b33b06 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_e1ac07a866b75a266568f6cc40a56f73 = $(`<div id="html_e1ac07a866b75a266568f6cc40a56f73" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Grande-Vallée 
+ 				- Accident routier</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 28 octobre 2009<br>           📁 <b>Dossier :</b> 7110-01-09-03020-01 Catégorie : 1<br>           📍 <b>Adresse :</b> Route 132, Km 988<br>           🏙️ <b>Municipalité :</b> Grande-Vallée<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-09-03020-01" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_c100b6e896c00227d9ed1bce60b33b06.setContent(html_e1ac07a866b75a266568f6cc40a56f73);
+            
+        
+
+        marker_5cad6e8eadbc35cb665424c340a2b6f0.bindPopup(popup_c100b6e896c00227d9ed1bce60b33b06)
+        ;
+
+        
+    
+    
+            marker_5cad6e8eadbc35cb665424c340a2b6f0.bindTooltip(
+                `<div>
+                     28 octobre 2009 – Grande-Vallée 
+				- Accident routier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5cad6e8eadbc35cb665424c340a2b6f0.setIcon(icon_e33e971f5628e47b8a3725b3db721418);
+            
+    
+            var marker_707a275e34fdf11950e17539c15795e1 = L.marker(
+                [48.393661, -64.494188],
+                {
+}
+            ).addTo(marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc);
+        
+    
+            var icon_9ed22445eebe85302d2706c087fc38cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f553dc4d67797bf30431f2e02d7468a5 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_0db750375320b55df2eab76862800ecb = $(`<div id="html_0db750375320b55df2eab76862800ecb" style="width: 100.0%; height: 100.0%;">         <div style="font-family:sans-serif;font-size:13px;max-width:320px">           <b style="color:#1a5276">Les Méchins 
+ 				- Déversement maritime</b><br>           <hr style="margin:4px 0">                      📅 <b>Date :</b> 8 juillet 2008<br>           📁 <b>Dossier :</b> 7110-01-08-08005-03 Catégorie : 1<br>           📍 <b>Adresse :</b> Havre de Pêche<br>           🏙️ <b>Municipalité :</b> Les Méchins<br>           <a href="https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-08-08005-03" target="_blank"              style="color:#2980b9;font-size:12px">🔗 Fiche complète</a>         </div></div>`)[0];
+                popup_f553dc4d67797bf30431f2e02d7468a5.setContent(html_0db750375320b55df2eab76862800ecb);
+            
+        
+
+        marker_707a275e34fdf11950e17539c15795e1.bindPopup(popup_f553dc4d67797bf30431f2e02d7468a5)
+        ;
+
+        
+    
+    
+            marker_707a275e34fdf11950e17539c15795e1.bindTooltip(
+                `<div>
+                     8 juillet 2008 – Les Méchins 
+				- Déversement maritime
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_707a275e34fdf11950e17539c15795e1.setIcon(icon_9ed22445eebe85302d2706c087fc38cb);
+            
+    
+            marker_cluster_52a6f0c1a8a67e5cb721b3d2e79f66fc.addTo(map_7d50c8b4d1a9efc4eab4c4fd3ab77b13);
+        
+</script>
+</html>
