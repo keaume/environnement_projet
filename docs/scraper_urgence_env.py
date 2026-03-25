@@ -73,6 +73,8 @@ MAX_THREADS = 10
 DELAI_SCRAPE = 0.15
 DELAI_NOMINATIM = 1.1  # Nominatim: max ~1 req/sec
 
+GITHUB_URL = "https://github.com/keaume/environnement_projet/tree/main"
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 print("BASE_DIR =", BASE_DIR)
 OUTPUT_DIR = BASE_DIR
@@ -772,6 +774,15 @@ def generer_carte_region(region, evenements, fichier):
     </a>
     """))
 
+    carte.get_root().html.add_child(folium.Element(f"""
+    <a href="{GITHUB_URL}" target="_blank" style="
+       position:fixed;top:12px;right:12px;z-index:1000;
+       background:#24292e;color:white;padding:8px 14px;border-radius:8px;
+       text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.18);
+       font-family:sans-serif;font-size:13px;font-weight:600;">
+       🔗 GitHub
+    </a>"""))
+
     # titre
     carte.get_root().html.add_child(folium.Element(f"""
     <div style="
@@ -936,32 +947,76 @@ def generer_accueil(stats_regions, fichier):
           background:#f0f4f8; color:#1a3c5e; }}
   header {{ background:#1a3c5e; color:white; padding:30px 20px; text-align:center; }}
   header h1 {{ font-size:1.6em; margin-bottom:8px; }}
-  header p {{ opacity:0.8; font-size:0.95em; }}
+  header p {{ opacity:0.85; font-size:0.95em; }}
+
+  .top-links {{
+    position:absolute;
+    top:16px;
+    right:20px;
+  }}
+
+  .github-btn {{
+    display:inline-block;
+    background:#24292e;
+    color:white;
+    text-decoration:none;
+    padding:9px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+    box-shadow:0 2px 8px rgba(0,0,0,.18);
+  }}
+
+  .github-btn:hover {{
+    background:#1b1f23;
+  }}
+
   .total {{ background:#2980b9; color:white; text-align:center;
             padding:10px; font-size:0.9em; }}
+
   .grid {{ display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr));
            gap:16px; padding:30px 20px; max-width:1100px; margin:0 auto; }}
+
   .region-card {{ background:white; border-radius:10px; padding:20px;
                   text-decoration:none; color:inherit;
                   box-shadow:0 2px 8px rgba(0,0,0,.08);
                   transition:transform .15s, box-shadow .15s;
                   border-left:4px solid #2980b9; }}
+
   .region-card:hover {{ transform:translateY(-3px);
                         box-shadow:0 6px 16px rgba(0,0,0,.15); }}
+
   .region-name {{ font-weight:600; font-size:1em; margin-bottom:6px; }}
   .region-count {{ color:#2980b9; font-size:0.85em; }}
+
   footer {{ text-align:center; padding:20px; color:#888; font-size:0.8em; }}
+
+  @media (max-width: 700px) {{
+    .top-links {{
+      position:static;
+      margin-top:14px;
+    }}
+    header {{
+      padding-top:24px;
+    }}
+  }}
 </style>
 </head>
 <body>
 <header>
+  <div class="top-links">
+    <a class="github-btn" href="{GITHUB_URL}" target="_blank">🔗 Voir le projet GitHub</a>
+  </div>
   <h1>🌿 Interventions d'urgence environnementale</h1>
   <p>Registre du MELCCFP — Québec</p>
 </header>
+
 <div class="total">
   {total} interventions géocodées réparties dans {len(stats_regions)} régions
 </div>
+
 <div class="grid">{cartes_html}</div>
+
 <footer>Source : MELCCFP — Urgence-Environnement</footer>
 </body>
 </html>"""
