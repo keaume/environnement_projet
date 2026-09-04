@@ -695,7 +695,7 @@ def type_evenement_label(evenement: str) -> str:
 
 def generer_carte_region(region, evenements, fichier):
     geo = ZOOM_REGIONS.get(region, (46.8, -71.2, 8))
-    carte = folium.Map(location=[geo[0], geo[1]], zoom_start=geo[2], tiles="CartoDB positron")
+    carte = folium.Map(location=[geo[0], geo[1]], zoom_start=geo[2], tiles="OpenStreetMap")
 
     # cluster principal
     cluster = MarkerCluster(
