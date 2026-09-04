@@ -677,11 +677,11 @@
     "adresse": "Près du 880, route 132",
     "municipalite": "Sainte-Jeanne-D'Arc",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301484464",
-    "lat": 48.865047,
-    "lon": -72.084019,
-    "precision": "ville",
-    "geocode_query": "Sainte-Jeanne-D'Arc, Québec, Canada",
-    "geocode_formatted": "Sainte-Jeanne-d'Arc, Maria-Chapdelaine, Saguenay–Lac-Saint-Jean, Québec, G0W 1E0, Canada"
+    "lat": 48.493898,
+    "lon": -67.956279,
+    "precision": "ville_region",
+    "geocode_query": "Sainte-Jeanne-D'Arc, Bas-Saint-Laurent, Québec, Canada",
+    "geocode_formatted": "Sainte-Jeanne-d'Arc, 207, Rue Principale, Sainte-Jeanne-d’Arc-de-la-Mitis, La Mitis, Bas-Saint-Laurent, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301483556": {
     "region": "Bas-Saint-Laurent",
@@ -1598,11 +1598,11 @@
     "adresse": "2962-4343 Québec Inc.",
     "municipalite": "Saint-Donat",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301203221",
-    "lat": 46.318718,
-    "lon": -74.221916,
-    "precision": "ville",
-    "geocode_query": "Saint-Donat, Québec, Canada",
-    "geocode_formatted": "Saint-Donat, Matawinie, Lanaudière, Québec, J0T 2C0, Canada"
+    "lat": 48.496985,
+    "lon": -68.248268,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Donat, Bas-Saint-Laurent, Québec, Canada",
+    "geocode_formatted": "Saint-Donat, La Mitis, Bas-Saint-Laurent, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301195837": {
     "region": "Bas-Saint-Laurent",
@@ -2214,11 +2214,11 @@
     "adresse": "Rang de l'Église, avenue Belzile et Bérubé",
     "municipalite": "Saint-Léon-le-Grand",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-13-0703002",
-    "lat": 46.313513,
-    "lon": -72.935036,
-    "precision": "ville",
-    "geocode_query": "Saint-Léon-le-Grand, Québec, Canada",
-    "geocode_formatted": "Saint-Léon-le-Grand, Maskinongé (MRC), Mauricie, Québec, J0K 2W0, Canada"
+    "lat": 48.380426,
+    "lon": -67.504807,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Léon-le-Grand, Bas-Saint-Laurent, Québec, Canada",
+    "geocode_formatted": "Saint-Léon-le-Grand, La Matapédia, Bas-Saint-Laurent, Québec, G0J 2W0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-13-1207201": {
     "region": "Bas-Saint-Laurent",
@@ -2396,11 +2396,11 @@
     "adresse": "Face au 72, route 132",
     "municipalite": "Sainte-Félicité",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-11-0802303",
-    "lat": 46.965372,
-    "lon": -69.949506,
-    "precision": "ville",
-    "geocode_query": "Sainte-Félicité, Québec, Canada",
-    "geocode_formatted": "Sainte-Félicité, L'Islet (MRC), Chaudière-Appalaches, Québec, Canada"
+    "lat": 48.901019,
+    "lon": -67.33739,
+    "precision": "ville_region",
+    "geocode_query": "Sainte-Félicité, Bas-Saint-Laurent, Québec, Canada",
+    "geocode_formatted": "Sainte-Félicité, La Matanie, Bas-Saint-Laurent, Québec, G0J 2K0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-11-1207207": {
     "region": "Bas-Saint-Laurent",
@@ -6064,11 +6064,11 @@
     "adresse": "Kilomètre 39 de la route 172",
     "municipalite": "Municipalité de Sacré-Cœur",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301322130",
-    "lat": 48.233363,
-    "lon": -69.800262,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Sacré-Cœur, Québec, Canada",
-    "geocode_formatted": "Sacré-Coeur, La Haute-Côte-Nord, Côte-Nord, Québec, G0T 1Y0, Canada"
+    "lat": 48.371822,
+    "lon": -72.523228,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Sacré-Cœur, Québec, Saguenay—Lac-Saint-Jean, Canada",
+    "geocode_formatted": "Lac Sacré-Coeur, Sainte-Hedwidge, Le Domaine-du-Roy, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301316155": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -8686,11 +8686,11 @@
     "adresse": "km 188 de la route 175",
     "municipalite": "Réserve faunique des Laurentides",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-08-24-425",
-    "lat": 47.696064,
-    "lon": -71.575039,
-    "precision": "ville",
-    "geocode_query": "Réserve faunique des Laurentides, Québec, Canada",
-    "geocode_formatted": "Réserve faunique des Laurentides, Québec, Canada"
+    "lat": 48.25827,
+    "lon": -71.742922,
+    "precision": "ville_region",
+    "geocode_query": "Réserve faunique des Laurentides, Saguenay—Lac-Saint-Jean, Québec, Canada",
+    "geocode_formatted": "Réserve faunique des Laurentides, Belle-Rivière, Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-07-28-347": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -11443,11 +11443,11 @@
     "adresse": "Kilomètre 22 de la route 169",
     "municipalite": "Réserve faunique des Laurentides",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2008-12-15-498",
-    "lat": 47.696064,
-    "lon": -71.575039,
-    "precision": "ville",
-    "geocode_query": "Réserve faunique des Laurentides, Québec, Canada",
-    "geocode_formatted": "Réserve faunique des Laurentides, Québec, Canada"
+    "lat": 48.25827,
+    "lon": -71.742922,
+    "precision": "ville_region",
+    "geocode_query": "Réserve faunique des Laurentides, Saguenay—Lac-Saint-Jean, Québec, Canada",
+    "geocode_formatted": "Réserve faunique des Laurentides, Belle-Rivière, Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2008-12-11-496": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -11667,11 +11667,11 @@
     "adresse": "Route 169, kilomètre 38",
     "municipalite": "Réserve faunique des Laurentides",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02 - 2008-05-13 - 78",
-    "lat": 47.696064,
-    "lon": -71.575039,
-    "precision": "ville",
-    "geocode_query": "Réserve faunique des Laurentides, Québec, Canada",
-    "geocode_formatted": "Réserve faunique des Laurentides, Québec, Canada"
+    "lat": 48.25827,
+    "lon": -71.742922,
+    "precision": "ville_region",
+    "geocode_query": "Réserve faunique des Laurentides, Saguenay—Lac-Saint-Jean, Québec, Canada",
+    "geocode_formatted": "Réserve faunique des Laurentides, Belle-Rivière, Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=02-20080607-0843(136)": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -11891,11 +11891,11 @@
     "adresse": "Derrière le 1347, boulevard Père-Lelièvre",
     "municipalite": "Ville de Québec (arrondissement des Rivières)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821459",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "des Rivières, Québec, Canada",
-    "geocode_formatted": "Des Rivières, Notre-Dame-de-Stanbridge, Brome-Missisquoi, Québec, J0J 1M0, Canada"
+    "lat": 46.823929,
+    "lon": -71.321972,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "des Rivières, Québec, Québec, Capitale-Nationale, Canada",
+    "geocode_formatted": "Parc Linéaire des Rivières Saint-Charles et du Berger, Les Méandres, Neufchâtel-Est–Lebourgneuf, Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1P 1G7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301816723": {
     "region": "Capitale-Nationale",
@@ -12703,11 +12703,11 @@
     "adresse": "Intersection Côte Dufournel et boulevard Ste Anne",
     "municipalite": "L'Ange-Gardien",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301675449",
-    "lat": 45.626429,
-    "lon": -75.45159,
-    "precision": "ville",
-    "geocode_query": "L'Ange-Gardien, Québec, Canada",
-    "geocode_formatted": "L'Ange-Gardien, Les Collines-de-l'Outaouais, Outaouais, Québec, Canada"
+    "lat": 46.916738,
+    "lon": -71.091499,
+    "precision": "ville_region",
+    "geocode_query": "L'Ange-Gardien, Capitale-Nationale, Québec, Canada",
+    "geocode_formatted": "L'Ange-Gardien, La Côte-de-Beaupré, Capitale-Nationale, Québec, G0A 2K0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301675448": {
     "region": "Capitale-Nationale",
@@ -15673,11 +15673,11 @@
     "adresse": "Intersection du boulevard Sainte-Anne et de la rue Casgrain",
     "municipalite": "L'Ange-Gardien",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301202708",
-    "lat": 45.626429,
-    "lon": -75.45159,
-    "precision": "ville",
-    "geocode_query": "L'Ange-Gardien, Québec, Canada",
-    "geocode_formatted": "L'Ange-Gardien, Les Collines-de-l'Outaouais, Outaouais, Québec, Canada"
+    "lat": 46.916738,
+    "lon": -71.091499,
+    "precision": "ville_region",
+    "geocode_query": "L'Ange-Gardien, Capitale-Nationale, Québec, Canada",
+    "geocode_formatted": "L'Ange-Gardien, La Côte-de-Beaupré, Capitale-Nationale, Québec, G0A 2K0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301202723": {
     "region": "Capitale-Nationale",
@@ -16129,11 +16129,11 @@
     "adresse": "Terrain - N 46.94988° W 71.12759°",
     "municipalite": "L'Ange-Gardien",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300982536",
-    "lat": 45.626429,
-    "lon": -75.45159,
-    "precision": "ville",
-    "geocode_query": "L'Ange-Gardien, Québec, Canada",
-    "geocode_formatted": "L'Ange-Gardien, Les Collines-de-l'Outaouais, Outaouais, Québec, Canada"
+    "lat": 46.916738,
+    "lon": -71.091499,
+    "precision": "ville_region",
+    "geocode_query": "L'Ange-Gardien, Capitale-Nationale, Québec, Canada",
+    "geocode_formatted": "L'Ange-Gardien, La Côte-de-Beaupré, Capitale-Nationale, Québec, G0A 2K0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300982198": {
     "region": "Capitale-Nationale",
@@ -16493,11 +16493,11 @@
     "adresse": "Quai 102-105 et 107-108",
     "municipalite": "Port de Québec, secteur de l'Anse au Foulon",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300923900",
-    "lat": 45.547178,
-    "lon": -73.656717,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Port de Québec, Québec, Canada",
-    "geocode_formatted": "Postes Canada, Rue de Port-Royal Est, Ahuntsic, Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3L 1H4, Canada"
+    "lat": 46.82119,
+    "lon": -71.200436,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Port de Québec, Québec, Capitale-Nationale, Canada",
+    "geocode_formatted": "Groupe Océan - Compagnie maritime et services portuaires au Canada, 85, Rue Abraham-Martin, Port de Québec - Secteur L'Estuaire, Vieux-Québec, Vieux-Québec–Cap-Blanc–Colline-Parlementaire, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1K 4C4, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300924088": {
     "region": "Capitale-Nationale",
@@ -17873,11 +17873,11 @@
     "adresse": "Croisement du boulevard Sainte-Anne et rivière du Petit Pré",
     "municipalite": "L'Ange-Gardien",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=N-03-2012-08-16-02",
-    "lat": 45.626429,
-    "lon": -75.45159,
-    "precision": "ville",
-    "geocode_query": "L'Ange-Gardien, Québec, Canada",
-    "geocode_formatted": "L'Ange-Gardien, Les Collines-de-l'Outaouais, Outaouais, Québec, Canada"
+    "lat": 46.916738,
+    "lon": -71.091499,
+    "precision": "ville_region",
+    "geocode_query": "L'Ange-Gardien, Capitale-Nationale, Québec, Canada",
+    "geocode_formatted": "L'Ange-Gardien, La Côte-de-Beaupré, Capitale-Nationale, Québec, G0A 2K0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-08-08-01": {
     "region": "Capitale-Nationale",
@@ -20149,11 +20149,11 @@
     "adresse": "Chemin du Pont-Mathias",
     "municipalite": "L'Ange-Gardien",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-09-08-1",
-    "lat": 45.626429,
-    "lon": -75.45159,
-    "precision": "ville",
-    "geocode_query": "L'Ange-Gardien, Québec, Canada",
-    "geocode_formatted": "L'Ange-Gardien, Les Collines-de-l'Outaouais, Outaouais, Québec, Canada"
+    "lat": 46.916738,
+    "lon": -71.091499,
+    "precision": "ville_region",
+    "geocode_query": "L'Ange-Gardien, Capitale-Nationale, Québec, Canada",
+    "geocode_formatted": "L'Ange-Gardien, La Côte-de-Beaupré, Capitale-Nationale, Québec, G0A 2K0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-09-04-1": {
     "region": "Capitale-Nationale",
@@ -20219,11 +20219,11 @@
     "adresse": "Rue Hannequin / Rivière Nelson - émissaire pluvial",
     "municipalite": "Québec (arrondissement Laurentien)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-24-01",
-    "lat": 46.77863,
-    "lon": -72.836386,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Laurentien, Québec, Québec, Canada",
-    "geocode_formatted": "Laurentien, Saint-Roch-de-Mékinac, Mékinac, Mauricie, Québec, Canada"
+    "lat": 46.912501,
+    "lon": -71.363748,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Laurentien, Québec, Québec, Capitale-Nationale, Canada",
+    "geocode_formatted": "Rue du Domaine-Laurentien, Lac-Saint-Charles, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G2C 1C2, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-19-1": {
     "region": "Capitale-Nationale",
@@ -20303,11 +20303,11 @@
     "adresse": "Rivière Lorette - À l'intersection du boulevard Masson et du boulevard Père-Lelièvre",
     "municipalite": "Ville de Québec (arrondissement des Rivières)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-07-27-1",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "des Rivières, Québec, Canada",
-    "geocode_formatted": "Des Rivières, Notre-Dame-de-Stanbridge, Brome-Missisquoi, Québec, J0J 1M0, Canada"
+    "lat": 46.823929,
+    "lon": -71.321972,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "des Rivières, Québec, Québec, Capitale-Nationale, Canada",
+    "geocode_formatted": "Parc Linéaire des Rivières Saint-Charles et du Berger, Les Méandres, Neufchâtel-Est–Lebourgneuf, Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1P 1G7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-07-17-01": {
     "region": "Capitale-Nationale",
@@ -20653,11 +20653,11 @@
     "adresse": "Poste de pompage à l'extrémité de la rue des Hannetons dans le secteur nord-est du lac Saint-Augustin",
     "municipalite": "Ville de Québec (arrondissement Laurentien)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-04-04-1",
-    "lat": 46.77863,
-    "lon": -72.836386,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Laurentien, Québec, Québec, Canada",
-    "geocode_formatted": "Laurentien, Saint-Roch-de-Mékinac, Mékinac, Mauricie, Québec, Canada"
+    "lat": 46.912501,
+    "lon": -71.363748,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Laurentien, Québec, Québec, Capitale-Nationale, Canada",
+    "geocode_formatted": "Rue du Domaine-Laurentien, Lac-Saint-Charles, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G2C 1C2, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-01-31-01": {
     "region": "Capitale-Nationale",
@@ -22291,10 +22291,10 @@
     "adresse": "Km 150-151, chemin de Parent",
     "municipalite": "La Tuque (secteur de Parent)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301567818",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "de Parent, Québec, Canada",
+    "lat": 47.922392,
+    "lon": -74.62095,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "de Parent, La Tuque, Québec, Mauricie, Canada",
     "geocode_formatted": "Radio-Canada, Rue Commerciale, Parent, La Tuque, Agglomération de La Tuque, Mauricie, Québec, G0X 3P0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301566205": {
@@ -22333,10 +22333,10 @@
     "adresse": "chemin Langevin Rive de la rivière Saint-Maurice",
     "municipalite": "Trois-Rivières (secteur Saint-Louis-de-France)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301559452",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Louis-de-France, Québec, Canada",
+    "lat": 46.423813,
+    "lon": -72.595153,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Louis-de-France, Trois-Rivières, Québec, Mauricie, Canada",
     "geocode_formatted": "Saint-Louis-de-France, Trois-Rivières, Mauricie, Québec, G8W 1E2, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301556128": {
@@ -24951,10 +24951,10 @@
     "adresse": "Stationnement du 850, 7e Avenue",
     "municipalite": "Shawinigan (secteur Grand-Mère)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-36033-110614",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Grand-Mère, Québec, Canada",
+    "lat": 46.612894,
+    "lon": -72.69516,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Grand-Mère, Shawinigan, Québec, Mauricie, Canada",
     "geocode_formatted": "Grand-Mère, Shawinigan, Mauricie, Québec, G9T 2H9, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-037067-06-07": {
@@ -25676,8 +25676,8 @@
     "adresse": "481, rang 6",
     "municipalite": "Sainte-Élisabeth-de-Warwick",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-01-39090-01",
-    "lat": 45.922936,
-    "lon": -72.077894,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Sainte-Élisabeth-de-Warwick, Québec, Canada",
     "geocode_formatted": "Sainte-Élizabeth-de-Warwick, Arthabaska, Centre-du-Québec, Québec, Canada"
@@ -30668,8 +30668,8 @@
     "adresse": "Face au 505, rue Wellington sud",
     "municipalite": "Shebrooke",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-13-43027-02",
-    "lat": 45.550904,
-    "lon": -73.554805,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Shebrooke, Québec, Canada",
     "geocode_formatted": "Collège de Maisonneuve (Shebrooke/V.-Bourgeau), Rue Sherbrooke Est, Hochelaga, Hochelaga-Maisonneuve, Mercier–Hochelaga-Maisonneuve, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H1X 2A4, Canada"
@@ -32261,8 +32261,8 @@
     "adresse": "Pont de l'Île-aux-Tourtes",
     "municipalite": "Vaudreuil-Dorion",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-71083-07",
-    "lat": 45.397151,
-    "lon": -74.025458,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Vaudreuil-Dorion, Québec, Canada",
     "geocode_formatted": "Vaudreuil-Dorion, Vaudreuil-Soulanges, Montérégie, Québec, Canada"
@@ -32415,11 +32415,11 @@
     "adresse": "Au niveau du 1478, route 161",
     "municipalite": "Frontenac",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-30025-01",
-    "lat": 45.533154,
-    "lon": -73.552216,
-    "precision": "ville",
-    "geocode_query": "Frontenac, Québec, Canada",
-    "geocode_formatted": "Frontenac, 2570, Rue Ontario Est, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2K 1W6, Canada"
+    "lat": 45.572608,
+    "lon": -70.83155,
+    "precision": "ville_region",
+    "geocode_query": "Frontenac, Estrie, Québec, Canada",
+    "geocode_formatted": "Frontenac, Le Granit, Estrie, Québec, G6B 2S1, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-43027-21": {
     "region": "Estrie",
@@ -41203,11 +41203,11 @@
     "adresse": "Rouyn-Noranda (secteur Cadillac)",
     "municipalite": "Km 568 de la Route 117",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301852563",
-    "lat": 47.261223,
-    "lon": -76.82401,
-    "precision": "ville",
-    "geocode_query": "Km 568 de la Route 117, Québec, Canada",
-    "geocode_formatted": "Urgences km 370, Route 117, Lac-Pythonga, La Vallée-de-la-Gatineau, Outaouais, Québec, Canada"
+    "lat": 47.615999,
+    "lon": -77.229695,
+    "precision": "ville_region",
+    "geocode_query": "Km 568 de la Route 117, Abitibi-Témiscamingue, Québec, Canada",
+    "geocode_formatted": "Urgences km 426, Route 117, Réservoir-Dozois, La Vallée-de-l'Or, Abitibi-Témiscamingue, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301844355": {
     "region": "Abitibi-Témiscamingue",
@@ -42334,11 +42334,11 @@
     "adresse": "Route 393, 1 km au sud de l'aéroport de La Sarre",
     "municipalite": "Clermont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300916908",
-    "lat": 47.694512,
-    "lon": -70.22622,
-    "precision": "ville",
-    "geocode_query": "Clermont, Québec, Canada",
-    "geocode_formatted": "Clermont, Charlevoix-Est, Capitale-Nationale, Québec, Canada"
+    "lat": 48.923165,
+    "lon": -79.250356,
+    "precision": "ville_region",
+    "geocode_query": "Clermont, Abitibi-Témiscamingue, Québec, Canada",
+    "geocode_formatted": "Clermont, Abitibi-Ouest, Abitibi-Témiscamingue, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300905984": {
     "region": "Abitibi-Témiscamingue",
@@ -48710,11 +48710,11 @@
     "adresse": "Kilomètre 96 de la route 198",
     "municipalite": "Gaspé",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301557911",
-    "lat": 48.614677,
-    "lon": -66.066573,
-    "precision": "ville",
-    "geocode_query": "Gaspé, Québec, Canada",
-    "geocode_formatted": "Gaspésie, Québec, Canada"
+    "lat": 48.831722,
+    "lon": -64.483757,
+    "precision": "ville_region",
+    "geocode_query": "Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",
+    "geocode_formatted": "Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301625734": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -48808,11 +48808,11 @@
     "adresse": "Rivière York au niveau du Lieu d'enfouissement technique de Gaspé",
     "municipalite": "Gaspé",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301550986",
-    "lat": 48.614677,
-    "lon": -66.066573,
-    "precision": "ville",
-    "geocode_query": "Gaspé, Québec, Canada",
-    "geocode_formatted": "Gaspésie, Québec, Canada"
+    "lat": 48.831722,
+    "lon": -64.483757,
+    "precision": "ville_region",
+    "geocode_query": "Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",
+    "geocode_formatted": "Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301531141": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -48906,11 +48906,11 @@
     "adresse": "Anse-au-Griffon (quai)",
     "municipalite": "Gaspé",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301483351",
-    "lat": 48.614677,
-    "lon": -66.066573,
-    "precision": "ville",
-    "geocode_query": "Gaspé, Québec, Canada",
-    "geocode_formatted": "Gaspésie, Québec, Canada"
+    "lat": 48.831722,
+    "lon": -64.483757,
+    "precision": "ville_region",
+    "geocode_query": "Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",
+    "geocode_formatted": "Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301449517": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -49102,11 +49102,11 @@
     "adresse": "Secteur du parc industriel",
     "municipalite": "Gaspé",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301319576",
-    "lat": 48.614677,
-    "lon": -66.066573,
-    "precision": "ville",
-    "geocode_query": "Gaspé, Québec, Canada",
-    "geocode_formatted": "Gaspésie, Québec, Canada"
+    "lat": 48.831722,
+    "lon": -64.483757,
+    "precision": "ville_region",
+    "geocode_query": "Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",
+    "geocode_formatted": "Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301296137": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -49200,11 +49200,11 @@
     "adresse": "Quai de Tourelle",
     "municipalite": "Sainte-Anne-des-Monts (secteur Tourelle)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301047960",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Tourelle, Québec, Canada",
-    "geocode_formatted": "Tourelle, Sainte-Anne-des-Monts, La Haute-Gaspésie, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
+    "lat": 49.160798,
+    "lon": -66.407197,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Tourelle, Sainte-Anne-des-Monts, Québec, Gaspésie—Îles-de-la-Madeleine, Canada",
+    "geocode_formatted": "Tourelle, Sainte-Anne-des-Monts, La Haute-Gaspésie, Gaspésie–Îles-de-la-Madeleine, Québec, G4V 3L7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301064834": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -49256,11 +49256,11 @@
     "adresse": "Réseau d'aqueduc municipale",
     "municipalite": "Saint-Elzéar",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301029898",
-    "lat": 46.408511,
-    "lon": -71.061287,
-    "precision": "ville",
-    "geocode_query": "Saint-Elzéar, Québec, Canada",
-    "geocode_formatted": "Saint-Elzéar, La Nouvelle-Beauce, Chaudière-Appalaches, Québec, Canada"
+    "lat": 48.159338,
+    "lon": -65.39675,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Elzéar, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",
+    "geocode_formatted": "Saint-Elzéar, Bonaventure (MRC), Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301025197": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -50092,10 +50092,10 @@
     "adresse": "Effluent à proximité du 30, rue du juvénat",
     "municipalite": "Lévis (Arrondissement St-Romuald)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301825425",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "St-Romuald, Québec, Canada",
+    "lat": 46.756568,
+    "lon": -71.237877,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "St-Romuald, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Romuald, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301829611": {
@@ -50162,10 +50162,10 @@
     "adresse": "585, rue de Bernière",
     "municipalite": "Lévis (arrondissement Saint-Rédempteur)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821543",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Rédempteur, Québec, Canada",
+    "lat": 46.695609,
+    "lon": -71.28582,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Rédempteur, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Rédempteur, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301780605": {
@@ -52584,11 +52584,11 @@
     "adresse": "Près du 4279, route des Rivières",
     "municipalite": "Lévis (secteur Saint-Étienne)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301318837",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Étienne, Québec, Canada",
-    "geocode_formatted": "Saint-Étienne, Petit-Saguenay, Le Fjord-du-Saguenay, Saguenay–Lac-Saint-Jean, Québec, G0V 1N0, Canada"
+    "lat": 46.653443,
+    "lon": -71.300926,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Étienne, Lévis, Québec, Chaudière-Appalaches, Canada",
+    "geocode_formatted": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301319857": {
     "region": "Chaudière-Appalaches",
@@ -53113,10 +53113,10 @@
     "adresse": "Près du 22, rue de la Boucle",
     "municipalite": "Lévis (secteur Saint-Étienne-de-Lauzon)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239287",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Étienne-de-Lauzon, Québec, Canada",
+    "lat": 46.653443,
+    "lon": -71.300926,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Étienne-de-Lauzon, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239098": {
@@ -53127,10 +53127,10 @@
     "adresse": "Près du 1276, rue Pierre-Beaumont",
     "municipalite": "Lévis (secteur Saint-Jean-Chrysostome)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239098",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Jean-Chrysostome, Québec, Canada",
+    "lat": 46.718916,
+    "lon": -71.197929,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301234188": {
@@ -53225,10 +53225,10 @@
     "adresse": "Rivière Etchemin près du 812, route des Îles",
     "municipalite": "Lévis (secteur Pintendre)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301212230",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Pintendre, Québec, Canada",
+    "lat": 46.753126,
+    "lon": -71.124,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Pintendre, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Pintendre, Desjardins, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301204379": {
@@ -53421,10 +53421,10 @@
     "adresse": "À proximité de la Rue Perreault",
     "municipalite": "Lévis (secteur Saint-Romuald)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301059507",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Romuald, Québec, Canada",
+    "lat": 46.756568,
+    "lon": -71.237877,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Romuald, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Romuald, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301051546": {
@@ -53491,11 +53491,11 @@
     "adresse": "près du 40, rue des Commerçants",
     "municipalite": "Saint-Isidore",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301037263",
-    "lat": 45.30049,
-    "lon": -73.68084,
-    "precision": "ville",
-    "geocode_query": "Saint-Isidore, Québec, Canada",
-    "geocode_formatted": "Saint-Isidore, Roussillon, Montérégie, Québec, Canada"
+    "lat": 46.585058,
+    "lon": -71.090469,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Isidore, Chaudière-Appalaches, Québec, Canada",
+    "geocode_formatted": "Saint-Isidore, La Nouvelle-Beauce, Chaudière-Appalaches, Québec, G0S 2S0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301032717": {
     "region": "Chaudière-Appalaches",
@@ -54580,10 +54580,10 @@
     "adresse": "Autoroute 20, km 311, direction Est",
     "municipalite": "Lévis (secteur St-Nicolas)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2013-08-07-01",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "St-Nicolas, Québec, Canada",
+    "lat": 46.700053,
+    "lon": -71.396556,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "St-Nicolas, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Nicolas, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2013-08-04-01": {
@@ -57251,10 +57251,10 @@
     "adresse": "En bordure du garage municipal, chemin Petit St-Jean",
     "municipalite": "Lévis (secteur St-Jean-Chrysostome)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2010-04-06-1",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "St-Jean-Chrysostome, Québec, Canada",
+    "lat": 46.718916,
+    "lon": -71.197929,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "St-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2010-04-24-1": {
@@ -58161,10 +58161,10 @@
     "adresse": "Face au 955, route Lagueux (route 171)",
     "municipalite": "Ville de Lévis (Quartier St-Étienne-de-Lauzon)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-10-31-01",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "St-Étienne-de-Lauzon, Québec, Canada",
+    "lat": 46.653443,
+    "lon": -71.300926,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "St-Étienne-de-Lauzon, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-09-16-1": {
@@ -58217,11 +58217,11 @@
     "adresse": "Près du 336, rang Sainte-Geneviève",
     "municipalite": "Saint-Isidore",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-09-03-2",
-    "lat": 45.30049,
-    "lon": -73.68084,
-    "precision": "ville",
-    "geocode_query": "Saint-Isidore, Québec, Canada",
-    "geocode_formatted": "Saint-Isidore, Roussillon, Montérégie, Québec, Canada"
+    "lat": 46.585058,
+    "lon": -71.090469,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Isidore, Chaudière-Appalaches, Québec, Canada",
+    "geocode_formatted": "Saint-Isidore, La Nouvelle-Beauce, Chaudière-Appalaches, Québec, G0S 2S0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-03-1": {
     "region": "Chaudière-Appalaches",
@@ -58273,10 +58273,10 @@
     "adresse": "Hydro-Québec, poste de Lévis 1120, Commerciale",
     "municipalite": "Lévis (Secteur Saint-Jean-Chrysostome)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-29-2",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Jean-Chrysostome, Québec, Canada",
+    "lat": 46.718916,
+    "lon": -71.197929,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada",
     "geocode_formatted": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-28-1": {
@@ -59379,11 +59379,11 @@
     "adresse": "Ruisseau Lapinière",
     "municipalite": "Laval (secteur St-François)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-02-26-133",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "St-François, Québec, Canada",
-    "geocode_formatted": "Saint-François-de-l'Île-d'Orléans, L'Île-d'Orléans, Capitale-Nationale, Québec, G0A 3S0, Canada"
+    "lat": 45.663905,
+    "lon": -73.583946,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "St-François, Laval, Québec, Laval, Canada",
+    "geocode_formatted": "Saint-François, Laval, Laval (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2009-08-30-70": {
     "region": "Laval",
@@ -59813,11 +59813,11 @@
     "adresse": "Lot 5 187 105",
     "municipalite": "Notre-Dame-de-Lourdes",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301763676",
-    "lat": 46.326542,
-    "lon": -71.819344,
-    "precision": "ville",
-    "geocode_query": "Notre-Dame-de-Lourdes, Québec, Canada",
-    "geocode_formatted": "Notre-Dame-de-Lourdes, L'Érable, Centre-du-Québec, Québec, Canada"
+    "lat": 46.09955,
+    "lon": -73.420983,
+    "precision": "ville_region",
+    "geocode_query": "Notre-Dame-de-Lourdes, Lanaudière, Québec, Canada",
+    "geocode_formatted": "Notre-Dame-de-Lourdes, Joliette (MRC), Lanaudière, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301762408": {
     "region": "Lanaudière",
@@ -60118,8 +60118,8 @@
     "adresse": "Intersection boulevard de la Salette et rue des Lacs",
     "municipalite": "Saint-Jérôme",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301692138",
-    "lat": 45.77804,
-    "lon": -74.003327,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Saint-Jérôme, Québec, Canada",
     "geocode_formatted": "Saint-Jérôme, La Rivière-du-Nord, Laurentides, Québec, Canada"
@@ -60188,8 +60188,8 @@
     "adresse": "1962, Montée des Quatres-Lacs",
     "municipalite": "Saint-Adolphe-d'Howard",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301685584",
-    "lat": 45.971345,
-    "lon": -74.339275,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Saint-Adolphe-d'Howard, Québec, Canada",
     "geocode_formatted": "Saint-Adolphe-d'Howard, Les Pays-d'en-Haut, Laurentides, Québec, J0T 2B0, Canada"
@@ -61722,11 +61722,11 @@
     "adresse": "Intersection de la Route 131 et de la rue Principale",
     "municipalite": "Notre-Dame-de-Lourdes",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301262473",
-    "lat": 46.326542,
-    "lon": -71.819344,
-    "precision": "ville",
-    "geocode_query": "Notre-Dame-de-Lourdes, Québec, Canada",
-    "geocode_formatted": "Notre-Dame-de-Lourdes, L'Érable, Centre-du-Québec, Québec, Canada"
+    "lat": 46.09955,
+    "lon": -73.420983,
+    "precision": "ville_region",
+    "geocode_query": "Notre-Dame-de-Lourdes, Lanaudière, Québec, Canada",
+    "geocode_formatted": "Notre-Dame-de-Lourdes, Joliette (MRC), Lanaudière, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301256907": {
     "region": "Lanaudière",
@@ -62184,11 +62184,11 @@
     "adresse": "Entre le 2565 et le 2585, Chemin Comtois",
     "municipalite": "Ville de Terrebonne",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301009509",
-    "lat": 45.67586,
-    "lon": -73.760718,
-    "precision": "ville",
-    "geocode_query": "Ville de Terrebonne, Québec, Canada",
-    "geocode_formatted": "BDF Centre-Ville, Bois-des-Filion, Thérèse-De Blainville, Laurentides, Québec, J6Z 2C3, Canada"
+    "lat": 45.695153,
+    "lon": -73.635015,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Terrebonne, Québec, Lanaudière, Canada",
+    "geocode_formatted": "Terrebonne, Les Moulins, Lanaudière, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301020569": {
     "region": "Lanaudière",
@@ -64930,8 +64930,8 @@
     "adresse": "Domaine Saint-Côme / Rang petit Beloeil",
     "municipalite": "Saint-Côme",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301600075",
-    "lat": 46.271037,
-    "lon": -73.771477,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Saint-Côme, Québec, Canada",
     "geocode_formatted": "Saint-Côme, Matawinie, Lanaudière, Québec, J0K 2B0, Canada"
@@ -65448,11 +65448,11 @@
     "adresse": "Jonction du Chemin des Cimes et de la Route 125",
     "municipalite": "Notre-Dame-de-la-Merci",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301478403",
-    "lat": 46.225924,
-    "lon": -74.05767,
-    "precision": "ville",
-    "geocode_query": "Notre-Dame-de-la-Merci, Québec, Canada",
-    "geocode_formatted": "Notre-Dame-de-la-Merci, Matawinie, Lanaudière, Québec, J0T 2A0, Canada"
+    "lat": 45.976564,
+    "lon": -74.632611,
+    "precision": "ville_region",
+    "geocode_query": "Notre-Dame-de-la-Merci, Laurentides, Québec, Canada",
+    "geocode_formatted": "Église Notre-Dame de la Merci, Rue Principale, Huberdeau, Les Laurentides, Laurentides, Québec, J0T 1G0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301472737": {
     "region": "Laurentides",
@@ -68043,11 +68043,11 @@
     "adresse": "Écluse Côte-Sainte-Catherine",
     "municipalite": "Ville de Sainte-Catherine",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301831466",
-    "lat": 45.504487,
-    "lon": -73.568311,
-    "precision": "ville",
-    "geocode_query": "Ville de Sainte-Catherine, Québec, Canada",
-    "geocode_formatted": "Ordinateurs Canada, Rue Sainte-Catherine Ouest, Quartier des Spectacles, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3B 1A6, Canada"
+    "lat": 45.405323,
+    "lon": -73.571676,
+    "precision": "ville_region",
+    "geocode_query": "Ville de Sainte-Catherine, Montérégie, Québec, Canada",
+    "geocode_formatted": "Hôtel de ville de Sainte-Catherine, Boulevard Marie-Victorin, Sainte-Catherine, Roussillon, Montérégie, Québec, J5C 1A6, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301830570": {
     "region": "Montérégie",
@@ -69793,11 +69793,11 @@
     "adresse": "190 rue Comeau à Farnham",
     "municipalite": "Farnham",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301532413",
-    "lat": 45.2831,
-    "lon": -72.974968,
-    "precision": "ville",
-    "geocode_query": "Farnham, Québec, Canada",
-    "geocode_formatted": "Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.314559,
+    "lon": -73.021613,
+    "precision": "ville_region",
+    "geocode_query": "Farnham, Montérégie, Québec, Canada",
+    "geocode_formatted": "BFC Farnham, Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301531037": {
     "region": "Montérégie",
@@ -69821,11 +69821,11 @@
     "adresse": "Intersection de la rue Mountain et le boulevard Pierre-Laporte",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301531759",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301528396": {
     "region": "Montérégie",
@@ -71190,11 +71190,11 @@
     "adresse": "Usine de filtration d'eau potable",
     "municipalite": "Saint-Armand",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301388935",
-    "lat": 45.032774,
-    "lon": -73.043976,
-    "precision": "ville",
-    "geocode_query": "Saint-Armand, Québec, Canada",
-    "geocode_formatted": "Saint-Armand, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.316631,
+    "lon": -73.851911,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Armand, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Saint-Armand, Saint-Paul, Maple Grove, Beauharnois, Beauharnois-Salaberry, Montérégie, Québec, J6N 1L5, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301388936": {
     "region": "Montérégie",
@@ -71512,11 +71512,11 @@
     "adresse": "Rivière Yamaska, en amont du boulevard de Bromont",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301376320",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301374256": {
     "region": "Montérégie",
@@ -71806,11 +71806,11 @@
     "adresse": "Autoroute 10 - Sortie 78",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301341597",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301340050": {
     "region": "Montérégie",
@@ -71848,11 +71848,11 @@
     "adresse": "en face du 1715, rue Jacques-Cartier Sud",
     "municipalite": "Farnham",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301337301",
-    "lat": 45.2831,
-    "lon": -72.974968,
-    "precision": "ville",
-    "geocode_query": "Farnham, Québec, Canada",
-    "geocode_formatted": "Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.314559,
+    "lon": -73.021613,
+    "precision": "ville_region",
+    "geocode_query": "Farnham, Montérégie, Québec, Canada",
+    "geocode_formatted": "BFC Farnham, Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301337343": {
     "region": "Montérégie",
@@ -71876,11 +71876,11 @@
     "adresse": "Autoroute 10, entre les sorties 74 et 78",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301336831",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301335570": {
     "region": "Montérégie",
@@ -71932,11 +71932,11 @@
     "adresse": "1655, rang Maxime",
     "municipalite": "Roxton Pond",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301334710",
-    "lat": 45.475099,
-    "lon": -72.660142,
-    "precision": "ville",
-    "geocode_query": "Roxton Pond, Québec, Canada",
-    "geocode_formatted": "Roxton Pond, La Haute-Yamaska, Estrie, Québec, J0E 1Z0, Canada"
+    "lat": 45.526172,
+    "lon": -72.613856,
+    "precision": "ville_region",
+    "geocode_query": "Roxton Pond, Montérégie, Québec, Canada",
+    "geocode_formatted": "6e Rang de Roxton, Roxton Pond, La Haute-Yamaska, Estrie, Québec, J0H 2B0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301329817": {
     "region": "Montérégie",
@@ -72114,11 +72114,11 @@
     "adresse": "Du chemin Compton jusqu'au 1357, rue Shefford",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301301071",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301299783": {
     "region": "Montérégie",
@@ -72494,8 +72494,8 @@
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301266336",
     "lat": 45.432232,
     "lon": -72.667413,
-    "precision": "ville",
-    "geocode_query": "Shefford, Québec, Canada",
+    "precision": "ville_region",
+    "geocode_query": "Shefford, Montérégie, Québec, Canada",
     "geocode_formatted": "Shefford, La Haute-Yamaska, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=16-20170914-000018": {
@@ -72548,11 +72548,11 @@
     "adresse": "Centrale de traitement des eaux",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301265183",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301263244": {
     "region": "Montérégie",
@@ -72786,11 +72786,11 @@
     "adresse": "Derrière le 1258, Chemin Gagné",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301249201",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301246529": {
     "region": "Montérégie",
@@ -73262,11 +73262,11 @@
     "adresse": "Boulevard Pierre-Laporte et chemin de Granby",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301058095",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301054478": {
     "region": "Montérégie",
@@ -73472,8 +73472,8 @@
     "adresse": "Autoroute 10 - KM 97 direction Est",
     "municipalite": "Saint-Étienne-de-Bolton",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301034288",
-    "lat": 45.267012,
-    "lon": -72.380886,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Saint-Étienne-de-Bolton, Québec, Canada",
     "geocode_formatted": "Saint-Étienne-de-Bolton, Memphrémagog, Estrie, Québec, Canada"
@@ -73514,11 +73514,11 @@
     "adresse": "Face au 1372, 10e Rang Ouest",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301033575",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301032151": {
     "region": "Montérégie",
@@ -73833,11 +73833,11 @@
     "adresse": "Rue Saint-Charles coin rue Saint-Édouard",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300995209",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300990924": {
     "region": "Montérégie",
@@ -73970,11 +73970,11 @@
     "adresse": "Kilomètre 73 de l'autoroute 10",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300980448",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300979894": {
     "region": "Montérégie",
@@ -74264,11 +74264,11 @@
     "adresse": "130, rue de Madrid",
     "municipalite": "Farnham",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300958517",
-    "lat": 45.2831,
-    "lon": -72.974968,
-    "precision": "ville",
-    "geocode_query": "Farnham, Québec, Canada",
-    "geocode_formatted": "Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.499269,
+    "lon": -73.403504,
+    "precision": "adresse_region",
+    "geocode_query": "130, rue de Madrid, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Madrid, Saint-Hubert, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J3Z 1B9, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300958448": {
     "region": "Montérégie",
@@ -74866,8 +74866,8 @@
     "adresse": "Derrière le 355, 11e Rang Nord",
     "municipalite": "Sainte-Sabine",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300908183",
-    "lat": 46.49272,
-    "lon": -70.353355,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Sainte-Sabine, Québec, Canada",
     "geocode_formatted": "Sainte-Sabine, Les Etchemins, Chaudière-Appalaches, Québec, Canada"
@@ -75160,10 +75160,10 @@
     "adresse": "Route 116 Ouest à la hauteur de la sortie 2",
     "municipalite": "Ville de Longueuil (arrondissement Saint-Hubert)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876477",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Hubert, Québec, Canada",
+    "lat": 45.504275,
+    "lon": -73.421698,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Hubert, Longueuil, Québec, Montérégie, Canada",
     "geocode_formatted": "Saint-Hubert, Longueuil, Agglomération de Longueuil, Montérégie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876195": {
@@ -75174,8 +75174,8 @@
     "adresse": "À l'angle des rues Albert et Bernard",
     "municipalite": "Cowansville",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876195",
-    "lat": 45.207613,
-    "lon": -72.747919,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Cowansville, Québec, Canada",
     "geocode_formatted": "Cowansville, Brome-Missisquoi, Estrie, Québec, Canada"
@@ -75246,8 +75246,8 @@
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-47035-01",
     "lat": 45.432232,
     "lon": -72.667413,
-    "precision": "ville",
-    "geocode_query": "Shefford, Québec, Canada",
+    "precision": "ville_region",
+    "geocode_query": "Shefford, Montérégie, Québec, Canada",
     "geocode_formatted": "Shefford, La Haute-Yamaska, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-6900501": {
@@ -75272,11 +75272,11 @@
     "adresse": "Kilomètre 93 de l'Autoroute 10",
     "municipalite": "Foster",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-47025-01",
-    "lat": 45.289675,
-    "lon": -72.493887,
-    "precision": "ville",
-    "geocode_query": "Foster, Québec, Canada",
-    "geocode_formatted": "Foster, Lac-Brome, Brome-Missisquoi, Québec, J0E 1R0, Canada"
+    "lat": 45.369722,
+    "lon": -74.006277,
+    "precision": "ville_region",
+    "geocode_query": "Foster, Montérégie, Québec, Canada",
+    "geocode_formatted": "Pointe Foster, Dorion, Vaudreuil-Dorion, Vaudreuil-Soulanges, Montérégie, Québec, J7V 2T8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-5802001": {
     "region": "Montérégie",
@@ -75328,11 +75328,11 @@
     "adresse": "Route 104 intersection du chemin Bricault",
     "municipalite": "Farnham",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46115-03",
-    "lat": 45.2831,
-    "lon": -72.974968,
-    "precision": "ville",
-    "geocode_query": "Farnham, Québec, Canada",
-    "geocode_formatted": "Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.314559,
+    "lon": -73.021613,
+    "precision": "ville_region",
+    "geocode_query": "Farnham, Montérégie, Québec, Canada",
+    "geocode_formatted": "BFC Farnham, Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-53052-34": {
     "region": "Montérégie",
@@ -75454,11 +75454,11 @@
     "adresse": "Lot 3 218 506 du cadastre du Québec",
     "municipalite": "Municipalité de Saint-Louis",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-54120-05",
-    "lat": 46.249166,
-    "lon": -72.002282,
-    "precision": "ville",
-    "geocode_query": "Municipalité de Saint-Louis, Québec, Canada",
-    "geocode_formatted": "Municipalité de Saint-Louis-de-Blandford, 80, Rue Principale, Saint-Louis-de-Blandford, Arthabaska, Centre-du-Québec, Québec, G0Z 1B0, Canada"
+    "lat": 45.854152,
+    "lon": -72.977715,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Saint-Louis, Québec, Montérégie, Canada",
+    "geocode_formatted": "Saint-Louis, Les Maskoutains, Montérégie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-67050-10": {
     "region": "Montérégie",
@@ -75790,8 +75790,8 @@
     "adresse": "Face au 621, route 221",
     "municipalite": "Route 221, Saint-Rémi",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-68055-01",
-    "lat": 46.00108,
-    "lon": -74.769007,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Route 221, Saint-Rémi, Québec, Canada",
     "geocode_formatted": "Route 323 Sud, Amherst, Les Laurentides, Laurentides, Québec, J0T 2L0, Canada"
@@ -75862,8 +75862,8 @@
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-47035-03",
     "lat": 45.432232,
     "lon": -72.667413,
-    "precision": "ville",
-    "geocode_query": "Shefford, Québec, Canada",
+    "precision": "ville_region",
+    "geocode_query": "Shefford, Montérégie, Québec, Canada",
     "geocode_formatted": "Shefford, La Haute-Yamaska, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46090-04": {
@@ -76098,11 +76098,11 @@
     "adresse": "425, rang Magenta",
     "municipalite": "Farnham",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46115-02",
-    "lat": 45.2831,
-    "lon": -72.974968,
-    "precision": "ville",
-    "geocode_query": "Farnham, Québec, Canada",
-    "geocode_formatted": "Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.314559,
+    "lon": -73.021613,
+    "precision": "ville_region",
+    "geocode_query": "Farnham, Montérégie, Québec, Canada",
+    "geocode_formatted": "BFC Farnham, Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46035-06": {
     "region": "Montérégie",
@@ -76112,11 +76112,11 @@
     "adresse": "Sentier naturel près de la rivière aux Brochets",
     "municipalite": "Bedford",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46035-06",
-    "lat": 45.120519,
-    "lon": -72.988516,
-    "precision": "ville",
-    "geocode_query": "Bedford, Québec, Canada",
-    "geocode_formatted": "Bedford (Ville), Brome-Missisquoi, Québec, J0J 1A0, Canada"
+    "lat": 45.340795,
+    "lon": -73.738321,
+    "precision": "ville_region",
+    "geocode_query": "Bedford, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue de Bedford, Mercier, Roussillon, Montérégie, Québec, J6K 2R5, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-67030-01": {
     "region": "Montérégie",
@@ -76392,11 +76392,11 @@
     "adresse": "Sous un ponceau qui traverse le ruisseau Latulipe proche du 63, rue Champlain",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-10",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-08": {
     "region": "Montérégie",
@@ -76406,11 +76406,11 @@
     "adresse": "Près du 122, rue de la Rivière",
     "municipalite": "Bromont",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-08",
-    "lat": 45.318734,
-    "lon": -72.646307,
-    "precision": "ville",
-    "geocode_query": "Bromont, Québec, Canada",
-    "geocode_formatted": "Bromont, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "precision": "ville_region",
+    "geocode_query": "Bromont, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-57035-05": {
     "region": "Montérégie",
@@ -76588,8 +76588,8 @@
     "adresse": "À l'embranchement des chemins Eastman et de la Vallée-Missisquoi",
     "municipalite": "Glen Sutton",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-46058-02",
-    "lat": 45.040793,
-    "lon": -72.546161,
+    "lat": null,
+    "lon": null,
     "precision": "ville",
     "geocode_query": "Glen Sutton, Québec, Canada",
     "geocode_formatted": "Glen Sutton, Sutton, Brome-Missisquoi, Québec, Canada"
@@ -76616,11 +76616,11 @@
     "adresse": "Rue Valmore-Boisseau / prolongement de la rue Saint-Jude",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47015-18",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-59020-10": {
     "region": "Montérégie",
@@ -77036,11 +77036,11 @@
     "adresse": "1024, rang 11",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47020-01",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-11-46080-04": {
     "region": "Montérégie",
@@ -77750,11 +77750,11 @@
     "adresse": "112, chemin Choinière",
     "municipalite": "Saint-Alphonse",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-47010-03",
-    "lat": 45.325599,
-    "lon": -72.8088,
-    "precision": "ville",
-    "geocode_query": "Saint-Alphonse, Québec, Canada",
-    "geocode_formatted": "Saint-Alphonse-de-Granby, La Haute-Yamaska, Estrie, Québec, J0E 2A0, Canada"
+    "lat": 45.476585,
+    "lon": -73.46062,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Alphonse, Montérégie, Québec, Canada",
+    "geocode_formatted": "Parc Saint-Alphonse, 2500, Brossard, Agglomération de Longueuil, Montérégie, Québec, J4Z 2W1, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-57010-02": {
     "region": "Montérégie",
@@ -77834,11 +77834,11 @@
     "adresse": "Usine Agropur",
     "municipalite": "Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-47015-03",
-    "lat": 45.399041,
-    "lon": -72.721834,
-    "precision": "ville",
-    "geocode_query": "Granby, Québec, Canada",
-    "geocode_formatted": "Granby, La Haute-Yamaska, Estrie, Québec, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_region",
+    "geocode_query": "Granby, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-57033-03": {
     "region": "Montérégie",
@@ -77890,11 +77890,11 @@
     "adresse": "En bordure du lac au 496, chemin Bondville",
     "municipalite": "Lac Brôme",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-4607404",
-    "lat": 45.217703,
-    "lon": -72.537222,
-    "precision": "ville",
-    "geocode_query": "Lac Brôme, Québec, Canada",
-    "geocode_formatted": "Lac-Brome, Brome-Missisquoi, Estrie, Québec, Canada"
+    "lat": 45.275782,
+    "lon": -73.047248,
+    "precision": "ville_region",
+    "geocode_query": "Lac Brôme, Montérégie, Québec, Canada",
+    "geocode_formatted": "Rang du Lac, Sainte-Sabine, Brome-Missisquoi, Estrie, Québec, J2N 0A9, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-55020-02": {
     "region": "Montérégie",
@@ -78128,11 +78128,11 @@
     "adresse": "Près du 940, rang sud (route 227)",
     "municipalite": "Saint-Jean-Baptiste",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-5733-01",
-    "lat": 46.809694,
-    "lon": -71.222992,
-    "precision": "ville",
-    "geocode_query": "Saint-Jean-Baptiste, Québec, Canada",
-    "geocode_formatted": "Saint-Jean-Baptiste, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
+    "lat": 45.520607,
+    "lon": -73.123883,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Jean-Baptiste, Montérégie, Québec, Canada",
+    "geocode_formatted": "Saint-Jean-Baptiste, La Vallée-du-Richelieu, Montérégie, Québec, J0L 2B0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-68050-03": {
     "region": "Montérégie",
@@ -78380,11 +78380,11 @@
     "adresse": "Entre le 453 et le 455 chemin des Patriotes",
     "municipalite": "Saint-Hilaire",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110 16 08 57035 02",
-    "lat": 47.366276,
-    "lon": -72.211401,
-    "precision": "ville",
-    "geocode_query": "Saint-Hilaire, Québec, Canada",
-    "geocode_formatted": "Saint-Hilaire, La Tuque, Agglomération de La Tuque, Mauricie, Québec, Canada"
+    "lat": 45.569662,
+    "lon": -73.19452,
+    "precision": "ville_region",
+    "geocode_query": "Saint-Hilaire, Montérégie, Québec, Canada",
+    "geocode_formatted": "Saint-Hilaire, Rue Sainte-Anne, Mont-Saint-Hilaire, La Vallée-du-Richelieu, Montérégie, Québec, J3H 2X9, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=71100853052-08": {
     "region": "Montérégie",
@@ -78450,11 +78450,11 @@
     "adresse": "Dans un ruisseau près du 301, chemin Grande Ligne",
     "municipalite": "Ville de Granby",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-47015-03",
-    "lat": 45.415584,
-    "lon": -72.696072,
-    "precision": "ville",
-    "geocode_query": "Ville de Granby, Québec, Canada",
-    "geocode_formatted": "Rue de Ville-Marie, Granby, La Haute-Yamaska, Québec, J2H 1G2, Canada"
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "Granby, Québec, Montérégie, Canada",
+    "geocode_formatted": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-69017-04": {
     "region": "Montérégie",
@@ -82720,11 +82720,11 @@
     "adresse": "Près du 1331, rang Sainte-Anne",
     "municipalite": "Sainte-Perpétue",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301027874",
-    "lat": 47.057493,
-    "lon": -69.927292,
-    "precision": "ville",
-    "geocode_query": "Sainte-Perpétue, Québec, Canada",
-    "geocode_formatted": "Sainte-Perpétue, L'Islet (MRC), Chaudière-Appalaches, Québec, G0R 3Z0, Canada"
+    "lat": 46.08109,
+    "lon": -72.46479,
+    "precision": "ville_region",
+    "geocode_query": "Sainte-Perpétue, Centre-du-Québec, Québec, Canada",
+    "geocode_formatted": "Sainte-Perpétue, Nicolet-Yamaska, Centre-du-Québec, Québec, J0C 1R0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301027405": {
     "region": "Centre-du-Québec",
@@ -85296,11 +85296,11 @@
     "adresse": "Autoroute 55 près du village de St-Grégoire",
     "municipalite": "Ville de Bécancour (secteur St-Grégoire)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-17-38010-100723",
-    "lat": null,
-    "lon": null,
-    "precision": "ville_simplifiee",
-    "geocode_query": "St-Grégoire, Québec, Canada",
-    "geocode_formatted": "St-Grégoire, Avenue Laperrière, Saint-Grégoire, Bécancour, Bécancour (MRC), Centre-du-Québec, Québec, G0X 1L1, Canada"
+    "lat": 46.271455,
+    "lon": -72.511574,
+    "precision": "ville_simplifiee_region",
+    "geocode_query": "St-Grégoire, Bécancour, Québec, Centre-du-Québec, Canada",
+    "geocode_formatted": "Saint-Grégoire, Bécancour, Bécancour (MRC), Centre-du-Québec, Québec, G9H 1Y9, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-17-49030-100727": {
     "region": "Centre-du-Québec",

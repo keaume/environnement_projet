@@ -57148,5 +57148,1225 @@
     "lat": 45.974319,
     "lon": -72.550275,
     "display_name": "Saint-Joachim-de-Courval, Drummondville, Drummond, Centre-du-Québec, Québec, J1Z 2C2, Canada"
+  },
+  "Sainte-Jeanne-D'Arc, Bas-Saint-Laurent, Québec, Canada": {
+    "lat": 48.493898,
+    "lon": -67.956279,
+    "display_name": "Sainte-Jeanne-d'Arc, 207, Rue Principale, Sainte-Jeanne-d’Arc-de-la-Mitis, La Mitis, Bas-Saint-Laurent, Québec, Canada"
+  },
+  "Les Hauteurs Saint-Gabriel-de-Rimouski Saint-Donat-de-Rimouski, Bas-Saint-Laurent, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Les Hauteurs Saint-Gabriel-de-Rimouski Saint-Donat-de-Rimouski, Québec, Bas-Saint-Laurent, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Donat, Bas-Saint-Laurent, Québec, Canada": {
+    "lat": 48.496985,
+    "lon": -68.248268,
+    "display_name": "Saint-Donat, La Mitis, Bas-Saint-Laurent, Québec, Canada"
+  },
+  "Saint-Léon-le-Grand, Bas-Saint-Laurent, Québec, Canada": {
+    "lat": 48.380426,
+    "lon": -67.504807,
+    "display_name": "Saint-Léon-le-Grand, La Matapédia, Bas-Saint-Laurent, Québec, G0J 2W0, Canada"
+  },
+  "Sainte-Félicité, Bas-Saint-Laurent, Québec, Canada": {
+    "lat": 48.901019,
+    "lon": -67.33739,
+    "display_name": "Sainte-Félicité, La Matanie, Bas-Saint-Laurent, Québec, G0J 2K0, Canada"
+  },
+  "Saguenay (secteur Jonquère), Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Jonquère, Saguenay, Québec, Saguenay—Lac-Saint-Jean, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Mont-Valin, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Lac-Ministuk, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Secteur des Monts-Valin, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Secteur des Monts-Valin, Québec, Saguenay—Lac-Saint-Jean, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saguenay - LaBaie, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saguenay - LaBaie, Québec, Saguenay—Lac-Saint-Jean, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Passes Dangereuses, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Belle-Rivière, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé, Lac Ashuapmushuan, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Municipalité de Sacré-Cœur, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sacré-Cœur, Québec, Saguenay—Lac-Saint-Jean, Canada": {
+    "lat": 48.371822,
+    "lon": -72.523228,
+    "display_name": "Lac Sacré-Coeur, Sainte-Hedwidge, Le Domaine-du-Roy, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "TNO, Passes Dangereuses, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lac-Minustuk, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lac-Minustuk, Québec, Saguenay—Lac-Saint-Jean, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Maria-Chapdelaine, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Secteur de La Doré, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Secteur de La Doré, Québec, Saguenay—Lac-Saint-Jean, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Entre la municipalité d'Hébertville et la jonction de la route 175, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé Rivière-Mistassini, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé de la rivière Mistassini, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Réserve faunique des Laurentides, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": 48.25827,
+    "lon": -71.742922,
+    "display_name": "Réserve faunique des Laurentides, Belle-Rivière, Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, Canada"
+  },
+  "Territoire non organisé Passes-Dangereuses, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé Lac-Ministuk, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Passes-Dangereuses, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé, secteur du lac Pikauba, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Réserve faunique de l'Ashuapmushuan, Saguenay—Lac-Saint-Jean, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Ville de Québec (arrondissement des Rivières), Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "des Rivières, Québec, Québec, Capitale-Nationale, Canada": {
+    "lat": 46.823929,
+    "lon": -71.321972,
+    "display_name": "Parc Linéaire des Rivières Saint-Charles et du Berger, Les Méandres, Neufchâtel-Est–Lebourgneuf, Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1P 1G7, Canada"
+  },
+  "L'Ange-Gardien, Capitale-Nationale, Québec, Canada": {
+    "lat": 46.916738,
+    "lon": -71.091499,
+    "display_name": "L'Ange-Gardien, La Côte-de-Beaupré, Capitale-Nationale, Québec, G0A 2K0, Canada"
+  },
+  "Territoire non organisé Lac-Jacques-Cartier, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Réserve faunique des Laurentides (Municipalité Lac-Jacques-Cartier), Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Ville de Québec - Arrondissement Sainte-Foy-Sillery-Cap-Rouge, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Québec - Arrondissement Sainte-Foy-Sillery-Cap-Rouge, Québec, Capitale-Nationale, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Québec - Arrondissement Les Rivières, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Québec - Arrondissement Les Rivières, Québec, Capitale-Nationale, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Ville de Québec, arrondissement des Rivières, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Québec, arrondissement des Rivières, Québec, Capitale-Nationale, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Réserve faunique des Laurentides territoire du Lac-Pikauba, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Port de Québec, secteur de l'Anse au Foulon, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Port de Québec, Québec, Capitale-Nationale, Canada": {
+    "lat": 46.82119,
+    "lon": -71.200436,
+    "display_name": "Groupe Océan - Compagnie maritime et services portuaires au Canada, 85, Rue Abraham-Martin, Port de Québec - Secteur L'Estuaire, Vieux-Québec, Vieux-Québec–Cap-Blanc–Colline-Parlementaire, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1K 4C4, Canada"
+  },
+  "Près de l'Étape, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Lac-Jacques-Cartier, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Urbain, près de la route 381, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Urbain, près de la route 381, Québec, Capitale-Nationale, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé Lac-Lapeyrère, MRC Portneuf, Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Québec (arrondissement Laurentien), Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Laurentien, Québec, Québec, Capitale-Nationale, Canada": {
+    "lat": 46.912501,
+    "lon": -71.363748,
+    "display_name": "Rue du Domaine-Laurentien, Lac-Saint-Charles, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G2C 1C2, Canada"
+  },
+  "Ville de Québec (arrondissement Laurentien), Capitale-Nationale, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "La Tuque (secteur de Parent), Mauricie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "de Parent, La Tuque, Québec, Mauricie, Canada": {
+    "lat": 47.922392,
+    "lon": -74.62095,
+    "display_name": "Radio-Canada, Rue Commerciale, Parent, La Tuque, Agglomération de La Tuque, Mauricie, Québec, G0X 3P0, Canada"
+  },
+  "Trois-Rivières (secteur Saint-Louis-de-France), Mauricie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Louis-de-France, Trois-Rivières, Québec, Mauricie, Canada": {
+    "lat": 46.423813,
+    "lon": -72.595153,
+    "display_name": "Saint-Louis-de-France, Trois-Rivières, Mauricie, Québec, G8W 1E2, Canada"
+  },
+  "Shawinigan (secteur Grand-Mère), Mauricie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Grand-Mère, Shawinigan, Québec, Mauricie, Canada": {
+    "lat": 46.612894,
+    "lon": -72.69516,
+    "display_name": "Grand-Mère, Shawinigan, Mauricie, Québec, G9T 2H9, Canada"
+  },
+  "Entre Hérouxville et St-Tite (Mékinac), Mauricie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sainte-Élisabeth-de-Warwick, Mauricie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sainte-Élisabeth-de-Warwick, Québec, Mauricie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Roxton Falls, Estrie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Roxton Falls, Québec, Estrie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Canton de Westbury, Estrie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Canton de Westbury, Québec, Estrie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Canton d'Hatley, Estrie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Canton d'Hatley, Québec, Estrie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Shebrooke, Estrie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Shebrooke, Québec, Estrie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sherbooke, Estrie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sherbooke, Québec, Estrie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Vaudreuil-Dorion, Estrie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Vaudreuil-Dorion, Québec, Estrie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Frontenac, Estrie, Québec, Canada": {
+    "lat": 45.572608,
+    "lon": -70.83155,
+    "display_name": "Frontenac, Le Granit, Estrie, Québec, G6B 2S1, Canada"
+  },
+  "Lac des battures, Île-des-Soeurs, Montréal, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lac des battures, Île-des-Soeurs, Québec, Montréal, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Montréal - Arrondissement Pierrefonds-Roxboro, Montréal, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Montréal - Arrondissement Pierrefonds-Roxboro, Québec, Montréal, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Montréal - Arrondissement Pierrefonds, Montréal, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Montréal - Arrondissement Pierrefonds, Québec, Montréal, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Moncert-Lytton, Outaouais, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Moncert-Lytton, Québec, Outaouais, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Parc Moussette à Gatineau, Outaouais, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Parc Moussette à Gatineau, Québec, Outaouais, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Wakefield, Municipalité de La Pêche, Outaouais, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Wakefield, Municipalité de La Pêche, Québec, Outaouais, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Km 568 de la Route 117, Abitibi-Témiscamingue, Québec, Canada": {
+    "lat": 47.615999,
+    "lon": -77.229695,
+    "display_name": "Urgences km 426, Route 117, Réservoir-Dozois, La Vallée-de-l'Or, Abitibi-Témiscamingue, Québec, Canada"
+  },
+  "Territoire de Senneterre V, près de la limite avec le Gouvernement Eeyou Istchee Baie James, Abitibi-Témiscamingue, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire de Senneterre V, près de la limite avec le Gouvernement Eeyou Istchee Baie James, Québec, Abitibi-Témiscamingue, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Clermont, Abitibi-Témiscamingue, Québec, Canada": {
+    "lat": 48.923165,
+    "lon": -79.250356,
+    "display_name": "Clermont, Abitibi-Ouest, Abitibi-Témiscamingue, Québec, Canada"
+  },
+  "À environ 25 km à l'est de Val d'Or, Abitibi-Témiscamingue, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Val-d'Or, quartier Sullivan, Abitibi-Témiscamingue, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Val-d'Or, quartier Sullivan, Québec, Abitibi-Témiscamingue, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Parc de la Vérendrye - secteur Senneterre, Abitibi-Témiscamingue, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Réservoir-Dozois, Abitibi-Témiscamingue, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO du lac Jérôme (Havre st-pierre), Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Rivière-au-Outarde, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Près de Schefferville, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "MRC de Manicouagan, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Haute-Côte-Nord, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé Minganie, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "TNO Rivière-aux-Outardes, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé - Rivière Nipissis, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Entre Colombier et Betsiamites, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Entre Franquelin et Godbout, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "T.N.O. Rivière-aux-Outardes, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "T.N.O. Rivière-aux-Outardes, Québec, Côte-Nord, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Entre Port-Cartier et Fermont, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé de la municipalité régionale de comté de Manicouagan, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé de la MRC de Manicouagan, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Municipalité régionale de comté - Manicouagan Territoire non organisé de la Rivière-aux-Outardes, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "régionale de comté - Manicouagan Territoire non organisé de la Rivière-aux-Outardes, Québec, Côte-Nord, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Municipalité régionale de comté de Manicouagan, Territoire Non Organisé Rivière-Aux-Outardes, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "régionale de comté de Manicouagan, Territoire Non Organisé Rivière-Aux-Outardes, Québec, Côte-Nord, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Territoire non organisé - MRC de la Manicouagan, Côte-Nord, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Eyou-Itshee-Bais-James, Nord-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Eyou-Itshee-Bais-James, Québec, Nord-du-Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Village nordique Kangirsuk, Nord-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Village nordique Kangirsuk, Québec, Nord-du-Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Puvirnituk, Nord-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Puvirnituk, Québec, Nord-du-Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Puvirnituk (Nunavik), Nord-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Poste Hydro-Québec LG-2 près de Radisson, Nord-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Poste Hydro-Québec LG-2 près de Radisson, Québec, Nord-du-Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada": {
+    "lat": 48.831722,
+    "lon": -64.483757,
+    "display_name": "Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
+  },
+  "Sainte-Anne-des-Monts (secteur Tourelle), Gaspésie—Îles-de-la-Madeleine, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Tourelle, Sainte-Anne-des-Monts, Québec, Gaspésie—Îles-de-la-Madeleine, Canada": {
+    "lat": 49.160798,
+    "lon": -66.407197,
+    "display_name": "Tourelle, Sainte-Anne-des-Monts, La Haute-Gaspésie, Gaspésie–Îles-de-la-Madeleine, Québec, G4V 3L7, Canada"
+  },
+  "Saint-Elzéar, Gaspésie—Îles-de-la-Madeleine, Québec, Canada": {
+    "lat": 48.159338,
+    "lon": -65.39675,
+    "display_name": "Saint-Elzéar, Bonaventure (MRC), Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
+  },
+  "Port-Daniel-Gascon, Gaspésie—Îles-de-la-Madeleine, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Port-Daniel-Gascon, Québec, Gaspésie—Îles-de-la-Madeleine, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lévis (Arrondissement St-Romuald), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-Romuald, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.756568,
+    "lon": -71.237877,
+    "display_name": "Saint-Romuald, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Lévis (arrondissement Saint-Rédempteur), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Rédempteur, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.695609,
+    "lon": -71.28582,
+    "display_name": "Saint-Rédempteur, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Lévis (secteur Saint-Étienne), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Étienne, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.653443,
+    "lon": -71.300926,
+    "display_name": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Sainte-Euphémie-sur-la-rivière-du-Sud, Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sainte-Euphémie-sur-la-rivière-du-Sud, Québec, Chaudière-Appalaches, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lévis (secteur Saint-Étienne-de-Lauzon), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Étienne-de-Lauzon, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.653443,
+    "lon": -71.300926,
+    "display_name": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Lévis (secteur Saint-Jean-Chrysostome), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.718916,
+    "lon": -71.197929,
+    "display_name": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Lévis (secteur Pintendre), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Pintendre, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.753126,
+    "lon": -71.124,
+    "display_name": "Pintendre, Desjardins, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Lévis (secteur Saint-Romuald), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Romuald, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.756568,
+    "lon": -71.237877,
+    "display_name": "Saint-Romuald, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Saint-Isidore, Chaudière-Appalaches, Québec, Canada": {
+    "lat": 46.585058,
+    "lon": -71.090469,
+    "display_name": "Saint-Isidore, La Nouvelle-Beauce, Chaudière-Appalaches, Québec, G0S 2S0, Canada"
+  },
+  "Muncipalité de Saint-Marcel, Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Muncipalité de Saint-Marcel, Québec, Chaudière-Appalaches, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lévis (secteur St-Nicolas), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-Nicolas, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.700053,
+    "lon": -71.396556,
+    "display_name": "Saint-Nicolas, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Rivière Beaurivage à Lévis (Saint-Étienne-de-Lauzon), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Rivière Beaurivage à Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lévis (secteur St-Jean-Chrysostome), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.718916,
+    "lon": -71.197929,
+    "display_name": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Ville de Lévis (Quartier St-Étienne-de-Lauzon), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-Étienne-de-Lauzon, Lévis, Québec, Chaudière-Appalaches, Canada": {
+    "lat": 46.653443,
+    "lon": -71.300926,
+    "display_name": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
+  },
+  "Lévis (Secteur Saint-Jean-Chrysostome), Chaudière-Appalaches, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Laval (secteur St-François), Laval, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-François, Laval, Québec, Laval, Canada": {
+    "lat": 45.663905,
+    "lon": -73.583946,
+    "display_name": "Saint-François, Laval, Laval (région administrative), Québec, Canada"
+  },
+  "Notre-Dame-de-Lourdes, Lanaudière, Québec, Canada": {
+    "lat": 46.09955,
+    "lon": -73.420983,
+    "display_name": "Notre-Dame-de-Lourdes, Joliette (MRC), Lanaudière, Québec, Canada"
+  },
+  "Au coin du chemin du lac d'Argent et de la rue André-Joly à Chertsey, Lanaudière, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Au coin du chemin du lac d'Argent, Québec, Lanaudière, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Jérôme, Lanaudière, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Jérôme, Québec, Lanaudière, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Adolphe-d'Howard, Lanaudière, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Adolphe-d'Howard, Québec, Lanaudière, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Alphonse-de-Rodrigez, Lanaudière, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Alphonse-de-Rodrigez, Québec, Lanaudière, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Notre-Dames-des-Prairies, Lanaudière, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Notre-Dames-des-Prairies, Québec, Lanaudière, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Ville de Terrebonne, Lanaudière, Québec, Canada": {
+    "lat": 45.67586,
+    "lon": -73.760718,
+    "display_name": "BDF Centre-Ville, Bois-des-Filion, Thérèse-De Blainville, Laurentides, Québec, J6Z 2C3, Canada"
+  },
+  "Terrebonne, Québec, Lanaudière, Canada": {
+    "lat": 45.695153,
+    "lon": -73.635015,
+    "display_name": "Terrebonne, Les Moulins, Lanaudière, Québec, Canada"
+  },
+  "Brownsburg-Chattam, Laurentides, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Brownsburg-Chattam, Québec, Laurentides, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Canton de Gore, Laurentides, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Canton de Gore, Québec, Laurentides, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Au coin des rues Albert, Québec, Laurentides, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "121, route 117 à Sainte-Anne-des-Lacs, Laurentides, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "121, route 117 à Sainte-Anne-des-Lacs, Québec, Laurentides, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Côme, Laurentides, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Côme, Québec, Laurentides, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Notre-Dame-de-la-Merci, Laurentides, Québec, Canada": {
+    "lat": 45.976564,
+    "lon": -74.632611,
+    "display_name": "Église Notre-Dame de la Merci, Rue Principale, Huberdeau, Les Laurentides, Laurentides, Québec, J0T 1G0, Canada"
+  },
+  "Saint-Hyppolite, Laurentides, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Hyppolite, Québec, Laurentides, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lac Wade, Municipalité de La Conception, Laurentides, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Lac Wade, Municipalité de La Conception, Québec, Laurentides, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Ville de Sainte-Catherine, Montérégie, Québec, Canada": {
+    "lat": 45.405323,
+    "lon": -73.571676,
+    "display_name": "Hôtel de ville de Sainte-Catherine, Boulevard Marie-Victorin, Sainte-Catherine, Roussillon, Montérégie, Québec, J5C 1A6, Canada"
+  },
+  "Farnham, Montérégie, Québec, Canada": {
+    "lat": 45.314559,
+    "lon": -73.021613,
+    "display_name": "BFC Farnham, Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
+  },
+  "Farnham, Québec, Montérégie, Canada": {
+    "lat": 45.314559,
+    "lon": -73.021613,
+    "display_name": "BFC Farnham, Farnham, Brome-Missisquoi, Estrie, Québec, Canada"
+  },
+  "Granby, Montérégie, Québec, Canada": {
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "display_name": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
+  },
+  "Saint-Mathieu-de-La Prairie, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Mathieu-de-La Prairie, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Armand, Montérégie, Québec, Canada": {
+    "lat": 45.316631,
+    "lon": -73.851911,
+    "display_name": "Rue Saint-Armand, Saint-Paul, Maple Grove, Beauharnois, Beauharnois-Salaberry, Montérégie, Québec, J6N 1L5, Canada"
+  },
+  "Bromont, Montérégie, Québec, Canada": {
+    "lat": 45.526576,
+    "lon": -73.444168,
+    "display_name": "Rue De Bromont, Le Vieux-Longueuil, Longueuil, Agglomération de Longueuil, Montérégie, Québec, J4M 0B8, Canada"
+  },
+  "Pike River, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Pike River, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Roxton Pond, Montérégie, Québec, Canada": {
+    "lat": 45.526172,
+    "lon": -72.613856,
+    "display_name": "6e Rang de Roxton, Roxton Pond, La Haute-Yamaska, Estrie, Québec, J0H 2B0, Canada"
+  },
+  "Roxton Pond, Québec, Montérégie, Canada": {
+    "lat": 45.526172,
+    "lon": -72.613856,
+    "display_name": "6e Rang de Roxton, Roxton Pond, La Haute-Yamaska, Estrie, Québec, J0H 2B0, Canada"
+  },
+  "Shefford, Montérégie, Québec, Canada": {
+    "lat": 45.432232,
+    "lon": -72.667413,
+    "display_name": "Shefford, La Haute-Yamaska, Estrie, Québec, Canada"
+  },
+  "Shefford, Québec, Montérégie, Canada": {
+    "lat": 45.432232,
+    "lon": -72.667413,
+    "display_name": "Shefford, La Haute-Yamaska, Estrie, Québec, Canada"
+  },
+  "Sainte-Cécile-de-Milton, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sainte-Cécile-de-Milton, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Étienne-de-Bolton, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Étienne-de-Bolton, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Kahnawake - Sainte-Catherine, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Kahnawake - Sainte-Catherine, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Hinchinbrook, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Hinchinbrook, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sainte-Sabine, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sainte-Sabine, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Ville de Longueuil (arrondissement Saint-Hubert), Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Hubert, Longueuil, Québec, Montérégie, Canada": {
+    "lat": 45.504275,
+    "lon": -73.421698,
+    "display_name": "Saint-Hubert, Longueuil, Agglomération de Longueuil, Montérégie, Québec, Canada"
+  },
+  "Cowansville, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Cowansville, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Foster, Montérégie, Québec, Canada": {
+    "lat": 45.369722,
+    "lon": -74.006277,
+    "display_name": "Pointe Foster, Dorion, Vaudreuil-Dorion, Vaudreuil-Soulanges, Montérégie, Québec, J7V 2T8, Canada"
+  },
+  "Municipalité de Saint-Louis, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Louis, Québec, Montérégie, Canada": {
+    "lat": 45.854152,
+    "lon": -72.977715,
+    "display_name": "Saint-Louis, Les Maskoutains, Montérégie, Québec, Canada"
+  },
+  "Waterloo, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Waterloo, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Route 221, Saint-Rémi, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Route 221, Saint-Rémi, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Bedford, Montérégie, Québec, Canada": {
+    "lat": 45.340795,
+    "lon": -73.738321,
+    "display_name": "Rue de Bedford, Mercier, Roussillon, Montérégie, Québec, J6K 2R5, Canada"
+  },
+  "Glen Sutton, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Glen Sutton, Québec, Montérégie, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Alphonse, Montérégie, Québec, Canada": {
+    "lat": 45.476585,
+    "lon": -73.46062,
+    "display_name": "Parc Saint-Alphonse, 2500, Brossard, Agglomération de Longueuil, Montérégie, Québec, J4Z 2W1, Canada"
+  },
+  "Lac Brôme, Montérégie, Québec, Canada": {
+    "lat": 45.275782,
+    "lon": -73.047248,
+    "display_name": "Rang du Lac, Sainte-Sabine, Brome-Missisquoi, Estrie, Québec, J2N 0A9, Canada"
+  },
+  "Lac Brôme, Québec, Montérégie, Canada": {
+    "lat": 45.275782,
+    "lon": -73.047248,
+    "display_name": "Rang du Lac, Sainte-Sabine, Brome-Missisquoi, Estrie, Québec, J2N 0A9, Canada"
+  },
+  "Saint-Jean-Baptiste, Montérégie, Québec, Canada": {
+    "lat": 45.520607,
+    "lon": -73.123883,
+    "display_name": "Saint-Jean-Baptiste, La Vallée-du-Richelieu, Montérégie, Québec, J0L 2B0, Canada"
+  },
+  "Ville de Waterloo, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Saint-Hilaire, Montérégie, Québec, Canada": {
+    "lat": 45.569662,
+    "lon": -73.19452,
+    "display_name": "Saint-Hilaire, Rue Sainte-Anne, Mont-Saint-Hilaire, La Vallée-du-Richelieu, Montérégie, Québec, J3H 2X9, Canada"
+  },
+  "Ville de Granby, Montérégie, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Granby, Québec, Montérégie, Canada": {
+    "lat": 45.573441,
+    "lon": -72.534037,
+    "display_name": "Rue Chemin Granby, Roxton Falls, Acton, Montérégie, Québec, J0H 1E0, Canada"
+  },
+  "Louiseville, Centre-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Louiseville, Québec, Centre-du-Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Sainte-Perpétue, Centre-du-Québec, Québec, Canada": {
+    "lat": 46.08109,
+    "lon": -72.46479,
+    "display_name": "Sainte-Perpétue, Nicolet-Yamaska, Centre-du-Québec, Québec, J0C 1R0, Canada"
+  },
+  "Ville de Bécancour (secteur St-Grégoire), Centre-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "St-Grégoire, Bécancour, Québec, Centre-du-Québec, Canada": {
+    "lat": 46.271455,
+    "lon": -72.511574,
+    "display_name": "Saint-Grégoire, Bécancour, Bécancour (MRC), Centre-du-Québec, Québec, G9H 1Y9, Canada"
+  },
+  "Bord de la rivière Nicolet, Nicolet, Centre-du-Québec, Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
+  },
+  "Bord de la rivière Nicolet, Nicolet, Québec, Centre-du-Québec, Canada": {
+    "lat": null,
+    "lon": null,
+    "display_name": ""
   }
 }

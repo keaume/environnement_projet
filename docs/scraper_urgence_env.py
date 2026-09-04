@@ -166,12 +166,23 @@ def charger_polygones():
     return polygones
 
 
+# Tolérance appliquée au polygone d'une région (~15 km) : certaines
+# municipalités sont à cheval sur la frontière administrative, ou le
+# registre du gouvernement les regroupe encore sous une région voisine
+# de celle qui est géographiquement exacte aujourd'hui (ex: des
+# municipalités de Brome-Missisquoi listées sous "Montérégie" alors
+# qu'elles sont désormais en Estrie). Une tolérance évite de rejeter ces
+# points légitimes tout en filtrant les vraies erreurs de géocodage
+# (généralement à des dizaines, voire des centaines de km).
+TOLERANCE_REGION_DEG = 0.135
+
+
 def point_dans_region(polygones, region, lat, lon) -> bool:
     if lat is None or lon is None:
         return False
     if region not in polygones:
         return (44.9 <= lat <= 63.0) and (-79.8 <= lon <= -57.0)
-    return polygones[region].contains(Point(lon, lat))
+    return polygones[region].buffer(TOLERANCE_REGION_DEG).contains(Point(lon, lat))
 
 
 # ──────────────────────────────────────────────────────────────────
@@ -578,10 +589,18 @@ def geocoder(evenements, polygones):
         if adr and reg and not adresse_non_postale(adr):
             tentatives.append(("adresse_region", f"{adr}, {reg}, Québec, Canada"))
 
+        # Le Québec compte de nombreuses municipalités homonymes (ex: plusieurs
+        # "Saint-Isidore"). Sans la région, Nominatim peut résoudre vers la
+        # mauvaise ville du même nom : on tente d'abord la requête qualifiée
+        # par région avant la requête nue.
+        if muni and reg:
+            tentatives.append(("ville_region", f"{muni}, {reg}, Québec, Canada"))
         if muni:
             tentatives.append(("ville", f"{muni}, Québec, Canada"))
 
         if muni_simple:
+            if reg:
+                tentatives.append(("ville_simplifiee_region", f"{muni_simple}, {reg}, Canada"))
             q_simple = f"{muni_simple}, Canada"
             q_ville = f"{muni}, Québec, Canada" if muni else ""
             if q_simple.lower() != q_ville.lower():

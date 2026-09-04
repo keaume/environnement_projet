@@ -96,7 +96,7 @@ Bas-Saint-Laurent,29 novembre 2020,301497588 Catégorie : 1,"Amqui
 Bas-Saint-Laurent,24 novembre 2020,301496719 Catégorie : 1,"Rimouski (secteur Le Bic) 
 				- Accident routier","Route 132 - secteur de l'entrée Est du Parc du Bic (48°21'09.9""N 68°45'26.1""O)",Rimouski (secteur Le Bic),48.35275,-68.75725,gps,"GPS extrait de: Route 132 - secteur de l'entrée Est du Parc du Bic (48°21'09.9""N 68°45'26.1""O)",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301496719
 Bas-Saint-Laurent,12 septembre 2020,301484464 Catégorie : 1,"Sainte-Jeanne-D'Arc 
-				- Déversement de matières dangereuses","Près du 880, route 132",Sainte-Jeanne-D'Arc,48.865047,-72.084019,ville,"Sainte-Jeanne-D'Arc, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301484464
+				- Déversement de matières dangereuses","Près du 880, route 132",Sainte-Jeanne-D'Arc,48.493898,-67.956279,ville_region,"Sainte-Jeanne-D'Arc, Bas-Saint-Laurent, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301484464
 Bas-Saint-Laurent,8 septembre 2020,301483556 Catégorie : 1,"Sainte-Angèle-de-Mérici 
 				- Accident routier",Route 234 (Pont de la Rivière Mitis),Sainte-Angèle-de-Mérici,48.525245,-68.078842,ville,"Sainte-Angèle-de-Mérici, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301483556
 Bas-Saint-Laurent,1 septembre 2020,301483352 Catégorie : 2,"Sainte-Angèle-de-Mérici 
@@ -230,7 +230,7 @@ Bas-Saint-Laurent,21 février 2017,301225479 Catégorie : 1,"Rimouski
 Bas-Saint-Laurent,23 septembre 2016,301066430 Catégorie : 1,"Rimouski 
 				- Déversement de produits pétroliers",Rue des Merises,Rimouski,48.393319,-68.653306,adresse,"Rue des Merises, Rimouski, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301066430
 Bas-Saint-Laurent,21 novembre 2016,301203221 Catégorie : 1,"Saint-Donat 
-				- Émission de gaz",2962-4343 Québec Inc.,Saint-Donat,46.318718,-74.221916,ville,"Saint-Donat, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301203221
+				- Émission de gaz",2962-4343 Québec Inc.,Saint-Donat,48.496985,-68.248268,ville_region,"Saint-Donat, Bas-Saint-Laurent, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301203221
 Bas-Saint-Laurent,2 novembre 2016,301195837 Catégorie : 1,"Saint-Léon-le-Grand 
 				- Déversement de déjections animales","367, rue Gendron",Saint-Léon-le-Grand,48.374141,-67.513363,adresse,"367, rue Gendron, Saint-Léon-le-Grand, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301195837
 Bas-Saint-Laurent,20 septembre 2016,301065808 Catégorie : 1,"Rimouski 
@@ -318,7 +318,7 @@ Bas-Saint-Laurent,3 juin 2013,7110-01-13-1207202 Catégorie : 1,"Rivière-du-L
 Bas-Saint-Laurent,21 octobre 2013,7110-01-13-1004320 Catégorie : 1,"Rimouski 
 				- Déversement de matières dangereuses","389, rue Vanier",Rimouski,48.441192,-68.542706,adresse,"389, rue Vanier, Rimouski, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-13-1004320
 Bas-Saint-Laurent,23 mai 2013,7110-01-13-0703002 Catégorie : 1,"Saint-Léon-le-Grand 
-				- Déversement de diesel","Rang de l'Église, avenue Belzile et Bérubé",Saint-Léon-le-Grand,46.313513,-72.935036,ville,"Saint-Léon-le-Grand, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-13-0703002
+				- Déversement de diesel","Rang de l'Église, avenue Belzile et Bérubé",Saint-Léon-le-Grand,48.380426,-67.504807,ville_region,"Saint-Léon-le-Grand, Bas-Saint-Laurent, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-13-0703002
 Bas-Saint-Laurent,15 mai 2013,7110-01-13-1207201 Catégorie : 1,"Rivière-du-Loup 
 				- Déversement de diesel","Boulevard Industriel, rue Témiscouata et chemin des Raymond",Rivière-du-Loup,47.854123,-69.533302,ville,"Rivière-du-Loup, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-13-1207201
 Bas-Saint-Laurent,25 mars 2013,7110-01-13-1004302 Catégorie : 1,"Rimouski 
@@ -344,7 +344,7 @@ Bas-Saint-Laurent,9 novembre 2011,7110-01-11-1004514 Catégorie : 1,"Rimouski
 Bas-Saint-Laurent,22 février 2012,7110-01-12-1408501 Catégorie : 1,"La Pocatière 
 				- Odeurs d'hydrocarbures",Rue de la Gare,La Pocatière,48.425549,-68.598149,adresse,"Rue de la Gare, Bas-Saint-Laurent, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-12-1408501
 Bas-Saint-Laurent,4 août 2011,7110-01-11-0802303 Catégorie : 1,"Sainte-Félicité 
-				- Présence de matières inconnues","Face au 72, route 132",Sainte-Félicité,46.965372,-69.949506,ville,"Sainte-Félicité, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-11-0802303
+				- Présence de matières inconnues","Face au 72, route 132",Sainte-Félicité,48.901019,-67.33739,ville_region,"Sainte-Félicité, Bas-Saint-Laurent, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-11-0802303
 Bas-Saint-Laurent,27 juillet 2011,7110-01-11-1207207 Catégorie : 1,"Rivière-du-Loup 
 				- Incendie","5, rue Sainte-Anne",Rivière-du-Loup,47.832476,-69.534072,adresse,"5, rue Sainte-Anne, Rivière-du-Loup, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-11-1207207
 Bas-Saint-Laurent,6 octobre 2011,7110-01-11-1104004 Catégorie : 1,"Trois-Pistoles 
@@ -875,7 +875,7 @@ Saguenay—Lac-Saint-Jean,20 juin 2018,301322998 Catégorie : 1,"Saguenay
 Saguenay—Lac-Saint-Jean,22 juin 2018,301324044 Catégorie : 1,"Saint-Félix-d'Otis 
 				- Explosion et incendie d'un bateau de plaisance",Débarcadère municipal,Saint-Félix-d'Otis,48.273597,-70.626297,ville,"Saint-Félix-d'Otis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301324044
 Saguenay—Lac-Saint-Jean,14 juin 2018,301322130 Catégorie : 1,"Municipalité de Sacré-Cœur 
-				- Accident routier",Kilomètre 39 de la route 172,Municipalité de Sacré-Cœur,48.233363,-69.800262,ville_simplifiee,"Sacré-Cœur, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301322130
+				- Accident routier",Kilomètre 39 de la route 172,Municipalité de Sacré-Cœur,48.371822,-72.523228,ville_simplifiee_region,"Sacré-Cœur, Québec, Saguenay—Lac-Saint-Jean, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301322130
 Saguenay—Lac-Saint-Jean,29 mai 2018,301316155 Catégorie : 1,"Municipalité de Saint-Gédéon 
 				- Bateau coulé",Marina de la Belle Rivière,Municipalité de Saint-Gédéon,48.493464,-71.77578,ville_simplifiee,"Saint-Gédéon, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301316155
 Saguenay—Lac-Saint-Jean,15 mai 2018,301312973 Catégorie : 1,"Municipalité de Desbiens 
@@ -1255,7 +1255,7 @@ Saguenay—Lac-Saint-Jean,8 octobre 2012,T-02-2012-10-08-583 Catégorie : 1,"V
 Saguenay—Lac-Saint-Jean,5 septembre 2012,T-02-2012-09-05-466 Catégorie : 1,"Ville de Saguenay 
 				- Nappes d'hydrocarbures",Lac Kénogami,Ville de Saguenay,48.352237,-71.276429,adresse,"Lac Kénogami, Ville de Saguenay, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-09-05-466
 Saguenay—Lac-Saint-Jean,24 août 2012,T-02-2012-08-24-425 Catégorie : 1,"Réserve faunique des Laurentides 
-				- Déversement de produits pétroliers",km 188 de la route 175,Réserve faunique des Laurentides,47.696064,-71.575039,ville,"Réserve faunique des Laurentides, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-08-24-425
+				- Déversement de produits pétroliers",km 188 de la route 175,Réserve faunique des Laurentides,48.25827,-71.742922,ville_region,"Réserve faunique des Laurentides, Saguenay—Lac-Saint-Jean, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-08-24-425
 Saguenay—Lac-Saint-Jean,28 juillet 2012,T-02-2012-07-28-347 Catégorie : 1,"Saint-Ambroise 
 				- Travaux en milieu hydrique,","28, rue de la Décharge",Saint-Ambroise,48.478884,-71.319523,adresse,"28, rue de la Décharge, Saint-Ambroise, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-07-28-347
 Saguenay—Lac-Saint-Jean,14 août 2012,T-02-2012-08-14-401 Catégorie : 1,"Saguenay (arrondissement Chicoutimi) 
@@ -1651,7 +1651,7 @@ Saguenay—Lac-Saint-Jean,9 janvier 2009,T-02-2009-01-09-530 Catégorie : 1,"M
 Saguenay—Lac-Saint-Jean,15 décembre 2008,T-02-2008-12-11-502 Catégorie : 1,"Chambord 
 				- Déversement d'hydrocarbures et incendie","Route 169, près du poste de contrôle routier de la Société d'assurance automobile du Québec",Chambord,48.430682,-72.063108,ville,"Chambord, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2008-12-11-502
 Saguenay—Lac-Saint-Jean,15 décembre 2008,T-02-2008-12-15-498 Catégorie : 1,"Réserve faunique des Laurentides 
-				- Déversement d'hydrocarbures",Kilomètre 22 de la route 169,Réserve faunique des Laurentides,47.696064,-71.575039,ville,"Réserve faunique des Laurentides, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2008-12-15-498
+				- Déversement d'hydrocarbures",Kilomètre 22 de la route 169,Réserve faunique des Laurentides,48.25827,-71.742922,ville_region,"Réserve faunique des Laurentides, Saguenay—Lac-Saint-Jean, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2008-12-15-498
 Saguenay—Lac-Saint-Jean,11 décembre 2008,T-02-2008-12-11-496 Catégorie : 1,"Municipalité Régionale de Comté du Fjord-du-Saguenay 
 				- Déversement de copeaux de bois",Kilomètre 51 de la route régionale 172,Municipalité Régionale de Comté du Fjord-du-Saguenay,48.530696,-70.73347,ville_simplifiee,"Fjord-du-Saguenay, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2008-12-11-496
 Saguenay—Lac-Saint-Jean,2 décembre 2008,T-02-2008-12-02-481 Catégorie : 1,"Saguenay, arrondissement de Chicoutimi  
@@ -1683,7 +1683,7 @@ Saguenay—Lac-Saint-Jean,1 juin 2008,T-02-2008-06-01-122 Catégorie : 1,"Vill
 Saguenay—Lac-Saint-Jean,14 juillet 2008,T-02-2008-07-14-221 Catégorie : 1,"Alma 
 				- Déversement d'asphalte",Intersection de la route 172 et 169,Alma,48.548887,-71.651459,ville,"Alma, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2008-07-14-221
 Saguenay—Lac-Saint-Jean,13 mai 2008,T-02 - 2008-05-13 - 78 Catégorie : 1,"Réserve faunique des Laurentides 
-				- Perte d'un chargement de produits chimiques","Route 169, kilomètre 38",Réserve faunique des Laurentides,47.696064,-71.575039,ville,"Réserve faunique des Laurentides, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02 - 2008-05-13 - 78
+				- Perte d'un chargement de produits chimiques","Route 169, kilomètre 38",Réserve faunique des Laurentides,48.25827,-71.742922,ville_region,"Réserve faunique des Laurentides, Saguenay—Lac-Saint-Jean, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02 - 2008-05-13 - 78
 Saguenay—Lac-Saint-Jean,7 juin 2008,02-20080607-0843(136) Catégorie : 1,"Saguenay (arrondissement de Jonquière) 
 				- Fuite d'acide fluorhydrique","Usine de fluorure, Complexe Jonquière de Rio Tinto Alcan",Saguenay (arrondissement de Jonquière),48.434952,-71.141728,ville,"Saguenay (arrondissement de Jonquière), Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=02-20080607-0843(136)
 Saguenay—Lac-Saint-Jean,5 mai 2008,7610-02-01-0707900 Catégorie : 1,"Saguenay 
@@ -1715,7 +1715,7 @@ Capitale-Nationale,1 mai 2025,301821781 Catégorie : 1,"Saint-Gabriel-de-Valca
 Capitale-Nationale,23 mai 2025,301826001 Catégorie : 1,"Québec 
 				- Déversement de produits pétroliers","2390, avenue Watt",Québec,46.790852,-71.29499,adresse,"2390, avenue Watt, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier= 301826001
 Capitale-Nationale,1 mai 2025,301821459 Catégorie : 1,"Ville de Québec (arrondissement des Rivières) 
-				- Signalement d'une coloration sur un cours d'eau","Derrière le 1347, boulevard Père-Lelièvre",Ville de Québec (arrondissement des Rivières),,,ville_simplifiee,"des Rivières, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821459
+				- Signalement d'une coloration sur un cours d'eau","Derrière le 1347, boulevard Père-Lelièvre",Ville de Québec (arrondissement des Rivières),46.823929,-71.321972,ville_simplifiee_region,"des Rivières, Québec, Québec, Capitale-Nationale, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821459
 Capitale-Nationale,8 avril 2025,301816723 Catégorie : 1,"Québec 
 				- Bris d'équipement","1570, boulevard Bastien",Québec,46.854374,-71.315269,adresse,"1570, boulevard Bastien, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301816723
 Capitale-Nationale,1 mai 2025,301821549 Catégorie : 1,"Ville de Québec (arrondissement les Rivières) 
@@ -1832,7 +1832,7 @@ Capitale-Nationale,13 mai 2023,301675459 Catégorie : 1,"Québec (arrondisseme
 Capitale-Nationale,19 mai 2023,301677174 Catégorie : 1,"Neuville 
 				- Déversement de produits pétroliers",À proximité du 430 rue des Érables,Neuville,46.698199,-71.584854,ville,"Neuville, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301677174
 Capitale-Nationale,11 mai 2023,301675449 Catégorie : 1,"L'Ange-Gardien 
-				- Accident routier",Intersection Côte Dufournel et boulevard Ste Anne,L'Ange-Gardien,45.626429,-75.45159,ville,"L'Ange-Gardien, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301675449
+				- Accident routier",Intersection Côte Dufournel et boulevard Ste Anne,L'Ange-Gardien,46.916738,-71.091499,ville_region,"L'Ange-Gardien, Capitale-Nationale, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301675449
 Capitale-Nationale,12 mai 2023,301675448 Catégorie : 1,"Québec 
 				- Déversement de produits pétroliers",Rue Abraham-Martin,Québec,46.819543,-71.212706,adresse,"Rue Abraham-Martin, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301675448
 Capitale-Nationale,27 avril 2023,301672232 Catégorie : 1,"Ville de Québec 
@@ -2258,7 +2258,7 @@ Capitale-Nationale,8 mars 2017,301229162 Catégorie : 1,"Ville de Québec
 Capitale-Nationale,20 janvier 2017,301228595 Catégorie : 1,"Ville de Québec 
 				- Signalement d'odeur",Arrondissement Limoilou,Ville de Québec,46.81415,-71.220079,adresse,"Arrondissement Limoilou, Ville de Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301228595
 Capitale-Nationale,18 novembre 2016,301202708 Catégorie : 1,"L'Ange-Gardien 
-				- Incendie d'un véhicule",Intersection du boulevard Sainte-Anne et de la rue Casgrain,L'Ange-Gardien,45.626429,-75.45159,ville,"L'Ange-Gardien, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301202708
+				- Incendie d'un véhicule",Intersection du boulevard Sainte-Anne et de la rue Casgrain,L'Ange-Gardien,46.916738,-71.091499,ville_region,"L'Ange-Gardien, Capitale-Nationale, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301202708
 Capitale-Nationale,17 novembre 2016,301202723 Catégorie : 1,"Petite-Rivière-Saint-François 
 				- Incendie d'un véhicule",Kilomètre 438 de la Route 138,Petite-Rivière-Saint-François,47.303583,-70.568047,ville,"Petite-Rivière-Saint-François, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301202723
 Capitale-Nationale,7 octobre 2016,301068754 Catégorie : 1,"Saint-Augustin-de-Desmaures 
@@ -2325,7 +2325,7 @@ Capitale-Nationale,3 septembre 2015,300987505 Catégorie : 1,"Québec (Arrondi
 Capitale-Nationale,25 août 2015,300985680 Catégorie : 1,"Québec (arrondissement Cap-Rouge) 
 				- Travaux en milieu hydrique",Rivière du Cap-Rouge à la hauteur du boulevard Wilfrid-Hamel,Québec (arrondissement Cap-Rouge),46.749864,-71.345345,ville_simplifiee,"Cap-Rouge, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300985680
 Capitale-Nationale,10 août 2015,300982536 Catégorie : 1,"L'Ange-Gardien 
-				- Déversement de produits pétroliers",Terrain - N 46.94988° W 71.12759°,L'Ange-Gardien,45.626429,-75.45159,ville,"L'Ange-Gardien, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300982536
+				- Déversement de produits pétroliers",Terrain - N 46.94988° W 71.12759°,L'Ange-Gardien,46.916738,-71.091499,ville_region,"L'Ange-Gardien, Capitale-Nationale, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300982536
 Capitale-Nationale,8 août 2015,300982198 Catégorie : 1,"Château-Richer 
 				- Signalement d'odeur","7499, boulevard Sainte-Anne",Château-Richer,46.952932,-71.042981,adresse,"7499, boulevard Sainte-Anne, Château-Richer, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300982198
 Capitale-Nationale,8 août 2015,300982011 Catégorie : 1,"Ville de Québec  
@@ -2377,7 +2377,7 @@ Capitale-Nationale,13 novembre 2014,300924836 Catégorie : 1,"Québec
 Capitale-Nationale,23 novembre 2014,300926586 Catégorie : 1,"Québec 
 				- Déversement de produits pétroliers","218, rue Germaine-Viger",Québec,46.913698,-71.201633,adresse,"218, rue Germaine-Viger, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300926586
 Capitale-Nationale,7 novembre 2014,300923900 Catégorie : 1,"Port de Québec, secteur de l'Anse au Foulon 
-				- Nappes d'hydrocarbures",Quai 102-105 et 107-108,"Port de Québec, secteur de l'Anse au Foulon",45.547178,-73.656717,ville_simplifiee,"Port de Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300923900
+				- Nappes d'hydrocarbures",Quai 102-105 et 107-108,"Port de Québec, secteur de l'Anse au Foulon",46.82119,-71.200436,ville_simplifiee_region,"Port de Québec, Québec, Capitale-Nationale, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300923900
 Capitale-Nationale,10 novembre 2014,300924088 Catégorie : 1,"Québec 
 				- Déversement de produits pétroliers","515, rue du Calvados",Québec,46.898871,-71.320763,adresse,"515, rue du Calvados, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300924088
 Capitale-Nationale,1 novembre 2014,300922971 Catégorie : 1,"Québec 
@@ -2576,7 +2576,7 @@ Capitale-Nationale,16 août 2012,T-03-2012-08-16-01 Catégorie : 1,"Québec
 Capitale-Nationale,9 août 2012,T-03-2012-08-09-01 Catégorie : 1,"Québec 
 				- Accident maritime","Port de Québec, quai no 17",Québec,46.81918,-71.207355,adresse,"Port de Québec, quai no 17, Capitale-Nationale, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-08-09-01
 Capitale-Nationale,16 août 2012,N-03-2012-08-16-02 Catégorie : 1,"L'Ange-Gardien 
-				- Présence de mousse sur un cours d'eau",Croisement du boulevard Sainte-Anne et rivière du Petit Pré,L'Ange-Gardien,45.626429,-75.45159,ville,"L'Ange-Gardien, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=N-03-2012-08-16-02
+				- Présence de mousse sur un cours d'eau",Croisement du boulevard Sainte-Anne et rivière du Petit Pré,L'Ange-Gardien,46.916738,-71.091499,ville_region,"L'Ange-Gardien, Capitale-Nationale, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=N-03-2012-08-16-02
 Capitale-Nationale,8 août 2012,T-03-2012-08-08-01 Catégorie : 1,"Québec 
 				- Déversement de produits pétroliers","1705, rue A.-R.-Décary",Québec,46.805886,-71.27754,adresse,"1705, rue A.-R.-Décary, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-08-08-01
 Capitale-Nationale,7 août 2012,T-03-2012-08-07-03 Catégorie : 1,"Saint-Augustin-de-Desmaures 
@@ -2905,7 +2905,7 @@ Capitale-Nationale,14 septembre 2009,T-03-2009-09-14-1 Catégorie : 1,"Québec
 Capitale-Nationale,15 septembre 2009,T-03-2009-09-15-1 Catégorie : 1,"Québec 
 				- Déversement d'huile à chauffage","Au 220, rue de la Sapinière-Dorion Est",Québec,46.813743,-71.208406,ville,"Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-09-15-1
 Capitale-Nationale,8 septembre 2009,T-03-2009-09-08-1 Catégorie : 1,"L'Ange-Gardien 
-				- Rejet de matières en suspension",Chemin du Pont-Mathias,L'Ange-Gardien,45.626429,-75.45159,ville,"L'Ange-Gardien, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-09-08-1
+				- Rejet de matières en suspension",Chemin du Pont-Mathias,L'Ange-Gardien,46.916738,-71.091499,ville_region,"L'Ange-Gardien, Capitale-Nationale, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-09-08-1
 Capitale-Nationale,4 septembre 2009,T-03-2009-09-04-1 Catégorie : 1,"Stoneham-et-Tewkesbury 
 				- Signalement de matières en suspension",Rivière des Hurons - Chemin des Pignons,Stoneham-et-Tewkesbury,46.999608,-71.369475,ville,"Stoneham-et-Tewkesbury, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-09-04-1
 Capitale-Nationale,26 août 2009,T-03-2009-08-26-1 Catégorie : 1,"Québec 
@@ -2915,7 +2915,7 @@ Capitale-Nationale,21 août 2009,T-03-2009-08-21-01 Catégorie : 1,"Québec (a
 Capitale-Nationale,20 août 2009,T-03-2009-08-20-1 Catégorie : 1,"Québec (arrondissement Les Rivières) 
 				- Rejet de matières en suspension","Secteurs Duberger ou Lebourneuf,",Québec (arrondissement Les Rivières),46.829922,-71.301735,ville_simplifiee,"Les Rivières, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-20-1
 Capitale-Nationale,24 août 2009,T-03-2009-08-24-01 Catégorie : 1,"Québec (arrondissement Laurentien) 
-				- Présence de matières inconnues",Rue Hannequin / Rivière Nelson - émissaire pluvial,Québec (arrondissement Laurentien),46.77863,-72.836386,ville_simplifiee,"Laurentien, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-24-01
+				- Présence de matières inconnues",Rue Hannequin / Rivière Nelson - émissaire pluvial,Québec (arrondissement Laurentien),46.912501,-71.363748,ville_simplifiee_region,"Laurentien, Québec, Québec, Capitale-Nationale, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-24-01
 Capitale-Nationale,19 août 2009,T-03-2009-08-19-1 Catégorie : 1,"Lac-Beauport 
 				- Rejet de matières en suspension","3, Chemin du Lac-Tourbillon",Lac-Beauport,46.962032,-71.246796,adresse,"3, Chemin du Lac-Tourbillon, Lac-Beauport, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-19-1
 Capitale-Nationale,12 août 2009,T-03-2009-08-12-1 Catégorie : 1,"L'Ange-Gardien 
@@ -2927,7 +2927,7 @@ Capitale-Nationale,27 juillet 2009,T-03-2009-07-27-2 Catégorie : 1,"Saint-Uba
 Capitale-Nationale,27 juillet 2009,T-03-2009-07-27-3 Catégorie : 1,"Québec (arrondissement Beauport) 
 				- Déversement d'huile à chauffage","2979, Monseigneur-Gauthier",Québec (arrondissement Beauport),46.84775,-71.212563,adresse,"2979, Monseigneur-Gauthier, Capitale-Nationale, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-07-27-3
 Capitale-Nationale,27 juillet 2009,T-03-2009-07-27-1 Catégorie : 1,"Ville de Québec (arrondissement des Rivières) 
-				- Déversement d'hydrocarbures",Rivière Lorette - À l'intersection du boulevard Masson et du boulevard Père-Lelièvre,Ville de Québec (arrondissement des Rivières),,,ville_simplifiee,"des Rivières, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-07-27-1
+				- Déversement d'hydrocarbures",Rivière Lorette - À l'intersection du boulevard Masson et du boulevard Père-Lelièvre,Ville de Québec (arrondissement des Rivières),46.823929,-71.321972,ville_simplifiee_region,"des Rivières, Québec, Québec, Capitale-Nationale, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-07-27-1
 Capitale-Nationale,17 juillet 2009,T-03-2009-07-17-01 Catégorie : 1,"Québec 
 				- Déraillement de train","6 Boulevard des Capucins, gare de triage",Québec,46.813743,-71.208406,ville,"Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-07-17-01
 Capitale-Nationale,29 juin 2009,T-03-2009-06-29-1 Catégorie : 1,"Québec 
@@ -2977,7 +2977,7 @@ Capitale-Nationale,15 avril 2009,T-03-2009-04-15-2 Catégorie : 1,"L'Ancienne-
 Capitale-Nationale,11 avril 2009,T-03-2009-04-11-01 Catégorie : 1,"Saint-Pierre-de-l'Île-d'Orléans 
 				- Déversement d'huiles usées","890, Chemin Royal",Saint-Pierre-de-l'Île-d'Orléans,46.881211,-71.086046,adresse,"890, Chemin Royal, Saint-Pierre-de-l'Île-d'Orléans, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-04-11-01
 Capitale-Nationale,4 avril 2009,T-03-2009-04-04-1 Catégorie : 1,"Ville de Québec (arrondissement Laurentien) 
-				- Déversement d'eaux usées",Poste de pompage à l'extrémité de la rue des Hannetons dans le secteur nord-est du lac Saint-Augustin,Ville de Québec (arrondissement Laurentien),46.77863,-72.836386,ville_simplifiee,"Laurentien, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-04-04-1
+				- Déversement d'eaux usées",Poste de pompage à l'extrémité de la rue des Hannetons dans le secteur nord-est du lac Saint-Augustin,Ville de Québec (arrondissement Laurentien),46.912501,-71.363748,ville_simplifiee_region,"Laurentien, Québec, Québec, Capitale-Nationale, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-04-04-1
 Capitale-Nationale,31 janvier 2009,T-03-2009-01-31-01 Catégorie : 1,"Québec (Arrondissement de Beauport) 
 				- Émanation de monoxyde de carbone","Rue Joseph-Giffard, Québec",Québec (Arrondissement de Beauport),46.860244,-71.191165,ville_simplifiee,"de Beauport, Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-01-31-01
 Capitale-Nationale,6 mars 2009,T-03-2009-03-06-1 Catégorie : 1,"Québec 
@@ -3211,13 +3211,13 @@ Mauricie,17 novembre 2021,301570836 Catégorie : 1,"Saint-Tite
 Mauricie,10 novembre 2021,301569476 Catégorie : 1,"Trois-Rivières 
 				- Travaux en milieu hydrique",Lot 2 545 088,Trois-Rivières,46.343232,-72.542849,ville,"Trois-Rivières, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301569476
 Mauricie,2 novembre 2021,301567818 Catégorie : 1,"La Tuque (secteur de Parent)  
-				- Déversement d'eaux usées","Km 150-151, chemin de Parent",La Tuque (secteur de Parent),,,ville_simplifiee,"de Parent, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301567818
+				- Déversement d'eaux usées","Km 150-151, chemin de Parent",La Tuque (secteur de Parent),47.922392,-74.62095,ville_simplifiee_region,"de Parent, La Tuque, Québec, Mauricie, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301567818
 Mauricie,22 octobre 2021,301566205 Catégorie : 1,"Shawinigan 
 				- Rejet de matières en suspension",Cours d'eau sans nom - tributaire Petite Rivière Shawinigan,Shawinigan,46.539658,-72.751864,ville,"Shawinigan, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301566205
 Mauricie,19 octobre 2021,301565468 Catégorie : 1,"Trois-Rivières 
 				- Présence de matières inconnues",Chemin Sainte-Marguerite,Trois-Rivières,46.309136,-72.636659,adresse,"Chemin Sainte-Marguerite, Trois-Rivières, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301565468
 Mauricie,18 septembre 2021,301559452 Catégorie : 1,"Trois-Rivières (secteur Saint-Louis-de-France) 
-				- Déboisement",chemin Langevin Rive de la rivière Saint-Maurice,Trois-Rivières (secteur Saint-Louis-de-France),,,ville_simplifiee,"Saint-Louis-de-France, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301559452
+				- Déboisement",chemin Langevin Rive de la rivière Saint-Maurice,Trois-Rivières (secteur Saint-Louis-de-France),46.423813,-72.595153,ville_simplifiee_region,"Saint-Louis-de-France, Trois-Rivières, Québec, Mauricie, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301559452
 Mauricie,1 septembre 2021,301556128 Catégorie : 1,"Trois-Rivières 
 				- Accident routier",Bretelle autoroutes 55 Sud et 40 Ouest,Trois-Rivières,46.343232,-72.542849,ville,"Trois-Rivières, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301556128
 Mauricie,9 août 2021,301551516 Catégorie : 1,"Shawinigan 
@@ -3592,7 +3592,7 @@ Mauricie,15 août 2011,7110-04-36030-110815 Catégorie : 1,"Shawinigan
 Mauricie,3 septembre 2011,7110-35027-110903 Catégorie : 1,"Saint-Tite 
 				- Déversement de produits pétroliers",Chemin de la Pisciculture,Saint-Tite,46.738471,-72.512152,adresse,"Chemin de la Pisciculture, Saint-Tite, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-35027-110903
 Mauricie,14 juin 2011,7110-04-36033-110614 Catégorie : 1,"Shawinigan (secteur Grand-Mère) 
-				- Déversement de diesel","Stationnement du 850, 7e Avenue",Shawinigan (secteur Grand-Mère),,,ville_simplifiee,"Grand-Mère, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-36033-110614
+				- Déversement de diesel","Stationnement du 850, 7e Avenue",Shawinigan (secteur Grand-Mère),46.612894,-72.69516,ville_simplifiee_region,"Grand-Mère, Shawinigan, Québec, Mauricie, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-36033-110614
 Mauricie,7 juin 2011,7110-037067-06-07 Catégorie : 1,"Trois-Rivières 
 				- Incendie",Rue La Vérendrye près de l'intersection de la rue Bellefeuille,Trois-Rivières,46.343232,-72.542849,ville,"Trois-Rivières, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-037067-06-07
 Mauricie,3 juin 2011,7710-04-35005-2011-06-03 Catégorie : 1,"Notre-Dame-de-Montauban 
@@ -3696,7 +3696,7 @@ Mauricie,11 mai 2008,7110-04-01-51055-01 Catégorie : 1,"Ste-Angèle-de-Prémo
 Mauricie,8 mai 2008,7110-04-01-3706701 Catégorie : 1,"Trois-Rivières 
 				- Odeurs d'essence dans le réseau d'égout",rue Notre-Dame centre,Trois-Rivières,46.338742,-72.542796,adresse,"rue Notre-Dame centre, Trois-Rivières, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-01-3706701
 Mauricie,8 mai 2008,7110-04-01-39090-01 Catégorie : 1,"Sainte-Élisabeth-de-Warwick 
-				- Brûlage de déchets à ciel ouvert","481, rang 6",Sainte-Élisabeth-de-Warwick,45.922936,-72.077894,ville,"Sainte-Élisabeth-de-Warwick, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-01-39090-01
+				- Brûlage de déchets à ciel ouvert","481, rang 6",Sainte-Élisabeth-de-Warwick,,,ville,"Sainte-Élisabeth-de-Warwick, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-01-39090-01
 Estrie,2 mars 2026,301877341 Catégorie : 1,"St-Alphonse-de-Granby 
 				- Déversement de matières liquides","Autoroute 10, Sortie 68",St-Alphonse-de-Granby,45.325599,-72.8088,ville,"St-Alphonse-de-Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301877341
 Estrie,27 janvier 2026,301870845 Catégorie : 1,"Coaticook 
@@ -4410,7 +4410,7 @@ Estrie,14 décembre 2012,7110-05-12-43025-10 Catégorie : 1,"Sherbrooke
 Estrie,26 novembre 2012,7110-05-12-43025-08 Catégorie : 1,"Sherbrooke 
 				- Incendie impliquant des matières dangereuses,","1266, rue King Est",Sherbrooke,45.408027,-71.879613,adresse,"1266, rue King Est, Sherbrooke, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-12-43025-08
 Estrie,13 mars 2013,7110-05-13-43027-02 Catégorie : 1,"Shebrooke 
-				- Signalement d'odeur","Face au 505, rue Wellington sud",Shebrooke,45.550904,-73.554805,ville,"Shebrooke, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-13-43027-02
+				- Signalement d'odeur","Face au 505, rue Wellington sud",Shebrooke,,,ville,"Shebrooke, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-13-43027-02
 Estrie,2 mars 2013,7110-05-13-43025-01 Catégorie : 1,"Ascot Corner 
 				- Brûlage de matières résiduelles","4581, rue King Est (route 112)",Ascot Corner,45.44913,-71.765482,ville,"Ascot Corner, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-13-43025-01
 Estrie,21 octobre 2012,7110-05-12-43015-01 Catégorie : 1,"Ascot Corner 
@@ -4638,7 +4638,7 @@ Estrie,6 octobre 2008,7110-05-08-45072-08 Catégorie : 1,"Ville de Magog
 Estrie,19 septembre 2008,7110-05-08-41060-02 Catégorie : 1,"East Angus  
 				- Déversement de pâte de carton",248 Warner,East Angus,45.481583,-71.663909,adresse,"248 Warner, East Angus, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-41060-02
 Estrie,28 septembre 2008,7110-16-08-71083-07 Catégorie : 1,"Vaudreuil-Dorion 
-				- Déversement d'hydrocarbures",Pont de l'Île-aux-Tourtes,Vaudreuil-Dorion,45.397151,-74.025458,ville,"Vaudreuil-Dorion, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-71083-07
+				- Déversement d'hydrocarbures",Pont de l'Île-aux-Tourtes,Vaudreuil-Dorion,,,ville,"Vaudreuil-Dorion, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-71083-07
 Estrie,30 septembre 2008,7110-05-08-41038-02 Catégorie : 1,"Cookshire - Eaton 
 				- Travaux d'excavation sur le littoral d'un cours d'eau","810, chemin du Bassin",Cookshire - Eaton,45.427151,-71.630626,adresse,"810, chemin du Bassin, Cookshire - Eaton, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-41038-02
 Estrie,19 septembre 2008,7110-05-08-41065-03 Catégorie : 1,"Westbury 
@@ -4660,7 +4660,7 @@ Estrie,16 août 2008,7110-05-08-41117-02 Catégorie : 1,"Dudswell (Lac Miroir)
 Estrie,23 juillet 2008,7110-05-08-45070-01 Catégorie : 1,"Magog 
 				- Déversement d'eaux usées",Marina Le Merry Club - Lac Memphrémagog,Magog,45.265801,-72.148069,ville,"Magog, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-45070-01
 Estrie,2 août 2008,7110-05-08-30025-01 Catégorie : 1,"Frontenac 
-				- Déversement de fumier","Au niveau du 1478, route 161",Frontenac,45.533154,-73.552216,ville,"Frontenac, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-30025-01
+				- Déversement de fumier","Au niveau du 1478, route 161",Frontenac,45.572608,-70.83155,ville_region,"Frontenac, Estrie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-30025-01
 Estrie,21 juillet 2008,7110-05-08-43027-21 Catégorie : 1,"Sherbrooke 
 				- Émission de poussières","549, rue Boisclair",Sherbrooke,45.381548,-71.893138,adresse,"549, rue Boisclair, Sherbrooke, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-43027-21
 Estrie,29 juillet 2008,7110-05-08-41055-03 Catégorie : 1,"Ascot Corner 
@@ -5926,7 +5926,7 @@ Outaouais,18 mai 2008,7110-07-01-8305001 Catégorie : 1,"Bouchette
 Outaouais,24 avril 2008,7110-07-01-84030-01 Catégorie : 1,"Litchfield 
 				- Feu de pneus",Dépôt en tranchée de la municipalité de Campbell's Bay,Litchfield,45.777273,-76.592128,ville,"Litchfield, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-07-01-84030-01
 Abitibi-Témiscamingue,26 septembre 2025,301852563 Catégorie : 1,"Km 568 de la Route 117 
-				- Accident routier",Rouyn-Noranda (secteur Cadillac),Km 568 de la Route 117,47.261223,-76.82401,ville,"Km 568 de la Route 117, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301852563
+				- Accident routier",Rouyn-Noranda (secteur Cadillac),Km 568 de la Route 117,47.615999,-77.229695,ville_region,"Km 568 de la Route 117, Abitibi-Témiscamingue, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301852563
 Abitibi-Témiscamingue,15 août 2025,301844355 Catégorie : 1,"Rivière-Héva 
 				- Accident routier",Route 117 Entre Cadillac et Rivière-Héva,Rivière-Héva,48.238394,-78.21579,ville,"Rivière-Héva, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301844355
 Abitibi-Témiscamingue,19 juin 2025,301833509 Catégorie : 1,"Kipawa 
@@ -6088,7 +6088,7 @@ Abitibi-Témiscamingue,24 novembre 2014,300926761 Catégorie : 1,"Rouyn-Norand
 Abitibi-Témiscamingue,21 août 2014,300907756 Catégorie : 1,"Malartic 
 				- Déversement de résidus miniers","100, chemin du Lac Mourier",Malartic,48.111916,-78.141239,adresse,"100, chemin du Lac Mourier, Malartic, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300907756
 Abitibi-Témiscamingue,2 octobre 2014,300916908 Catégorie : 1,"Clermont 
-				- Accident routier","Route 393, 1 km au sud de l'aéroport de La Sarre",Clermont,47.694512,-70.22622,ville,"Clermont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300916908
+				- Accident routier","Route 393, 1 km au sud de l'aéroport de La Sarre",Clermont,48.923165,-79.250356,ville_region,"Clermont, Abitibi-Témiscamingue, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300916908
 Abitibi-Témiscamingue,15 août 2014,300905984 Catégorie : 1,"Saint-Eugène-de-Guigues 
 				- Déversement de matières liquides","Face au 994, Route 391",Saint-Eugène-de-Guigues,47.512563,-79.352875,ville,"Saint-Eugène-de-Guigues, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300905984
 Abitibi-Témiscamingue,15 juin 2014,300889989 Catégorie : 2,"La Corne 
@@ -7016,7 +7016,7 @@ Gaspésie—Îles-de-la-Madeleine,3 août 2023,301695829 Catégorie : 1,"Saint
 Gaspésie—Îles-de-la-Madeleine,28 septembre 2022,301634587 Catégorie : 1,"Sainte-Anne-des-Monts 
 				- Incendie de bateau","280, Rue du Havre (quai de Tourelle)",Sainte-Anne-des-Monts,49.126328,-66.48495,ville,"Sainte-Anne-des-Monts, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301634587
 Gaspésie—Îles-de-la-Madeleine,9 septembre 2021,301557911 Catégorie : 1,"Gaspé 
-				- Accident routier",Kilomètre 96 de la route 198,Gaspé,48.614677,-66.066573,ville,"Gaspé, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301557911
+				- Accident routier",Kilomètre 96 de la route 198,Gaspé,48.831722,-64.483757,ville_region,"Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301557911
 Gaspésie—Îles-de-la-Madeleine,8 août 2022,301625734 Catégorie : 1,"Grande-Rivière 
 				- Incendie impliquant des produits pétroliers","142, Rang Saint-Hilaire",Grande-Rivière,48.398481,-64.495306,ville,"Grande-Rivière, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301625734
 Gaspésie—Îles-de-la-Madeleine,21 juillet 2022,301621918 Catégorie : 1,"Murdochville 
@@ -7030,7 +7030,7 @@ Gaspésie—Îles-de-la-Madeleine,21 janvier 2022,301581897 Catégorie : 1,"Po
 Gaspésie—Îles-de-la-Madeleine,27 octobre 2021,301566736 Catégorie : 1,"La Martre 
 				- Déversement de produits pétroliers",GPS : O49.1572 / N66.1946 (secteur forestier),La Martre,49.205559,-66.165608,ville,"La Martre, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301566736
 Gaspésie—Îles-de-la-Madeleine,3 août 2021,301550986 Catégorie : 1,"Gaspé 
-				- Signalement d'une coloration sur un cours d'eau",Rivière York au niveau du Lieu d'enfouissement technique de Gaspé,Gaspé,48.614677,-66.066573,ville,"Gaspé, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301550986
+				- Signalement d'une coloration sur un cours d'eau",Rivière York au niveau du Lieu d'enfouissement technique de Gaspé,Gaspé,48.831722,-64.483757,ville_region,"Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301550986
 Gaspésie—Îles-de-la-Madeleine,16 mai 2021,301531141 Catégorie : 1,"Ste-Anne-des-Monts 
 				- Brûlage de matières résiduelles",191 Route Bellevue,Ste-Anne-des-Monts,49.108401,-66.513436,adresse,"191 Route Bellevue, Ste-Anne-des-Monts, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301531141
 Gaspésie—Îles-de-la-Madeleine,27 novembre 2020,301497524 Catégorie : 1,"Saint-Anne-des-Monts 
@@ -7044,7 +7044,7 @@ Gaspésie—Îles-de-la-Madeleine,9 octobre 2020,301489272 Catégorie : 1,"Gas
 Gaspésie—Îles-de-la-Madeleine,25 novembre 2019,301432057 Catégorie : 1,"Marsoui 
 				- Accident routier","Route de la Mine-Candegos (GPS: 49,1704° N; 66,1041° O)",Marsoui,49.214968,-66.068516,ville,"Marsoui, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301432057
 Gaspésie—Îles-de-la-Madeleine,2 septembre 2020,301483351 Catégorie : 1,"Gaspé 
-				- Travaux en milieu hydrique",Anse-au-Griffon (quai),Gaspé,48.614677,-66.066573,ville,"Gaspé, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301483351
+				- Travaux en milieu hydrique",Anse-au-Griffon (quai),Gaspé,48.831722,-64.483757,ville_region,"Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301483351
 Gaspésie—Îles-de-la-Madeleine,26 février 2020,301449517 Catégorie : 1,"Municipalité de La Martre 
 				- Brûlage de matières résiduelles","35, route de la Rivière",Municipalité de La Martre,49.197076,-66.165768,adresse,"35, route de la Rivière, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301449517
 Gaspésie—Îles-de-la-Madeleine,10 août 2020,301478941 Catégorie : 1,"La Martre 
@@ -7072,7 +7072,7 @@ Gaspésie—Îles-de-la-Madeleine,22 juin 2018,301324816 Catégorie : 1,"Saint
 Gaspésie—Îles-de-la-Madeleine,27 mars 2018,301297156 Catégorie : 1,"Carleton-sur-Mer 
 				- Déversement de produits pétroliers","1021,  Boulevard Perron",Carleton-sur-Mer,48.100008,-66.085197,adresse,"1021,  Boulevard Perron, Carleton-sur-Mer, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301297156
 Gaspésie—Îles-de-la-Madeleine,8 juin 2018,301319576 Catégorie : 1,"Gaspé 
-				- Déversement d'eaux contaminées aux hydrocarbures",Secteur du parc industriel,Gaspé,48.614677,-66.066573,ville,"Gaspé, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301319576
+				- Déversement d'eaux contaminées aux hydrocarbures",Secteur du parc industriel,Gaspé,48.831722,-64.483757,ville_region,"Gaspé, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301319576
 Gaspésie—Îles-de-la-Madeleine,23 mars 2018,301296137 Catégorie : 1,"Saint-Elzéar-de-Bonaventure 
 				- Contamination d'un réseau d'eau potable","140, chemin Principal",Saint-Elzéar-de-Bonaventure,48.159466,-65.395989,adresse,"140, chemin Principal, Saint-Elzéar-de-Bonaventure, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301296137
 Gaspésie—Îles-de-la-Madeleine,6 juillet 2017,11-20170706-000184 Catégorie : 1,"TNO Mont-Albert (Sainte-Anne-des-Monts) 
@@ -7086,7 +7086,7 @@ Gaspésie—Îles-de-la-Madeleine,19 octobre 2016,301070625 Catégorie : 1,"Ca
 Gaspésie—Îles-de-la-Madeleine,22 septembre 2016,301066422 Catégorie : 1,"Marsoui 
 				- Travaux en milieu hydrique",Route 132 (N 49.21028   -  O 66.12605),Marsoui,49.214968,-66.068516,ville,"Marsoui, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301066422
 Gaspésie—Îles-de-la-Madeleine,8 juillet 2016,301047960 Catégorie : 1,"Sainte-Anne-des-Monts (secteur Tourelle) 
-				- Déversement de produits pétroliers",Quai de Tourelle,Sainte-Anne-des-Monts (secteur Tourelle),,,ville_simplifiee,"Tourelle, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301047960
+				- Déversement de produits pétroliers",Quai de Tourelle,Sainte-Anne-des-Monts (secteur Tourelle),49.160798,-66.407197,ville_simplifiee_region,"Tourelle, Sainte-Anne-des-Monts, Québec, Gaspésie—Îles-de-la-Madeleine, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301047960
 Gaspésie—Îles-de-la-Madeleine,13 septembre 2016,301064834 Catégorie : 1,"Cap-Chat 
 				- Déversement de produits pétroliers","80, rue Louis-Landry",Cap-Chat,49.088781,-66.692493,adresse,"80, rue Louis-Landry, Cap-Chat, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301064834
 Gaspésie—Îles-de-la-Madeleine,6 mai 2016,301032919 Catégorie : 1,"Ristigouche-Partie-Sud-Est 
@@ -7094,7 +7094,7 @@ Gaspésie—Îles-de-la-Madeleine,6 mai 2016,301032919 Catégorie : 1,"Ristigo
 Gaspésie—Îles-de-la-Madeleine,4 mai 2016,301032431 Catégorie : 1,"Sainte-Anne-des-Monts 
 				- Déversement de déjections animales","193, Route 132 Est",Sainte-Anne-des-Monts,48.111106,-66.234023,adresse,"193, Route 132 Est, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301032431
 Gaspésie—Îles-de-la-Madeleine,18 avril 2016,301029898 Catégorie : 2,"Saint-Elzéar 
-				- Contamination d'un réseau d'eau potable",Réseau d'aqueduc municipale,Saint-Elzéar,46.408511,-71.061287,ville,"Saint-Elzéar, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301029898
+				- Contamination d'un réseau d'eau potable",Réseau d'aqueduc municipale,Saint-Elzéar,48.159338,-65.39675,ville_region,"Saint-Elzéar, Gaspésie—Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301029898
 Gaspésie—Îles-de-la-Madeleine,29 mars 2016,301025197 Catégorie : 1,"Municipalité des Îles-de-la-Madeleine (Havre-aux-Maisons) 
 				- Accident d'avion","Près du 391, route 199",Municipalité des Îles-de-la-Madeleine (Havre-aux-Maisons),48.047022,-65.468224,ville_simplifiee,"des Îles-de-la-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301025197
 Gaspésie—Îles-de-la-Madeleine,2 décembre 2015,301003925 Catégorie : 1,"Îles-de-la-Madeleine 
@@ -7214,7 +7214,7 @@ Chaudière-Appalaches,25 juin 2025,301833254 Catégorie : 1,"Saint Georges
 Chaudière-Appalaches,15 juin 2025,301831453 Catégorie : 2,"Beauceville 
 				- Incendie impliquant des matières résiduelles","132, 181e Rue",Beauceville,46.22582,-70.790036,adresse,"132, 181e Rue, Beauceville, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301831453
 Chaudière-Appalaches,20 mai 2025,301825425 Catégorie : 1,"Lévis (Arrondissement St-Romuald) 
-				- Déversement de peinture","Effluent à proximité du 30, rue du juvénat",Lévis (Arrondissement St-Romuald),,,ville_simplifiee,"St-Romuald, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301825425
+				- Déversement de peinture","Effluent à proximité du 30, rue du juvénat",Lévis (Arrondissement St-Romuald),46.756568,-71.237877,ville_simplifiee_region,"St-Romuald, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301825425
 Chaudière-Appalaches,6 juin 2025,301829611 Catégorie : 1,"Scott 
 				- Accident routier","Autoroute 73 sud, km 104",Scott,46.504773,-71.071243,ville,"Scott, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301829611
 Chaudière-Appalaches,6 mai 2025,301822883 Catégorie : 1,"Saint-Agapit 
@@ -7224,7 +7224,7 @@ Chaudière-Appalaches,14 mars 2025,301810628 Catégorie : 1,"Saint-Honoré-de-
 Chaudière-Appalaches,19 octobre 2024,301783272 Catégorie : 1,"Saint-Côme-Linière 
 				- Déversement de déjections animales","Les champs agricoles avoisinant le 800, 7e rang",Saint-Côme-Linière,46.059466,-70.523371,ville,"Saint-Côme-Linière, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301783272
 Chaudière-Appalaches,1 mai 2025,301821543 Catégorie : 1,"Lévis (arrondissement Saint-Rédempteur) 
-				- Dépôt illicite de matières résiduelles","585, rue de Bernière",Lévis (arrondissement Saint-Rédempteur),,,ville_simplifiee,"Saint-Rédempteur, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821543
+				- Dépôt illicite de matières résiduelles","585, rue de Bernière",Lévis (arrondissement Saint-Rédempteur),46.695609,-71.28582,ville_simplifiee_region,"Saint-Rédempteur, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821543
 Chaudière-Appalaches,5 octobre 2024,301780605 Catégorie : 1,"Saint-Pierre-de-Broughton 
 				- Incendie de machinerie",15ème rang,Saint-Pierre-de-Broughton,46.244451,-71.208229,ville,"Saint-Pierre-de-Broughton, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301780605
 Chaudière-Appalaches,14 septembre 2024,301776442 Catégorie : 1,"Saint-Prosper 
@@ -7570,7 +7570,7 @@ Chaudière-Appalaches,10 juillet 2018,301327976 Catégorie : 1,"Saint-Henri
 Chaudière-Appalaches,24 juin 2018,301324164 Catégorie : 1,"Sainte-Euphémie-sur-Rivière-du-Sud 
 				- Bris d'équipement",Ouvrage municipal d'assainissement des eaux usées de Sainte-Euphémie-sur-Rivière-du-Sud,Sainte-Euphémie-sur-Rivière-du-Sud,46.773731,-70.440216,ville,"Sainte-Euphémie-sur-Rivière-du-Sud, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301324164
 Chaudière-Appalaches,6 juin 2018,301318837 Catégorie : 1,"Lévis (secteur Saint-Étienne) 
-				- Déversement de produits pétroliers","Près du 4279, route des Rivières",Lévis (secteur Saint-Étienne),,,ville_simplifiee,"Saint-Étienne, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301318837
+				- Déversement de produits pétroliers","Près du 4279, route des Rivières",Lévis (secteur Saint-Étienne),46.653443,-71.300926,ville_simplifiee_region,"Saint-Étienne, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301318837
 Chaudière-Appalaches,11 juin 2018,301319857 Catégorie : 1,"Saint-Antoine-de-Tilly 
 				- Déversement de produits pétroliers","3 712, route 132",Saint-Antoine-de-Tilly,46.661625,-71.571105,adresse,"3 712, route 132, Saint-Antoine-de-Tilly, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301319857
 Chaudière-Appalaches,24 mai 2018,301315073 Catégorie : 1,"Lévis 
@@ -7646,9 +7646,9 @@ Chaudière-Appalaches,10 mai 2017,301242364 Catégorie : 1,"Saint-Henri
 Chaudière-Appalaches,6 mai 2017,301241483 Catégorie : 1,"Lévis 
 				- Déversement de matières dangereuses","165, chemin des Îles",Lévis,46.762403,-71.191489,adresse,"165, chemin des Îles, Lévis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301241483
 Chaudière-Appalaches,25 avril 2017,301239287 Catégorie : 1,"Lévis (secteur Saint-Étienne-de-Lauzon) 
-				- Signalement d'hydrocarbures","Près du 22, rue de la Boucle",Lévis (secteur Saint-Étienne-de-Lauzon),,,ville_simplifiee,"Saint-Étienne-de-Lauzon, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239287
+				- Signalement d'hydrocarbures","Près du 22, rue de la Boucle",Lévis (secteur Saint-Étienne-de-Lauzon),46.653443,-71.300926,ville_simplifiee_region,"Saint-Étienne-de-Lauzon, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239287
 Chaudière-Appalaches,25 avril 2017,301239098 Catégorie : 1,"Lévis (secteur Saint-Jean-Chrysostome) 
-				- Déversement de produits pétroliers","Près du 1276, rue Pierre-Beaumont",Lévis (secteur Saint-Jean-Chrysostome),,,ville_simplifiee,"Saint-Jean-Chrysostome, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239098
+				- Déversement de produits pétroliers","Près du 1276, rue Pierre-Beaumont",Lévis (secteur Saint-Jean-Chrysostome),46.718916,-71.197929,ville_simplifiee_region,"Saint-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239098
 Chaudière-Appalaches,2 avril 2017,301234188 Catégorie : 1,"Ville de Lévis 
 				- Présence de mousse",Secteur rue Saint-Laurent,Ville de Lévis,46.823872,-71.097448,ville,"Ville de Lévis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301234188
 Chaudière-Appalaches,10 avril 2017,301236395 Catégorie : 1,"Saint-Bernard 
@@ -7662,7 +7662,7 @@ Chaudière-Appalaches,4 mars 2017,301228114 Catégorie : 1,"Saint-Bernard
 Chaudière-Appalaches,21 décembre 2016,301214628 Catégorie : 1,"Lac-Etchemin 
 				- Accident routier","Près du 208, Rang 8",Lac-Etchemin,46.398804,-70.508194,ville,"Lac-Etchemin, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301214628
 Chaudière-Appalaches,10 décembre 2016,301212230 Catégorie : 1,"Lévis (secteur Pintendre) 
-				- Accident d'avion","Rivière Etchemin près du 812, route des Îles",Lévis (secteur Pintendre),,,ville_simplifiee,"Pintendre, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301212230
+				- Accident d'avion","Rivière Etchemin près du 812, route des Îles",Lévis (secteur Pintendre),46.753126,-71.124,ville_simplifiee_region,"Pintendre, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301212230
 Chaudière-Appalaches,25 novembre 2016,301204379 Catégorie : 1,"Adstock 
 				- Déversement de produits pétroliers","Près du 84, chemin du Lac-Bolduc",Adstock,46.046813,-71.076283,ville,"Adstock, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301204379
 Chaudière-Appalaches,18 novembre 2016,301202918 Catégorie : 1,"Saint-Elzéar 
@@ -7690,7 +7690,7 @@ Chaudière-Appalaches,4 septembre 2016,301063205 Catégorie : 1,"Sainte-Croix
 Chaudière-Appalaches,19 août 2016,301060168 Catégorie : 1,"Lévis (Charny) 
 				- Signalement d'odeur",Secteur de l'avenue des Belles-Amours,Lévis (Charny),46.723329,-71.267699,ville,"Lévis (Charny), Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301060168
 Chaudière-Appalaches,16 août 2016,301059507 Catégorie : 1,"Lévis (secteur Saint-Romuald) 
-				- Rejet de matières en suspension",À proximité de la Rue Perreault,Lévis (secteur Saint-Romuald),,,ville_simplifiee,"Saint-Romuald, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301059507
+				- Rejet de matières en suspension",À proximité de la Rue Perreault,Lévis (secteur Saint-Romuald),46.756568,-71.237877,ville_simplifiee_region,"Saint-Romuald, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301059507
 Chaudière-Appalaches,21 juillet 2016,301051546 Catégorie : 1,"Lévis 
 				- Déversement de produits pétroliers","165, Chemin des Iles",Lévis,46.762403,-71.191489,adresse,"165, Chemin des Iles, Lévis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301051546
 Chaudière-Appalaches,27 juin 2016,301044920 Catégorie : 1,"Sainte-Claire 
@@ -7700,7 +7700,7 @@ Chaudière-Appalaches,22 juin 2016,301043930 Catégorie : 1,"Lévis
 Chaudière-Appalaches,21 juin 2016,301043242 Catégorie : 1,"Saint-Malachie 
 				- Déversement de produits pétroliers","En face du 692, route 277",Saint-Malachie,46.531705,-70.766716,ville,"Saint-Malachie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301043242
 Chaudière-Appalaches,31 mai 2016,301037263 Catégorie : 1,"Saint-Isidore 
-				- Déversement de produits pétroliers","près du 40, rue des Commerçants",Saint-Isidore,45.30049,-73.68084,ville,"Saint-Isidore, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301037263
+				- Déversement de produits pétroliers","près du 40, rue des Commerçants",Saint-Isidore,46.585058,-71.090469,ville_region,"Saint-Isidore, Chaudière-Appalaches, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301037263
 Chaudière-Appalaches,2 mai 2016,301032717 Catégorie : 1,"Lévis (St-Nicolas) 
 				- Mortalité d'animaux","En face du 1527, chemin des Fauvettes",Lévis (St-Nicolas),46.716228,-71.296132,ville,"Lévis (St-Nicolas), Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301032717
 Chaudière-Appalaches,28 avril 2016,301031610 Catégorie : 1,"Saint-Elzéar 
@@ -7856,7 +7856,7 @@ Chaudière-Appalaches,12 août 2013,T-12-2013-08-12-01 Catégorie : 1,"Vallée
 Chaudière-Appalaches,9 août 2013,T-12-2013-08-09-01 Catégorie : 1,"Ville de Lévis 
 				- Signalement d'odeur","Rue du Pont, Lévis (secteur St-Nicolas)",Ville de Lévis,46.823872,-71.097448,ville,"Ville de Lévis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2013-08-09-01
 Chaudière-Appalaches,7 août 2013,T-12-2013-08-07-01 Catégorie : 1,"Lévis (secteur St-Nicolas) 
-				- Accident routier","Autoroute 20, km 311, direction Est",Lévis (secteur St-Nicolas),,,ville_simplifiee,"St-Nicolas, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2013-08-07-01
+				- Accident routier","Autoroute 20, km 311, direction Est",Lévis (secteur St-Nicolas),46.700053,-71.396556,ville_simplifiee_region,"St-Nicolas, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2013-08-07-01
 Chaudière-Appalaches,4 août 2013,T-12-2013-08-04-01 Catégorie : 1,"Sainte-Marie 
 				- Présence de styromousse dans un cours d'eau",Rivière du Moulin,Sainte-Marie,46.171323,-70.785892,adresse,"Rivière du Moulin, Chaudière-Appalaches, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2013-08-04-01
 Chaudière-Appalaches,22 juillet 2013,T-12-2013-07-22-01 Catégorie : 1,"St-Paul-de-Montminy 
@@ -8240,7 +8240,7 @@ Chaudière-Appalaches,7 mai 2010,T-12-2010-05-07-1 Catégorie : 1,"Sainte-Clot
 Chaudière-Appalaches,6 mai 2010,T-12-2010-05-06-1 Catégorie : 1,"Lévis 
 				- Présence de mousse sur un cours d'eau","Ruisseau Rouge, secteur rue Charles Rodrigue",Lévis,46.803311,-71.177879,ville,"Lévis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2010-05-06-1
 Chaudière-Appalaches,6 avril 2010,T-12-2010-04-06-1 Catégorie : 1,"Lévis (secteur St-Jean-Chrysostome) 
-				- Déversement de produits pétroliers","En bordure du garage municipal, chemin Petit St-Jean",Lévis (secteur St-Jean-Chrysostome),,,ville_simplifiee,"St-Jean-Chrysostome, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2010-04-06-1
+				- Déversement de produits pétroliers","En bordure du garage municipal, chemin Petit St-Jean",Lévis (secteur St-Jean-Chrysostome),46.718916,-71.197929,ville_simplifiee_region,"St-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2010-04-06-1
 Chaudière-Appalaches,24 avril 2010,T-12-2010-04-24-1 Catégorie : 1,"Lévis 
 				- Présence de matières inconnues","Rivière Beaurivage, à la hauteur du 597, rue Principale dans le secteur Saint-Étienne-de-Lauzon",Lévis,46.803311,-71.177879,ville,"Lévis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2010-04-24-1
 Chaudière-Appalaches,12 avril 2010,T-12-2010-04-12-1 Catégorie : 1,"Saint-Gilles 
@@ -8370,7 +8370,7 @@ Chaudière-Appalaches,20 septembre 2008,T-12-2008-09-20-1 Catégorie : 1,"Sain
 Chaudière-Appalaches,10 octobre 2008,T-12-2008-10-10-1 Catégorie : 1,"Saint-Anselme 
 				- Dépôt de sols potentiellement contaminés","Au 789, rang Saint-Phillipe",Saint-Anselme,46.629639,-70.970524,ville,"Saint-Anselme, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-10-10-1
 Chaudière-Appalaches,31 octobre 2008,T-12-2008-10-31-01 Catégorie : 1,"Ville de Lévis (Quartier St-Étienne-de-Lauzon) 
-				- Déversement d'eaux usées","Face au 955, route Lagueux (route 171)",Ville de Lévis (Quartier St-Étienne-de-Lauzon),,,ville_simplifiee,"St-Étienne-de-Lauzon, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-10-31-01
+				- Déversement d'eaux usées","Face au 955, route Lagueux (route 171)",Ville de Lévis (Quartier St-Étienne-de-Lauzon),46.653443,-71.300926,ville_simplifiee_region,"St-Étienne-de-Lauzon, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-10-31-01
 Chaudière-Appalaches,16 septembre 2008,T-12-2008-09-16-1 Catégorie : 1,"Sainte-Marguerite  
 				- Déversement de lisier","226, rang Saint-Jean-Baptiste",Sainte-Marguerite,46.145898,-70.448087,adresse,"226, rang Saint-Jean-Baptiste, Chaudière-Appalaches, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-09-16-1
 Chaudière-Appalaches,10 septembre 2008,T-12-2008-09-10-1 Catégorie : 1,"Lévis 
@@ -8378,7 +8378,7 @@ Chaudière-Appalaches,10 septembre 2008,T-12-2008-09-10-1 Catégorie : 1,"Lév
 Chaudière-Appalaches,3 septembre 2008,T-12-2008-09-03-1 Catégorie : 1,"Saint-Pierre-de-la-Rivière-du-Sud 
 				- Déversement de boues",Intersection de la route 132 et du chemin Saint-Pierre,Saint-Pierre-de-la-Rivière-du-Sud,46.91386,-70.625426,ville,"Saint-Pierre-de-la-Rivière-du-Sud, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-09-03-1
 Chaudière-Appalaches,3 septembre 2008,T-12-2008-09-03-2 Catégorie : 1,"Saint-Isidore 
-				- Déversement de déjections animales","Près du 336, rang Sainte-Geneviève",Saint-Isidore,45.30049,-73.68084,ville,"Saint-Isidore, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-09-03-2
+				- Déversement de déjections animales","Près du 336, rang Sainte-Geneviève",Saint-Isidore,46.585058,-71.090469,ville_region,"Saint-Isidore, Chaudière-Appalaches, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-09-03-2
 Chaudière-Appalaches,3 août 2008,T-12-2008-08-03-1 Catégorie : 1,"Saint-Elzéar 
 				- Lieu d'entreposage de déjections animales",Au 651 rang du Haut Sainte-Anne,Saint-Elzéar,46.408511,-71.061287,ville,"Saint-Elzéar, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-03-1
 Chaudière-Appalaches,26 juillet 2008,7110-12-08-26022-01 Catégorie : 1,"Saint-Elzéar 
@@ -8386,7 +8386,7 @@ Chaudière-Appalaches,26 juillet 2008,7110-12-08-26022-01 Catégorie : 1,"Sain
 Chaudière-Appalaches,8 août 2008,T-12-2008-08-08-1 Catégorie : 1,"Notre-Dame-Auxiliatrice-de-Buckland 
 				- Brûlage de déchets","Terrain, rue Fillion",Notre-Dame-Auxiliatrice-de-Buckland,46.619693,-70.54558,ville,"Notre-Dame-Auxiliatrice-de-Buckland, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-08-1
 Chaudière-Appalaches,29 août 2008,T-12-2008-08-29-2 Catégorie : 1,"Lévis (Secteur Saint-Jean-Chrysostome) 
-				- Incendie avec déversement d'huile isolante","Hydro-Québec, poste de Lévis 1120, Commerciale",Lévis (Secteur Saint-Jean-Chrysostome),,,ville_simplifiee,"Saint-Jean-Chrysostome, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-29-2
+				- Incendie avec déversement d'huile isolante","Hydro-Québec, poste de Lévis 1120, Commerciale",Lévis (Secteur Saint-Jean-Chrysostome),46.718916,-71.197929,ville_simplifiee_region,"Saint-Jean-Chrysostome, Lévis, Québec, Chaudière-Appalaches, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-29-2
 Chaudière-Appalaches,28 août 2008,T-12-2008-08-28-1 Catégorie : 1,"Lévis 
 				- Signalement de présence d'hydrocarbures","68, Côte du Passage",Lévis,46.806103,-71.183445,adresse,"68, Côte du Passage, Lévis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-28-1
 Chaudière-Appalaches,29 août 2008,T-12-2008-08-29-1 Catégorie : 1,"Saint-Antoine-de-Tilly 
@@ -8544,7 +8544,7 @@ Laval,9 août 2010,T-13-2010-08-09-40 Catégorie : 1,"Laval
 Laval,13 mai 2011,T-13-2011-05-13-008 Catégorie : 1,"Laval 
 				- Déversement d'eaux usées","3949, boulevard Leman",Laval,45.613554,-73.670502,adresse,"3949, boulevard Leman, Laval, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2011-05-13-008
 Laval,26 février 2010,T-13-2010-02-26-133 Catégorie : 2,"Laval (secteur St-François) 
-				- Déversement de produits pétroliers",Ruisseau Lapinière,Laval (secteur St-François),,,ville_simplifiee,"St-François, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-02-26-133
+				- Déversement de produits pétroliers",Ruisseau Lapinière,Laval (secteur St-François),45.663905,-73.583946,ville_simplifiee_region,"St-François, Laval, Québec, Laval, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-02-26-133
 Laval,30 août 2009,T-13-2009-08-30-70 Catégorie : 1,"Laval 
 				- Déversement de produits pétroliers",Boulevard Sainte-Rose,Laval,45.572392,-73.830815,adresse,"Boulevard Sainte-Rose, Laval, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2009-08-30-70
 Laval,13 août 2009,T-13-2009-08-13-61 Catégorie : 1,"Laval 
@@ -8606,7 +8606,7 @@ Lanaudière,22 août 2024,301772467 Catégorie : 1,"Repentigny
 Lanaudière,10 août 2024,301771521 Catégorie : 1,"Saint-Michel-des-Saints 
 				- Déversement d'huile de cuisson",De l'intersection des rues Saint-Maurice E / Bellerose jusqu'au 650 rue Bellerose,Saint-Michel-des-Saints,46.678622,-73.91768,ville,"Saint-Michel-des-Saints, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301771521
 Lanaudière,10 juillet 2024,301763676 Catégorie : 1,"Notre-Dame-de-Lourdes 
-				- Déversement de produits pétroliers",Lot 5 187 105,Notre-Dame-de-Lourdes,46.326542,-71.819344,ville,"Notre-Dame-de-Lourdes, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301763676
+				- Déversement de produits pétroliers",Lot 5 187 105,Notre-Dame-de-Lourdes,46.09955,-73.420983,ville_region,"Notre-Dame-de-Lourdes, Lanaudière, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301763676
 Lanaudière,4 juillet 2024,301762408 Catégorie : 1,"Saint-Jean-de-Matha 
 				- Travaux en rive","390, rue des Ormes",Saint-Jean-de-Matha,46.27692,-73.551881,adresse,"390, rue des Ormes, Saint-Jean-de-Matha, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301762408
 Lanaudière,16 mai 2024,301751851 Catégorie : 1,"Saint-Lin-Laurentides 
@@ -8650,7 +8650,7 @@ Lanaudière,14 juillet 2023,301691962 Catégorie : 1,"L'Assomption
 Lanaudière,28 juillet 2023,301694321 Catégorie : 1,"Mascouche 
 				- Odeurs d'hydrocarbures",Rue Elm,Mascouche,45.729343,-73.652483,adresse,"Rue Elm, Mascouche, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301694321
 Lanaudière,18 juillet 2023,301692138 Catégorie : 1,"Saint-Jérôme 
-				- Déversement de produits pétroliers",Intersection boulevard de la Salette et rue des Lacs,Saint-Jérôme,45.77804,-74.003327,ville,"Saint-Jérôme, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301692138
+				- Déversement de produits pétroliers",Intersection boulevard de la Salette et rue des Lacs,Saint-Jérôme,,,ville,"Saint-Jérôme, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301692138
 Lanaudière,30 juin 2023,301686965 Catégorie : 1,"Repentigny 
 				- Bateau coulé","Marina localisée au 9, rue Babin",Repentigny,45.732605,-73.452831,ville,"Repentigny, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301686965
 Lanaudière,21 juillet 2023,301692659 Catégorie : 1,"Saint-Calixte 
@@ -8660,7 +8660,7 @@ Lanaudière,10 juin 2023,301682195 Catégorie : 1,"Rawdon
 Lanaudière,14 juin 2023,301683010 Catégorie : 1,"Repentigny 
 				- Déversement de produits pétroliers","86, rue Victoria",Repentigny,45.781973,-73.406903,adresse,"86, rue Victoria, Repentigny, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301683010
 Lanaudière,25 juin 2023,301685584 Catégorie : 1,"Saint-Adolphe-d'Howard 
-				- Déversement de produits pétroliers","1962, Montée des Quatres-Lacs",Saint-Adolphe-d'Howard,45.971345,-74.339275,ville,"Saint-Adolphe-d'Howard, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301685584
+				- Déversement de produits pétroliers","1962, Montée des Quatres-Lacs",Saint-Adolphe-d'Howard,,,ville,"Saint-Adolphe-d'Howard, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301685584
 Lanaudière,30 mai 2023,301679590 Catégorie : 1,"Saint-Liguori 
 				- Déversement de déjections animales",1541 Rang de la Rivière-Rouge,Saint-Liguori,46.022223,-73.541281,adresse,"1541 Rang de la Rivière-Rouge, Saint-Liguori, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301679590
 Lanaudière,10 mai 2023,301675519 Catégorie : 1,"Mascouche 
@@ -8880,7 +8880,7 @@ Lanaudière,6 septembre 2017,301265517 Catégorie : 1,"Berthierville
 Lanaudière,20 juillet 2017,301258084 Catégorie : 1,"Charlemagne 
 				- Accident maritime","Secteur du 256, rue Notre-Dame",Charlemagne,45.72552,-73.489692,ville,"Charlemagne, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301258084
 Lanaudière,14 août 2017,301262473 Catégorie : 1,"Notre-Dame-de-Lourdes 
-				- Déversement de matières dangereuses",Intersection de la Route 131 et de la rue Principale,Notre-Dame-de-Lourdes,46.326542,-71.819344,ville,"Notre-Dame-de-Lourdes, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301262473
+				- Déversement de matières dangereuses",Intersection de la Route 131 et de la rue Principale,Notre-Dame-de-Lourdes,46.09955,-73.420983,ville_region,"Notre-Dame-de-Lourdes, Lanaudière, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301262473
 Lanaudière,17 juillet 2017,301256907 Catégorie : 1,"Notre-Dame-des-Prairies 
 				- Présence de mousse","Secteur du 131, rue Jean-Duceppe",Notre-Dame-des-Prairies,46.042155,-73.435119,ville,"Notre-Dame-des-Prairies, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301256907
 Lanaudière,13 juillet 2017,14-20170713-000142 Catégorie : 1,"Terrebonne 
@@ -8946,7 +8946,7 @@ Lanaudière,7 avril 2016,301027960 Catégorie : 2,"Mascouche
 Lanaudière,13 mars 2016,301021741 Catégorie : 1,"Saint-Lin–Laurentides 
 				- Déversement de produits pétroliers","688, rue du Parc",Saint-Lin–Laurentides,45.861553,-73.750213,adresse,"688, rue du Parc, Saint-Lin–Laurentides, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301021741
 Lanaudière,9 janvier 2016,301009509 Catégorie : 1,"Ville de Terrebonne 
-				- Signalement d'odeur","Entre le 2565 et le 2585, Chemin Comtois",Ville de Terrebonne,45.67586,-73.760718,ville,"Ville de Terrebonne, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301009509
+				- Signalement d'odeur","Entre le 2565 et le 2585, Chemin Comtois",Ville de Terrebonne,45.695153,-73.635015,ville_simplifiee_region,"Terrebonne, Québec, Lanaudière, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301009509
 Lanaudière,8 mars 2016,301020569 Catégorie : 1,"Crabtree 
 				- Signalement d'hydrocarbures",Sous le pont de la route 158,Crabtree,45.963799,-73.473816,ville,"Crabtree, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301020569
 Lanaudière,21 octobre 2015,300995991 Catégorie : 1,"Saint-Damien 
@@ -9341,7 +9341,7 @@ Laurentides,2 mai 2022,301603056 Catégorie : 1,"Boisbriand
 Laurentides,4 avril 2022,301597098 Catégorie : 1,"Saint-André d'Argenteuil 
 				- Présence d'un véhicule dans un cours d'eau","Lac des Deux-Montagnes (Baie de Carillon), face au 340 route du Long-Sault",Saint-André d'Argenteuil,45.563675,-74.333581,ville,"Saint-André d'Argenteuil, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301597098
 Laurentides,14 avril 2022,301600075 Catégorie : 1,"Saint-Côme 
-				- Rejet de matières en suspension",Domaine Saint-Côme / Rang petit Beloeil,Saint-Côme,46.271037,-73.771477,ville,"Saint-Côme, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301600075
+				- Rejet de matières en suspension",Domaine Saint-Côme / Rang petit Beloeil,Saint-Côme,,,ville,"Saint-Côme, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301600075
 Laurentides,31 mars 2022,301596933 Catégorie : 1,"Canton de Wentworth 
 				- Déversement de matières dangereuses","42, chemin Robinson",Canton de Wentworth,45.759612,-74.430599,adresse,"42, chemin Robinson, Laurentides, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301596933
 Laurentides,17 mars 2022,301593730 Catégorie : 1,"Saint-Hippolyte 
@@ -9415,7 +9415,7 @@ Laurentides,12 juillet 2020,301473817 Catégorie : 1,"Saint-Hippolyte
 Laurentides,27 juillet 2020,301476471 Catégorie : 1,"Sainte-Sophie 
 				- Présence de matières diverses","657, chemin McGuire",Sainte-Sophie,45.818718,-73.899189,ville,"Sainte-Sophie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301476471
 Laurentides,6 août 2020,301478403 Catégorie : 1,"Notre-Dame-de-la-Merci 
-				- Dépôt illicite de matières dangereuses",Jonction du Chemin des Cimes et de la Route 125,Notre-Dame-de-la-Merci,46.225924,-74.05767,ville,"Notre-Dame-de-la-Merci, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301478403
+				- Dépôt illicite de matières dangereuses",Jonction du Chemin des Cimes et de la Route 125,Notre-Dame-de-la-Merci,45.976564,-74.632611,ville_region,"Notre-Dame-de-la-Merci, Laurentides, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301478403
 Laurentides,9 juillet 2020,301472737 Catégorie : 1,"Sainte-Anne-des-Plaines 
 				- Incendie impliquant des produits pétroliers","123, rang Sainte-Claire",Sainte-Anne-des-Plaines,45.762963,-73.763339,adresse,"123, rang Sainte-Claire, Sainte-Anne-des-Plaines, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301472737
 Laurentides,19 novembre 2019,301430944 Catégorie : 1,"Boisbriand 
@@ -9790,7 +9790,7 @@ Montérégie,7 juillet 2025,301835612 Catégorie : 1,"Ville de Rigaud
 Montérégie,5 juillet 2025,301835355 Catégorie : 1,"Longueuil 
 				- Signalement d'hydrocarbures","101, chemin de la Rive",Longueuil,45.537978,-73.51722,adresse,"101, chemin de la Rive, Longueuil, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301835355
 Montérégie,16 juin 2025,301831466 Catégorie : 1,"Ville de Sainte-Catherine 
-				- Mortalité de poissons",Écluse Côte-Sainte-Catherine,Ville de Sainte-Catherine,45.504487,-73.568311,ville,"Ville de Sainte-Catherine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301831466
+				- Mortalité de poissons",Écluse Côte-Sainte-Catherine,Ville de Sainte-Catherine,45.405323,-73.571676,ville_region,"Ville de Sainte-Catherine, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301831466
 Montérégie,11 juin 2025,301830570 Catégorie : 1,"Candiac et Delson 
 				- Mortalité de poissons",Rivière La Tortue entre la route 132 et le boulevard Marie-Victorin,Candiac et Delson,45.386795,-73.516382,ville_simplifiee,"Candiac, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301830570
 Montérégie,13 mai 2025,301823807 Catégorie : 1,"Beauharnois 
@@ -10041,11 +10041,11 @@ Montérégie,17 juin 2021,301538820 Catégorie : 1,"Saint-Césaire
 Montérégie,2 juin 2021,301535072 Catégorie : 1,"Rougemont 
 				- Rejet de matières en suspension","755, Principale",Rougemont,45.439105,-73.057957,adresse,"755, Principale, Rougemont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301535072
 Montérégie,21 mai 2021,301532413 Catégorie : 1,"Farnham 
-				- Incendie",190 rue Comeau à Farnham,Farnham,45.2831,-72.974968,ville,"Farnham, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301532413
+				- Incendie",190 rue Comeau à Farnham,Farnham,45.314559,-73.021613,ville_region,"Farnham, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301532413
 Montérégie,17 mai 2021,301531037 Catégorie : 1,"Waterloo 
 				- Incendie impliquant des matières dangereuses","6477, rue Foster",Waterloo,45.354808,-72.514171,adresse,"6477, rue Foster, Waterloo, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301531037
 Montérégie,19 mai 2021,301531759 Catégorie : 1,"Granby 
-				- Accident routier",Intersection de la rue Mountain et le boulevard Pierre-Laporte,Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301531759
+				- Accident routier",Intersection de la rue Mountain et le boulevard Pierre-Laporte,Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301531759
 Montérégie,4 mai 2021,301528396 Catégorie : 1,"Beloeil 
 				- Déversement de produits pétroliers","Face au 2080, rue Pierre-Louis-Le Tourneux",Beloeil,45.564318,-73.204007,ville,"Beloeil, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301528396
 Montérégie,5 mai 2021,301528567 Catégorie : 1,"Saint-Jean-sur-Richelieu 
@@ -10242,7 +10242,7 @@ Montérégie,27 avril 2019,301388933 Catégorie : 1,"Saint-Armand
 Montérégie,27 avril 2019,301388938 Catégorie : 1,"Venise-en-Québec 
 				- Inondation",Baie Missisquoi,Venise-en-Québec,45.080774,-73.160137,adresse,"Baie Missisquoi, Venise-en-Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301388938
 Montérégie,27 avril 2019,301388935 Catégorie : 1,"Saint-Armand 
-				- Inondation",Usine de filtration d'eau potable,Saint-Armand,45.032774,-73.043976,ville,"Saint-Armand, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301388935
+				- Inondation",Usine de filtration d'eau potable,Saint-Armand,45.316631,-73.851911,ville_region,"Saint-Armand, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301388935
 Montérégie,27 avril 2019,301388936 Catégorie : 1,"Pike River 
 				- Inondation",Rivière aux Brochets,Pike River,45.071659,-73.088912,adresse,"Rivière aux Brochets, Pike River, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301388936
 Montérégie,27 avril 2019,301388939 Catégorie : 1,"Saint-Georges-de-Clarenceville 
@@ -10288,7 +10288,7 @@ Montérégie,21 mars 2019,301377384 Catégorie : 1,"Sainte-Catherine
 Montérégie,14 mars 2019,301376328 Catégorie : 1,"Waterloo 
 				- Déversement d'eaux contaminées aux hydrocarbures","24, rue Taylor",Waterloo,45.346259,-72.514998,adresse,"24, rue Taylor, Waterloo, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301376328
 Montérégie,14 mars 2019,301376320 Catégorie : 1,"Bromont 
-				- Signalement d'une coloration sur un cours d'eau","Rivière Yamaska, en amont du boulevard de Bromont",Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301376320
+				- Signalement d'une coloration sur un cours d'eau","Rivière Yamaska, en amont du boulevard de Bromont",Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301376320
 Montérégie,5 mars 2019,301374256 Catégorie : 1,"Granby 
 				- Déversement de produits pétroliers","28, rue Joseph-Dion",Granby,45.423393,-72.813141,adresse,"28, rue Joseph-Dion, Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301374256
 Montérégie,25 février 2019,301373189 Catégorie : 1,"Saint-Mathieu 
@@ -10330,17 +10330,17 @@ Montérégie,4 septembre 2018,301340873 Catégorie : 1,"Upton
 Montérégie,31 août 2018,301340960 Catégorie : 1,"Sainte-Cécile-de-Milton 
 				- Rejet de matières en suspension",1er Rang,Sainte-Cécile-de-Milton,45.468123,-72.799694,adresse,"1er Rang, Sainte-Cécile-de-Milton, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301340960
 Montérégie,7 septembre 2018,301341597 Catégorie : 1,"Bromont 
-				- Accident routier",Autoroute 10 - Sortie 78,Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301341597
+				- Accident routier",Autoroute 10 - Sortie 78,Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301341597
 Montérégie,27 août 2018,301340050 Catégorie : 1,"Saint-Jean-sur-Richelieu 
 				- Déversement d'eaux usées",Secteur aéroport et CÉGEP,Saint-Jean-sur-Richelieu,45.305688,-73.25334,ville,"Saint-Jean-sur-Richelieu, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301340050
 Montérégie,18 août 2018,301338219 Catégorie : 1,"Salaberry-de-Valleyfield 
 				- Émission de gaz",Intersection du boulevard du Havre et de la rue Hébert,Salaberry-de-Valleyfield,45.255558,-74.131672,ville,"Salaberry-de-Valleyfield, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301338219
 Montérégie,14 août 2018,301337301 Catégorie : 1,"Farnham 
-				- Accident routier","en face du 1715, rue Jacques-Cartier Sud",Farnham,45.2831,-72.974968,ville,"Farnham, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301337301
+				- Accident routier","en face du 1715, rue Jacques-Cartier Sud",Farnham,45.314559,-73.021613,ville_region,"Farnham, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301337301
 Montérégie,14 août 2018,301337343 Catégorie : 1,"Saint-Jean-sur-Richelieu 
 				- Signalement d'hydrocarbures","Rivière Richelieu (rive est), entre la 1ère avenue et le boulevard des Érables",Saint-Jean-sur-Richelieu,45.305688,-73.25334,ville,"Saint-Jean-sur-Richelieu, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301337343
 Montérégie,10 août 2018,301336831 Catégorie : 1,"Bromont 
-				- Accident routier","Autoroute 10, entre les sorties 74 et 78",Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301336831
+				- Accident routier","Autoroute 10, entre les sorties 74 et 78",Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301336831
 Montérégie,6 août 2018,301335570 Catégorie : 1,"La Présentation 
 				- Incendie impliquant des matières résiduelles","1423, rang Salvail Nord",La Présentation,45.697412,-73.060338,adresse,"1423, rang Salvail Nord, La Présentation, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301335570
 Montérégie,5 août 2018,301335153 Catégorie : 1,"Roxton Pond 
@@ -10348,7 +10348,7 @@ Montérégie,5 août 2018,301335153 Catégorie : 1,"Roxton Pond
 Montérégie,27 juillet 2018,301333135 Catégorie : 1,"Mont-Saint-Hilaire 
 				- Déversement d'eaux usées","300, rue Brunet",Mont-Saint-Hilaire,45.594177,-73.168292,adresse,"300, rue Brunet, Mont-Saint-Hilaire, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301333135
 Montérégie,2 août 2018,301334710 Catégorie : 1,"Roxton Pond 
-				- Déversement de matières liquides","1655, rang Maxime",Roxton Pond,45.475099,-72.660142,ville,"Roxton Pond, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301334710
+				- Déversement de matières liquides","1655, rang Maxime",Roxton Pond,45.526172,-72.613856,ville_region,"Roxton Pond, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301334710
 Montérégie,16 juillet 2018,301329817 Catégorie : 2,"Saint-Polycarpe 
 				- Déraillement de train",À la hauteur du pont ferroviaire qui traverse la rivière Delisle,Saint-Polycarpe,45.302124,-74.304189,ville,"Saint-Polycarpe, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301329817
 Montérégie,16 juillet 2018,301329598 Catégorie : 1,"Saint-Jean-Sur-Richelieu 
@@ -10374,7 +10374,7 @@ Montérégie,14 mai 2018,301313073 Catégorie : 1,"Longueuil
 Montérégie,11 mai 2018,301312904 Catégorie : 1,"Saint-Dominique 
 				- Déversement de déjections animales","990, rang 7",Saint-Dominique,45.565532,-72.853147,ville,"Saint-Dominique, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301312904
 Montérégie,17 avril 2018,301301071 Catégorie : 1,"Bromont 
-				- Déversement de produits pétroliers","Du chemin Compton jusqu'au 1357, rue Shefford",Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301301071
+				- Déversement de produits pétroliers","Du chemin Compton jusqu'au 1357, rue Shefford",Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301301071
 Montérégie,10 avril 2018,301299783 Catégorie : 2,"Beauharnois 
 				- Incendie","61, boulevard de Melocheville",Beauharnois,45.314261,-73.89268,adresse,"61, boulevard de Melocheville, Beauharnois, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301299783
 Montérégie,14 avril 2018,301300578 Catégorie : 1,"Sainte-Brigide-d'Iberville 
@@ -10428,7 +10428,7 @@ Montérégie,15 septembre 2017,16-20170917-000003 Catégorie : 1,"Granby
 Montérégie,15 septembre 2017,16-20170915-000018 Catégorie : 1,"Hudson 
 				- Signalement d'hydrocarbures",Rivière des Outaouais à la hauteur de la rue du Yacht-Club,Hudson,45.464465,-74.150848,ville,"Hudson, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=16-20170915-000018
 Montérégie,12 septembre 2017,301266336 Catégorie : 2,"Shefford 
-				- Accident routier",Kilomètre 86 de l'autoroute 10,Shefford,45.432232,-72.667413,ville,"Shefford, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301266336
+				- Accident routier",Kilomètre 86 de l'autoroute 10,Shefford,45.432232,-72.667413,ville_region,"Shefford, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301266336
 Montérégie,11 septembre 2017,16-20170914-000018 Catégorie : 1,"Saint-Constant 
 				- Déversement de produits pétroliers",Angle des rues Saint-François-Xavier et Radisson,Saint-Constant,45.37249,-73.570459,ville,"Saint-Constant, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=16-20170914-000018
 Montérégie,5 septembre 2017,301265335 Catégorie : 1,"Bromont 
@@ -10436,7 +10436,7 @@ Montérégie,5 septembre 2017,301265335 Catégorie : 1,"Bromont
 Montérégie,3 septembre 2017,301265229 Catégorie : 1,"La Présentation 
 				- Déversement de déjections animales","1124, rang Salvail Sud",La Présentation,45.699976,-73.054842,adresse,"1124, rang Salvail Sud, La Présentation, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301265229
 Montérégie,30 août 2017,301265183 Catégorie : 1,"Bromont 
-				- Travaux en milieu hydrique",Centrale de traitement des eaux,Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301265183
+				- Travaux en milieu hydrique",Centrale de traitement des eaux,Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301265183
 Montérégie,24 août 2017,301263244 Catégorie : 1,"Varennes 
 				- Signalement d'odeur","979, Lionel Boulet",Varennes,45.644557,-73.406642,adresse,"979, Lionel Boulet, Varennes, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301263244
 Montérégie,10 août 2017,16-20170811-000018 Catégorie : 1,"Saint-Jean-sur-Richelieu 
@@ -10471,7 +10471,7 @@ Montérégie,13 juin 2017,301249957 Catégorie : 1,"Mont-Saint-Hilaire
 Montérégie,9 juin 2017,301249316 Catégorie : 1,"Saint-Hyacinthe 
 				- Accident routier",Kilomètre 134 de l'Autoroute 20 en direction ouest,Saint-Hyacinthe,45.627484,-72.940636,ville,"Saint-Hyacinthe, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301249316
 Montérégie,6 juin 2017,301249201 Catégorie : 1,"Granby 
-				- Brûlage de matières résiduelles","Derrière le 1258, Chemin Gagné",Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301249201
+				- Brûlage de matières résiduelles","Derrière le 1258, Chemin Gagné",Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301249201
 Montérégie,30 mai 2017,301246529 Catégorie : 1,"Contrecoeur 
 				- Écoulement d'eaux de ruissellement chargées de matières en suspension",Exutoire pluvial au fleuve Saint-Laurent,Contrecoeur,45.857378,-73.237431,ville,"Contrecoeur, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301246529
 Montérégie,17 mai 2017,301244364 Catégorie : 1,"Saint-Alphonse-de-Granby 
@@ -10539,7 +10539,7 @@ Montérégie,15 août 2016,301058740 Catégorie : 1,"Saint-Hyacinthe
 Montérégie,9 août 2016,301057604 Catégorie : 1,"Longueuil 
 				- Incendie impliquant des matières dangereuses","2555, chemin du Lac",Longueuil,45.568125,-73.457035,adresse,"2555, chemin du Lac, Longueuil, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301057604
 Montérégie,11 août 2016,301058095 Catégorie : 1,"Bromont 
-				- Déversement de matières liquides",Boulevard Pierre-Laporte et chemin de Granby,Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301058095
+				- Déversement de matières liquides",Boulevard Pierre-Laporte et chemin de Granby,Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301058095
 Montérégie,29 juillet 2016,301054478 Catégorie : 1,"Saint-Amable 
 				- Déversement d'eaux usées","310, rue Hervé Sud",Saint-Amable,45.662062,-73.274503,adresse,"310, rue Hervé Sud, Saint-Amable, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301054478
 Montérégie,9 août 2016,301057601 Catégorie : 1,"Saint-Zotique 
@@ -10569,13 +10569,13 @@ Montérégie,9 juin 2016,301040155 Catégorie : 1,"Châteauguay
 Montérégie,8 juin 2016,301038882 Catégorie : 1,"Carignan 
 				- Incendie impliquant des matières dangereuses","301, place Antoine-Forestier",Carignan,45.509159,-73.330319,adresse,"301, place Antoine-Forestier, Carignan, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301038882
 Montérégie,14 mai 2016,301034288 Catégorie : 1,"Saint-Étienne-de-Bolton 
-				- Accident routier",Autoroute 10 - KM 97 direction Est,Saint-Étienne-de-Bolton,45.267012,-72.380886,ville,"Saint-Étienne-de-Bolton, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301034288
+				- Accident routier",Autoroute 10 - KM 97 direction Est,Saint-Étienne-de-Bolton,,,ville,"Saint-Étienne-de-Bolton, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301034288
 Montérégie,14 mai 2016,301034287 Catégorie : 1,"Sainte-Brigide-d'Iberville 
 				- Accident routier","Face au 1190, rang Double (Route 104)",Sainte-Brigide-d'Iberville,45.323206,-73.065158,ville,"Sainte-Brigide-d'Iberville, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301034287
 Montérégie,12 mai 2016,301034143 Catégorie : 1,"Saint-Césaire 
 				- Épandage de pesticides","1110, avenue Cécile",Saint-Césaire,45.415568,-73.008613,adresse,"1110, avenue Cécile, Saint-Césaire, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301034143
 Montérégie,10 mai 2016,301033575 Catégorie : 1,"Granby 
-				- Incendie impliquant des matières dangereuses","Face au 1372, 10e Rang Ouest",Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301033575
+				- Incendie impliquant des matières dangereuses","Face au 1372, 10e Rang Ouest",Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301033575
 Montérégie,3 mai 2016,301032151 Catégorie : 1,"Sainte-Marie-Madeleine 
 				- Déversement de produits pétroliers",Route 229,Sainte-Marie-Madeleine,48.330499,-66.963782,adresse,"Route 229, Sainte-Marie-Madeleine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301032151
 Montérégie,20 avril 2016,301030012 Catégorie : 1,"Salaberry-de-Valleyfield 
@@ -10621,7 +10621,7 @@ Montérégie,12 novembre 2015,301000416 Catégorie : 1,"Saint-Valérien-de-Mil
 Montérégie,19 octobre 2015,300995539 Catégorie : 1,"Kahnawake - Sainte-Catherine 
 				- Accident maritime,",Voie maritime du Saint-Laurent en amont de l'écluse de Sainte-Catherine,Kahnawake - Sainte-Catherine,,,,,https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300995539
 Montérégie,9 octobre 2015,300995209 Catégorie : 1,"Granby 
-				- Fuite de gaz",Rue Saint-Charles coin rue Saint-Édouard,Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300995209
+				- Fuite de gaz",Rue Saint-Charles coin rue Saint-Édouard,Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300995209
 Montérégie,24 septembre 2015,300990924 Catégorie : 1,"Sainte-Martine 
 				- Déversement de déjections animales",Chemin de la Rivière des Fèves Sud,Sainte-Martine,45.218996,-73.797302,adresse,"Chemin de la Rivière des Fèves Sud, Sainte-Martine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300990924
 Montérégie,27 septembre 2015,300991482 Catégorie : 1,"Longueuil 
@@ -10641,7 +10641,7 @@ Montérégie,11 août 2015,300982613 Catégorie : 1,"Longueuil
 Montérégie,10 août 2015,300982247 Catégorie : 1,"St-Hubert 
 				- Incendie impliquant des matières dangereuses",5335 rue Ramsay,St-Hubert,45.469003,-73.42674,adresse,"5335 rue Ramsay, St-Hubert, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300982247
 Montérégie,31 juillet 2015,300980448 Catégorie : 1,"Granby 
-				- Accident routier",Kilomètre 73 de l'autoroute 10,Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300980448
+				- Accident routier",Kilomètre 73 de l'autoroute 10,Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300980448
 Montérégie,28 juillet 2015,300979894 Catégorie : 1,"Saint-Jean-sur-Richelieu 
 				- Signalement d'odeur","745, boulevard Pierre-Tremblay",Saint-Jean-sur-Richelieu,45.306596,-73.220013,adresse,"745, boulevard Pierre-Tremblay, Saint-Jean-sur-Richelieu, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300979894
 Montérégie,23 juillet 2015,300978958 Catégorie : 1,"Sutton 
@@ -10683,7 +10683,7 @@ Montérégie,18 mai 2015,300962091 Catégorie : 1,"Saint-Jean-sur-Richelieu
 Montérégie,6 mai 2015,300959663 Catégorie : 1,"Wickham 
 				- Déversement de matières solides",Rang 11,Wickham,45.291337,-73.15976,adresse,"Rang 11, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300959663
 Montérégie,3 mai 2015,300958517 Catégorie : 1,"Farnham 
-				- Déversement d'eaux usées","130, rue de Madrid",Farnham,45.2831,-72.974968,ville,"Farnham, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300958517
+				- Déversement d'eaux usées","130, rue de Madrid",Farnham,45.499269,-73.403504,adresse_region,"130, rue de Madrid, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300958517
 Montérégie,1 mai 2015,300958448 Catégorie : 1,"Verchères 
 				- Signalement d'hydrocarbures",Rang des Terres-Noires,Verchères,45.785236,-73.30224,adresse,"Rang des Terres-Noires, Verchères, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300958448
 Montérégie,30 avril 2015,300958442 Catégorie : 1,"Saint-Anicet 
@@ -10769,7 +10769,7 @@ Montérégie,10 août 2014,300904675 Catégorie : 1,"Saint-Paul-d'Abbotsford
 Montérégie,7 août 2014,300904587 Catégorie : 1,"Elgin 
 				- Signalement d'odeur","3245, Montée Gilmore",Elgin,45.021276,-74.271176,ville,"Elgin, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300904587
 Montérégie,23 août 2014,300908183 Catégorie : 1,"Sainte-Sabine 
-				- Dépôt illicite de matières résiduelles","Derrière le 355, 11e Rang Nord",Sainte-Sabine,46.49272,-70.353355,ville,"Sainte-Sabine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300908183
+				- Dépôt illicite de matières résiduelles","Derrière le 355, 11e Rang Nord",Sainte-Sabine,,,ville,"Sainte-Sabine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300908183
 Montérégie,10 août 2014,300904431 Catégorie : 1,"Coteau-du-Lac 
 				- Fuite de gaz","25, rue de L'Acier",Coteau-du-Lac,45.300634,-74.202932,adresse,"25, rue de L'Acier, Coteau-du-Lac, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300904431
 Montérégie,7 août 2014,300904136 Catégorie : 1,"Beauharnois 
@@ -10811,9 +10811,9 @@ Montérégie,13 avril 2014,300876528 Catégorie : 1,"Hudson
 Montérégie,16 avril 2014,300877664 Catégorie : 1,"Granby 
 				- Déversement de produits pétroliers","807, Saint-Hubert",Granby,45.435065,-72.728672,adresse,"807, Saint-Hubert, Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300877664
 Montérégie,11 avril 2014,300876477 Catégorie : 1,"Ville de Longueuil (arrondissement Saint-Hubert) 
-				- Accident routier",Route 116 Ouest à la hauteur de la sortie 2,Ville de Longueuil (arrondissement Saint-Hubert),,,ville_simplifiee,"Saint-Hubert, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876477
+				- Accident routier",Route 116 Ouest à la hauteur de la sortie 2,Ville de Longueuil (arrondissement Saint-Hubert),45.504275,-73.421698,ville_simplifiee_region,"Saint-Hubert, Longueuil, Québec, Montérégie, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876477
 Montérégie,10 avril 2014,300876195 Catégorie : 1,"Cowansville 
-				- Fuite de gaz",À l'angle des rues Albert et Bernard,Cowansville,45.207613,-72.747919,ville,"Cowansville, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876195
+				- Fuite de gaz",À l'angle des rues Albert et Bernard,Cowansville,,,ville,"Cowansville, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876195
 Montérégie,7 avril 2014,300876155 Catégorie : 1,"Saint-Rémi 
 				- Déversement de produits pétroliers",Rue Roch-Lécuyer,Saint-Rémi,45.278301,-73.621693,adresse,"Rue Roch-Lécuyer, Saint-Rémi, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876155
 Montérégie,30 mars 2014,7110-16-14-59025-01 Catégorie : 1,"Verchères 
@@ -10823,11 +10823,11 @@ Montérégie,20 février 2014,7110-16-14-58020-02 Catégorie : 1,"Longueuil (S
 Montérégie,5 mars 2014,7110-16-14-67050-01 Catégorie : 1,"Châteauguay 
 				- Bris d'équipement","224, boulevard Industriel",Châteauguay,45.352078,-73.690193,adresse,"224, boulevard Industriel, Châteauguay, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-67050-01
 Montérégie,4 février 2014,7110-16-14-47035-01 Catégorie : 1,"Shefford 
-				- Accident routier",Chemin Wallace à l'intersection du chemin Allen,Shefford,45.432232,-72.667413,ville,"Shefford, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-47035-01
+				- Accident routier",Chemin Wallace à l'intersection du chemin Allen,Shefford,45.432232,-72.667413,ville_region,"Shefford, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-47035-01
 Montérégie,14 janvier 2014,7110-16-14-6900501 Catégorie : 1,"Havelock 
 				- Déversement de produits pétroliers",Route 202,Havelock,45.044754,-73.811413,adresse,"Route 202, Havelock, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-6900501
 Montérégie,5 janvier 2014,7110-16-14-47025-01 Catégorie : 1,"Foster 
-				- , Accident routier,",Kilomètre 93 de l'Autoroute 10,Foster,45.289675,-72.493887,ville,"Foster, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-47025-01
+				- , Accident routier,",Kilomètre 93 de l'Autoroute 10,Foster,45.369722,-74.006277,ville_region,"Foster, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-47025-01
 Montérégie,14 janvier 2014,7110-16-14-5802001 Catégorie : 1,"Saint-Hubert 
 				- Déversement de matières solides",Sortie Grande-Allée de l'autoroute 30,Saint-Hubert,45.504275,-73.421698,ville,"Saint-Hubert, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-14-5802001
 Montérégie,20 décembre 2013,7110-16-13-58227-22 Catégorie : 1,"Longueuil (arrondissement St-Hubert) 
@@ -10835,7 +10835,7 @@ Montérégie,20 décembre 2013,7110-16-13-58227-22 Catégorie : 1,"Longueuil (
 Montérégie,19 décembre 2013,7110-16-13-68055-04 Catégorie : 1,"Saint-Rémi 
 				- Coupure d'alimentation en eau potable",Réseau de distribution d'eau potable,Saint-Rémi,45.259106,-73.618831,ville,"Saint-Rémi, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-68055-04
 Montérégie,16 novembre 2013,7110-16-13-46115-03 Catégorie : 1,"Farnham 
-				- Déversement de produits pétroliers",Route 104 intersection du chemin Bricault,Farnham,45.2831,-72.974968,ville,"Farnham, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46115-03
+				- Déversement de produits pétroliers",Route 104 intersection du chemin Bricault,Farnham,45.314559,-73.021613,ville_region,"Farnham, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46115-03
 Montérégie,3 décembre 2013,7110-16-13-53052-34 Catégorie : 1,"Sorel-Tracy 
 				- Présence de matières inconnues",Ruisseau du Marais au niveau du lot 4 483 935 du cadastre du Québec,Sorel-Tracy,46.043523,-73.116516,ville,"Sorel-Tracy, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-53052-34
 Montérégie,16 novembre 2013,7110-16-13-70045-06 Catégorie : 1,"Salaberry de Valleyfield 
@@ -10853,7 +10853,7 @@ Montérégie,19 octobre 2013,7110-16-13-56055-03 Catégorie : 1,"Sainte-Anne-d
 Montérégie,9 octobre 2013,7110-16-13-47015-02 Catégorie : 1,"Granby 
 				- Déversement de matières liquides","630, rue Laurent",Granby,45.392012,-72.754595,adresse,"630, rue Laurent, Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-47015-02
 Montérégie,7 octobre 2013,7110-16-13-54120-05 Catégorie : 1,"Municipalité de Saint-Louis 
-				- Déversement de déjections animales",Lot 3 218 506 du cadastre du Québec,Municipalité de Saint-Louis,46.249166,-72.002282,ville,"Municipalité de Saint-Louis, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-54120-05
+				- Déversement de déjections animales",Lot 3 218 506 du cadastre du Québec,Municipalité de Saint-Louis,45.854152,-72.977715,ville_simplifiee_region,"Saint-Louis, Québec, Montérégie, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-54120-05
 Montérégie,5 octobre 2013,7110-16-13-67050-10 Catégorie : 1,"Châteauguay 
 				- Déversement de diesel",Pont de la Sauvagine,Châteauguay,45.380863,-73.752373,adresse,"Pont de la Sauvagine, Châteauguay, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-67050-10
 Montérégie,24 septembre 2013,7110-16-13-67020- Catégorie : 1,"Candiac 
@@ -10901,7 +10901,7 @@ Montérégie,23 juin 2013,7110-16-13-71070-01 Catégorie : 1,"Pincourt
 Montérégie,21 juin 2013,7110-16-13-55015-01 Catégorie : 1,"Saint-Paul-d'Abbotsford 
 				- Déversement de matières liquides","À l'arrière du 2430, rue Principale (champ d'épuration des eaux usées de l'industrie)",Saint-Paul-d'Abbotsford,45.437972,-72.888107,ville,"Saint-Paul-d'Abbotsford, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-55015-01
 Montérégie,21 juin 2013,7110-16-13-68055-01 Catégorie : 1,"Route 221, Saint-Rémi 
-				- Déversement de matières liquides","Face au 621, route 221","Route 221, Saint-Rémi",46.00108,-74.769007,ville,"Route 221, Saint-Rémi, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-68055-01
+				- Déversement de matières liquides","Face au 621, route 221","Route 221, Saint-Rémi",,,ville,"Route 221, Saint-Rémi, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-68055-01
 Montérégie,20 juin 2013,7110-16-13-71040-04 Catégorie : 2,"Côteau-du-Lac 
 				- , Explosion","62, chemin Masson",Côteau-du-Lac,45.313937,-74.155704,adresse,"62, chemin Masson, Côteau-du-Lac, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-71040-04
 Montérégie,17 juin 2013,7110-16-13-57035-03 Catégorie : 1,"Mont Saint-Hilaire 
@@ -10911,7 +10911,7 @@ Montérégie,8 juin 2013,7110-16-13-69070-02 Catégorie : 1,"Saint-Anicet
 Montérégie,7 juin 2013,7110-16-13-58005-03 Catégorie : 1,"Boucherville 
 				- Bris d'équipement","125, chemin Île Sainte-Marguerite, Île Charron",Boucherville,45.60502,-73.452614,ville,"Boucherville, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-58005-03
 Montérégie,31 mai 2013,7110-16-13-47035-03 Catégorie : 1,"Shefford 
-				- Déversement d'huile",rue Clermont et rue Bertrand,Shefford,45.432232,-72.667413,ville,"Shefford, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-47035-03
+				- Déversement d'huile",rue Clermont et rue Bertrand,Shefford,45.432232,-72.667413,ville_region,"Shefford, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-47035-03
 Montérégie,30 mai 2013,7110-16-13-46090-04 Catégorie : 1,"Brigham 
 				- Déversement d'huile","247, chemin Gaudreau",Brigham,45.248,-72.855818,adresse,"247, chemin Gaudreau, Brigham, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46090-04
 Montérégie,23 mai 2013,7110-16-13-59005-03 Catégorie : 1,"Boucherville 
@@ -10945,9 +10945,9 @@ Montérégie,13 avril 2013,7110-16-13-59025-02 Catégorie : 1,"Verchères
 Montérégie,11 avril 2013,7110-16-13-67020-12 Catégorie : 1,"La Prairie 
 				- Signalement d'odeur","1985, Jean-Marie-Langlois",La Prairie,45.398244,-73.502872,adresse,"1985, Jean-Marie-Langlois, La Prairie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-67020-12
 Montérégie,11 avril 2013,7110-16-13-46115-02 Catégorie : 1,"Farnham 
-				- Déversement de déjections animales","425, rang Magenta",Farnham,45.2831,-72.974968,ville,"Farnham, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46115-02
+				- Déversement de déjections animales","425, rang Magenta",Farnham,45.314559,-73.021613,ville_region,"Farnham, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46115-02
 Montérégie,7 avril 2013,7110-16-13-46035-06 Catégorie : 1,"Bedford 
-				- Mortalité d'animaux",Sentier naturel près de la rivière aux Brochets,Bedford,45.120519,-72.988516,ville,"Bedford, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46035-06
+				- Mortalité d'animaux",Sentier naturel près de la rivière aux Brochets,Bedford,45.340795,-73.738321,ville_region,"Bedford, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-46035-06
 Montérégie,6 avril 2013,7110-16-13-67030-01 Catégorie : 1,"Sainte-Catherine 
 				- Signalement d'une matière sur un lieu sensible","Fleuve Saint-Laurent à la hauteur du 7140, Route 132",Sainte-Catherine,45.40049,-73.576257,ville,"Sainte-Catherine, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-13-67030-01
 Montérégie,3 avril 2013,7110-16-13-53052-11 Catégorie : 1,"Sorel-Tracy 
@@ -10987,9 +10987,9 @@ Montérégie,13 novembre 2012,7710-16-12-70052-26 Catégorie : 1,"Salaberry-de
 Montérégie,9 novembre 2012,7110-16-12-55037-02 Catégorie : 1,"Rougemont 
 				- Déversement d'eaux usées","170, 5ième Avenue",Rougemont,45.435873,-73.053718,ville,"Rougemont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-55037-02
 Montérégie,24 octobre 2012,7110-16-12-47005-10 Catégorie : 1,"Bromont 
-				- Écoulement d'eaux de ruissellement chargées de matières en suspension","Sous un ponceau qui traverse le ruisseau Latulipe proche du 63, rue Champlain",Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-10
+				- Écoulement d'eaux de ruissellement chargées de matières en suspension","Sous un ponceau qui traverse le ruisseau Latulipe proche du 63, rue Champlain",Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-10
 Montérégie,27 septembre 2012,7110-16-12-47005-08 Catégorie : 1,"Bromont 
-				- Présence de matières inconnues","Près du 122, rue de la Rivière",Bromont,45.318734,-72.646307,ville,"Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-08
+				- Présence de matières inconnues","Près du 122, rue de la Rivière",Bromont,45.526576,-73.444168,ville_region,"Bromont, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-08
 Montérégie,13 octobre 2012,7110-16-12-57035-05 Catégorie : 1,"Mont-Saint-Hilaire 
 				- Déversement de matières liquides","derrière le 617, rue Wolfe",Mont-Saint-Hilaire,45.562351,-73.191886,ville,"Mont-Saint-Hilaire, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-57035-05
 Montérégie,14 septembre 2012,7110-16-12-47015-21 Catégorie : 1,"Granby 
@@ -11015,11 +11015,11 @@ Montérégie,1 août 2012,7110-16-12-71050-05 Catégorie : 1,"Les Cèdres
 Montérégie,28 juillet 2012,7110-16-12-69010-04 Catégorie : 1,"Franklin 
 				- Accident routier","Prés du 3439, route 202",Franklin,45.052064,-73.898645,ville,"Franklin, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-69010-04
 Montérégie,28 juillet 2012,7110-16-12-46058-02 Catégorie : 1,"Glen Sutton 
-				- Travaux en milieu hydrique",À l'embranchement des chemins Eastman et de la Vallée-Missisquoi,Glen Sutton,45.040793,-72.546161,ville,"Glen Sutton, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-46058-02
+				- Travaux en milieu hydrique",À l'embranchement des chemins Eastman et de la Vallée-Missisquoi,Glen Sutton,,,ville,"Glen Sutton, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-46058-02
 Montérégie,26 juillet 2012,7110-16-12-56083-14 Catégorie : 1,"Saint-Jean-sur-Richelieu 
 				- Déversement de diesel","1006, rue Payette",Saint-Jean-sur-Richelieu,45.336472,-73.270589,adresse,"1006, rue Payette, Saint-Jean-sur-Richelieu, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-56083-14
 Montérégie,20 juillet 2012,7110-16-12-47015-18 Catégorie : 1,"Granby 
-				- Travaux en milieu hydrique",Rue Valmore-Boisseau / prolongement de la rue Saint-Jude,Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47015-18
+				- Travaux en milieu hydrique",Rue Valmore-Boisseau / prolongement de la rue Saint-Jude,Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47015-18
 Montérégie,15 juillet 2012,7110-16-12-59020-10 Catégorie : 1,"Varennes 
 				- Émission de poussières","3654, chemin de la Côte-Bissonnette",Varennes,45.708295,-73.426508,adresse,"3654, chemin de la Côte-Bissonnette, Varennes, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-59020-10
 Montérégie,24 juin 2012,7110-16-12-67015-06 Catégorie : 1,"La Prairie - Candiac 
@@ -11079,7 +11079,7 @@ Montérégie,25 mars 2012,7110-16-12-57020-01 Catégorie : 1,"Saint-Basile-Le-
 Montérégie,16 mars 2012,7110-16-12-47005-02 Catégorie : 1,"Bromont 
 				- Fuite de gaz","45, boulevard de l'Aéroport",Bromont,45.299294,-72.730583,adresse,"45, boulevard de l'Aéroport, Bromont, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47005-02
 Montérégie,10 février 2012,7110-16-12-47020-01 Catégorie : 1,"Granby 
-				- Brûlage de matières résiduelles","1024, rang 11",Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47020-01
+				- Brûlage de matières résiduelles","1024, rang 11",Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-12-47020-01
 Montérégie,17 décembre 2011,7110-16-11-46080-04 Catégorie : 1,"Cowansville 
 				- Explosion d'un transformateur","Face au 413, rue Principale",Cowansville,45.642362,-73.306426,adresse,"Face au 413, rue Principale, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-11-46080-04
 Montérégie,20 novembre 2011,03711016114802003 Catégorie : 1,"Sainte-Christine  
@@ -11182,7 +11182,7 @@ Montérégie,9 octobre 2009,7110-16-09-58227-33 Catégorie : 1,"Longueuil
 Montérégie,5 novembre 2009,7110-16-09-46058-01 Catégorie : 1,"Sutton 
 				- Incendie impliquant des matières résiduelles","200, rue Principale",Sutton,45.256539,-74.209648,adresse,"200, rue Principale, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-46058-01
 Montérégie,26 août 2009,7110-16-09-47010-03 Catégorie : 1,"Saint-Alphonse 
-				- Déversement de déjections animales","112, chemin Choinière",Saint-Alphonse,45.325599,-72.8088,ville,"Saint-Alphonse, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-47010-03
+				- Déversement de déjections animales","112, chemin Choinière",Saint-Alphonse,45.476585,-73.46062,ville_region,"Saint-Alphonse, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-47010-03
 Montérégie,12 août 2009,7110-16-09-57010-02 Catégorie : 1,"Carignan 
 				- Déversement de produits pétroliers","4309, rue Sainte-Thérèse",Carignan,45.382224,-73.257256,adresse,"4309, rue Sainte-Thérèse, Carignan, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-57010-02
 Montérégie,30 juillet 2009,7110-16-09-53052-25 Catégorie : 1,"Sorel-Tracy 
@@ -11194,7 +11194,7 @@ Montérégie,21 juillet 2009,7110-16-09-68025-01 Catégorie : 1,"Saint-Patrice
 Montérégie,18 juin 2009,7110-16-09-71083-06 Catégorie : 1,"Vaudreuil-Dorion 
 				- Accident routier",Au km 2 sur l'autoroute 540 Nord,Vaudreuil-Dorion,45.397151,-74.025458,ville,"Vaudreuil-Dorion, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-71083-06
 Montérégie,21 juillet 2009,7110-16-09-47015-03 Catégorie : 2,"Granby 
-				- Fuite d'acide nitrique",Usine Agropur,Granby,45.399041,-72.721834,ville,"Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-47015-03
+				- Fuite d'acide nitrique",Usine Agropur,Granby,45.573441,-72.534037,ville_region,"Granby, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-47015-03
 Montérégie,26 juin 2009,7110-16-09-57033-03 Catégorie : 1,"Saint-Jean-Baptiste 
 				- Incendie impliquant des matières résiduelles","5010, rang de la Rivière sud",Saint-Jean-Baptiste,45.499125,-73.148509,adresse,"5010, rang de la Rivière sud, Saint-Jean-Baptiste, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-57033-03
 Montérégie,1 juillet 2009,7110-16-09-58227-15 Catégorie : 1,"Longueuil 
@@ -11202,7 +11202,7 @@ Montérégie,1 juillet 2009,7110-16-09-58227-15 Catégorie : 1,"Longueuil
 Montérégie,3 juin 2009,7110-16-09-5703301 Catégorie : 1,"Saint-Jean-Baptiste 
 				- Incendie impliquant des matières résiduelles","3845, rang du Cordon",Saint-Jean-Baptiste,45.479367,-73.092737,adresse,"3845, rang du Cordon, Saint-Jean-Baptiste, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-5703301
 Montérégie,23 mai 2009,7110-16-09-4607404 Catégorie : 1,"Lac Brôme 
-				- Travaux en milieu hydrique","En bordure du lac au 496, chemin Bondville",Lac Brôme,45.217703,-72.537222,ville,"Lac Brôme, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-4607404
+				- Travaux en milieu hydrique","En bordure du lac au 496, chemin Bondville",Lac Brôme,45.275782,-73.047248,ville_region,"Lac Brôme, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-4607404
 Montérégie,6 mai 2009,7110-16-09-55020-02 Catégorie : 1,"Saint-Césaire 
 				- Accident routier",Rang du Bas Casimir,Saint-Césaire,45.409979,-73.002722,ville,"Saint-Césaire, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-09-55020-02
 Montérégie,15 avril 2009,7110-16-09-54095-02 Catégorie : 1,"Sainte-Hélène-de-Bagot 
@@ -11236,7 +11236,7 @@ Montérégie,4 novembre 2008,7110-16-08-57033-08 Catégorie : 1,"Mont-Saint-Hi
 Montérégie,26 octobre 2008,7110-16-08-46017-03 Catégorie : 1,"Saint-Armand 
 				- Feu de déchets","314, Champlain",Saint-Armand,45.046365,-73.076234,adresse,"314, Champlain, Saint-Armand, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-46017-03
 Montérégie,5 novembre 2008,7110-16-08-5733-01 Catégorie : 1,"Saint-Jean-Baptiste 
-				- Déboisement ruisseau Normandin","Près du 940, rang sud (route 227)",Saint-Jean-Baptiste,46.809694,-71.222992,ville,"Saint-Jean-Baptiste, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-5733-01
+				- Déboisement ruisseau Normandin","Près du 940, rang sud (route 227)",Saint-Jean-Baptiste,45.520607,-73.123883,ville_region,"Saint-Jean-Baptiste, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-5733-01
 Montérégie,27 octobre 2008,7110-16-08-68050-03 Catégorie : 1,"Saint-Michel 
 				- Déversement de diesel","479, chemin Rhéaume",Saint-Michel,45.242951,-73.568532,adresse,"479, chemin Rhéaume, Saint-Michel, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-68050-03
 Montérégie,23 octobre 2008,7110-16-08-58005-02 Catégorie : 1,"Brossard 
@@ -11273,7 +11273,7 @@ Montérégie,31 mai 2008,7110 16 08 54072 02 Catégorie : 1,"Saint-Liboire
 Montérégie,23 mai 2008,7110160869017-03 Catégorie : 1,"St-Chrysostome, Montérégie 
 				- Travaux illégaux dans un ruisseau",Ruisseau Norton,"St-Chrysostome, Montérégie",45.152249,-73.68242,adresse,"Ruisseau Norton, St-Chrysostome, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110160869017-03
 Montérégie,14 mai 2008,7110 16 08 57035 02 Catégorie : 1,"Saint-Hilaire 
-				- Traces d'hydrocarbures",Entre le 453 et le 455 chemin des Patriotes,Saint-Hilaire,47.366276,-72.211401,ville,"Saint-Hilaire, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110 16 08 57035 02
+				- Traces d'hydrocarbures",Entre le 453 et le 455 chemin des Patriotes,Saint-Hilaire,45.569662,-73.19452,ville_region,"Saint-Hilaire, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110 16 08 57035 02
 Montérégie,24 mai 2008,71100853052-08 Catégorie : 1,"Sorel-Tracy, Montérégie 
 				- Déversement de déchets dans le fleuve",Berge du fleuve St-Laurent,"Sorel-Tracy, Montérégie",46.043523,-73.116516,ville,"Sorel-Tracy, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=71100853052-08
 Montérégie,25 mai 2008,7710-16-08-53052-09 Catégorie : 1,"Sorel-Tracy 
@@ -11283,7 +11283,7 @@ Montérégie,5 juin 2008,7110-16-08-59020-10 Catégorie : 1,"Varennes
 Montérégie,14 juin 2008,7110-16-08-48010-02 Catégorie : 1,"Roxton Falls 
 				- Brûlage de matières résiduelles","993, 5e rang",Roxton Falls,45.622266,-72.865488,adresse,"993, 5e rang, Montérégie, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-48010-02
 Montérégie,28 juin 2008,7110-16-08-47015-03 Catégorie : 1,"Ville de Granby 
-				- Déversement d'eaux usées","Dans un ruisseau près du 301, chemin Grande Ligne",Ville de Granby,45.415584,-72.696072,ville,"Ville de Granby, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-47015-03
+				- Déversement d'eaux usées","Dans un ruisseau près du 301, chemin Grande Ligne",Ville de Granby,45.573441,-72.534037,ville_simplifiee_region,"Granby, Québec, Montérégie, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-47015-03
 Montérégie,3 juillet 2008,7110-16-08-69017-04 Catégorie : 1,"Saint-Chrysostome 
 				- Fuite d'huile",25 rue Jean-François,Saint-Chrysostome,45.102282,-73.751984,adresse,"25 rue Jean-François, Saint-Chrysostome, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-16-08-69017-04
 Montérégie,25 avril 2008,7110-16-08-70052-14 Catégorie : 1,"Salaberry-de-Valleyfield 
@@ -11894,7 +11894,7 @@ Centre-du-Québec,27 mai 2016,301036694 Catégorie : 1,"Warwick
 Centre-du-Québec,1 juin 2016,301037489 Catégorie : 1,"Warwick 
 				- Déversement de produits pétroliers",Route 116 Ouest,Warwick,45.893701,-72.036048,adresse,"Route 116 Ouest, Warwick, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301037489
 Centre-du-Québec,9 avril 2016,301027874 Catégorie : 1,"Sainte-Perpétue 
-				- Travaux en milieu hydrique","Près du 1331, rang Sainte-Anne",Sainte-Perpétue,47.057493,-69.927292,ville,"Sainte-Perpétue, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301027874
+				- Travaux en milieu hydrique","Près du 1331, rang Sainte-Anne",Sainte-Perpétue,46.08109,-72.46479,ville_region,"Sainte-Perpétue, Centre-du-Québec, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301027874
 Centre-du-Québec,7 avril 2016,301027405 Catégorie : 1,"Bécancour 
 				- Accident routier,","1394, boulevard du Parc-Industriel",Bécancour,46.332377,-72.319702,adresse,"1394, boulevard du Parc-Industriel, Bécancour, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301027405
 Centre-du-Québec,6 avril 2016,301026836 Catégorie : 1,"Drummondville 
@@ -12265,7 +12265,7 @@ Centre-du-Québec,29 juillet 2010,7110-17-49030-100729 Catégorie : 1,"Drummon
 Centre-du-Québec,11 juillet 2010,7110-17-49058-100711 Catégorie : 1,"Drummondville 
 				- Signalement d'une matière sur un lieu sensible","Rivière St-François, hauteur du centre-ville",Drummondville,45.88643,-72.501876,ville,"Drummondville, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-17-49058-100711
 Centre-du-Québec,23 juillet 2010,7110-17-38010-100723 Catégorie : 1,"Ville de Bécancour (secteur St-Grégoire) 
-				- Déversement de produits pétroliers",Autoroute 55 près du village de St-Grégoire,Ville de Bécancour (secteur St-Grégoire),,,ville_simplifiee,"St-Grégoire, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-17-38010-100723
+				- Déversement de produits pétroliers",Autoroute 55 près du village de St-Grégoire,Ville de Bécancour (secteur St-Grégoire),46.271455,-72.511574,ville_simplifiee_region,"St-Grégoire, Bécancour, Québec, Centre-du-Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-17-38010-100723
 Centre-du-Québec,27 juillet 2010,7110-17-49030-100727 Catégorie : 1,"Saint-Lucien 
 				- Présence de mousse sur un cours d'eau","Derrière le 128, rue Tremblay - Rivière St-François",Saint-Lucien,45.874951,-72.268753,ville,"Saint-Lucien, Québec, Canada",https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-17-49030-100727
 Centre-du-Québec,8 juillet 2010,7110-17-50042-100708 Catégorie : 1,"Saint-Léonard-d'Aston 
