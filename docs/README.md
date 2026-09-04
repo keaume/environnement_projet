@@ -13,7 +13,8 @@ Carte interactive des interventions d'urgence environnementale au Québec, basé
 ## 📌 Fonctionnalités
 
 * 🗺️ Cartes interactives par région
-* 📍 Géocodage des adresses (Nominatim - OpenStreetMap)
+* 🔎 Barre de recherche d'adresse sur chaque carte (Nominatim)
+* 📍 Géocodage des événements (Nominatim - OpenStreetMap)
 * ⚡ Mise à jour rapide grâce au cache
 * 🎯 Filtres dynamiques :
 
@@ -45,7 +46,7 @@ Le script :
 ### 1. Cloner le projet
 
 ```bash
-git clone https://keaume.github.io/environnement_projet/
+git clone https://github.com/keaume/environnement_projet.git
 ```
 
 ### 2. Installer les dépendances
@@ -59,6 +60,7 @@ pip install requests beautifulsoup4 folium tqdm shapely
 ## ▶️ Utilisation
 
 ```bash
+cd docs
 python scraper_urgence_env.py
 ```
 
@@ -82,15 +84,14 @@ git push
 
 ```
 /docs
-  ├── index.html
-  ├── carte_*.html
-  ├── urgences_quebec.csv
-  ├── erreurs_geocode.csv
-
-scraper_urgence_env.py
-cache_fiches.json
-cache_geocode.json
-regions_quebec.geojson
+  ├── index.html              ← page d'accueil (générée)
+  ├── carte_*.html             ← une carte par région (générées)
+  ├── urgences_quebec.csv      ← données géocodées (généré)
+  ├── erreurs_geocode.csv      ← événements non localisables (généré)
+  ├── scraper_urgence_env.py   ← script principal (scraping + géocodage + génération des cartes)
+  ├── cache_fiches.json        ← cache des fiches scrapées
+  ├── cache_geocode.json       ← cache des requêtes de géocodage
+  └── regions_quebec.geojson   ← polygones approximatifs des 17 régions (contrôle de cohérence)
 ```
 
 ---
@@ -107,7 +108,8 @@ regions_quebec.geojson
 
 * Certaines adresses sont approximatives (centre-ville, etc.)
 * Dépendance à la qualité des données source
-* Nominatim peut rejeter certaines requêtes
+* Nominatim peut rejeter certaines requêtes, ou mal résoudre un nom de secteur/quartier ambigu (ex. deux villes différentes ayant un secteur du même nom)
+* Un contrôle de cohérence (polygone approximatif de la région) rejette les résultats de géocodage manifestement hors région ; les événements non localisables de façon fiable sont exclus des cartes et listés dans `erreurs_geocode.csv` plutôt que placés au mauvais endroit
 
 ---
 
