@@ -485,6 +485,11 @@ def simplifier_municipalite(municipalite):
         m, re.I
     )
     if secteur:
+        # Garder la ville-mère (ex: "Montréal") évite qu'un secteur/quartier
+        # (ex: "St-Henri") soit confondu avec une municipalité homonyme ailleurs au Québec.
+        ville_base = re.sub(r'\s*\([^)]+\)', '', m).strip()
+        if ville_base:
+            return f"{secteur.group(1).strip()}, {ville_base}, Québec"
         return secteur.group(1).strip() + ', Québec'
 
     m = re.sub(r'\s*\([^)]+\)', '', m).strip()
@@ -763,17 +768,6 @@ def generer_carte_region(region, evenements, fichier):
 
         n += 1
 
-    # bouton retour
-    carte.get_root().html.add_child(folium.Element("""
-    <a href="index.html" style="
-       position:fixed;top:12px;left:12px;z-index:1000;
-       background:white;padding:8px 14px;border-radius:8px;text-decoration:none;
-       box-shadow:0 2px 8px rgba(0,0,0,.18);font-family:sans-serif;
-       font-size:13px;color:#1a3c5e;font-weight:600;">
-       ← Toutes les régions
-    </a>
-    """))
-
     carte.get_root().html.add_child(folium.Element(f"""
     <a href="{GITHUB_URL}" target="_blank" style="
        position:fixed;top:12px;right:12px;z-index:1000;
@@ -919,6 +913,109 @@ def generer_carte_region(region, evenements, fichier):
     </script>
     """
     carte.get_root().html.add_child(folium.Element(js))
+
+    # navigation + barre de recherche d'adresse (panneau unique, haut gauche)
+    search_html = """
+    <div id="nav-panel" style="
+        position:fixed;
+        top:12px;
+        left:12px;
+        z-index:1000;
+        width:260px;
+        background:rgba(255,255,255,.97);
+        padding:12px;
+        border-radius:10px;
+        box-shadow:0 4px 14px rgba(0,0,0,.18);
+        font-family:sans-serif;
+        font-size:13px;
+        color:#243b53;">
+      <a href="index.html" style="
+          display:block;
+          font-weight:700;
+          font-size:13px;
+          color:#1a3c5e;
+          text-decoration:none;
+          padding-bottom:10px;
+          margin-bottom:10px;
+          border-bottom:1px solid #e4e9f0;">
+        ← Toutes les régions
+      </a>
+      <div style="font-weight:700;font-size:14px;margin-bottom:8px;">🔎 Rechercher une adresse</div>
+      <div style="display:flex;gap:6px;">
+        <input id="search-input" type="text" placeholder="Ex: 123 rue Principale, Montréal"
+          style="flex:1;min-width:0;padding:7px 8px;border:1px solid #cbd2d9;border-radius:6px;">
+        <button id="search-btn" style="
+            padding:7px 10px;border:none;border-radius:6px;
+            background:#2f80c1;color:white;font-weight:600;cursor:pointer;">
+          OK
+        </button>
+      </div>
+      <div id="search-status" style="margin-top:8px;color:#486581;font-size:12px;"></div>
+    </div>
+    """
+    carte.get_root().html.add_child(folium.Element(search_html))
+
+    search_js = f"""
+    <script>
+    setTimeout(function() {{
+        var map = {carte.get_name()};
+        var searchMarker = null;
+
+        function geocodeAndFly(query) {{
+            var statusEl = document.getElementById("search-status");
+            statusEl.innerText = "Recherche en cours...";
+
+            var url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=ca&q=" + encodeURIComponent(query);
+
+            fetch(url, {{ headers: {{ "Accept-Language": "fr" }} }})
+                .then(function(res) {{ return res.json(); }})
+                .then(function(data) {{
+                    if (!data || data.length === 0) {{
+                        statusEl.innerText = "Adresse introuvable.";
+                        return;
+                    }}
+                    var lat = parseFloat(data[0].lat);
+                    var lon = parseFloat(data[0].lon);
+
+                    if (searchMarker) {{
+                        map.removeLayer(searchMarker);
+                    }}
+                    searchMarker = L.marker([lat, lon], {{
+                        icon: L.AwesomeMarkers.icon({{
+                            markerColor: "blue",
+                            iconColor: "white",
+                            icon: "map-marker",
+                            prefix: "glyphicon",
+                        }})
+                    }}).addTo(map);
+                    searchMarker.bindPopup(data[0].display_name).openPopup();
+
+                    map.flyTo([lat, lon], 16);
+                    statusEl.innerText = "";
+                }})
+                .catch(function() {{
+                    statusEl.innerText = "Erreur de recherche.";
+                }});
+        }}
+
+        var btn = document.getElementById("search-btn");
+        var input = document.getElementById("search-input");
+
+        if (btn) btn.addEventListener("click", function() {{
+            var q = input.value.trim();
+            if (q) geocodeAndFly(q);
+        }});
+
+        if (input) input.addEventListener("keydown", function(e) {{
+            if (e.key === "Enter") {{
+                var q = input.value.trim();
+                if (q) geocodeAndFly(q);
+            }}
+        }});
+    }}, 300);
+    </script>
+    """
+    carte.get_root().html.add_child(folium.Element(search_js))
 
     carte.save(fichier)
     return n

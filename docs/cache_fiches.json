@@ -1769,7 +1769,7 @@
     "lat": 48.513594,
     "lon": -68.463297,
     "precision": "ville_simplifiee",
-    "geocode_query": "Pointe-au-Père, Québec, Canada",
+    "geocode_query": "Pointe-au-Père, Rimouski, Québec, Canada",
     "geocode_formatted": "Pointe-au-Père, Rimouski, Rimouski-Neigette, Bas-Saint-Laurent, Québec, G5M 1X3, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301027420": {
@@ -2088,11 +2088,11 @@
     "adresse": "Champs agricoles voisins du 27, de la Coulée",
     "municipalite": "Matane (secteur Saint-Luc)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300901970",
-    "lat": 45.362142,
-    "lon": -73.303685,
+    "lat": 48.796476,
+    "lon": -67.47177,
     "precision": "ville_simplifiee",
-    "geocode_query": "Saint-Luc, Québec, Canada",
-    "geocode_formatted": "Saint-Luc, Saint-Jean-sur-Richelieu, Le Haut-Richelieu, Montérégie, Québec, Canada"
+    "geocode_query": "Saint-Luc, Matane, Québec, Canada",
+    "geocode_formatted": "Saint-Luc-de-Matane, Matane, La Matanie, Bas-Saint-Laurent, Québec, G4W 4E8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300878816": {
     "region": "Bas-Saint-Laurent",
@@ -2357,7 +2357,7 @@
     "lat": 48.372095,
     "lon": -68.711215,
     "precision": "ville_simplifiee",
-    "geocode_query": "Le Bic, Québec, Canada",
+    "geocode_query": "Le Bic, Rimouski, Québec, Canada",
     "geocode_formatted": "Le Bic, Rimouski, Rimouski-Neigette, Bas-Saint-Laurent, Québec, G0L 1B0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-01-11-1004514": {
@@ -4106,11 +4106,11 @@
     "adresse": "Près du 219 Chemin des Puits",
     "municipalite": "Saguenay (secteur Laterrière)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301677966",
-    "lat": 48.405959,
-    "lon": -71.069183,
+    "lat": 48.30751,
+    "lon": -71.113358,
     "precision": "ville_simplifiee",
-    "geocode_query": "Laterrière, Québec, Canada",
-    "geocode_formatted": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+    "geocode_query": "Laterrière, Saguenay, Québec, Canada",
+    "geocode_formatted": "Laterrière, Arrondissement de Chicoutimi, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7N 1J4, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301673887": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -4302,11 +4302,11 @@
     "adresse": "En face du 1113, rue Victoria",
     "municipalite": "Saguenay (secteur La Baie)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301636581",
-    "lat": 48.405959,
-    "lon": -71.069183,
+    "lat": 48.329949,
+    "lon": -70.868729,
     "precision": "ville_simplifiee",
-    "geocode_query": "La Baie, Québec, Canada",
-    "geocode_formatted": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+    "geocode_query": "La Baie, Saguenay, Québec, Canada",
+    "geocode_formatted": "Arrondissement de La Baie, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301628606": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -4358,11 +4358,11 @@
     "adresse": "2440, Alexis-le-Trotteur Saguenay (Québec)",
     "municipalite": "Saguenay (secteur Jonquière)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301635519",
-    "lat": 48.405959,
-    "lon": -71.069183,
+    "lat": 48.413539,
+    "lon": -71.253925,
     "precision": "ville_simplifiee",
-    "geocode_query": "Jonquière, Québec, Canada",
-    "geocode_formatted": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+    "geocode_query": "Jonquière, Saguenay, Québec, Canada",
+    "geocode_formatted": "Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301622281": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -4719,11 +4719,11 @@
     "adresse": "6600, chemin du terminal",
     "municipalite": "Saguenay (Secteur La Baie)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301551431",
-    "lat": 48.405959,
-    "lon": -71.069183,
+    "lat": 48.329949,
+    "lon": -70.868729,
     "precision": "ville_simplifiee",
-    "geocode_query": "La Baie, Québec, Canada",
-    "geocode_formatted": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+    "geocode_query": "La Baie, Saguenay, Québec, Canada",
+    "geocode_formatted": "Arrondissement de La Baie, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301550635": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -5826,11 +5826,11 @@
     "adresse": "Arrière de la rue Neilson",
     "municipalite": "Saguenay (secteur d'Arvida)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301339487",
-    "lat": 48.425897,
-    "lon": -71.18217,
+    "lat": 48.438441,
+    "lon": -71.180609,
     "precision": "ville_simplifiee",
-    "geocode_query": "d'Arvida, Québec, Canada",
-    "geocode_formatted": "Arvida, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7S 3G7, Canada"
+    "geocode_query": "d'Arvida, Saguenay, Québec, Canada",
+    "geocode_formatted": "Chemin de l'Usine-d'Épuration, Arvida, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7S 5C3, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier= 301342375": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -5854,11 +5854,11 @@
     "adresse": "Lac Kénogami, Baie Gagné",
     "municipalite": "Ville de Saguenay (Secteur du lac Kénogami)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301338088",
-    "lat": 48.334675,
-    "lon": -71.364498,
+    "lat": 48.358947,
+    "lon": -71.385593,
     "precision": "ville_simplifiee",
-    "geocode_query": "du lac Kénogami, Québec, Canada",
-    "geocode_formatted": "Cran du Curé, Arrondissement de Jonquière, Lac-Kénogami, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+    "geocode_query": "du lac Kénogami, Saguenay, Québec, Canada",
+    "geocode_formatted": "Baie du Lac à Jean, Arrondissement de Jonquière, Lac-Kénogami, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301337928": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -6554,7 +6554,7 @@
     "lat": 48.428635,
     "lon": -71.063712,
     "precision": "ville_simplifiee",
-    "geocode_query": "Chicoutimi, Québec, Canada",
+    "geocode_query": "Chicoutimi, Saguenay, Québec, Canada",
     "geocode_formatted": "Arrondissement de Chicoutimi, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301233965": {
@@ -6898,11 +6898,11 @@
     "adresse": "Case postale 550",
     "municipalite": "Saguenay (secteur Jonquière)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301045545",
-    "lat": 48.405959,
-    "lon": -71.069183,
+    "lat": 48.413539,
+    "lon": -71.253925,
     "precision": "ville_simplifiee",
-    "geocode_query": "Jonquière, Québec, Canada",
-    "geocode_formatted": "Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+    "geocode_query": "Jonquière, Saguenay, Québec, Canada",
+    "geocode_formatted": "Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301039198": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -6954,7 +6954,7 @@
     "lat": 48.428635,
     "lon": -71.063712,
     "precision": "ville_simplifiee",
-    "geocode_query": "Chicoutimi, Québec, Canada",
+    "geocode_query": "Chicoutimi, Saguenay, Québec, Canada",
     "geocode_formatted": "Arrondissement de Chicoutimi, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301035340": {
@@ -7309,11 +7309,11 @@
     "adresse": "Lac Kénogami, face au 5672 rue de la Chapelle",
     "municipalite": "Saguenay (secteur du lac Kénogami)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300981546",
-    "lat": 48.334675,
-    "lon": -71.364498,
+    "lat": 48.358947,
+    "lon": -71.385593,
     "precision": "ville_simplifiee",
-    "geocode_query": "du lac Kénogami, Québec, Canada",
-    "geocode_formatted": "Cran du Curé, Arrondissement de Jonquière, Lac-Kénogami, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
+    "geocode_query": "du lac Kénogami, Saguenay, Québec, Canada",
+    "geocode_formatted": "Baie du Lac à Jean, Arrondissement de Jonquière, Lac-Kénogami, Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300980855": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -7480,7 +7480,7 @@
     "lat": 48.41928,
     "lon": -71.247606,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Lac-Kénogami, Québec, Canada",
+    "geocode_query": "de Lac-Kénogami, Saguenay, Québec, Canada",
     "geocode_formatted": "Bell Canada JNQRPQ06, Jonquiere, Rue Saint-Jacques, Kénogami, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7X 8T5, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300955901": {
@@ -7494,7 +7494,7 @@
     "lat": 48.459804,
     "lon": -71.260984,
     "precision": "ville_simplifiee",
-    "geocode_query": "Shipshaw, Québec, Canada",
+    "geocode_query": "Shipshaw, Saguenay, Québec, Canada",
     "geocode_formatted": "Shipshaw, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7P 1H5, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300955872": {
@@ -8205,7 +8205,7 @@
     "lat": 48.425897,
     "lon": -71.18217,
     "precision": "ville_simplifiee",
-    "geocode_query": "Arvida, Québec, Canada",
+    "geocode_query": "Arvida, Saguenay, Québec, Canada",
     "geocode_formatted": "Arvida, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7S 3G7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2013-12-27-1327": {
@@ -8871,7 +8871,7 @@
     "lat": 48.632301,
     "lon": -71.696372,
     "precision": "ville_simplifiee",
-    "geocode_query": "St-Coeur-de-Marie, Québec, Canada",
+    "geocode_query": "St-Coeur-de-Marie, Alma, Québec, Canada",
     "geocode_formatted": "Saint-Coeur-de-Marie, Alma, Lac-Saint-Jean-Est, Saguenay–Lac-Saint-Jean, Québec, G8E 2L1, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-06-07-188": {
@@ -8941,7 +8941,7 @@
     "lat": 48.650893,
     "lon": -71.138479,
     "precision": "ville_simplifiee",
-    "geocode_query": "Lac Sébastien, Québec, Canada",
+    "geocode_query": "Lac Sébastien, Saint-David-de-Falardeau, Québec, Canada",
     "geocode_formatted": "Lac Sébastien, Saint-David-de-Falardeau, Le Fjord-du-Saguenay, Saguenay–Lac-Saint-Jean, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-05-10-82": {
@@ -9109,7 +9109,7 @@
     "lat": 48.459804,
     "lon": -71.260984,
     "precision": "ville_simplifiee",
-    "geocode_query": "Shipshaw, Québec, Canada",
+    "geocode_query": "Shipshaw, Saguenay, Québec, Canada",
     "geocode_formatted": "Shipshaw, Arrondissement de Jonquière, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7P 1H5, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2012-02-09-645": {
@@ -9638,11 +9638,11 @@
     "adresse": "Halte routière, kilomètre 218 de la route 175",
     "municipalite": "Saguenay (secteur de Laterrière)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-02-2011-07-06-201",
-    "lat": 48.307715,
-    "lon": -71.110066,
+    "lat": 48.427549,
+    "lon": -71.06542,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Laterrière, Québec, Canada",
-    "geocode_formatted": "Postes Canada, Rue Notre-Dame, Laterrière, Arrondissement de Chicoutimi, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7N 1H8, Canada"
+    "geocode_query": "de Laterrière, Saguenay, Québec, Canada",
+    "geocode_formatted": "Service Canada, 100, Rue Racine Est, Centre-ville de Chicoutimi, Arrondissement de Chicoutimi, Saguenay, Saguenay–Lac-Saint-Jean, Québec, G7H 1P6, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T02-2011-07-02-190": {
     "region": "Saguenay—Lac-Saint-Jean",
@@ -11891,8 +11891,8 @@
     "adresse": "Derrière le 1347, boulevard Père-Lelièvre",
     "municipalite": "Ville de Québec (arrondissement des Rivières)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821459",
-    "lat": 45.157863,
-    "lon": -73.050521,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "des Rivières, Québec, Canada",
     "geocode_formatted": "Des Rivières, Notre-Dame-de-Stanbridge, Brome-Missisquoi, Québec, J0J 1M0, Canada"
@@ -12272,7 +12272,7 @@
     "lat": 46.774327,
     "lon": -71.299444,
     "precision": "ville_simplifiee",
-    "geocode_query": "Ste-Foy, Québec, Canada",
+    "geocode_query": "Ste-Foy, Québec, Québec, Canada",
     "geocode_formatted": "Sainte-Foy, Saint-Louis, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1V 4X7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301746297": {
@@ -12538,7 +12538,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "Les Rivières, Québec, Canada",
+    "geocode_query": "Les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301693951": {
@@ -12608,7 +12608,7 @@
     "lat": 46.826273,
     "lon": -71.233149,
     "precision": "ville_simplifiee",
-    "geocode_query": "Limoilou, Québec, Canada",
+    "geocode_query": "Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3K8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301682540": {
@@ -12636,7 +12636,7 @@
     "lat": 46.826273,
     "lon": -71.233149,
     "precision": "ville_simplifiee",
-    "geocode_query": "Limoilou, Québec, Canada",
+    "geocode_query": "Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3K8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301679518": {
@@ -12916,7 +12916,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "les Rivières, Québec, Canada",
+    "geocode_query": "les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301641885": {
@@ -12930,7 +12930,7 @@
     "lat": 46.826273,
     "lon": -71.233149,
     "precision": "ville_simplifiee",
-    "geocode_query": "Limoilou, Québec, Canada",
+    "geocode_query": "Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3K8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301639731": {
@@ -13330,11 +13330,11 @@
     "adresse": "435, avenue Adanac",
     "municipalite": "Québec (Arrondissement de Beauport)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301592806",
-    "lat": 46.889957,
-    "lon": -71.19213,
+    "lat": 46.860244,
+    "lon": -71.191165,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Beauport, Québec, Canada",
-    "geocode_formatted": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+    "geocode_query": "de Beauport, Québec, Québec, Canada",
+    "geocode_formatted": "Banque Nationale, Avenue Royale, Beauport, Vieux-Bourg, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1E 5A8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301596639": {
     "region": "Capitale-Nationale",
@@ -13345,9 +13345,9 @@
     "municipalite": "Québec (arrondissement Sainte-Foy-Sillery-Cap-Rouge)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301596639",
     "lat": 46.782012,
-    "lon": -71.349279,
+    "lon": -71.348834,
     "precision": "ville_simplifiee",
-    "geocode_query": "Sainte-Foy-Sillery-Cap-Rouge, Québec, Canada",
+    "geocode_query": "Sainte-Foy-Sillery-Cap-Rouge, Québec, Québec, Canada",
     "geocode_formatted": "Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301592795": {
@@ -13417,7 +13417,7 @@
     "lat": 46.818418,
     "lon": -71.219031,
     "precision": "ville_simplifiee",
-    "geocode_query": "La Cité-Limoilou, Québec, Canada",
+    "geocode_query": "La Cité-Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301576904": {
@@ -13666,7 +13666,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "Les Rivières, Québec, Canada",
+    "geocode_query": "Les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301540089": {
@@ -13694,7 +13694,7 @@
     "lat": 46.89565,
     "lon": -71.290829,
     "precision": "ville_simplifiee",
-    "geocode_query": "Charlesbourg, Québec, Canada",
+    "geocode_query": "Charlesbourg, Québec, Québec, Canada",
     "geocode_formatted": "Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301535201": {
@@ -13722,7 +13722,7 @@
     "lat": 46.818418,
     "lon": -71.219031,
     "precision": "ville_simplifiee",
-    "geocode_query": "La Cité-Limoilou, Québec, Canada",
+    "geocode_query": "La Cité-Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301533845": {
@@ -13901,11 +13901,11 @@
     "adresse": "Au sud de l'avenue de Marseille",
     "municipalite": "Québec (secteur de Charlesbourg)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301489564",
-    "lat": 46.865528,
-    "lon": -71.271784,
+    "lat": 46.847704,
+    "lon": -71.247195,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Charlesbourg, Québec, Canada",
-    "geocode_formatted": "TD, 8425, Boulevard Henri-Bourassa, Place Cloutier, Trait-Carré, Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1G 4E1, Canada"
+    "geocode_query": "de Charlesbourg, Québec, Québec, Canada",
+    "geocode_formatted": "Postes Canada, 47e Rue Est, Saint-Rodrigue, Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1H 3B1, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301490282": {
     "region": "Capitale-Nationale",
@@ -13974,7 +13974,7 @@
     "lat": 46.826273,
     "lon": -71.233149,
     "precision": "ville_simplifiee",
-    "geocode_query": "Limoilou, Québec, Canada",
+    "geocode_query": "Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3K8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301480666": {
@@ -13988,7 +13988,7 @@
     "lat": 46.823213,
     "lon": -71.226412,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Limoilou, Québec, Canada",
+    "geocode_query": "de Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "Banque Nationale, 5e Rue, Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3B1, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301478915": {
@@ -14072,7 +14072,7 @@
     "lat": 46.818418,
     "lon": -71.219031,
     "precision": "ville_simplifiee",
-    "geocode_query": "La Cité-Limoilou, Québec, Canada",
+    "geocode_query": "La Cité-Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301471690": {
@@ -14128,7 +14128,7 @@
     "lat": 46.89565,
     "lon": -71.290829,
     "precision": "ville_simplifiee",
-    "geocode_query": "Charlesbourg, Québec, Canada",
+    "geocode_query": "Charlesbourg, Québec, Québec, Canada",
     "geocode_formatted": "Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301463391": {
@@ -14405,11 +14405,11 @@
     "adresse": "Près du Parc Armand-Grenier",
     "municipalite": "Ville de Québec (arrondissement de Beauport)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301423223",
-    "lat": 46.889957,
-    "lon": -71.19213,
+    "lat": 46.860244,
+    "lon": -71.191165,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Beauport, Québec, Canada",
-    "geocode_formatted": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+    "geocode_query": "de Beauport, Québec, Québec, Canada",
+    "geocode_formatted": "Banque Nationale, Avenue Royale, Beauport, Vieux-Bourg, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1E 5A8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301422879": {
     "region": "Capitale-Nationale",
@@ -14436,7 +14436,7 @@
     "lat": 46.898349,
     "lon": -71.206289,
     "precision": "ville_simplifiee",
-    "geocode_query": "Beauport, Québec, Canada",
+    "geocode_query": "Beauport, Québec, Québec, Canada",
     "geocode_formatted": "Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301417806": {
@@ -14478,7 +14478,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "les Rivières, Québec, Canada",
+    "geocode_query": "les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301409447": {
@@ -14506,7 +14506,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "Les Rivières, Québec, Canada",
+    "geocode_query": "Les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301401055": {
@@ -14548,7 +14548,7 @@
     "lat": 46.898349,
     "lon": -71.206289,
     "precision": "ville_simplifiee",
-    "geocode_query": "Beauport, Québec, Canada",
+    "geocode_query": "Beauport, Québec, Québec, Canada",
     "geocode_formatted": "Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301402257": {
@@ -14892,7 +14892,7 @@
     "lat": 46.89565,
     "lon": -71.290829,
     "precision": "ville_simplifiee",
-    "geocode_query": "Charlesbourg, Québec, Canada",
+    "geocode_query": "Charlesbourg, Québec, Québec, Canada",
     "geocode_formatted": "Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301346870": {
@@ -14990,7 +14990,7 @@
     "lat": 46.891124,
     "lon": -71.403115,
     "precision": "ville_simplifiee",
-    "geocode_query": "de la Haute-Saint-Charles, Québec, Canada",
+    "geocode_query": "de la Haute-Saint-Charles, Québec, Québec, Canada",
     "geocode_formatted": "La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301340517": {
@@ -15270,7 +15270,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "Les Rivières, Québec, Canada",
+    "geocode_query": "Les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301292585": {
@@ -15606,7 +15606,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "Les Rivières, Québec, Canada",
+    "geocode_query": "Les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301235953": {
@@ -15799,10 +15799,10 @@
     "adresse": "Face au 1634, avenue de la Montagne",
     "municipalite": "Québec (arrondissement Haute-Saint-Charles)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301059990",
-    "lat": 46.850498,
-    "lon": -71.359776,
+    "lat": 46.850657,
+    "lon": -71.359886,
     "precision": "ville_simplifiee",
-    "geocode_query": "Haute-Saint-Charles, Québec, Canada",
+    "geocode_query": "Haute-Saint-Charles, Québec, Québec, Canada",
     "geocode_formatted": "Édifice Denis-Giguère, Rue Wilfrid-Caron, Loretteville-Sud, Loretteville, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G2B 1E7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301055300": {
@@ -15989,11 +15989,11 @@
     "adresse": "Aéroport Jean-Lesage - barrière no.29 au terminal",
     "municipalite": "Québec (arrondissement de Sainte-Foy)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301006020",
-    "lat": 46.786503,
-    "lon": -71.27994,
+    "lat": 46.767029,
+    "lon": -71.310026,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Sainte-Foy, Québec, Canada",
-    "geocode_formatted": "Postes Canada, Chemin Sainte-Foy, Cité-Universitaire, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1V 1S5, Canada"
+    "geocode_query": "de Sainte-Foy, Québec, Québec, Canada",
+    "geocode_formatted": "Service Canada, 3229, Chemin des Quatre-Bourgeois, Saint-Mathieu, Le Plateau, Plateau, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1W 2K8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301005711": {
     "region": "Capitale-Nationale",
@@ -16101,11 +16101,11 @@
     "adresse": "Section 50 du Port de Québec",
     "municipalite": "Québec (Arrondissement de Beauport)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300987505",
-    "lat": 46.889957,
-    "lon": -71.19213,
+    "lat": 46.860244,
+    "lon": -71.191165,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Beauport, Québec, Canada",
-    "geocode_formatted": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+    "geocode_query": "de Beauport, Québec, Québec, Canada",
+    "geocode_formatted": "Banque Nationale, Avenue Royale, Beauport, Vieux-Bourg, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1E 5A8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300985680": {
     "region": "Capitale-Nationale",
@@ -16118,7 +16118,7 @@
     "lat": 46.749864,
     "lon": -71.345345,
     "precision": "ville_simplifiee",
-    "geocode_query": "Cap-Rouge, Québec, Canada",
+    "geocode_query": "Cap-Rouge, Québec, Québec, Canada",
     "geocode_formatted": "Cap-Rouge, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300982536": {
@@ -16202,7 +16202,7 @@
     "lat": 46.89565,
     "lon": -71.290829,
     "precision": "ville_simplifiee",
-    "geocode_query": "Charlesbourg, Québec, Canada",
+    "geocode_query": "Charlesbourg, Québec, Québec, Canada",
     "geocode_formatted": "Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300975803": {
@@ -16244,7 +16244,7 @@
     "lat": 46.856119,
     "lon": -71.412426,
     "precision": "ville_simplifiee",
-    "geocode_query": "Val-Bélair, Québec, Canada",
+    "geocode_query": "Val-Bélair, Québec, Québec, Canada",
     "geocode_formatted": "Val-Bélair, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300973363": {
@@ -16300,7 +16300,7 @@
     "lat": 46.774327,
     "lon": -71.299444,
     "precision": "ville_simplifiee",
-    "geocode_query": "Sainte-Foy, Québec, Canada",
+    "geocode_query": "Sainte-Foy, Québec, Québec, Canada",
     "geocode_formatted": "Sainte-Foy, Saint-Louis, Sainte-Foy–Sillery–Cap-Rouge, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1V 4X7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300954124": {
@@ -16412,7 +16412,7 @@
     "lat": 46.898349,
     "lon": -71.206289,
     "precision": "ville_simplifiee",
-    "geocode_query": "Beauport, Québec, Canada",
+    "geocode_query": "Beauport, Québec, Québec, Canada",
     "geocode_formatted": "Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300928429": {
@@ -16678,7 +16678,7 @@
     "lat": 46.898349,
     "lon": -71.206289,
     "precision": "ville_simplifiee",
-    "geocode_query": "Beauport, Québec, Canada",
+    "geocode_query": "Beauport, Québec, Québec, Canada",
     "geocode_formatted": "Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300891743": {
@@ -17694,7 +17694,7 @@
     "lat": 46.826273,
     "lon": -71.233149,
     "precision": "ville_simplifiee",
-    "geocode_query": "Limoilou, Québec, Canada",
+    "geocode_query": "Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3K8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-10-25-01": {
@@ -17915,10 +17915,10 @@
     "adresse": "Rue Santerre",
     "municipalite": "Québec (secteur Vanier)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-08-07-01",
-    "lat": 46.814159,
-    "lon": -71.258011,
+    "lat": 46.815467,
+    "lon": -71.257071,
     "precision": "ville_simplifiee",
-    "geocode_query": "Vanier, Québec, Canada",
+    "geocode_query": "Vanier, Québec, Québec, Canada",
     "geocode_formatted": "Vanier, Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=N-03-2012-07-24-01": {
@@ -17960,7 +17960,7 @@
     "lat": 46.826273,
     "lon": -71.233149,
     "precision": "ville_simplifiee",
-    "geocode_query": "Limoilou, Québec, Canada",
+    "geocode_query": "Limoilou, Québec, Québec, Canada",
     "geocode_formatted": "Limoilou, Vieux-Limoilou, La Cité-Limoilou, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1L 3K8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-07-09-01": {
@@ -18055,10 +18055,10 @@
     "adresse": "Près du 386, chemin de la Baie-de-l'Écho",
     "municipalite": "Québec (quartier Lac-Saint-Charles)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=N-03-2012-06-24",
-    "lat": 46.908295,
-    "lon": -71.376457,
+    "lat": 46.908375,
+    "lon": -71.375285,
     "precision": "ville_simplifiee",
-    "geocode_query": "Lac-Saint-Charles, Québec, Canada",
+    "geocode_query": "Lac-Saint-Charles, Québec, Québec, Canada",
     "geocode_formatted": "Lac-Saint-Charles, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-06-18-01": {
@@ -18268,7 +18268,7 @@
     "lat": 46.856119,
     "lon": -71.412426,
     "precision": "ville_simplifiee",
-    "geocode_query": "Val Bélair, Québec, Canada",
+    "geocode_query": "Val Bélair, Québec, Québec, Canada",
     "geocode_formatted": "Val-Bélair, La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2012-04-25-01": {
@@ -19088,11 +19088,11 @@
     "adresse": "Boulevard Sainte-Anne, à la hauteur du Parc de la Chute-Montmorency",
     "municipalite": "Québec (arrondissement de Beauport)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2011-05-19-01",
-    "lat": 46.889957,
-    "lon": -71.19213,
+    "lat": 46.860244,
+    "lon": -71.191165,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Beauport, Québec, Canada",
-    "geocode_formatted": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+    "geocode_query": "de Beauport, Québec, Québec, Canada",
+    "geocode_formatted": "Banque Nationale, Avenue Royale, Beauport, Vieux-Bourg, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1E 5A8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2011-05-25-01": {
     "region": "Capitale-Nationale",
@@ -20194,7 +20194,7 @@
     "lat": 46.891124,
     "lon": -71.403115,
     "precision": "ville_simplifiee",
-    "geocode_query": "La Haute-Saint-Charles, Québec, Canada",
+    "geocode_query": "La Haute-Saint-Charles, Québec, Québec, Canada",
     "geocode_formatted": "La Haute-Saint-Charles, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-20-1": {
@@ -20208,7 +20208,7 @@
     "lat": 46.829922,
     "lon": -71.301735,
     "precision": "ville_simplifiee",
-    "geocode_query": "Les Rivières, Québec, Canada",
+    "geocode_query": "Les Rivières, Québec, Québec, Canada",
     "geocode_formatted": "Les Rivières, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-24-01": {
@@ -20222,7 +20222,7 @@
     "lat": 46.77863,
     "lon": -72.836386,
     "precision": "ville_simplifiee",
-    "geocode_query": "Laurentien, Québec, Canada",
+    "geocode_query": "Laurentien, Québec, Québec, Canada",
     "geocode_formatted": "Laurentien, Saint-Roch-de-Mékinac, Mékinac, Mauricie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-08-19-1": {
@@ -20303,8 +20303,8 @@
     "adresse": "Rivière Lorette - À l'intersection du boulevard Masson et du boulevard Père-Lelièvre",
     "municipalite": "Ville de Québec (arrondissement des Rivières)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-07-27-1",
-    "lat": 45.157863,
-    "lon": -73.050521,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "des Rivières, Québec, Canada",
     "geocode_formatted": "Des Rivières, Notre-Dame-de-Stanbridge, Brome-Missisquoi, Québec, J0J 1M0, Canada"
@@ -20348,7 +20348,7 @@
     "lat": 46.898349,
     "lon": -71.206289,
     "precision": "ville_simplifiee",
-    "geocode_query": "Beauport, Québec, Canada",
+    "geocode_query": "Beauport, Québec, Québec, Canada",
     "geocode_formatted": "Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-06-21-1": {
@@ -20401,11 +20401,11 @@
     "adresse": "Fleuve Saint-Laurent à environ 300 mètres en aval du pont de l'Île-d'Orléans",
     "municipalite": "Québec (arrondissement de Beauport)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-06-09-01",
-    "lat": 46.889957,
-    "lon": -71.19213,
+    "lat": 46.860244,
+    "lon": -71.191165,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Beauport, Québec, Canada",
-    "geocode_formatted": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+    "geocode_query": "de Beauport, Québec, Québec, Canada",
+    "geocode_formatted": "Banque Nationale, Avenue Royale, Beauport, Vieux-Bourg, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1E 5A8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-06-16-2": {
     "region": "Capitale-Nationale",
@@ -20656,7 +20656,7 @@
     "lat": 46.77863,
     "lon": -72.836386,
     "precision": "ville_simplifiee",
-    "geocode_query": "Laurentien, Québec, Canada",
+    "geocode_query": "Laurentien, Québec, Québec, Canada",
     "geocode_formatted": "Laurentien, Saint-Roch-de-Mékinac, Mékinac, Mauricie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-01-31-01": {
@@ -20667,11 +20667,11 @@
     "adresse": "Rue Joseph-Giffard, Québec",
     "municipalite": "Québec (Arrondissement de Beauport)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-01-31-01",
-    "lat": 46.889957,
-    "lon": -71.19213,
+    "lat": 46.860244,
+    "lon": -71.191165,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Beauport, Québec, Canada",
-    "geocode_formatted": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+    "geocode_query": "de Beauport, Québec, Québec, Canada",
+    "geocode_formatted": "Banque Nationale, Avenue Royale, Beauport, Vieux-Bourg, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1E 5A8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2009-03-06-1": {
     "region": "Capitale-Nationale",
@@ -20737,11 +20737,11 @@
     "adresse": "Près de l'intersection du boulevard Henri-Bourassa et de la rue des Orchidées",
     "municipalite": "Québec (arrondissement de Charlesbourg)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2008-11-26-1",
-    "lat": 46.865528,
-    "lon": -71.271784,
+    "lat": 46.847704,
+    "lon": -71.247195,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Charlesbourg, Québec, Canada",
-    "geocode_formatted": "TD, 8425, Boulevard Henri-Bourassa, Place Cloutier, Trait-Carré, Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1G 4E1, Canada"
+    "geocode_query": "de Charlesbourg, Québec, Québec, Canada",
+    "geocode_formatted": "Postes Canada, 47e Rue Est, Saint-Rodrigue, Charlesbourg, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1H 3B1, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2008-09-30-01": {
     "region": "Capitale-Nationale",
@@ -20807,11 +20807,11 @@
     "adresse": "3725, rue Saint-Henri Carrière Unibéton",
     "municipalite": "Québec (arrondissement de Beauport)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2008-08-29-1",
-    "lat": 46.889957,
-    "lon": -71.19213,
+    "lat": 46.860244,
+    "lon": -71.191165,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Beauport, Québec, Canada",
-    "geocode_formatted": "Banque Nationale, 945, Avenue Nordique, Saint-Michel, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1C 7S8, Canada"
+    "geocode_query": "de Beauport, Québec, Québec, Canada",
+    "geocode_formatted": "Banque Nationale, Avenue Royale, Beauport, Vieux-Bourg, Beauport, Québec, Agglomération de Québec, Capitale-Nationale, Québec, G1E 5A8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-03-2008-08-28-1": {
     "region": "Capitale-Nationale",
@@ -22291,8 +22291,8 @@
     "adresse": "Km 150-151, chemin de Parent",
     "municipalite": "La Tuque (secteur de Parent)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301567818",
-    "lat": 47.922392,
-    "lon": -74.62095,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "de Parent, Québec, Canada",
     "geocode_formatted": "Radio-Canada, Rue Commerciale, Parent, La Tuque, Agglomération de La Tuque, Mauricie, Québec, G0X 3P0, Canada"
@@ -22333,8 +22333,8 @@
     "adresse": "chemin Langevin Rive de la rivière Saint-Maurice",
     "municipalite": "Trois-Rivières (secteur Saint-Louis-de-France)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301559452",
-    "lat": 46.423813,
-    "lon": -72.595153,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Louis-de-France, Québec, Canada",
     "geocode_formatted": "Saint-Louis-de-France, Trois-Rivières, Mauricie, Québec, G8W 1E2, Canada"
@@ -24951,8 +24951,8 @@
     "adresse": "Stationnement du 850, 7e Avenue",
     "municipalite": "Shawinigan (secteur Grand-Mère)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-04-36033-110614",
-    "lat": 46.612894,
-    "lon": -72.69516,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Grand-Mère, Québec, Canada",
     "geocode_formatted": "Grand-Mère, Shawinigan, Mauricie, Québec, G9T 2H9, Canada"
@@ -30005,7 +30005,7 @@
     "lat": 45.366198,
     "lon": -71.856443,
     "precision": "ville_simplifiee",
-    "geocode_query": "Lennoxville, Québec, Canada",
+    "geocode_query": "Lennoxville, Sherbrooke, Québec, Canada",
     "geocode_formatted": "Lennoxville, Sherbrooke, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300879116": {
@@ -31077,7 +31077,7 @@
     "lat": 45.366198,
     "lon": -71.856443,
     "precision": "ville_simplifiee",
-    "geocode_query": "Lennoxville, Québec, Canada",
+    "geocode_query": "Lennoxville, Sherbrooke, Québec, Canada",
     "geocode_formatted": "Lennoxville, Sherbrooke, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-12-44035-01": {
@@ -32180,8 +32180,8 @@
     "lat": 45.474916,
     "lon": -71.942888,
     "precision": "ville_simplifiee",
-    "geocode_query": "Bromptonville, Québec, Canada",
-    "geocode_formatted": "Brompton, Brompton–Rock Forest–Saint-Élie–Deauville, Sherbrooke, Estrie, Québec, Canada"
+    "geocode_query": "Bromptonville, Sherbrooke, Québec, Canada",
+    "geocode_formatted": "Bromptonville, Brompton, Brompton–Rock Forest–Saint-Élie–Deauville, Sherbrooke, Estrie, Québec, J0B 1H0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-43027-36": {
     "region": "Estrie",
@@ -32362,7 +32362,7 @@
     "lat": 45.366198,
     "lon": -71.856443,
     "precision": "ville_simplifiee",
-    "geocode_query": "Lennoxville, Québec, Canada",
+    "geocode_query": "Lennoxville, Sherbrooke, Québec, Canada",
     "geocode_formatted": "Lennoxville, Sherbrooke, Estrie, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-05-08-43027-26": {
@@ -33227,7 +33227,7 @@
     "lat": 45.537104,
     "lon": -73.625126,
     "precision": "ville_simplifiee",
-    "geocode_query": "Villeray - Saint-Michel - Parc-Extension, Québec, Canada",
+    "geocode_query": "Villeray - Saint-Michel - Parc-Extension, Montréal, Québec, Canada",
     "geocode_formatted": "Villeray–Saint-Michel–Parc-Extension, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301623175": {
@@ -33241,7 +33241,7 @@
     "lat": 45.459099,
     "lon": -73.573171,
     "precision": "ville_simplifiee",
-    "geocode_query": "Verdun, Québec, Canada",
+    "geocode_query": "Verdun, Montréal, Québec, Canada",
     "geocode_formatted": "Verdun, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301615577": {
@@ -33269,7 +33269,7 @@
     "lat": 45.459099,
     "lon": -73.573171,
     "precision": "ville_simplifiee",
-    "geocode_query": "Verdun, Québec, Canada",
+    "geocode_query": "Verdun, Montréal, Québec, Canada",
     "geocode_formatted": "Verdun, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301608732": {
@@ -33311,7 +33311,7 @@
     "lat": 45.599509,
     "lon": -73.563737,
     "precision": "ville_simplifiee",
-    "geocode_query": "d'Anjou, Québec, Canada",
+    "geocode_query": "d'Anjou, Montréal, Québec, Canada",
     "geocode_formatted": "Les Galeries d'Anjou, Anjou, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301614326": {
@@ -33843,7 +33843,7 @@
     "lat": 45.432514,
     "lon": -73.629267,
     "precision": "ville_simplifiee",
-    "geocode_query": "LaSalle, Québec, Canada",
+    "geocode_query": "LaSalle, Montréal, Québec, Canada",
     "geocode_formatted": "LaSalle, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301266328": {
@@ -34610,11 +34610,11 @@
     "adresse": "Voie ferrée au sud de la rue St-Jacques et à l'est de la rue De Courcelle",
     "municipalite": "Montréal (quartier St-Henri)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-06-20140223-843",
-    "lat": 46.692077,
-    "lon": -71.067123,
+    "lat": 45.478318,
+    "lon": -73.585239,
     "precision": "ville_simplifiee",
-    "geocode_query": "St-Henri, Québec, Canada",
-    "geocode_formatted": "Saint-Henri, Bellechasse, Chaudière-Appalaches, Québec, G0R 3E0, Canada"
+    "geocode_query": "St-Henri, Montréal, Québec, Canada",
+    "geocode_formatted": "Saint-Henri, Le Sud-Ouest, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H4C 2R6, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-06-2014-01-21-778": {
     "region": "Montréal",
@@ -34781,7 +34781,7 @@
     "lat": 45.541862,
     "lon": -73.680319,
     "precision": "ville_simplifiee",
-    "geocode_query": "d'Ahuntsic-Cartierville, Québec, Canada",
+    "geocode_query": "d'Ahuntsic-Cartierville, Montréal, Québec, Canada",
     "geocode_formatted": "Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-06-2013-04-11-023": {
@@ -35173,7 +35173,7 @@
     "lat": 45.67473,
     "lon": -73.506233,
     "precision": "ville_simplifiee",
-    "geocode_query": "Pointe-aux-Trembles, Québec, Canada",
+    "geocode_query": "Pointe-aux-Trembles, Montréal, Québec, Canada",
     "geocode_formatted": "Pointe-aux-Trembles, 53e Avenue, Pointe-aux-Trembles, Rivière-des-Prairies–Pointe-aux-Trembles, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H1A 5S2, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-06-2012-02-15-754": {
@@ -35674,7 +35674,7 @@
     "lat": 45.63098,
     "lon": -73.497744,
     "precision": "ville_simplifiee",
-    "geocode_query": "Montréal-Est, Québec, Canada",
+    "geocode_query": "Montréal-Est, Montréal, Québec, Canada",
     "geocode_formatted": "Montréal-Est, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-06-2009-04-17-39": {
@@ -35814,7 +35814,7 @@
     "lat": 45.435114,
     "lon": -73.683799,
     "precision": "ville_simplifiee",
-    "geocode_query": "Lachine, Québec, Canada",
+    "geocode_query": "Lachine, Montréal, Québec, Canada",
     "geocode_formatted": "Lachine, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-06-2008-09-03-462": {
@@ -37720,7 +37720,7 @@
     "lat": 45.54452,
     "lon": -75.416528,
     "precision": "ville_simplifiee",
-    "geocode_query": "Masson-Angers, Québec, Canada",
+    "geocode_query": "Masson-Angers, Gatineau, Québec, Canada",
     "geocode_formatted": "Masson-Angers, Gatineau, Outaouais, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301449214": {
@@ -38644,7 +38644,7 @@
     "lat": 45.54452,
     "lon": -75.416528,
     "precision": "ville_simplifiee",
-    "geocode_query": "Masson-Angers, Québec, Canada",
+    "geocode_query": "Masson-Angers, Gatineau, Québec, Canada",
     "geocode_formatted": "Masson-Angers, Gatineau, Outaouais, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301263330": {
@@ -38798,7 +38798,7 @@
     "lat": 45.440584,
     "lon": -75.732682,
     "precision": "ville_simplifiee",
-    "geocode_query": "Hull, Québec, Canada",
+    "geocode_query": "Hull, Gatineau, Québec, Canada",
     "geocode_formatted": "Hull, Gatineau, Outaouais, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301223850": {
@@ -38910,7 +38910,7 @@
     "lat": 45.440584,
     "lon": -75.732682,
     "precision": "ville_simplifiee",
-    "geocode_query": "Hull, Québec, Canada",
+    "geocode_query": "Hull, Gatineau, Québec, Canada",
     "geocode_formatted": "Hull, Gatineau, Outaouais, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301029019": {
@@ -39582,7 +39582,7 @@
     "lat": 45.440584,
     "lon": -75.732682,
     "precision": "ville_simplifiee",
-    "geocode_query": "Hull, Québec, Canada",
+    "geocode_query": "Hull, Gatineau, Québec, Canada",
     "geocode_formatted": "Hull, Gatineau, Outaouais, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-07-13-02-17-168": {
@@ -40856,7 +40856,7 @@
     "lat": 45.440584,
     "lon": -75.732682,
     "precision": "ville_simplifiee",
-    "geocode_query": "Hull, Québec, Canada",
+    "geocode_query": "Hull, Gatineau, Québec, Canada",
     "geocode_formatted": "Hull, Gatineau, Outaouais, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-07-01-8101701": {
@@ -41066,7 +41066,7 @@
     "lat": 45.586467,
     "lon": -75.416825,
     "precision": "ville_simplifiee",
-    "geocode_query": "Buckingham, Québec, Canada",
+    "geocode_query": "Buckingham, Gatineau, Québec, Canada",
     "geocode_formatted": "Buckingham, Gatineau, Outaouais, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=0708072347": {
@@ -42071,7 +42071,7 @@
     "lat": 48.113303,
     "lon": -77.947249,
     "precision": "ville_simplifiee",
-    "geocode_query": "Dubuisson, Québec, Canada",
+    "geocode_query": "Dubuisson, Val-d'Or, Québec, Canada",
     "geocode_formatted": "Dubuisson, Val-d'Or, La Vallée-de-l'Or, Abitibi-Témiscamingue, Québec, J9P 4N7, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301338821": {
@@ -42740,7 +42740,7 @@
     "lat": 48.25175,
     "lon": -79.363723,
     "precision": "ville_simplifiee",
-    "geocode_query": "Arntfield, Québec, Canada",
+    "geocode_query": "Arntfield, Rouyn-Noranda, Québec, Canada",
     "geocode_formatted": "Arntfield, Rouyn-Noranda, Abitibi-Témiscamingue, Québec, J0Z 1B0, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-08-10-89008-02": {
@@ -42835,7 +42835,7 @@
     "lat": 48.365225,
     "lon": -79.244608,
     "precision": "ville_simplifiee",
-    "geocode_query": "D'Alembert, Québec, Canada",
+    "geocode_query": "D'Alembert, Rouyn-Noranda, Québec, Canada",
     "geocode_formatted": "D'Alembert, Rouyn-Noranda, Abitibi-Témiscamingue, Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-08-09-86042-23": {
@@ -48573,8 +48573,8 @@
     "lat": 48.992561,
     "lon": -64.385798,
     "precision": "ville_simplifiee",
-    "geocode_query": "Rivière-au-Renard, Québec, Canada",
-    "geocode_formatted": "Rivière-au-Renard, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 5K9, Canada"
+    "geocode_query": "Rivière-au-Renard, Gaspé, Québec, Canada",
+    "geocode_formatted": "Rivière-au-Renard, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 5H8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301765450": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -48881,8 +48881,8 @@
     "lat": 48.992561,
     "lon": -64.385798,
     "precision": "ville_simplifiee",
-    "geocode_query": "Rivière-au-Renard, Québec, Canada",
-    "geocode_formatted": "Rivière-au-Renard, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 5K9, Canada"
+    "geocode_query": "Rivière-au-Renard, Gaspé, Québec, Canada",
+    "geocode_formatted": "Rivière-au-Renard, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 5H8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301432057": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -49007,8 +49007,8 @@
     "lat": 48.764274,
     "lon": -64.375677,
     "precision": "ville_simplifiee",
-    "geocode_query": "Douglastown, Québec, Canada",
-    "geocode_formatted": "Douglastown, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 2J6, Canada"
+    "geocode_query": "Douglastown, Gaspé, Québec, Canada",
+    "geocode_formatted": "Douglastown, Gaspé, La Côte-de-Gaspé, Gaspésie–Îles-de-la-Madeleine, Québec, G4X 2W8, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301391699": {
     "region": "Gaspésie—Îles-de-la-Madeleine",
@@ -49200,8 +49200,8 @@
     "adresse": "Quai de Tourelle",
     "municipalite": "Sainte-Anne-des-Monts (secteur Tourelle)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301047960",
-    "lat": 49.160798,
-    "lon": -66.407197,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Tourelle, Québec, Canada",
     "geocode_formatted": "Tourelle, Sainte-Anne-des-Monts, La Haute-Gaspésie, Gaspésie–Îles-de-la-Madeleine, Québec, Canada"
@@ -50092,8 +50092,8 @@
     "adresse": "Effluent à proximité du 30, rue du juvénat",
     "municipalite": "Lévis (Arrondissement St-Romuald)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301825425",
-    "lat": 46.756568,
-    "lon": -71.237877,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "St-Romuald, Québec, Canada",
     "geocode_formatted": "Saint-Romuald, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -50162,8 +50162,8 @@
     "adresse": "585, rue de Bernière",
     "municipalite": "Lévis (arrondissement Saint-Rédempteur)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301821543",
-    "lat": 46.695609,
-    "lon": -71.28582,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Rédempteur, Québec, Canada",
     "geocode_formatted": "Saint-Rédempteur, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -52584,8 +52584,8 @@
     "adresse": "Près du 4279, route des Rivières",
     "municipalite": "Lévis (secteur Saint-Étienne)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301318837",
-    "lat": 48.201058,
-    "lon": -69.960667,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Étienne, Québec, Canada",
     "geocode_formatted": "Saint-Étienne, Petit-Saguenay, Le Fjord-du-Saguenay, Saguenay–Lac-Saint-Jean, Québec, G0V 1N0, Canada"
@@ -53113,8 +53113,8 @@
     "adresse": "Près du 22, rue de la Boucle",
     "municipalite": "Lévis (secteur Saint-Étienne-de-Lauzon)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239287",
-    "lat": 46.653443,
-    "lon": -71.300926,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Étienne-de-Lauzon, Québec, Canada",
     "geocode_formatted": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -53127,8 +53127,8 @@
     "adresse": "Près du 1276, rue Pierre-Beaumont",
     "municipalite": "Lévis (secteur Saint-Jean-Chrysostome)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301239098",
-    "lat": 46.718916,
-    "lon": -71.197929,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Jean-Chrysostome, Québec, Canada",
     "geocode_formatted": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -53225,8 +53225,8 @@
     "adresse": "Rivière Etchemin près du 812, route des Îles",
     "municipalite": "Lévis (secteur Pintendre)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301212230",
-    "lat": 46.753126,
-    "lon": -71.124,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Pintendre, Québec, Canada",
     "geocode_formatted": "Pintendre, Desjardins, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -53421,8 +53421,8 @@
     "adresse": "À proximité de la Rue Perreault",
     "municipalite": "Lévis (secteur Saint-Romuald)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301059507",
-    "lat": 46.756568,
-    "lon": -71.237877,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Romuald, Québec, Canada",
     "geocode_formatted": "Saint-Romuald, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -54580,8 +54580,8 @@
     "adresse": "Autoroute 20, km 311, direction Est",
     "municipalite": "Lévis (secteur St-Nicolas)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2013-08-07-01",
-    "lat": 46.700053,
-    "lon": -71.396556,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "St-Nicolas, Québec, Canada",
     "geocode_formatted": "Saint-Nicolas, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -57251,8 +57251,8 @@
     "adresse": "En bordure du garage municipal, chemin Petit St-Jean",
     "municipalite": "Lévis (secteur St-Jean-Chrysostome)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2010-04-06-1",
-    "lat": 46.718916,
-    "lon": -71.197929,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "St-Jean-Chrysostome, Québec, Canada",
     "geocode_formatted": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -58161,8 +58161,8 @@
     "adresse": "Face au 955, route Lagueux (route 171)",
     "municipalite": "Ville de Lévis (Quartier St-Étienne-de-Lauzon)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-10-31-01",
-    "lat": 46.653443,
-    "lon": -71.300926,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "St-Étienne-de-Lauzon, Québec, Canada",
     "geocode_formatted": "Saint-Étienne-de-Lauzon, Les Chutes-de-la-Chaudière-Ouest, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -58273,8 +58273,8 @@
     "adresse": "Hydro-Québec, poste de Lévis 1120, Commerciale",
     "municipalite": "Lévis (Secteur Saint-Jean-Chrysostome)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-12-2008-08-29-2",
-    "lat": 46.718916,
-    "lon": -71.197929,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Jean-Chrysostome, Québec, Canada",
     "geocode_formatted": "Saint-Jean-Chrysostome, Les Chutes-de-la-Chaudière-Est, Lévis, Chaudière-Appalaches, Québec, Canada"
@@ -59323,11 +59323,11 @@
     "adresse": "Baie du Marigot",
     "municipalite": "Laval (Secteur Pont-Viau)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=N-13-2011-06-13-001",
-    "lat": 45.557393,
-    "lon": -73.675801,
+    "lat": 45.571727,
+    "lon": -73.680246,
     "precision": "ville_simplifiee",
-    "geocode_query": "Pont-Viau, Québec, Canada",
-    "geocode_formatted": "Pont Viau, Avenue Park Stanley, Ahuntsic, Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2C 3K9, Canada"
+    "geocode_query": "Pont-Viau, Laval, Québec, Canada",
+    "geocode_formatted": "Pont-Viau, Laval, Laval (région administrative), Québec, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-08-21-43": {
     "region": "Laval",
@@ -59379,8 +59379,8 @@
     "adresse": "Ruisseau Lapinière",
     "municipalite": "Laval (secteur St-François)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-13-2010-02-26-133",
-    "lat": 47.001886,
-    "lon": -70.812922,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "St-François, Québec, Canada",
     "geocode_formatted": "Saint-François-de-l'Île-d'Orléans, L'Île-d'Orléans, Capitale-Nationale, Québec, G0A 3S0, Canada"
@@ -61291,11 +61291,11 @@
     "adresse": "Au sud de la résidence privée au 2200, rue Pelletier",
     "municipalite": "Terrebonne (secteur Laplaine)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301458571",
-    "lat": 45.770164,
-    "lon": -73.682793,
+    "lat": 45.791818,
+    "lon": -73.765094,
     "precision": "ville_simplifiee",
-    "geocode_query": "Laplaine, Québec, Canada",
-    "geocode_formatted": "Lac-Laplaine, Mascouche, Les Moulins, Lanaudière, Québec, J6X 4J8, Canada"
+    "geocode_query": "Laplaine, Terrebonne, Québec, Canada",
+    "geocode_formatted": "Pizza Laplaine 2 pour 1, Chemin Gauthier, La Plaine, Terrebonne, Les Moulins, Lanaudière, Québec, J5M 0G9, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=301440741": {
     "region": "Lanaudière",
@@ -62789,7 +62789,7 @@
     "lat": 45.742015,
     "lon": -73.451243,
     "precision": "ville_simplifiee",
-    "geocode_query": "de Le Gardeur, Québec, Canada",
+    "geocode_query": "de Le Gardeur, Repentigny, Québec, Canada",
     "geocode_formatted": "Ville de Repentigny, Boulevard Iberville, Le Gardeur, Repentigny, L'Assomption (MRC), Lanaudière, Québec, J6A 2B6, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=T-14-2013-02-08-109": {
@@ -75160,8 +75160,8 @@
     "adresse": "Route 116 Ouest à la hauteur de la sortie 2",
     "municipalite": "Ville de Longueuil (arrondissement Saint-Hubert)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=300876477",
-    "lat": 45.504275,
-    "lon": -73.421698,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "Saint-Hubert, Québec, Canada",
     "geocode_formatted": "Saint-Hubert, Longueuil, Agglomération de Longueuil, Montérégie, Québec, Canada"
@@ -85296,8 +85296,8 @@
     "adresse": "Autoroute 55 près du village de St-Grégoire",
     "municipalite": "Ville de Bécancour (secteur St-Grégoire)",
     "url": "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=7110-17-38010-100723",
-    "lat": 46.272118,
-    "lon": -72.493575,
+    "lat": null,
+    "lon": null,
     "precision": "ville_simplifiee",
     "geocode_query": "St-Grégoire, Québec, Canada",
     "geocode_formatted": "St-Grégoire, Avenue Laperrière, Saint-Grégoire, Bécancour, Bécancour (MRC), Centre-du-Québec, Québec, G0X 1L1, Canada"
@@ -85912,7 +85912,7 @@
     "lat": 45.974319,
     "lon": -72.550275,
     "precision": "ville_simplifiee",
-    "geocode_query": "St-Joachim-De-Courval, Québec, Canada",
+    "geocode_query": "St-Joachim-De-Courval, Drummondville, Québec, Canada",
     "geocode_formatted": "Saint-Joachim-de-Courval, Drummondville, Drummond, Centre-du-Québec, Québec, J1Z 2C2, Canada"
   },
   "https://www.environnement.gouv.qc.ca/ministere/urgence_environnement/urgence.asp?dossier=17-014-49058-081020": {
